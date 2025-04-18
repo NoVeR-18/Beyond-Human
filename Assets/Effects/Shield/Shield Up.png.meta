@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: fa287979d6823cf4ea3c465bc99b5854
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1422868305549830651
+    second: Shield Up_0
+  - first:
+      213: -2412438441331181439
+    second: Shield Up_1
+  - first:
+      213: -1933026748854229670
+    second: Shield Up_2
+  - first:
+      213: 192900662749994954
+    second: Shield Up_3
+  - first:
+      213: -8738240305255826837
+    second: Shield Up_4
+  - first:
+      213: 4714480707611330521
+    second: Shield Up_5
+  - first:
+      213: -6639565350938899984
+    second: Shield Up_6
+  - first:
+      213: 8994752234257716400
+    second: Shield Up_7
+  - first:
+      213: 7907391672540154595
+    second: Shield Up_8
+  - first:
+      213: 3059822751875419401
+    second: Shield Up_9
+  - first:
+      213: 1331753170932184826
+    second: Shield Up_10
+  - first:
+      213: 2077455197129579565
+    second: Shield Up_11
+  - first:
+      213: -6278886490455684695
+    second: Shield Up_12
+  - first:
+      213: 7017636829258448789
+    second: Shield Up_13
+  - first:
+      213: 4390426752927627248
+    second: Shield Up_14
+  - first:
+      213: 5870940532079642456
+    second: Shield Up_15
+  - first:
+      213: -3877224691934048839
+    second: Shield Up_16
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shield Up_0
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 7
+        width: 102
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5065a8590d4f04ce0800000000000000
+      internalID: -1422868305549830651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_1
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 9
+        width: 102
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18835fde40c458ed0800000000000000
+      internalID: -2412438441331181439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_2
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 11
+        width: 102
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55273dd9628c25e0800000000000000
+      internalID: -1933026748854229670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_3
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 11
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf962871225da200800000000000000
+      internalID: 192900662749994954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_4
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 15
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ab9335db88bb680800000000000000
+      internalID: -8738240305255826837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_5
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 19
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d70b95a9333d6140800000000000000
+      internalID: 4714480707611330521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_6
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 23
+        width: 94
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f98b42cd768bd3a0800000000000000
+      internalID: -6639565350938899984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_7
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 31
+        width: 94
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b415953087c3dc70800000000000000
+      internalID: 8994752234257716400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_8
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 36
+        width: 94
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea43adb4d2bcbd60800000000000000
+      internalID: 7907391672540154595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_9
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 44
+        width: 92
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d4139c49ca67a20800000000000000
+      internalID: 3059822751875419401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_10
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 60
+        width: 86
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6b9e9f3765b7210800000000000000
+      internalID: 1331753170932184826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_11
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 68
+        width: 70
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c92b5be7a94dc10800000000000000
+      internalID: 2077455197129579565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 7
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9c36ff00aecd8a0800000000000000
+      internalID: -6278886490455684695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_13
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 7
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ff5a2e387a36160800000000000000
+      internalID: 7017636829258448789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_14
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 7
+        width: 74
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f77f9cceddedec30800000000000000
+      internalID: 4390426752927627248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_15
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 7
+        width: 90
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857cc00fe45c97150800000000000000
+      internalID: 5870940532079642456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Up_16
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 7
+        width: 94
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bdc5e26fa4513ac0800000000000000
+      internalID: -3877224691934048839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Shield Up_0: -1422868305549830651
+      Shield Up_1: -2412438441331181439
+      Shield Up_10: 1331753170932184826
+      Shield Up_11: 2077455197129579565
+      Shield Up_12: -6278886490455684695
+      Shield Up_13: 7017636829258448789
+      Shield Up_14: 4390426752927627248
+      Shield Up_15: 5870940532079642456
+      Shield Up_16: -3877224691934048839
+      Shield Up_2: -1933026748854229670
+      Shield Up_3: 192900662749994954
+      Shield Up_4: -8738240305255826837
+      Shield Up_5: 4714480707611330521
+      Shield Up_6: -6639565350938899984
+      Shield Up_7: 8994752234257716400
+      Shield Up_8: 7907391672540154595
+      Shield Up_9: 3059822751875419401
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

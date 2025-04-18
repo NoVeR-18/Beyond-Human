@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: 3c22ce7b830d8e94193391080292800b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4757206253726567980
+    second: Effect 12_0
+  - first:
+      213: -6821641669664842128
+    second: Effect 12_1
+  - first:
+      213: -1919887120714167458
+    second: Effect 12_2
+  - first:
+      213: 5388305707569596751
+    second: Effect 12_3
+  - first:
+      213: -4895448385449992014
+    second: Effect 12_4
+  - first:
+      213: -335640666546865908
+    second: Effect 12_5
+  - first:
+      213: -2575543060634960207
+    second: Effect 12_6
+  - first:
+      213: -2439903136413949918
+    second: Effect 12_7
+  - first:
+      213: 7006378534599555504
+    second: Effect 12_8
+  - first:
+      213: 4907298562131068853
+    second: Effect 12_9
+  - first:
+      213: -8673512822923573577
+    second: Effect 12_10
+  - first:
+      213: -8545821345264889002
+    second: Effect 12_11
+  - first:
+      213: 8461501316539375117
+    second: Effect 12_12
+  - first:
+      213: 8003083692394258573
+    second: Effect 12_13
+  - first:
+      213: -4096197233140695740
+    second: Effect 12_14
+  - first:
+      213: 680284082922881911
+    second: Effect 12_15
+  - first:
+      213: 4050790324900350299
+    second: Effect 12_16
+  - first:
+      213: 7437776797964140863
+    second: Effect 12_17
+  - first:
+      213: 5122330171014082373
+    second: Effect 12_18
+  - first:
+      213: 3781366556913606644
+    second: Effect 12_19
+  - first:
+      213: 2683559621722002979
+    second: Effect 12_20
+  - first:
+      213: -7093608298856828666
+    second: Effect 12_21
+  - first:
+      213: 1589243680488673420
+    second: Effect 12_22
+  - first:
+      213: -5583271454839147257
+    second: Effect 12_23
+  - first:
+      213: -1282848182832003113
+    second: Effect 12_24
+  - first:
+      213: 8571664079047459602
+    second: Effect 12_25
+  - first:
+      213: -6717468441035684189
+    second: Effect 12_26
+  - first:
+      213: -4213447862962423445
+    second: Effect 12_27
+  - first:
+      213: -3272384935632397524
+    second: Effect 12_28
+  - first:
+      213: -3202358555776280113
+    second: Effect 12_29
+  - first:
+      213: 4522755464878808782
+    second: Effect 12_30
+  - first:
+      213: -6558579680715616526
+    second: Effect 12_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Effect 12_0
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 40
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e83ac02edf40240800000000000000
+      internalID: 4757206253726567980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 42
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07edf964b09a451a0800000000000000
+      internalID: -6821641669664842128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 43
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b0cf0f5d03b55e0800000000000000
+      internalID: -1919887120714167458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4945e81e7b17ca40800000000000000
+      internalID: 5388305707569596751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_4
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 43
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b06ef071afdf0cb0800000000000000
+      internalID: -4895448385449992014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 53
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c097c429790975bf0800000000000000
+      internalID: -335640666546865908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 39
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be712f6b35d14cd0800000000000000
+      internalID: -2575543060634960207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 39
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2206fab4609b32ed0800000000000000
+      internalID: -2439903136413949918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_8
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 31
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b97ab4e728ab3160800000000000000
+      internalID: 7006378534599555504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 33
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b78b92da0a3a1440800000000000000
+      internalID: 4907298562131068853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_10
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 34
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b648d2ba0e71a780800000000000000
+      internalID: -8673512822923573577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_11
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 43
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6531981a3c4276980800000000000000
+      internalID: -8545821345264889002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_12
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 34
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e54decd9a4d6570800000000000000
+      internalID: 8461501316539375117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_13
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 44
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80a1e0573aa01f60800000000000000
+      internalID: 8003083692394258573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_14
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 30
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44df5bca1526727c0800000000000000
+      internalID: -4096197233140695740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_15
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 23
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77388f4e4cad07900800000000000000
+      internalID: 680284082922881911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_16
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 30
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b594647a65c473830800000000000000
+      internalID: 4050790324900350299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_17
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 25
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f318b49379a483760800000000000000
+      internalID: 7437776797964140863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_18
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 26
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f6f89b62c261740800000000000000
+      internalID: 5122330171014082373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_19
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 35
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff906659dc1a7430800000000000000
+      internalID: 3781366556913606644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_20
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 26
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3265252024bed3520800000000000000
+      internalID: 2683559621722002979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_21
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 36
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60130e2f5d07e8d90800000000000000
+      internalID: -7093608298856828666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_22
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 13
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80df0d05b02e0610800000000000000
+      internalID: 1589243680488673420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_23
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 15
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705fbb9713c3482b0800000000000000
+      internalID: -5583271454839147257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_24
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 22
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d70b81ef58623ee0800000000000000
+      internalID: -1282848182832003113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_25
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 16
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2138995b01ba4f670800000000000000
+      internalID: 8571664079047459602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_26
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 25
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6cb262b02c6c2a0800000000000000
+      internalID: -6717468441035684189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_27
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 22
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69fe701e73d685c0800000000000000
+      internalID: -4213447862962423445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_28
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 16
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b9a472d372692d0800000000000000
+      internalID: -3272384935632397524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_29
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 26
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9958f3cdfee83d0800000000000000
+      internalID: -3202358555776280113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_30
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 12
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecede0af12e04ce30800000000000000
+      internalID: 4522755464878808782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 12_31
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 12
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fec9db778e3bf4a0800000000000000
+      internalID: -6558579680715616526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Effect 12_0: 4757206253726567980
+      Effect 12_1: -6821641669664842128
+      Effect 12_10: -8673512822923573577
+      Effect 12_11: -8545821345264889002
+      Effect 12_12: 8461501316539375117
+      Effect 12_13: 8003083692394258573
+      Effect 12_14: -4096197233140695740
+      Effect 12_15: 680284082922881911
+      Effect 12_16: 4050790324900350299
+      Effect 12_17: 7437776797964140863
+      Effect 12_18: 5122330171014082373
+      Effect 12_19: 3781366556913606644
+      Effect 12_2: -1919887120714167458
+      Effect 12_20: 2683559621722002979
+      Effect 12_21: -7093608298856828666
+      Effect 12_22: 1589243680488673420
+      Effect 12_23: -5583271454839147257
+      Effect 12_24: -1282848182832003113
+      Effect 12_25: 8571664079047459602
+      Effect 12_26: -6717468441035684189
+      Effect 12_27: -4213447862962423445
+      Effect 12_28: -3272384935632397524
+      Effect 12_29: -3202358555776280113
+      Effect 12_3: 5388305707569596751
+      Effect 12_30: 4522755464878808782
+      Effect 12_31: -6558579680715616526
+      Effect 12_4: -4895448385449992014
+      Effect 12_5: -335640666546865908
+      Effect 12_6: -2575543060634960207
+      Effect 12_7: -2439903136413949918
+      Effect 12_8: 7006378534599555504
+      Effect 12_9: 4907298562131068853
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

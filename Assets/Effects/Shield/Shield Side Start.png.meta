@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: f40bcd0c119aaa6429524dbf37155d39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5108079109943782991
+    second: Shield Side Start_0
+  - first:
+      213: -2195628881838880988
+    second: Shield Side Start_1
+  - first:
+      213: -8674137067389004080
+    second: Shield Side Start_2
+  - first:
+      213: 1678512230569940318
+    second: Shield Side Start_3
+  - first:
+      213: 1037573868424159629
+    second: Shield Side Start_4
+  - first:
+      213: 8230384300914535060
+    second: Shield Side Start_5
+  - first:
+      213: 389619668658253144
+    second: Shield Side Start_6
+  - first:
+      213: 8968715788953815239
+    second: Shield Side Start_7
+  - first:
+      213: -5784595821420537759
+    second: Shield Side Start_8
+  - first:
+      213: 5063773849771292679
+    second: Shield Side Start_9
+  - first:
+      213: -1561257328969764031
+    second: Shield Side Start_10
+  - first:
+      213: -4391930110354026481
+    second: Shield Side Start_11
+  - first:
+      213: 4818158827633047717
+    second: Shield Side Start_12
+  - first:
+      213: -2889464881929589530
+    second: Shield Side Start_13
+  - first:
+      213: 2147867302608490488
+    second: Shield Side Start_14
+  - first:
+      213: -7699930358364273565
+    second: Shield Side Start_15
+  - first:
+      213: -6330546682378055873
+    second: Shield Side Start_16
+  - first:
+      213: 4923980462917803174
+    second: Shield Side Start_17
+  - first:
+      213: 8675175830645398991
+    second: Shield Side Start_18
+  - first:
+      213: -2917673216923802686
+    second: Shield Side Start_19
+  - first:
+      213: -7974000744724278972
+    second: Shield Side Start_20
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shield Side Start_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 57
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1153ffc157c19b0800000000000000
+      internalID: -5108079109943782991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 59
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427c7673a2f8781e0800000000000000
+      internalID: -2195628881838880988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 6
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6da357b464f9780800000000000000
+      internalID: -8674137067389004080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 13
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5515460bf54b4710800000000000000
+      internalID: 1678512230569940318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_4
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 13
+        width: 40
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8166af9fe3366e00800000000000000
+      internalID: 1037573868424159629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_5
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 31
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a66fc4ae2383270800000000000000
+      internalID: 8230384300914535060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_6
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 53
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d61eb3605386500800000000000000
+      internalID: 389619668658253144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_7
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 65
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c88704ed77477c70800000000000000
+      internalID: 8968715788953815239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_8
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 6
+        width: 42
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168150f9fbcf8bfa0800000000000000
+      internalID: -5784595821420537759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_9
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 7
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708b782cc73264640800000000000000
+      internalID: 5063773849771292679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_10
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 8
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14338cf2bbc455ae0800000000000000
+      internalID: -1561257328969764031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_11
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 8
+        width: 38
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00910685dabc03c0800000000000000
+      internalID: -4391930110354026481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_12
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 6
+        width: 45
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8fa701de98dd240800000000000000
+      internalID: 4818158827633047717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_13
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 7
+        width: 46
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecee99bffe86e7d0800000000000000
+      internalID: -2889464881929589530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_14
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 7
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffc7ac8ee1cecd10800000000000000
+      internalID: 2147867302608490488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_15
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 1
+        width: 42
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3648372922a542590800000000000000
+      internalID: -7699930358364273565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_16
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 7
+        width: 41
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f04d245516528a0800000000000000
+      internalID: -6330546682378055873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_17
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 9
+        width: 39
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acdd25842e755440800000000000000
+      internalID: 4923980462917803174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_18
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 14
+        width: 38
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd5ca5747a646870800000000000000
+      internalID: 8675175830645398991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 9
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3e59eeaa75287d0800000000000000
+      internalID: -2917673216923802686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield Side Start_20
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 8
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441520c1298a65190800000000000000
+      internalID: -7974000744724278972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Shield Side Start_0: -5108079109943782991
+      Shield Side Start_1: -2195628881838880988
+      Shield Side Start_10: -1561257328969764031
+      Shield Side Start_11: -4391930110354026481
+      Shield Side Start_12: 4818158827633047717
+      Shield Side Start_13: -2889464881929589530
+      Shield Side Start_14: 2147867302608490488
+      Shield Side Start_15: -7699930358364273565
+      Shield Side Start_16: -6330546682378055873
+      Shield Side Start_17: 4923980462917803174
+      Shield Side Start_18: 8675175830645398991
+      Shield Side Start_19: -2917673216923802686
+      Shield Side Start_2: -8674137067389004080
+      Shield Side Start_20: -7974000744724278972
+      Shield Side Start_3: 1678512230569940318
+      Shield Side Start_4: 1037573868424159629
+      Shield Side Start_5: 8230384300914535060
+      Shield Side Start_6: 389619668658253144
+      Shield Side Start_7: 8968715788953815239
+      Shield Side Start_8: -5784595821420537759
+      Shield Side Start_9: 5063773849771292679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

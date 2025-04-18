@@ -1,0 +1,777 @@
+fileFormatVersion: 2
+guid: 910390f32ba71854f811cf47938fa841
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1891216768593063651
+    second: Effect 14_0
+  - first:
+      213: 485029201727128222
+    second: Effect 14_1
+  - first:
+      213: -2339169003371648158
+    second: Effect 14_2
+  - first:
+      213: 1554347564597429661
+    second: Effect 14_3
+  - first:
+      213: 6373214816377049775
+    second: Effect 14_4
+  - first:
+      213: 6722407429415885393
+    second: Effect 14_5
+  - first:
+      213: 8959106304511178367
+    second: Effect 14_6
+  - first:
+      213: -514034754536629027
+    second: Effect 14_7
+  - first:
+      213: -884327009734544248
+    second: Effect 14_8
+  - first:
+      213: -6544069219776190278
+    second: Effect 14_9
+  - first:
+      213: -8683862273233080782
+    second: Effect 14_10
+  - first:
+      213: -177332775706828217
+    second: Effect 14_11
+  - first:
+      213: 1707920135137779200
+    second: Effect 14_12
+  - first:
+      213: -1398828914730139948
+    second: Effect 14_13
+  - first:
+      213: -7558021599931945143
+    second: Effect 14_14
+  - first:
+      213: 3210280492468991837
+    second: Effect 14_15
+  - first:
+      213: -5095689343394784045
+    second: Effect 14_16
+  - first:
+      213: -4327262797561316315
+    second: Effect 14_17
+  - first:
+      213: -7353954325961115939
+    second: Effect 14_18
+  - first:
+      213: 6625772157107745996
+    second: Effect 14_19
+  - first:
+      213: -6476607156500275843
+    second: Effect 14_20
+  - first:
+      213: 5583623617420724141
+    second: Effect 14_21
+  - first:
+      213: 6420497713023286567
+    second: Effect 14_22
+  - first:
+      213: -2632416881941913317
+    second: Effect 14_23
+  - first:
+      213: 7659909012427905600
+    second: Effect 14_24
+  - first:
+      213: -2812378778002608459
+    second: Effect 14_25
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Effect 14_0
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 5
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee604581a3fe3a10800000000000000
+      internalID: 1891216768593063651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_1
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 8
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9203aa3d7b2bb600800000000000000
+      internalID: 485029201727128222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 2
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bad645f2a998fd0800000000000000
+      internalID: -2339169003371648158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_3
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95c25defd6229510800000000000000
+      internalID: 1554347564597429661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_4
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 2
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa21967db15327850800000000000000
+      internalID: 6373214816377049775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_5
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ad7c1b0f9ca4d50800000000000000
+      internalID: 6722407429415885393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_6
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 0
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76f95177b3255c70800000000000000
+      internalID: 8959106304511178367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_7
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 0
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc93ad3d18cdd8f0800000000000000
+      internalID: -514034754536629027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_8
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 32
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8843d7f154d3ab3f0800000000000000
+      internalID: -884327009734544248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_9
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 53
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab82ca177bbce25a0800000000000000
+      internalID: -6544069219776190278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_10
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 44
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ea6858549bc7780800000000000000
+      internalID: -8683862273233080782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_11
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 14
+        width: 87
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742e5f0b7ccf98df0800000000000000
+      internalID: -177332775706828217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 23
+        width: 43
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00edf9f5050c3b710800000000000000
+      internalID: 1707920135137779200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 29
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4def6fb638c569ce0800000000000000
+      internalID: -1398828914730139948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_14
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 23
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fa35326638c1790800000000000000
+      internalID: -7558021599931945143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 24
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57fafe59153d8c20800000000000000
+      internalID: 3210280492468991837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 23
+        width: 43
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcd5315a897849b0800000000000000
+      internalID: -5095689343394784045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 22
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c3895996972f3c0800000000000000
+      internalID: -4327262797561316315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_18
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 14
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6f3a2e08181f990800000000000000
+      internalID: -7353954325961115939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_19
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 16
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4b41b0ca873fb50800000000000000
+      internalID: 6625772157107745996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_20
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 20
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d5c0f0b187e16a0800000000000000
+      internalID: -6476607156500275843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_21
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da708d3c8140d7d40800000000000000
+      internalID: 5583623617420724141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_22
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 0
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72df5f917a03a1950800000000000000
+      internalID: 6420497713023286567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_23
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 2
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b116c130bc6c77bd0800000000000000
+      internalID: -2632416881941913317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_24
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 0
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a1491b9a67d4a60800000000000000
+      internalID: 7659909012427905600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 14_25
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 2
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5beae4be66c68f8d0800000000000000
+      internalID: -2812378778002608459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Effect 14_0: 1891216768593063651
+      Effect 14_1: 485029201727128222
+      Effect 14_10: -8683862273233080782
+      Effect 14_11: -177332775706828217
+      Effect 14_12: 1707920135137779200
+      Effect 14_13: -1398828914730139948
+      Effect 14_14: -7558021599931945143
+      Effect 14_15: 3210280492468991837
+      Effect 14_16: -5095689343394784045
+      Effect 14_17: -4327262797561316315
+      Effect 14_18: -7353954325961115939
+      Effect 14_19: 6625772157107745996
+      Effect 14_2: -2339169003371648158
+      Effect 14_20: -6476607156500275843
+      Effect 14_21: 5583623617420724141
+      Effect 14_22: 6420497713023286567
+      Effect 14_23: -2632416881941913317
+      Effect 14_24: 7659909012427905600
+      Effect 14_25: -2812378778002608459
+      Effect 14_3: 1554347564597429661
+      Effect 14_4: 6373214816377049775
+      Effect 14_5: 6722407429415885393
+      Effect 14_6: 8959106304511178367
+      Effect 14_7: -514034754536629027
+      Effect 14_8: -884327009734544248
+      Effect 14_9: -6544069219776190278
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
