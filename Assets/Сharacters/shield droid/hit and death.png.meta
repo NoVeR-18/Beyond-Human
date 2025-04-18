@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 6887a29e7f40728418457fc2494c3a37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6923051170901069527
+    second: hit and death_0
+  - first:
+      213: -5163849798170446253
+    second: hit and death_1
+  - first:
+      213: -4702262813856405974
+    second: hit and death_2
+  - first:
+      213: -1955315685029310632
+    second: hit and death_3
+  - first:
+      213: 7905818724210880750
+    second: hit and death_4
+  - first:
+      213: 2456808678779168818
+    second: hit and death_5
+  - first:
+      213: 8694673611960259904
+    second: hit and death_6
+  - first:
+      213: 1942201889285004202
+    second: hit and death_7
+  - first:
+      213: -4842606015243816890
+    second: hit and death_8
+  - first:
+      213: -5703787196422503431
+    second: hit and death_9
+  - first:
+      213: -7396560113856077318
+    second: hit and death_10
+  - first:
+      213: 8950939251384876672
+    second: hit and death_11
+  - first:
+      213: 5748775567700930218
+    second: hit and death_12
+  - first:
+      213: -6478273824223053638
+    second: hit and death_13
+  - first:
+      213: 1436934312814548846
+    second: hit and death_14
+  - first:
+      213: 8401748138773925818
+    second: hit and death_15
+  - first:
+      213: 7602541953769012444
+    second: hit and death_16
+  - first:
+      213: 6547343610634552100
+    second: hit and death_17
+  - first:
+      213: 1683425593382261320
+    second: hit and death_18
+  - first:
+      213: -9208537805921275108
+    second: hit and death_19
+  - first:
+      213: -6329153881832011950
+    second: hit and death_20
+  - first:
+      213: -7901648297656173643
+    second: hit and death_21
+  - first:
+      213: -8169028785547785156
+    second: hit and death_22
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hit and death_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 204
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921f694d3a16cef90800000000000000
+      internalID: -6923051170901069527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 185
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356f392c7f15658b0800000000000000
+      internalID: -5163849798170446253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 181
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a266f8b62e43ebeb0800000000000000
+      internalID: -4702262813856405974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 173
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f04128eb25dd4e0800000000000000
+      internalID: -1955315685029310632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 154
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0b83b2e3c17bd60800000000000000
+      internalID: 7905818724210880750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 149
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 238aab30a76581220800000000000000
+      internalID: 2456808678779168818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 142
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0459ade659fa9a870800000000000000
+      internalID: 8694673611960259904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 123
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabdcecf35614fa10800000000000000
+      internalID: 1942201889285004202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 118
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640f8328c7b9bccb0800000000000000
+      internalID: -4842606015243816890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 111
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3c0dac3c318d0b0800000000000000
+      internalID: -5703787196422503431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 92
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af129cdd3c32a5990800000000000000
+      internalID: -7396560113856077318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 87
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e75e433df183c70800000000000000
+      internalID: 8950939251384876672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 80
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae2246abe0c7cf40800000000000000
+      internalID: 5748775567700930218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 92
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8397db74c8816a0800000000000000
+      internalID: -6478273824223053638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 49
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6791e0f42401f310800000000000000
+      internalID: 1436934312814548846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 61
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf4be7fa61099470800000000000000
+      internalID: 8401748138773925818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 56
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcf76080a7a18960800000000000000
+      internalID: 7602541953769012444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_17
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 61
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423cb461356dcda50800000000000000
+      internalID: 6547343610634552100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 18
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842d95378aabc5710800000000000000
+      internalID: 1683425593382261320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_19
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 30
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13be4987a3b43080800000000000000
+      internalID: -9208537805921275108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_20
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 25
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2574e98e3145a28a0800000000000000
+      internalID: -6329153881832011950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_21
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb322eecb4b75290800000000000000
+      internalID: -7901648297656173643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit and death_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ccb75d997c1ae80800000000000000
+      internalID: -8169028785547785156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      hit and death_0: -6923051170901069527
+      hit and death_1: -5163849798170446253
+      hit and death_10: -7396560113856077318
+      hit and death_11: 8950939251384876672
+      hit and death_12: 5748775567700930218
+      hit and death_13: -6478273824223053638
+      hit and death_14: 1436934312814548846
+      hit and death_15: 8401748138773925818
+      hit and death_16: 7602541953769012444
+      hit and death_17: 6547343610634552100
+      hit and death_18: 1683425593382261320
+      hit and death_19: -9208537805921275108
+      hit and death_2: -4702262813856405974
+      hit and death_20: -6329153881832011950
+      hit and death_21: -7901648297656173643
+      hit and death_22: -8169028785547785156
+      hit and death_3: -1955315685029310632
+      hit and death_4: 7905818724210880750
+      hit and death_5: 2456808678779168818
+      hit and death_6: 8694673611960259904
+      hit and death_7: 1942201889285004202
+      hit and death_8: -4842606015243816890
+      hit and death_9: -5703787196422503431
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,827 @@
+fileFormatVersion: 2
+guid: 4112e031a15a6b440af3fbfa3fa768d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5496703637000198937
+    second: Awake_0
+  - first:
+      213: -7309290388879151984
+    second: Awake_1
+  - first:
+      213: 4269870823004045109
+    second: Awake_2
+  - first:
+      213: 7306123048791511295
+    second: Awake_3
+  - first:
+      213: -2118795523075695571
+    second: Awake_4
+  - first:
+      213: -7376771396782129228
+    second: Awake_5
+  - first:
+      213: 1689323656648485617
+    second: Awake_6
+  - first:
+      213: -106962117460098561
+    second: Awake_7
+  - first:
+      213: -2564465291878858374
+    second: Awake_8
+  - first:
+      213: -5644280928474473522
+    second: Awake_9
+  - first:
+      213: 6808759169191230288
+    second: Awake_10
+  - first:
+      213: 4348208293437982517
+    second: Awake_11
+  - first:
+      213: -1764736025407059354
+    second: Awake_12
+  - first:
+      213: -1291000586602430084
+    second: Awake_13
+  - first:
+      213: 1501739951934250921
+    second: Awake_14
+  - first:
+      213: 6819702277036481561
+    second: Awake_15
+  - first:
+      213: 3267548838387944971
+    second: Awake_16
+  - first:
+      213: 1016170872639047358
+    second: Awake_17
+  - first:
+      213: -3548068559267153684
+    second: Awake_18
+  - first:
+      213: 1072053537399813842
+    second: Awake_19
+  - first:
+      213: 6479087100464929828
+    second: Awake_20
+  - first:
+      213: -5574478276523193957
+    second: Awake_21
+  - first:
+      213: -3518270406102329468
+    second: Awake_22
+  - first:
+      213: -2758171118039192786
+    second: Awake_23
+  - first:
+      213: 1670434897589929848
+    second: Awake_24
+  - first:
+      213: -171220202715291743
+    second: Awake_25
+  - first:
+      213: 5105696990189661846
+    second: Awake_26
+  - first:
+      213: -4278179468344159282
+    second: Awake_27
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Awake_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 337
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e461093a29c7b3b0800000000000000
+      internalID: -5496703637000198937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_1
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 0
+        width: 188
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c6eaa1e1f209a90800000000000000
+      internalID: -7309290388879151984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_2
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 0
+        width: 193
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ff5f904e0a14b30800000000000000
+      internalID: 4269870823004045109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_3
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 0
+        width: 236
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff013801430946560800000000000000
+      internalID: 7306123048791511295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_4
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 0
+        width: 300
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c926792b68892e0800000000000000
+      internalID: -2118795523075695571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_5
+      rect:
+        serializedVersion: 2
+        x: 3948
+        y: 0
+        width: 336
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bff9899f7170a990800000000000000
+      internalID: -7376771396782129228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_6
+      rect:
+        serializedVersion: 2
+        x: 4310
+        y: 0
+        width: 337
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa62315aeea17710800000000000000
+      internalID: 1689323656648485617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_7
+      rect:
+        serializedVersion: 2
+        x: 4679
+        y: 0
+        width: 333
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff10e58558ef38ef0800000000000000
+      internalID: -106962117460098561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_8
+      rect:
+        serializedVersion: 2
+        x: 4784
+        y: 132
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a710eb67760396cd0800000000000000
+      internalID: -2564465291878858374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_9
+      rect:
+        serializedVersion: 2
+        x: 5002
+        y: 0
+        width: 360
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb54c5766c7ba1b0800000000000000
+      internalID: -5644280928474473522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_10
+      rect:
+        serializedVersion: 2
+        x: 5397
+        y: 0
+        width: 324
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bb3d8d3629d7e50800000000000000
+      internalID: 6808759169191230288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_11
+      rect:
+        serializedVersion: 2
+        x: 6115
+        y: 0
+        width: 324
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53747c3b760f75c30800000000000000
+      internalID: 4348208293437982517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_12
+      rect:
+        serializedVersion: 2
+        x: 6474
+        y: 0
+        width: 324
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a07435fe56287e0800000000000000
+      internalID: -1764736025407059354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_13
+      rect:
+        serializedVersion: 2
+        x: 6833
+        y: 0
+        width: 324
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71cdb67ec1751ee0800000000000000
+      internalID: -1291000586602430084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_14
+      rect:
+        serializedVersion: 2
+        x: 7192
+        y: 0
+        width: 324
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af9d0c978047d410800000000000000
+      internalID: 1501739951934250921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_15
+      rect:
+        serializedVersion: 2
+        x: 7551
+        y: 0
+        width: 324
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91c9ea0b61374ae50800000000000000
+      internalID: 6819702277036481561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_16
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 324
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e8a563b5aa85d20800000000000000
+      internalID: 3267548838387944971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_17
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 0
+        width: 335
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6cfb6560a2a1e00800000000000000
+      internalID: 1016170872639047358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_18
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 0
+        width: 337
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8362e917ab2cec0800000000000000
+      internalID: -3548068559267153684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_19
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 276
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6bae42303b0ee00800000000000000
+      internalID: 1072053537399813842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_20
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 0
+        width: 211
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c1704e3675ae950800000000000000
+      internalID: 6479087100464929828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_21
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 0
+        width: 185
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9904b7da8973a2b0800000000000000
+      internalID: -5574478276523193957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_22
+      rect:
+        serializedVersion: 2
+        x: 5010
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487508cc4b79c2fc0800000000000000
+      internalID: -3518270406102329468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_23
+      rect:
+        serializedVersion: 2
+        x: 5756
+        y: 0
+        width: 324
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b28874bf109b9d0800000000000000
+      internalID: -2758171118039192786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_24
+      rect:
+        serializedVersion: 2
+        x: 7910
+        y: 0
+        width: 324
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877834360b39e2710800000000000000
+      internalID: 1670434897589929848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_25
+      rect:
+        serializedVersion: 2
+        x: 8269
+        y: 0
+        width: 324
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afd8cef124bf9df0800000000000000
+      internalID: -171220202715291743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_26
+      rect:
+        serializedVersion: 2
+        x: 8628
+        y: 0
+        width: 324
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e29078c541bd640800000000000000
+      internalID: 5105696990189661846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Awake_27
+      rect:
+        serializedVersion: 2
+        x: 8987
+        y: 0
+        width: 324
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec31af7b07ad0a4c0800000000000000
+      internalID: -4278179468344159282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Awake_0: -5496703637000198937
+      Awake_1: -7309290388879151984
+      Awake_10: 6808759169191230288
+      Awake_11: 4348208293437982517
+      Awake_12: -1764736025407059354
+      Awake_13: -1291000586602430084
+      Awake_14: 1501739951934250921
+      Awake_15: 6819702277036481561
+      Awake_16: 3267548838387944971
+      Awake_17: 1016170872639047358
+      Awake_18: -3548068559267153684
+      Awake_19: 1072053537399813842
+      Awake_2: 4269870823004045109
+      Awake_20: 6479087100464929828
+      Awake_21: -5574478276523193957
+      Awake_22: -3518270406102329468
+      Awake_23: -2758171118039192786
+      Awake_24: 1670434897589929848
+      Awake_25: -171220202715291743
+      Awake_26: 5105696990189661846
+      Awake_27: -4278179468344159282
+      Awake_3: 7306123048791511295
+      Awake_4: -2118795523075695571
+      Awake_5: -7376771396782129228
+      Awake_6: 1689323656648485617
+      Awake_7: -106962117460098561
+      Awake_8: -2564465291878858374
+      Awake_9: -5644280928474473522
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,402 @@
+fileFormatVersion: 2
+guid: 76f284c9edf772e4582e57e3fa9c3828
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2222229273705919391
+    second: skeleton-variation1-hurt_0
+  - first:
+      213: -293336879631474120
+    second: skeleton-variation1-hurt_1
+  - first:
+      213: 933108626012084934
+    second: skeleton-variation1-hurt_2
+  - first:
+      213: -679379478363532249
+    second: skeleton-variation1-hurt_3
+  - first:
+      213: 7535661000373275226
+    second: skeleton-variation1-hurt_4
+  - first:
+      213: 1165668648953368035
+    second: skeleton-variation1-hurt_5
+  - first:
+      213: 4928061795748987130
+    second: skeleton-variation1-hurt_6
+  - first:
+      213: 4988672784029706935
+    second: skeleton-variation1-hurt_7
+  - first:
+      213: -4758897384411428569
+    second: skeleton-variation1-hurt_8
+  - first:
+      213: 8277454421891345736
+    second: skeleton-variation1-hurt_9
+  - first:
+      213: 3282923817609065047
+    second: skeleton-variation1-hurt_10
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 34
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9337b420c1f6de10800000000000000
+      internalID: 2222229273705919391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 34
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8326b0289abddebf0800000000000000
+      internalID: -293336879631474120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_2
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 34
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca9d4ef95113fc00800000000000000
+      internalID: 933108626012084934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_3
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 34
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7249374c6fb5296f0800000000000000
+      internalID: -679379478363532249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_4
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 34
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a830311cb049860800000000000000
+      internalID: 7535661000373275226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_5
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 34
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edcca2d5794d2010800000000000000
+      internalID: 1165668648953368035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 34
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0caced71ef36440800000000000000
+      internalID: 4928061795748987130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_7
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 34
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7baefb847735b3540800000000000000
+      internalID: 4988672784029706935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_8
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 34
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7290f97ea0005fdb0800000000000000
+      internalID: -4758897384411428569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_9
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 34
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84de15dd0fc6fd270800000000000000
+      internalID: 8277454421891345736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-variation1-hurt_10
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 34
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752f14581d94f8d20800000000000000
+      internalID: 3282923817609065047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      skeleton-variation1-hurt_0: 2222229273705919391
+      skeleton-variation1-hurt_1: -293336879631474120
+      skeleton-variation1-hurt_10: 3282923817609065047
+      skeleton-variation1-hurt_2: 933108626012084934
+      skeleton-variation1-hurt_3: -679379478363532249
+      skeleton-variation1-hurt_4: 7535661000373275226
+      skeleton-variation1-hurt_5: 1165668648953368035
+      skeleton-variation1-hurt_6: 4928061795748987130
+      skeleton-variation1-hurt_7: 4988672784029706935
+      skeleton-variation1-hurt_8: -4758897384411428569
+      skeleton-variation1-hurt_9: 8277454421891345736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

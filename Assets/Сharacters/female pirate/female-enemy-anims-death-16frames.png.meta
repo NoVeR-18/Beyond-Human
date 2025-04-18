@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: 808b887236df4fb498789c765aacc7e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7360921179694397161
+    second: female-enemy-anims-death-16frames_0
+  - first:
+      213: 2979808467490167541
+    second: female-enemy-anims-death-16frames_1
+  - first:
+      213: 2356102423004168312
+    second: female-enemy-anims-death-16frames_2
+  - first:
+      213: 2679203103662013918
+    second: female-enemy-anims-death-16frames_3
+  - first:
+      213: 2573065834016241126
+    second: female-enemy-anims-death-16frames_4
+  - first:
+      213: 1768714425450712747
+    second: female-enemy-anims-death-16frames_5
+  - first:
+      213: 7983891555983509291
+    second: female-enemy-anims-death-16frames_6
+  - first:
+      213: 5221185137951902277
+    second: female-enemy-anims-death-16frames_7
+  - first:
+      213: 8935141420134693413
+    second: female-enemy-anims-death-16frames_8
+  - first:
+      213: -4076832259643321789
+    second: female-enemy-anims-death-16frames_9
+  - first:
+      213: -7376200945330618282
+    second: female-enemy-anims-death-16frames_10
+  - first:
+      213: 5920105310948598078
+    second: female-enemy-anims-death-16frames_11
+  - first:
+      213: 1974160506045960232
+    second: female-enemy-anims-death-16frames_12
+  - first:
+      213: 4100712424896233654
+    second: female-enemy-anims-death-16frames_13
+  - first:
+      213: 1753030430126054055
+    second: female-enemy-anims-death-16frames_14
+  - first:
+      213: -4052085632166245966
+    second: female-enemy-anims-death-16frames_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 21
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6755720de372660800000000000000
+      internalID: 7360921179694397161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 21
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fad37373086a5920800000000000000
+      internalID: 2979808467490167541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 21
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870c999abae82b020800000000000000
+      internalID: 2356102423004168312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 21
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddf5ea17017e2520800000000000000
+      internalID: 2679203103662013918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_4
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 21
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e57b3c4ebd55b320800000000000000
+      internalID: 2573065834016241126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_5
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 21
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae491e166cbb8810800000000000000
+      internalID: 1768714425450712747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_6
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 20
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2743a7d11b7cce60800000000000000
+      internalID: 7983891555983509291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_7
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 20
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a0c2e4830657840800000000000000
+      internalID: 5221185137951902277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_8
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 20
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52af10df7cffffb70800000000000000
+      internalID: 8935141420134693413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_9
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 20
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3425b1be8ae2c67c0800000000000000
+      internalID: -4076832259643321789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_10
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 16
+        width: 43
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6500bad225872a990800000000000000
+      internalID: -7376200945330618282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_11
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 15
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31aefb0a60782250800000000000000
+      internalID: 5920105310948598078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_12
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 15
+        width: 43
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820997c4580a56b10800000000000000
+      internalID: 1974160506045960232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_13
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 15
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b088f35938a8e830800000000000000
+      internalID: 4100712424896233654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_14
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 15
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa1d1463e3045810800000000000000
+      internalID: 1753030430126054055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-death-16frames_15
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 15
+        width: 43
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9444f169914c7c0800000000000000
+      internalID: -4052085632166245966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      female-enemy-anims-death-16frames_0: 7360921179694397161
+      female-enemy-anims-death-16frames_1: 2979808467490167541
+      female-enemy-anims-death-16frames_10: -7376200945330618282
+      female-enemy-anims-death-16frames_11: 5920105310948598078
+      female-enemy-anims-death-16frames_12: 1974160506045960232
+      female-enemy-anims-death-16frames_13: 4100712424896233654
+      female-enemy-anims-death-16frames_14: 1753030430126054055
+      female-enemy-anims-death-16frames_15: -4052085632166245966
+      female-enemy-anims-death-16frames_2: 2356102423004168312
+      female-enemy-anims-death-16frames_3: 2679203103662013918
+      female-enemy-anims-death-16frames_4: 2573065834016241126
+      female-enemy-anims-death-16frames_5: 1768714425450712747
+      female-enemy-anims-death-16frames_6: 7983891555983509291
+      female-enemy-anims-death-16frames_7: 5221185137951902277
+      female-enemy-anims-death-16frames_8: 8935141420134693413
+      female-enemy-anims-death-16frames_9: -4076832259643321789
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

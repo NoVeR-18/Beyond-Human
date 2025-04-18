@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: f20e1ddaeba42f447b110cc331c8ad5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8342909173575568222
+    second: orc melee - anims-atk1 with fx_0
+  - first:
+      213: -6545900376040796108
+    second: orc melee - anims-atk1 with fx_1
+  - first:
+      213: -7050418872123051335
+    second: orc melee - anims-atk1 with fx_2
+  - first:
+      213: -4780887672737479141
+    second: orc melee - anims-atk1 with fx_3
+  - first:
+      213: 1415476035777106961
+    second: orc melee - anims-atk1 with fx_4
+  - first:
+      213: 9142960942790575997
+    second: orc melee - anims-atk1 with fx_5
+  - first:
+      213: 5292895438813603592
+    second: orc melee - anims-atk1 with fx_6
+  - first:
+      213: -8626275610180906278
+    second: orc melee - anims-atk1 with fx_7
+  - first:
+      213: -7456171909069459632
+    second: orc melee - anims-atk1 with fx_8
+  - first:
+      213: 3559240202692829000
+    second: orc melee - anims-atk1 with fx_9
+  - first:
+      213: -6907740431516677765
+    second: orc melee - anims-atk1 with fx_10
+  - first:
+      213: -2277818793531401329
+    second: orc melee - anims-atk1 with fx_11
+  - first:
+      213: -1214633724471460148
+    second: orc melee - anims-atk1 with fx_12
+  - first:
+      213: -7745260088328246558
+    second: orc melee - anims-atk1 with fx_13
+  - first:
+      213: 1122986044693478572
+    second: orc melee - anims-atk1 with fx_14
+  - first:
+      213: -7531557165880124945
+    second: orc melee - anims-atk1 with fx_15
+  - first:
+      213: -7528070626501194311
+    second: orc melee - anims-atk1 with fx_16
+  - first:
+      213: 4892273653701682777
+    second: orc melee - anims-atk1 with fx_17
+  - first:
+      213: 7127876140007739691
+    second: orc melee - anims-atk1 with fx_18
+  - first:
+      213: -1925915721781222628
+    second: orc melee - anims-atk1 with fx_19
+  - first:
+      213: -1058568822803649476
+    second: orc melee - anims-atk1 with fx_20
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 102
+        width: 57
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a43eab2f48083c80800000000000000
+      internalID: -8342909173575568222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_1
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 102
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4301ef62a4a4825a0800000000000000
+      internalID: -6545900376040796108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 102
+        width: 68
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b23569f361e72e90800000000000000
+      internalID: -7050418872123051335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_3
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 102
+        width: 72
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16407bedffd6adb0800000000000000
+      internalID: -4780887672737479141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_4
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 102
+        width: 74
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114929c74f7c4a310800000000000000
+      internalID: 1415476035777106961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_5
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 102
+        width: 75
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d778d46398252ee70800000000000000
+      internalID: 9142960942790575997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_6
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 102
+        width: 78
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80725cfcb54247940800000000000000
+      internalID: 5292895438813603592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_7
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 98
+        width: 107
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad21d885900594880800000000000000
+      internalID: -8626275610180906278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_8
+      rect:
+        serializedVersion: 2
+        x: 2165
+        y: 102
+        width: 93
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f2ba7372b568890800000000000000
+      internalID: -7456171909069459632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_9
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 142
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f9bcf4b16f46130800000000000000
+      internalID: 3559240202692829000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_10
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 102
+        width: 92
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7948d22da6c220a0800000000000000
+      internalID: -6907740431516677765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_11
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 150
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b1adc20ef8360e0800000000000000
+      internalID: -2277818793531401329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_12
+      rect:
+        serializedVersion: 2
+        x: 2677
+        y: 102
+        width: 91
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce3ba02011c42fe0800000000000000
+      internalID: -1214633724471460148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_13
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 102
+        width: 88
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea2f2e5cfe438490800000000000000
+      internalID: -7745260088328246558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_14
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 102
+        width: 72
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacfca99bd5a59f00800000000000000
+      internalID: 1122986044693478572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_15
+      rect:
+        serializedVersion: 2
+        x: 3436
+        y: 102
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9da2a59a88a7790800000000000000
+      internalID: -7531557165880124945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_16
+      rect:
+        serializedVersion: 2
+        x: 3693
+        y: 102
+        width: 41
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd085f86abe68790800000000000000
+      internalID: -7528070626501194311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_17
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 102
+        width: 53
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95624e8b7f8d4e340800000000000000
+      internalID: 4892273653701682777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_18
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 122
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21d420959d4be260800000000000000
+      internalID: 7127876140007739691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_19
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 87
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13e3efdad5c545e0800000000000000
+      internalID: -1925915721781222628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orc melee - anims-atk1 with fx_20
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c2c72a3453f41f0800000000000000
+      internalID: -1058568822803649476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      orc melee - anims-atk1 with fx_0: -8342909173575568222
+      orc melee - anims-atk1 with fx_1: -6545900376040796108
+      orc melee - anims-atk1 with fx_10: -6907740431516677765
+      orc melee - anims-atk1 with fx_11: -2277818793531401329
+      orc melee - anims-atk1 with fx_12: -1214633724471460148
+      orc melee - anims-atk1 with fx_13: -7745260088328246558
+      orc melee - anims-atk1 with fx_14: 1122986044693478572
+      orc melee - anims-atk1 with fx_15: -7531557165880124945
+      orc melee - anims-atk1 with fx_16: -7528070626501194311
+      orc melee - anims-atk1 with fx_17: 4892273653701682777
+      orc melee - anims-atk1 with fx_18: 7127876140007739691
+      orc melee - anims-atk1 with fx_19: -1925915721781222628
+      orc melee - anims-atk1 with fx_2: -7050418872123051335
+      orc melee - anims-atk1 with fx_20: -1058568822803649476
+      orc melee - anims-atk1 with fx_3: -4780887672737479141
+      orc melee - anims-atk1 with fx_4: 1415476035777106961
+      orc melee - anims-atk1 with fx_5: 9142960942790575997
+      orc melee - anims-atk1 with fx_6: 5292895438813603592
+      orc melee - anims-atk1 with fx_7: -8626275610180906278
+      orc melee - anims-atk1 with fx_8: -7456171909069459632
+      orc melee - anims-atk1 with fx_9: 3559240202692829000
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

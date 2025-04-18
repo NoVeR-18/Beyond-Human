@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: cf07993101dbcbb498c9cf7c33109dce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5329291561793687059
+    second: female-enemy-anims-atk1-21frames-packed_0
+  - first:
+      213: -6192347126149689670
+    second: female-enemy-anims-atk1-21frames-packed_1
+  - first:
+      213: 1123183720950699488
+    second: female-enemy-anims-atk1-21frames-packed_2
+  - first:
+      213: 4120139947461725535
+    second: female-enemy-anims-atk1-21frames-packed_3
+  - first:
+      213: -2876073495228987766
+    second: female-enemy-anims-atk1-21frames-packed_4
+  - first:
+      213: 6131513757560071909
+    second: female-enemy-anims-atk1-21frames-packed_5
+  - first:
+      213: 1603529992118023339
+    second: female-enemy-anims-atk1-21frames-packed_6
+  - first:
+      213: 544703137472849000
+    second: female-enemy-anims-atk1-21frames-packed_7
+  - first:
+      213: 4962320447508114820
+    second: female-enemy-anims-atk1-21frames-packed_8
+  - first:
+      213: 4222437274732411811
+    second: female-enemy-anims-atk1-21frames-packed_9
+  - first:
+      213: -3813903480624465131
+    second: female-enemy-anims-atk1-21frames-packed_10
+  - first:
+      213: 796980498192587608
+    second: female-enemy-anims-atk1-21frames-packed_11
+  - first:
+      213: 2600041751963232723
+    second: female-enemy-anims-atk1-21frames-packed_12
+  - first:
+      213: 7315519601479055737
+    second: female-enemy-anims-atk1-21frames-packed_13
+  - first:
+      213: 510053832917795293
+    second: female-enemy-anims-atk1-21frames-packed_14
+  - first:
+      213: -903189707239028290
+    second: female-enemy-anims-atk1-21frames-packed_15
+  - first:
+      213: -4121394647338499302
+    second: female-enemy-anims-atk1-21frames-packed_16
+  - first:
+      213: 4395334269118893953
+    second: female-enemy-anims-atk1-21frames-packed_17
+  - first:
+      213: 8523573645538825999
+    second: female-enemy-anims-atk1-21frames-packed_18
+  - first:
+      213: 2040359032074926273
+    second: female-enemy-anims-atk1-21frames-packed_19
+  - first:
+      213: 4778226021312327354
+    second: female-enemy-anims-atk1-21frames-packed_20
+  - first:
+      213: 431858772542540018
+    second: female-enemy-anims-atk1-21frames-packed_21
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 309
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1fcc27f8d8a06b0800000000000000
+      internalID: -5329291561793687059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 309
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abecfe3e81d501aa0800000000000000
+      internalID: -6192347126149689670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 309
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e594c0b4a9569f00800000000000000
+      internalID: 1123183720950699488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 309
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d4a59e37dad2930800000000000000
+      internalID: 4120139947461725535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_4
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 309
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86c5f8e4622618d0800000000000000
+      internalID: -2876073495228987766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 213
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6e9ceb643871550800000000000000
+      internalID: 6131513757560071909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_6
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 213
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba431ee2802e04610800000000000000
+      internalID: 1603529992118023339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_7
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 213
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8642c191e9c2f8700800000000000000
+      internalID: 544703137472849000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_8
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 213
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48de06fc724bdd440800000000000000
+      internalID: 4962320447508114820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_9
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 213
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab3bc6745c199a30800000000000000
+      internalID: 4222437274732411811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 117
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bb0c5cdfa421bc0800000000000000
+      internalID: -3813903480624465131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 117
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bdeaf5a817f0b00800000000000000
+      internalID: 796980498192587608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_12
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 134
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9e3f2a234351420800000000000000
+      internalID: 2600041751963232723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_13
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 117
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979f0997152f58560800000000000000
+      internalID: 7315519601479055737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_14
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 136
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd144673243141700800000000000000
+      internalID: 510053832917795293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_15
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 117
+        width: 56
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb98a3f1fb93773f0800000000000000
+      internalID: -903189707239028290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_16
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 117
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a134132876dddc6c0800000000000000
+      internalID: -4121394647338499302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_17
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 21
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fcee3fa3d5ffc30800000000000000
+      internalID: 4395334269118893953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_18
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 21
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07193f1211d94670800000000000000
+      internalID: 8523573645538825999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_19
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 21
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8f519babfc05c10800000000000000
+      internalID: 2040359032074926273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_20
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 21
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe69d0104baf4240800000000000000
+      internalID: 4778226021312327354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-enemy-anims-atk1-21frames-packed_21
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 21
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8c88af3454ef500800000000000000
+      internalID: 431858772542540018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      female-enemy-anims-atk1-21frames-packed_0: -5329291561793687059
+      female-enemy-anims-atk1-21frames-packed_1: -6192347126149689670
+      female-enemy-anims-atk1-21frames-packed_10: -3813903480624465131
+      female-enemy-anims-atk1-21frames-packed_11: 796980498192587608
+      female-enemy-anims-atk1-21frames-packed_12: 2600041751963232723
+      female-enemy-anims-atk1-21frames-packed_13: 7315519601479055737
+      female-enemy-anims-atk1-21frames-packed_14: 510053832917795293
+      female-enemy-anims-atk1-21frames-packed_15: -903189707239028290
+      female-enemy-anims-atk1-21frames-packed_16: -4121394647338499302
+      female-enemy-anims-atk1-21frames-packed_17: 4395334269118893953
+      female-enemy-anims-atk1-21frames-packed_18: 8523573645538825999
+      female-enemy-anims-atk1-21frames-packed_19: 2040359032074926273
+      female-enemy-anims-atk1-21frames-packed_2: 1123183720950699488
+      female-enemy-anims-atk1-21frames-packed_20: 4778226021312327354
+      female-enemy-anims-atk1-21frames-packed_21: 431858772542540018
+      female-enemy-anims-atk1-21frames-packed_3: 4120139947461725535
+      female-enemy-anims-atk1-21frames-packed_4: -2876073495228987766
+      female-enemy-anims-atk1-21frames-packed_5: 6131513757560071909
+      female-enemy-anims-atk1-21frames-packed_6: 1603529992118023339
+      female-enemy-anims-atk1-21frames-packed_7: 544703137472849000
+      female-enemy-anims-atk1-21frames-packed_8: 4962320447508114820
+      female-enemy-anims-atk1-21frames-packed_9: 4222437274732411811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

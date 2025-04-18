@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: fe2c72a4cde132d45a51e3efb3ee49d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5387997489881651006
+    second: medium mattack 2_0
+  - first:
+      213: 3284449134611760888
+    second: medium mattack 2_1
+  - first:
+      213: 1802908542868826906
+    second: medium mattack 2_2
+  - first:
+      213: -6002929201044183899
+    second: medium mattack 2_3
+  - first:
+      213: 3758981671058555272
+    second: medium mattack 2_4
+  - first:
+      213: 2781642927722543591
+    second: medium mattack 2_5
+  - first:
+      213: 2596890701220388256
+    second: medium mattack 2_6
+  - first:
+      213: -7836965989215751858
+    second: medium mattack 2_7
+  - first:
+      213: -1057017177166540369
+    second: medium mattack 2_8
+  - first:
+      213: -752375177471166248
+    second: medium mattack 2_9
+  - first:
+      213: -2680050096811411160
+    second: medium mattack 2_10
+  - first:
+      213: -3490127530158946767
+    second: medium mattack 2_11
+  - first:
+      213: -6445790270230598973
+    second: medium mattack 2_12
+  - first:
+      213: -8849760030714066511
+    second: medium mattack 2_13
+  - first:
+      213: 4342378565406403802
+    second: medium mattack 2_14
+  - first:
+      213: -1612432850453544527
+    second: medium mattack 2_15
+  - first:
+      213: -3119885327846299157
+    second: medium mattack 2_16
+  - first:
+      213: 1932687574407486980
+    second: medium mattack 2_17
+  - first:
+      213: 1942818944833862628
+    second: medium mattack 2_18
+  - first:
+      213: 8592435299158725022
+    second: medium mattack 2_19
+  - first:
+      213: -6708130903422377494
+    second: medium mattack 2_20
+  - first:
+      213: 2683507126337813204
+    second: medium mattack 2_21
+  - first:
+      213: 5806733461920215418
+    second: medium mattack 2_22
+  - first:
+      213: 373594236502417437
+    second: medium mattack 2_23
+  - first:
+      213: -4836281266498560364
+    second: medium mattack 2_24
+  - first:
+      213: 6771163604900756226
+    second: medium mattack 2_25
+  - first:
+      213: 254993593278576084
+    second: medium mattack 2_26
+  - first:
+      213: 5700219637559833830
+    second: medium mattack 2_27
+  - first:
+      213: 5953603120421269090
+    second: medium mattack 2_28
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medium mattack 2_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 433
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c868ec64dcf935b0800000000000000
+      internalID: -5387997489881651006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 434
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f68f5f0615b49d20800000000000000
+      internalID: 3284449134611760888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 439
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ba63c74c7350910800000000000000
+      internalID: 1802908542868826906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 371
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a421ff42bf41bca0800000000000000
+      internalID: -6002929201044183899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 372
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88146a4f9e59a2430800000000000000
+      internalID: 3758981671058555272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 377
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e931e641816a9620800000000000000
+      internalID: 2781642927722543591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 309
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad91c675520a0420800000000000000
+      internalID: 2596890701220388256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 310
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e413aff64f08d3390800000000000000
+      internalID: -7836965989215751858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 315
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa190894a78b451f0800000000000000
+      internalID: -1057017177166540369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 247
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8720923c60f85f0800000000000000
+      internalID: -752375177471166248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_10
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 248
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829fd4fe2ac8ecad0800000000000000
+      internalID: -2680050096811411160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 251
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1368018b083909fc0800000000000000
+      internalID: -3490127530158946767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca6c3686e3fb86a0800000000000000
+      internalID: -6445790270230598973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 215
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b986ddd3265f2580800000000000000
+      internalID: -8849760030714066511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_14
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 185
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adca15f5c4a334c30800000000000000
+      internalID: 4342378565406403802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_15
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 186
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1cb849ddc7f99e0800000000000000
+      internalID: -1612432850453544527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 189
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9a4cdf2d0f3b4d0800000000000000
+      internalID: -3119885327846299157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e9e5eeb1942da10800000000000000
+      internalID: 1932687574407486980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 123
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebb8bd698746fa10800000000000000
+      internalID: 1942818944833862628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_19
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 124
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9112e141667e3770800000000000000
+      internalID: 8592435299158725022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_20
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 127
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae160ba0c7ee7e2a0800000000000000
+      internalID: -6708130903422377494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 64
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da3899738bbd3520800000000000000
+      internalID: 2683507126337813204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_22
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 61
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71f0277159a59050800000000000000
+      internalID: 5806733461920215418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_23
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 62
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d102cdc8af54f2500800000000000000
+      internalID: 373594236502417437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_24
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 65
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e1a74dfc312ecb0800000000000000
+      internalID: -4836281266498560364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bb92a6c6108fd50800000000000000
+      internalID: 6771163604900756226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_26
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5be53725be98300800000000000000
+      internalID: 254993593278576084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_27
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4b57e2f8f3b1f40800000000000000
+      internalID: 5700219637559833830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium mattack 2_28
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 3
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26eed569e727f9250800000000000000
+      internalID: 5953603120421269090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      medium mattack 2_0: -5387997489881651006
+      medium mattack 2_1: 3284449134611760888
+      medium mattack 2_10: -2680050096811411160
+      medium mattack 2_11: -3490127530158946767
+      medium mattack 2_12: -6445790270230598973
+      medium mattack 2_13: -8849760030714066511
+      medium mattack 2_14: 4342378565406403802
+      medium mattack 2_15: -1612432850453544527
+      medium mattack 2_16: -3119885327846299157
+      medium mattack 2_17: 1932687574407486980
+      medium mattack 2_18: 1942818944833862628
+      medium mattack 2_19: 8592435299158725022
+      medium mattack 2_2: 1802908542868826906
+      medium mattack 2_20: -6708130903422377494
+      medium mattack 2_21: 2683507126337813204
+      medium mattack 2_22: 5806733461920215418
+      medium mattack 2_23: 373594236502417437
+      medium mattack 2_24: -4836281266498560364
+      medium mattack 2_25: 6771163604900756226
+      medium mattack 2_26: 254993593278576084
+      medium mattack 2_27: 5700219637559833830
+      medium mattack 2_28: 5953603120421269090
+      medium mattack 2_3: -6002929201044183899
+      medium mattack 2_4: 3758981671058555272
+      medium mattack 2_5: 2781642927722543591
+      medium mattack 2_6: 2596890701220388256
+      medium mattack 2_7: -7836965989215751858
+      medium mattack 2_8: -1057017177166540369
+      medium mattack 2_9: -752375177471166248
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,577 @@
+fileFormatVersion: 2
+guid: cb8725a29b9a96a48924c7aa7797d7f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1729545712785205798
+    second: idlet_0
+  - first:
+      213: 8193066744493321927
+    second: idlet_1
+  - first:
+      213: -7408053577504100058
+    second: idlet_2
+  - first:
+      213: 3386283306892778556
+    second: idlet_3
+  - first:
+      213: 4505964952574404089
+    second: idlet_4
+  - first:
+      213: -8532078440935152149
+    second: idlet_5
+  - first:
+      213: 6442764987767494705
+    second: idlet_6
+  - first:
+      213: -7074198987003092946
+    second: idlet_7
+  - first:
+      213: -6566883911663745720
+    second: idlet_8
+  - first:
+      213: -4028809367554934306
+    second: idlet_9
+  - first:
+      213: 3194732077840107865
+    second: idlet_10
+  - first:
+      213: -1715441110639607270
+    second: idlet_11
+  - first:
+      213: -1046571965345419787
+    second: idlet_12
+  - first:
+      213: 3481488388871668762
+    second: idlet_13
+  - first:
+      213: 2254952697065282911
+    second: idlet_14
+  - first:
+      213: 1669303356988786089
+    second: idlet_15
+  - first:
+      213: 4898155707998235727
+    second: idlet_16
+  - first:
+      213: 1992266343564799073
+    second: idlet_17
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idlet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 309
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62aac5989a4900810800000000000000
+      internalID: 1729545712785205798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 310
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce279e9bce93b170800000000000000
+      internalID: 8193066744493321927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 315
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6217ec3558e413990800000000000000
+      internalID: -7408053577504100058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 247
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cdd20f9be7efe20800000000000000
+      internalID: 3386283306892778556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 248
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5ae803047688e30800000000000000
+      internalID: 4505964952574404089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 253
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5aa44ecd7f79980800000000000000
+      internalID: -8532078440935152149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 185
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13894330f9c496950800000000000000
+      internalID: 6442764987767494705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_7
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 186
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20a045808563dd90800000000000000
+      internalID: -7074198987003092946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 191
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8450e0c00edbdd4a0800000000000000
+      internalID: -6566883911663745720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_9
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 123
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed93f1bc93bc618c0800000000000000
+      internalID: -4028809367554934306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_10
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 124
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959843cf5e7f55c20800000000000000
+      internalID: 3194732077840107865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 129
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12893f06678138e0800000000000000
+      internalID: -1715441110639607270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 61
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd24bda754d971f0800000000000000
+      internalID: -1046571965345419787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_13
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 62
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14c7547e3bb05030800000000000000
+      internalID: 3481488388871668762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 67
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d92edd7833b4f10800000000000000
+      internalID: 2254952697065282911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a50faf0f8e8a2710800000000000000
+      internalID: 1669303356988786089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_16
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c69c53aaeb9f340800000000000000
+      internalID: 4898155707998235727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idlet_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 5
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c652a1fa3f5ab10800000000000000
+      internalID: 1992266343564799073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      idlet_0: 1729545712785205798
+      idlet_1: 8193066744493321927
+      idlet_10: 3194732077840107865
+      idlet_11: -1715441110639607270
+      idlet_12: -1046571965345419787
+      idlet_13: 3481488388871668762
+      idlet_14: 2254952697065282911
+      idlet_15: 1669303356988786089
+      idlet_16: 4898155707998235727
+      idlet_17: 1992266343564799073
+      idlet_2: -7408053577504100058
+      idlet_3: 3386283306892778556
+      idlet_4: 4505964952574404089
+      idlet_5: -8532078440935152149
+      idlet_6: 6442764987767494705
+      idlet_7: -7074198987003092946
+      idlet_8: -6566883911663745720
+      idlet_9: -4028809367554934306
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

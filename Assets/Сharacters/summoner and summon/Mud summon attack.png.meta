@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 5739801eb09001f428f766ac12c1e73c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -28997567492178468
+    second: Mud summon attack_0
+  - first:
+      213: 6078217725476856844
+    second: Mud summon attack_1
+  - first:
+      213: -2637861017433645286
+    second: Mud summon attack_2
+  - first:
+      213: -6718246010832703577
+    second: Mud summon attack_3
+  - first:
+      213: -5086345930519577874
+    second: Mud summon attack_4
+  - first:
+      213: -8809108101910809721
+    second: Mud summon attack_5
+  - first:
+      213: 3446259632879741277
+    second: Mud summon attack_6
+  - first:
+      213: 8391630673547312061
+    second: Mud summon attack_7
+  - first:
+      213: -7116498641433122387
+    second: Mud summon attack_8
+  - first:
+      213: -7111864511340434840
+    second: Mud summon attack_9
+  - first:
+      213: -758063348845901601
+    second: Mud summon attack_10
+  - first:
+      213: -5775475189564995553
+    second: Mud summon attack_11
+  - first:
+      213: -6368369947917068586
+    second: Mud summon attack_12
+  - first:
+      213: 8255062137555193717
+    second: Mud summon attack_13
+  - first:
+      213: 8997839790769786341
+    second: Mud summon attack_14
+  - first:
+      213: -4055706776008618758
+    second: Mud summon attack_15
+  - first:
+      213: -1123372164889212095
+    second: Mud summon attack_16
+  - first:
+      213: -1789279783871017933
+    second: Mud summon attack_17
+  - first:
+      213: -9108968931397939940
+    second: Mud summon attack_18
+  - first:
+      213: -7086939917691945637
+    second: Mud summon attack_19
+  - first:
+      213: 9212856647916547997
+    second: Mud summon attack_20
+  - first:
+      213: 3543070053896630080
+    second: Mud summon attack_21
+  - first:
+      213: 234854657802537449
+    second: Mud summon attack_22
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mud summon attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 293
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd3742bddaf89ff0800000000000000
+      internalID: -28997567492178468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 286
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04e78a41da2a5450800000000000000
+      internalID: 6078217725476856844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f5401716f646bd0800000000000000
+      internalID: -2637861017433645286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 245
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afa1a219def3c2a0800000000000000
+      internalID: -6718246010832703577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 211
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea70a6235ba969b0800000000000000
+      internalID: -5086345930519577874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 204
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783379d9ad2cfb580800000000000000
+      internalID: -8809108101910809721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 204
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59a09580e293df20800000000000000
+      internalID: 3446259632879741277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb3f0703af057470800000000000000
+      internalID: 8391630673547312061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 163
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da924d0c03e1d3d90800000000000000
+      internalID: -7116498641433122387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 163
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86aa8de38e49d4d90800000000000000
+      internalID: -7111864511340434840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd80cce8661da75f0800000000000000
+      internalID: -758063348845901601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_11
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 130
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1885e43ae369dfa0800000000000000
+      internalID: -5775475189564995553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 122
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6512006410f97a0800000000000000
+      internalID: -6368369947917068586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f01c3e64fdf8270800000000000000
+      internalID: 8255062137555193717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 81
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed45bafd9fbedc70800000000000000
+      internalID: 8997839790769786341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc8cdedc2c37b7c0800000000000000
+      internalID: -4055706776008618758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 40
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b8739c7faf860f0800000000000000
+      internalID: -1123372164889212095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_17
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 40
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c849e34833b27e0800000000000000
+      internalID: -1789279783871017933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 40
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dc4fda401769180800000000000000
+      internalID: -9108968931397939940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d7f6d61b126ad90800000000000000
+      internalID: -7086939917691945637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f69a93f44aadf70800000000000000
+      internalID: 9212856647916547997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f25d821738b2130800000000000000
+      internalID: 3543070053896630080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mud summon attack_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e98a24211f524300800000000000000
+      internalID: 234854657802537449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mud summon attack_0: -28997567492178468
+      Mud summon attack_1: 6078217725476856844
+      Mud summon attack_10: -758063348845901601
+      Mud summon attack_11: -5775475189564995553
+      Mud summon attack_12: -6368369947917068586
+      Mud summon attack_13: 8255062137555193717
+      Mud summon attack_14: 8997839790769786341
+      Mud summon attack_15: -4055706776008618758
+      Mud summon attack_16: -1123372164889212095
+      Mud summon attack_17: -1789279783871017933
+      Mud summon attack_18: -9108968931397939940
+      Mud summon attack_19: -7086939917691945637
+      Mud summon attack_2: -2637861017433645286
+      Mud summon attack_20: 9212856647916547997
+      Mud summon attack_21: 3543070053896630080
+      Mud summon attack_22: 234854657802537449
+      Mud summon attack_3: -6718246010832703577
+      Mud summon attack_4: -5086345930519577874
+      Mud summon attack_5: -8809108101910809721
+      Mud summon attack_6: 3446259632879741277
+      Mud summon attack_7: 8391630673547312061
+      Mud summon attack_8: -7116498641433122387
+      Mud summon attack_9: -7111864511340434840
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

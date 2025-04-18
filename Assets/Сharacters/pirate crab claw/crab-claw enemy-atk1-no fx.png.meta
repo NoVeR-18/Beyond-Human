@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: 81c2894ec6123a24981519c3965718ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2371547563894313670
+    second: crab-claw enemy-atk1-no fx_0
+  - first:
+      213: 7755622891246816863
+    second: crab-claw enemy-atk1-no fx_1
+  - first:
+      213: -2872396984421087732
+    second: crab-claw enemy-atk1-no fx_2
+  - first:
+      213: 4402835680126735969
+    second: crab-claw enemy-atk1-no fx_3
+  - first:
+      213: -976021885027555918
+    second: crab-claw enemy-atk1-no fx_4
+  - first:
+      213: 2181432372051273508
+    second: crab-claw enemy-atk1-no fx_5
+  - first:
+      213: -8550464014281229603
+    second: crab-claw enemy-atk1-no fx_6
+  - first:
+      213: 975787808783237542
+    second: crab-claw enemy-atk1-no fx_7
+  - first:
+      213: -7562031997999167335
+    second: crab-claw enemy-atk1-no fx_8
+  - first:
+      213: 200130909357816951
+    second: crab-claw enemy-atk1-no fx_9
+  - first:
+      213: 7922804173303743586
+    second: crab-claw enemy-atk1-no fx_10
+  - first:
+      213: -7151580211145198600
+    second: crab-claw enemy-atk1-no fx_11
+  - first:
+      213: -1805659885090917771
+    second: crab-claw enemy-atk1-no fx_12
+  - first:
+      213: 4184701999494566159
+    second: crab-claw enemy-atk1-no fx_13
+  - first:
+      213: 2740119770228048851
+    second: crab-claw enemy-atk1-no fx_14
+  - first:
+      213: -3257892519862653512
+    second: crab-claw enemy-atk1-no fx_15
+  - first:
+      213: -360376799976109001
+    second: crab-claw enemy-atk1-no fx_16
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 53
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3de22e3e02961fd0800000000000000
+      internalID: -2371547563894313670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_1
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 53
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e87a4bde181ab60800000000000000
+      internalID: 7755622891246816863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 53
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c068da949223328d0800000000000000
+      internalID: -2872396984421087732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_3
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 53
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1669e5e49b30a1d30800000000000000
+      internalID: 4402835680126735969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_4
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 53
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5ece944497472f0800000000000000
+      internalID: -976021885027555918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_5
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 53
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42767a54f21064e10800000000000000
+      internalID: 2181432372051273508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_6
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 53
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddab1040846a65980800000000000000
+      internalID: -8550464014281229603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_7
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 53
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a18ea697d1ba8d00800000000000000
+      internalID: 975787808783237542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_8
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 53
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9984f1396f34e0790800000000000000
+      internalID: -7562031997999167335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_9
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 53
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c39d0700207c200800000000000000
+      internalID: 200130909357816951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_10
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 53
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26480c63b6473fd60800000000000000
+      internalID: 7922804173303743586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_11
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 53
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f33afb40bb70cc90800000000000000
+      internalID: -7151580211145198600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_12
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 53
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572bbfbb6e101f6e0800000000000000
+      internalID: -1805659885090917771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_13
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 53
+        width: 59
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f019dba0c4c031a30800000000000000
+      internalID: 4184701999494566159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_14
+      rect:
+        serializedVersion: 2
+        x: 2291
+        y: 53
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3c77ac96cd60620800000000000000
+      internalID: 2740119770228048851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_15
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 53
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd2f25a304a9c2d0800000000000000
+      internalID: -3257892519862653512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crab-claw enemy-atk1-no fx_16
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 53
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cc124b53faffaf0800000000000000
+      internalID: -360376799976109001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      crab-claw enemy-atk1-no fx_0: -2371547563894313670
+      crab-claw enemy-atk1-no fx_1: 7755622891246816863
+      crab-claw enemy-atk1-no fx_10: 7922804173303743586
+      crab-claw enemy-atk1-no fx_11: -7151580211145198600
+      crab-claw enemy-atk1-no fx_12: -1805659885090917771
+      crab-claw enemy-atk1-no fx_13: 4184701999494566159
+      crab-claw enemy-atk1-no fx_14: 2740119770228048851
+      crab-claw enemy-atk1-no fx_15: -3257892519862653512
+      crab-claw enemy-atk1-no fx_16: -360376799976109001
+      crab-claw enemy-atk1-no fx_2: -2872396984421087732
+      crab-claw enemy-atk1-no fx_3: 4402835680126735969
+      crab-claw enemy-atk1-no fx_4: -976021885027555918
+      crab-claw enemy-atk1-no fx_5: 2181432372051273508
+      crab-claw enemy-atk1-no fx_6: -8550464014281229603
+      crab-claw enemy-atk1-no fx_7: 975787808783237542
+      crab-claw enemy-atk1-no fx_8: -7562031997999167335
+      crab-claw enemy-atk1-no fx_9: 200130909357816951
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

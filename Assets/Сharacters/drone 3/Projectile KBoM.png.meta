@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: 3db9298848e210145822a31f5dc80f31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -997268303904727365
+    second: Projectile KBoM_0
+  - first:
+      213: -8483130091421777024
+    second: Projectile KBoM_1
+  - first:
+      213: 7482275236419013771
+    second: Projectile KBoM_2
+  - first:
+      213: -2292332497906618862
+    second: Projectile KBoM_3
+  - first:
+      213: 2356146267726700034
+    second: Projectile KBoM_4
+  - first:
+      213: -3712716395994991928
+    second: Projectile KBoM_5
+  - first:
+      213: 7474562025150313506
+    second: Projectile KBoM_6
+  - first:
+      213: -8878252075883465497
+    second: Projectile KBoM_7
+  - first:
+      213: -3133699269559329899
+    second: Projectile KBoM_8
+  - first:
+      213: 5372066602338585572
+    second: Projectile KBoM_9
+  - first:
+      213: 5458906785572413684
+    second: Projectile KBoM_10
+  - first:
+      213: 2390242674045630845
+    second: Projectile KBoM_11
+  - first:
+      213: -5998007999754889166
+    second: Projectile KBoM_12
+  - first:
+      213: -204471730676045329
+    second: Projectile KBoM_13
+  - first:
+      213: 1842525845917212063
+    second: Projectile KBoM_14
+  - first:
+      213: 1521034416904234110
+    second: Projectile KBoM_15
+  - first:
+      213: -1035114224409518628
+    second: Projectile KBoM_16
+  - first:
+      213: -6435279328837883806
+    second: Projectile KBoM_17
+  - first:
+      213: -5472321376133771722
+    second: Projectile KBoM_18
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Projectile KBoM_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe9008e2cdf822f0800000000000000
+      internalID: -997268303904727365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 24
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083c06d902ed54a80800000000000000
+      internalID: -8483130091421777024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 29
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c057a4fa166d760800000000000000
+      internalID: 7482275236419013771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 16
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e213b0dbfff20e0800000000000000
+      internalID: -2292332497906618862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 36
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e56be0c86b2b020800000000000000
+      internalID: 2356146267726700034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_5
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 26
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c233f0db18c97cc0800000000000000
+      internalID: -3712716395994991928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 42
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22475b85f8afab760800000000000000
+      internalID: 7474562025150313506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 37
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e47796a6cc1ac480800000000000000
+      internalID: -8878252075883465497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 16
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bd30d0e1dd284d0800000000000000
+      internalID: -3133699269559329899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_9
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 30
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb8126cc1a6d8a40800000000000000
+      internalID: 5372066602338585572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_10
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 15
+        width: 85
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f063088ccee1cb40800000000000000
+      internalID: 5458906785572413684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 30
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7938794c09db2120800000000000000
+      internalID: 2390242674045630845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 24
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23898a6c08bc2cca0800000000000000
+      internalID: -5998007999754889166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 17
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9e1765b02992df0800000000000000
+      internalID: -204471730676045329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_14
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 16
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d1f57ae77f19910800000000000000
+      internalID: 1842525845917212063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_15
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 15
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7468be4ebccb1510800000000000000
+      internalID: 1521034416904234110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 28
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdddd10e81982a1f0800000000000000
+      internalID: -1035114224409518628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 29
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2682436cb8b41b6a0800000000000000
+      internalID: -6435279328837883806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Projectile KBoM_18
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 20
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e05c6b3b86e04b0800000000000000
+      internalID: -5472321376133771722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Projectile KBoM_0: -997268303904727365
+      Projectile KBoM_1: -8483130091421777024
+      Projectile KBoM_10: 5458906785572413684
+      Projectile KBoM_11: 2390242674045630845
+      Projectile KBoM_12: -5998007999754889166
+      Projectile KBoM_13: -204471730676045329
+      Projectile KBoM_14: 1842525845917212063
+      Projectile KBoM_15: 1521034416904234110
+      Projectile KBoM_16: -1035114224409518628
+      Projectile KBoM_17: -6435279328837883806
+      Projectile KBoM_18: -5472321376133771722
+      Projectile KBoM_2: 7482275236419013771
+      Projectile KBoM_3: -2292332497906618862
+      Projectile KBoM_4: 2356146267726700034
+      Projectile KBoM_5: -3712716395994991928
+      Projectile KBoM_6: 7474562025150313506
+      Projectile KBoM_7: -8878252075883465497
+      Projectile KBoM_8: -3133699269559329899
+      Projectile KBoM_9: 5372066602338585572
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

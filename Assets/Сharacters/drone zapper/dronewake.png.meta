@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: 9e89ee5424321724e9a9bab1e91118d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4415390254100361971
+    second: dronewake_0
+  - first:
+      213: 6820815010036873579
+    second: dronewake_1
+  - first:
+      213: 2115739037398604993
+    second: dronewake_2
+  - first:
+      213: 3841583760843617106
+    second: dronewake_3
+  - first:
+      213: -6460840030007462287
+    second: dronewake_4
+  - first:
+      213: 6912738699308948995
+    second: dronewake_5
+  - first:
+      213: 1535914015662299237
+    second: dronewake_6
+  - first:
+      213: 5159603360990986570
+    second: dronewake_7
+  - first:
+      213: -6297867747152307470
+    second: dronewake_8
+  - first:
+      213: 641796215458375155
+    second: dronewake_9
+  - first:
+      213: -8692693492671826762
+    second: dronewake_10
+  - first:
+      213: 4871007610593773593
+    second: dronewake_11
+  - first:
+      213: 2898996593888011799
+    second: dronewake_12
+  - first:
+      213: -5824511896730566586
+    second: dronewake_13
+  - first:
+      213: 124175645083202997
+    second: dronewake_14
+  - first:
+      213: -5899794911034686906
+    second: dronewake_15
+  - first:
+      213: -4556976426325876031
+    second: dronewake_16
+  - first:
+      213: -547634446900221477
+    second: dronewake_17
+  - first:
+      213: -7034420688887700242
+    second: dronewake_18
+  - first:
+      213: -793868506448176712
+    second: dronewake_19
+  - first:
+      213: 4367071788045605456
+    second: dronewake_20
+  - first:
+      213: 7982887772254158163
+    second: dronewake_21
+  - first:
+      213: 1516657197739130775
+    second: dronewake_22
+  - first:
+      213: -4378759166776104754
+    second: dronewake_23
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dronewake_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 458
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2bf58da0e964d30800000000000000
+      internalID: 4415390254100361971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 438
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6976e70d1768ae50800000000000000
+      internalID: 6820815010036873579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 429
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc1291e17d9c5d10800000000000000
+      internalID: 2115739037398604993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 398
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2533effa31c005530800000000000000
+      internalID: 3841583760843617106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 378
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176f7c4493c7656a0800000000000000
+      internalID: -6460840030007462287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 369
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ed765c83bfeef50800000000000000
+      internalID: 6912738699308948995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568581dd8a9a05510800000000000000
+      internalID: 1535914015662299237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 318
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4187c98be79a9740800000000000000
+      internalID: 5159603360990986570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 309
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fad898c6aa7998a0800000000000000
+      internalID: -6297867747152307470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f52690f14e18e800800000000000000
+      internalID: 641796215458375155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 258
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b432f303595d5780800000000000000
+      internalID: -8692693492671826762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_11
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 249
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9188aa73d9b499340800000000000000
+      internalID: 4871007610593773593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71623c7ea0e4b3820800000000000000
+      internalID: 2898996593888011799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 198
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640865d1a4d2b2fa0800000000000000
+      internalID: -5824511896730566586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 189
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b570fe571929b100800000000000000
+      internalID: 124175645083202997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642ce1079c7bf1ea0800000000000000
+      internalID: -5899794911034686906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 138
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2640b851e52c0c0800000000000000
+      internalID: -4556976426325876031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 129
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9aebd3f596668f0800000000000000
+      internalID: -547634446900221477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4a03647a7b06e90800000000000000
+      internalID: -7034420688887700242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 78
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b959caaccc9bf4f0800000000000000
+      internalID: -793868506448176712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_20
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a961b47a4fa9c30800000000000000
+      internalID: 4367071788045605456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35db40b322ae8ce60800000000000000
+      internalID: 7982887772254158163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_22
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 18
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79fb74d8faf3c0510800000000000000
+      internalID: 1516657197739130775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dronewake_23
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 9
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8235bccb58b33c0800000000000000
+      internalID: -4378759166776104754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      dronewake_0: 4415390254100361971
+      dronewake_1: 6820815010036873579
+      dronewake_10: -8692693492671826762
+      dronewake_11: 4871007610593773593
+      dronewake_12: 2898996593888011799
+      dronewake_13: -5824511896730566586
+      dronewake_14: 124175645083202997
+      dronewake_15: -5899794911034686906
+      dronewake_16: -4556976426325876031
+      dronewake_17: -547634446900221477
+      dronewake_18: -7034420688887700242
+      dronewake_19: -793868506448176712
+      dronewake_2: 2115739037398604993
+      dronewake_20: 4367071788045605456
+      dronewake_21: 7982887772254158163
+      dronewake_22: 1516657197739130775
+      dronewake_23: -4378759166776104754
+      dronewake_3: 3841583760843617106
+      dronewake_4: -6460840030007462287
+      dronewake_5: 6912738699308948995
+      dronewake_6: 1535914015662299237
+      dronewake_7: 5159603360990986570
+      dronewake_8: -6297867747152307470
+      dronewake_9: 641796215458375155
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
