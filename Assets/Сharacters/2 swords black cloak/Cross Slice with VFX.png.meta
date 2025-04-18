@@ -21,7 +21,7 @@ TextureImporter:
       213: 38487018481024143
     second: Cross Slice with VFX_5
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -136,7 +136,7 @@ TextureImporter:
         width: 44
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,10 +154,10 @@ TextureImporter:
         serializedVersion: 2
         x: 49
         y: 56
-        width: 27
+        width: 42
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,27 +165,6 @@ TextureImporter:
       bones: []
       spriteID: 4bfbf1843c118a4c0800000000000000
       internalID: -4276148315761950796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cross Slice with VFX_2
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 57
-        width: 13
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8973d6ba4aeaa2850800000000000000
-      internalID: 6353082246633437080
       vertices: []
       indices: 
       edges: []
@@ -199,7 +178,7 @@ TextureImporter:
         width: 39
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +199,7 @@ TextureImporter:
         width: 39
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +220,7 @@ TextureImporter:
         width: 34
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,7 +235,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bf11781f735692d489104640bb272c7b
     internalID: 0
     vertices: []
     indices: 
