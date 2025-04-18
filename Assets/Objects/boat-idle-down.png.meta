@@ -1,0 +1,477 @@
+fileFormatVersion: 2
+guid: ea3d9a6945971994b9e0e7ad23d0bcb3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4483588736460589398
+    second: boat-idle-down_0
+  - first:
+      213: 564974127551247033
+    second: boat-idle-down_1
+  - first:
+      213: 6673288768250565151
+    second: boat-idle-down_2
+  - first:
+      213: -6349131209174629633
+    second: boat-idle-down_3
+  - first:
+      213: 1542357128463532605
+    second: boat-idle-down_4
+  - first:
+      213: -6754596900722334494
+    second: boat-idle-down_5
+  - first:
+      213: -8565363695708001568
+    second: boat-idle-down_6
+  - first:
+      213: -8664873421822763683
+    second: boat-idle-down_7
+  - first:
+      213: -3827733503404170410
+    second: boat-idle-down_8
+  - first:
+      213: 2105498501170561616
+    second: boat-idle-down_9
+  - first:
+      213: 4293132141441305501
+    second: boat-idle-down_10
+  - first:
+      213: 8330781534771416480
+    second: boat-idle-down_11
+  - first:
+      213: -8190007435070986910
+    second: boat-idle-down_12
+  - first:
+      213: 2044774311142444806
+    second: boat-idle-down_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boat-idle-down_0
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 807
+        width: 68
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6f25c9cc717c1c0800000000000000
+      internalID: -4483588736460589398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_1
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 806
+        width: 68
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b27af3c9f037d700800000000000000
+      internalID: 564974127551247033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_2
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 805
+        width: 68
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12dd2337c84c9c50800000000000000
+      internalID: 6673288768250565151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_3
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 805
+        width: 70
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2ccccedca53e7a0800000000000000
+      internalID: -6349131209174629633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 549
+        width: 70
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d324cd6f2ad876510800000000000000
+      internalID: 1542357128463532605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_5
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 549
+        width: 71
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4ad7bf7e9d242a0800000000000000
+      internalID: -6754596900722334494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_6
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 549
+        width: 71
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea2c499917b12980800000000000000
+      internalID: -8565363695708001568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_7
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 550
+        width: 72
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dd784088f20c780800000000000000
+      internalID: -8664873421822763683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 294
+        width: 72
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653abbaa8a821eac0800000000000000
+      internalID: -3827733503404170410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_9
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 295
+        width: 70
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052836d3bbb383d10800000000000000
+      internalID: 2105498501170561616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_10
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 295
+        width: 70
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bcb68cfe4449b30800000000000000
+      internalID: 4293132141441305501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_11
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 295
+        width: 70
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad0f61eaa1ec9370800000000000000
+      internalID: 8330781534771416480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 39
+        width: 70
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26529cc51af375e80800000000000000
+      internalID: -8190007435070986910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boat-idle-down_13
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 39
+        width: 68
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f4d7df66f706c10800000000000000
+      internalID: 2044774311142444806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      boat-idle-down_0: -4483588736460589398
+      boat-idle-down_1: 564974127551247033
+      boat-idle-down_10: 4293132141441305501
+      boat-idle-down_11: 8330781534771416480
+      boat-idle-down_12: -8190007435070986910
+      boat-idle-down_13: 2044774311142444806
+      boat-idle-down_2: 6673288768250565151
+      boat-idle-down_3: -6349131209174629633
+      boat-idle-down_4: 1542357128463532605
+      boat-idle-down_5: -6754596900722334494
+      boat-idle-down_6: -8565363695708001568
+      boat-idle-down_7: -8664873421822763683
+      boat-idle-down_8: -3827733503404170410
+      boat-idle-down_9: 2105498501170561616
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

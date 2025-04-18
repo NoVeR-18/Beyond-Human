@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: e2fc8ac5831c0ba4a92c51c2de325aee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9125497117350347185
+    second: banner-anim-neutral_0
+  - first:
+      213: 8390719441594939258
+    second: banner-anim-neutral_1
+  - first:
+      213: 8299593226022617993
+    second: banner-anim-neutral_2
+  - first:
+      213: -5370872075392305670
+    second: banner-anim-neutral_3
+  - first:
+      213: -2519910857935963455
+    second: banner-anim-neutral_4
+  - first:
+      213: -7338124994801679280
+    second: banner-anim-neutral_5
+  - first:
+      213: -6330585114076549024
+    second: banner-anim-neutral_6
+  - first:
+      213: -2383826446164730038
+    second: banner-anim-neutral_7
+  - first:
+      213: 7907948028203007352
+    second: banner-anim-neutral_8
+  - first:
+      213: -2137147768229123487
+    second: banner-anim-neutral_9
+  - first:
+      213: -6265467717954135451
+    second: banner-anim-neutral_10
+  - first:
+      213: -7948543478451153147
+    second: banner-anim-neutral_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: banner-anim-neutral_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1c48e774744ae70800000000000000
+      internalID: 9125497117350347185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77fa3e40e2d17470800000000000000
+      internalID: 8390719441594939258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9830151e0141e2370800000000000000
+      internalID: 8299593226022617993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af53d24bd44d675b0800000000000000
+      internalID: -5370872075392305670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cab31ffc6a770dd0800000000000000
+      internalID: -2519910857935963455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0544e6f323eb92a90800000000000000
+      internalID: -7338124994801679280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_6
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060771f216e3528a0800000000000000
+      internalID: -6330585114076549024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_7
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f5b2e2a72faeed0800000000000000
+      internalID: -2383826446164730038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_8
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d7a4365dcaebd60800000000000000
+      internalID: 7907948028203007352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_9
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a2f2a8d635752e0800000000000000
+      internalID: -2137147768229123487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_10
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 5
+        width: 87
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a9aaf6e469c09a0800000000000000
+      internalID: -6265467717954135451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banner-anim-neutral_11
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 5
+        width: 86
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507db2dc1d911b190800000000000000
+      internalID: -7948543478451153147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      banner-anim-neutral_0: 9125497117350347185
+      banner-anim-neutral_1: 8390719441594939258
+      banner-anim-neutral_10: -6265467717954135451
+      banner-anim-neutral_11: -7948543478451153147
+      banner-anim-neutral_2: 8299593226022617993
+      banner-anim-neutral_3: -5370872075392305670
+      banner-anim-neutral_4: -2519910857935963455
+      banner-anim-neutral_5: -7338124994801679280
+      banner-anim-neutral_6: -6330585114076549024
+      banner-anim-neutral_7: -2383826446164730038
+      banner-anim-neutral_8: 7907948028203007352
+      banner-anim-neutral_9: -2137147768229123487
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

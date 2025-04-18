@@ -1,0 +1,577 @@
+fileFormatVersion: 2
+guid: aecebefba1c3c3a46806033f7ce37877
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2166590281509963628
+    second: candle-smoking-only smoke_0
+  - first:
+      213: 5218556521482539359
+    second: candle-smoking-only smoke_1
+  - first:
+      213: 8859687722861095417
+    second: candle-smoking-only smoke_2
+  - first:
+      213: 3720248234882257079
+    second: candle-smoking-only smoke_3
+  - first:
+      213: -4533442613140655615
+    second: candle-smoking-only smoke_4
+  - first:
+      213: -2707375617138033691
+    second: candle-smoking-only smoke_5
+  - first:
+      213: 3257576833285312789
+    second: candle-smoking-only smoke_6
+  - first:
+      213: 8299467107834443661
+    second: candle-smoking-only smoke_7
+  - first:
+      213: 4339154407008771434
+    second: candle-smoking-only smoke_8
+  - first:
+      213: -5485179622903582507
+    second: candle-smoking-only smoke_9
+  - first:
+      213: 9133082196507708615
+    second: candle-smoking-only smoke_10
+  - first:
+      213: -1542888998036996850
+    second: candle-smoking-only smoke_11
+  - first:
+      213: 8151673657113083503
+    second: candle-smoking-only smoke_12
+  - first:
+      213: 3738729458573817464
+    second: candle-smoking-only smoke_13
+  - first:
+      213: -7259369610329642096
+    second: candle-smoking-only smoke_14
+  - first:
+      213: 8428868235578797169
+    second: candle-smoking-only smoke_15
+  - first:
+      213: 4941902963327251288
+    second: candle-smoking-only smoke_16
+  - first:
+      213: -7560981013538815496
+    second: candle-smoking-only smoke_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498f8c83e99bee1e0800000000000000
+      internalID: -2166590281509963628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51d347d1890c6840800000000000000
+      internalID: 5218556521482539359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f966061b0fe3fa70800000000000000
+      internalID: 8859687722861095417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b05e641f0af0a330800000000000000
+      internalID: 3720248234882257079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_4
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 25
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102f12a66f9f511c0800000000000000
+      internalID: -4533442613140655615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebfee278387d6ad0800000000000000
+      internalID: -2707375617138033691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_6
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5115388dedc353d20800000000000000
+      internalID: 3257576833285312789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_7
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87b283bc51ad2370800000000000000
+      internalID: 8299467107834443661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d145f71f5c73c30800000000000000
+      internalID: 4339154407008771434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_9
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0fe97d13ab0e3b0800000000000000
+      internalID: -5485179622903582507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_10
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc494b5ed93fbe70800000000000000
+      internalID: 9133082196507708615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_11
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d752081ae869ae0800000000000000
+      internalID: -1542888998036996850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_12
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e72217000902170800000000000000
+      internalID: 8151673657113083503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_13
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876b49942a2a2e330800000000000000
+      internalID: 3738729458573817464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_14
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b290b1dc9814b90800000000000000
+      internalID: -7259369610329642096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_15
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c6f30900b59f470800000000000000
+      internalID: 8428868235578797169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_16
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8533293df8a259440800000000000000
+      internalID: 4941902963327251288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: candle-smoking-only smoke_17
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 24
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1cb86f3dff11790800000000000000
+      internalID: -7560981013538815496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      candle-smoking-only smoke_0: -2166590281509963628
+      candle-smoking-only smoke_1: 5218556521482539359
+      candle-smoking-only smoke_10: 9133082196507708615
+      candle-smoking-only smoke_11: -1542888998036996850
+      candle-smoking-only smoke_12: 8151673657113083503
+      candle-smoking-only smoke_13: 3738729458573817464
+      candle-smoking-only smoke_14: -7259369610329642096
+      candle-smoking-only smoke_15: 8428868235578797169
+      candle-smoking-only smoke_16: 4941902963327251288
+      candle-smoking-only smoke_17: -7560981013538815496
+      candle-smoking-only smoke_2: 8859687722861095417
+      candle-smoking-only smoke_3: 3720248234882257079
+      candle-smoking-only smoke_4: -4533442613140655615
+      candle-smoking-only smoke_5: -2707375617138033691
+      candle-smoking-only smoke_6: 3257576833285312789
+      candle-smoking-only smoke_7: 8299467107834443661
+      candle-smoking-only smoke_8: 4339154407008771434
+      candle-smoking-only smoke_9: -5485179622903582507
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

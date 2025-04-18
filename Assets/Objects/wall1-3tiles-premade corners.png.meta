@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: 392b36fc5fbdf134b8a9d21355ac9405
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3178460960082678183
+    second: wall1-3tiles-premade corners_0
+  - first:
+      213: -9063979019614083733
+    second: wall1-3tiles-premade corners_1
+  - first:
+      213: 3407317466570707801
+    second: wall1-3tiles-premade corners_2
+  - first:
+      213: -8825954167305444697
+    second: wall1-3tiles-premade corners_3
+  - first:
+      213: 5624420978299863246
+    second: wall1-3tiles-premade corners_4
+  - first:
+      213: -1686879070984573218
+    second: wall1-3tiles-premade corners_5
+  - first:
+      213: -7406031147107623616
+    second: wall1-3tiles-premade corners_6
+  - first:
+      213: -6679751830491324210
+    second: wall1-3tiles-premade corners_7
+  - first:
+      213: 7205287042183486574
+    second: wall1-3tiles-premade corners_8
+  - first:
+      213: -2094239277462995563
+    second: wall1-3tiles-premade corners_9
+  - first:
+      213: -1185417356323402014
+    second: wall1-3tiles-premade corners_10
+  - first:
+      213: 2256078530890592554
+    second: wall1-3tiles-premade corners_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 415
+        width: 63
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e23d5d896d3e3d0800000000000000
+      internalID: -3178460960082678183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 415
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b652f4cca17463280800000000000000
+      internalID: -9063979019614083733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 415
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9535eefde29394f20800000000000000
+      internalID: 3407317466570707801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 415
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a261ed5279e38580800000000000000
+      internalID: -8825954167305444697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 223
+        width: 66
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec081de8415fd0e40800000000000000
+      internalID: 5624420978299863246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 66
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede6ce22c600798e0800000000000000
+      internalID: -1686879070984573218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 191
+        width: 66
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ddb2919ed783990800000000000000
+      internalID: -7406031147107623616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_7
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 191
+        width: 66
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0accbd911cc43a0800000000000000
+      internalID: -6679751830491324210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_8
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 223
+        width: 98
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c521eb3625ef360800000000000000
+      internalID: 7205287042183486574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_9
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 223
+        width: 98
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59db5201974cfe2e0800000000000000
+      internalID: -2094239277462995563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 98
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eec2cde13d8c8fe0800000000000000
+      internalID: -1185417356323402014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall1-3tiles-premade corners_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 31
+        width: 98
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a217e1b78733f4f10800000000000000
+      internalID: 2256078530890592554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      wall1-3tiles-premade corners_0: -3178460960082678183
+      wall1-3tiles-premade corners_1: -9063979019614083733
+      wall1-3tiles-premade corners_10: -1185417356323402014
+      wall1-3tiles-premade corners_11: 2256078530890592554
+      wall1-3tiles-premade corners_2: 3407317466570707801
+      wall1-3tiles-premade corners_3: -8825954167305444697
+      wall1-3tiles-premade corners_4: 5624420978299863246
+      wall1-3tiles-premade corners_5: -1686879070984573218
+      wall1-3tiles-premade corners_6: -7406031147107623616
+      wall1-3tiles-premade corners_7: -6679751830491324210
+      wall1-3tiles-premade corners_8: 7205287042183486574
+      wall1-3tiles-premade corners_9: -2094239277462995563
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
