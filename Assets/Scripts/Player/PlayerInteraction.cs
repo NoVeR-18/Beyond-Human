@@ -18,7 +18,7 @@ public class PlayerInteraction : MonoBehaviour
         Vector2 origin = transform.position;
         Vector2 direction = interactionDirection.normalized;
 
-        RaycastHit2D hit = Physics2D.Raycast(origin, direction, interactDistance, LayerMask.NameToLayer("Interacteble"));
+        RaycastHit2D hit = Physics2D.Raycast(origin, direction, interactDistance, LayerMask.GetMask("Interacteble"));
 
         if (hit.collider != null)
         {
