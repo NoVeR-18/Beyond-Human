@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
     }
-
     void Flip()
     {
         if (movement.x > 0.01f)

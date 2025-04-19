@@ -1,31 +1,40 @@
 fileFormatVersion: 2
-guid: cbe1c3b7eed26014da051be93fd1040b
+guid: 0153f4dafdebf14459bffbacbe4fa48d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2802224374340672950
-    second: wooden chest anim-closing-color scheme2_0
+      213: -7685322256256226352
+    second: wooden chest anim-opening-color scheme1_0
   - first:
-      213: 4498762804017374150
-    second: wooden chest anim-closing-color scheme2_1
+      213: 3174930231861191522
+    second: wooden chest anim-opening-color scheme1_1
   - first:
-      213: 4169557004802744791
-    second: wooden chest anim-closing-color scheme2_2
+      213: 1429850386045655713
+    second: wooden chest anim-opening-color scheme1_2
   - first:
-      213: -1113409725970032411
-    second: wooden chest anim-closing-color scheme2_3
+      213: -6393059435497417024
+    second: wooden chest anim-opening-color scheme1_3
   - first:
-      213: 4606287325245980750
-    second: wooden chest anim-closing-color scheme2_4
+      213: -3608102417213228090
+    second: wooden chest anim-opening-color scheme1_4
   - first:
-      213: 5444712257596257677
-    second: wooden chest anim-closing-color scheme2_5
+      213: 664457395679921068
+    second: wooden chest anim-opening-color scheme1_5
   - first:
-      213: -6140892018704834581
-    second: wooden chest anim-closing-color scheme2_6
+      213: -4106849042400398448
+    second: wooden chest anim-opening-color scheme1_6
   - first:
-      213: -5547462957425112915
-    second: wooden chest anim-closing-color scheme2_7
+      213: -8662525005734850050
+    second: wooden chest anim-opening-color scheme1_7
+  - first:
+      213: -6586833696129508649
+    second: wooden chest anim-opening-color scheme1_8
+  - first:
+      213: -2313344268418530021
+    second: wooden chest anim-opening-color scheme1_9
+  - first:
+      213: 8108827614879250290
+    second: wooden chest anim-opening-color scheme1_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,13 +143,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_0
+      name: wooden chest anim-opening-color scheme1_0
       rect:
         serializedVersion: 2
         x: 35
         y: 55
         width: 57
-        height: 57
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bd548db83083e620800000000000000
-      internalID: 2802224374340672950
+      spriteID: 0dba1736020485590800000000000000
+      internalID: -7685322256256226352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_1
+      name: wooden chest anim-opening-color scheme1_1
       rect:
         serializedVersion: 2
         x: 163
         y: 55
         width: 57
-        height: 50
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c3223e4fe0de6e30800000000000000
-      internalID: 4498762804017374150
+      spriteID: 2632cb0793e9f0c20800000000000000
+      internalID: 3174930231861191522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_2
+      name: wooden chest anim-opening-color scheme1_2
       rect:
         serializedVersion: 2
         x: 291
@@ -190,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d1620e210e3dd930800000000000000
-      internalID: 4169557004802744791
+      spriteID: 1aad436b959d7d310800000000000000
+      internalID: 1429850386045655713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_3
+      name: wooden chest anim-opening-color scheme1_3
       rect:
         serializedVersion: 2
         x: 419
@@ -211,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e8571ad0cf5c80f0800000000000000
-      internalID: -1113409725970032411
+      spriteID: 0c69737b05a4747a0800000000000000
+      internalID: -6393059435497417024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_4
+      name: wooden chest anim-opening-color scheme1_4
       rect:
         serializedVersion: 2
         x: 547
         y: 55
         width: 57
-        height: 37
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e40cbaacae1dcef30800000000000000
-      internalID: 4606287325245980750
+      spriteID: 6cbf6c4d7f17dedc0800000000000000
+      internalID: -3608102417213228090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_5
+      name: wooden chest anim-opening-color scheme1_5
       rect:
         serializedVersion: 2
         x: 675
         y: 55
         width: 57
-        height: 36
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d857d3273f08f8b40800000000000000
-      internalID: 5444712257596257677
+      spriteID: ca302ed1b70a83900800000000000000
+      internalID: 664457395679921068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_6
+      name: wooden chest anim-opening-color scheme1_6
       rect:
         serializedVersion: 2
         x: 803
         y: 55
         width: 57
-        height: 37
+        height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bef111dae3b27caa0800000000000000
-      internalID: -6140892018704834581
+      spriteID: 09332911e8a8107c0800000000000000
+      internalID: -4106849042400398448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color scheme2_7
+      name: wooden chest anim-opening-color scheme1_7
       rect:
         serializedVersion: 2
         x: 931
         y: 55
         width: 57
-        height: 37
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,8 +304,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da8c90af4d37303b0800000000000000
-      internalID: -5547462957425112915
+      spriteID: ef15c3f376788c780800000000000000
+      internalID: -8662525005734850050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden chest anim-opening-color scheme1_8
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 55
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da90a3e6add694a0800000000000000
+      internalID: -6586833696129508649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden chest anim-opening-color scheme1_9
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 55
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b154abdf4a955efd0800000000000000
+      internalID: -2313344268418530021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden chest anim-opening-color scheme1_10
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 55
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27771c9d0c7588070800000000000000
+      internalID: 8108827614879250290
       vertices: []
       indices: 
       edges: []
@@ -312,14 +384,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wooden chest anim-closing-color scheme2_0: 2802224374340672950
-      wooden chest anim-closing-color scheme2_1: 4498762804017374150
-      wooden chest anim-closing-color scheme2_2: 4169557004802744791
-      wooden chest anim-closing-color scheme2_3: -1113409725970032411
-      wooden chest anim-closing-color scheme2_4: 4606287325245980750
-      wooden chest anim-closing-color scheme2_5: 5444712257596257677
-      wooden chest anim-closing-color scheme2_6: -6140892018704834581
-      wooden chest anim-closing-color scheme2_7: -5547462957425112915
+      wooden chest anim-opening-color scheme1_0: -7685322256256226352
+      wooden chest anim-opening-color scheme1_1: 3174930231861191522
+      wooden chest anim-opening-color scheme1_10: 8108827614879250290
+      wooden chest anim-opening-color scheme1_2: 1429850386045655713
+      wooden chest anim-opening-color scheme1_3: -6393059435497417024
+      wooden chest anim-opening-color scheme1_4: -3608102417213228090
+      wooden chest anim-opening-color scheme1_5: 664457395679921068
+      wooden chest anim-opening-color scheme1_6: -4106849042400398448
+      wooden chest anim-opening-color scheme1_7: -8662525005734850050
+      wooden chest anim-opening-color scheme1_8: -6586833696129508649
+      wooden chest anim-opening-color scheme1_9: -2313344268418530021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

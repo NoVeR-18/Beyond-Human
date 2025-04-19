@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 111e02f6c6bf44b4299685f582eb8ef2
+guid: d02c40648ba3f864380adf616363aa95
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7211789064124601403
-    second: wooden chest anim-closing-color sheme1_0
+      213: 2705574646349443930
+    second: wooden doors2-vertical-leftwards-closing_0
   - first:
-      213: 1391518760626625318
-    second: wooden chest anim-closing-color sheme1_1
+      213: 8969775919708599788
+    second: wooden doors2-vertical-leftwards-closing_1
   - first:
-      213: -3275709198183512374
-    second: wooden chest anim-closing-color sheme1_2
+      213: 779788030532625917
+    second: wooden doors2-vertical-leftwards-closing_2
   - first:
-      213: 811055496068304782
-    second: wooden chest anim-closing-color sheme1_3
+      213: -1225777399169922203
+    second: wooden doors2-vertical-leftwards-closing_3
   - first:
-      213: 376195961722724788
-    second: wooden chest anim-closing-color sheme1_4
+      213: 2817913636597842378
+    second: wooden doors2-vertical-leftwards-closing_4
   - first:
-      213: -1034185070659902715
-    second: wooden chest anim-closing-color sheme1_5
+      213: -1366968428901761064
+    second: wooden doors2-vertical-leftwards-closing_5
   - first:
-      213: -5821692365718410984
-    second: wooden chest anim-closing-color sheme1_6
+      213: 77329643076230379
+    second: wooden doors2-vertical-leftwards-closing_6
   - first:
-      213: 8207769437818571957
-    second: wooden chest anim-closing-color sheme1_7
+      213: -7819428595230555214
+    second: wooden doors2-vertical-leftwards-closing_7
+  - first:
+      213: 2075459900227065116
+    second: wooden doors2-vertical-leftwards-closing_8
+  - first:
+      213: -3013347729632924965
+    second: wooden doors2-vertical-leftwards-closing_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_0
+      name: wooden doors2-vertical-leftwards-closing_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 55
-        width: 57
-        height: 57
+        x: 24
+        y: 35
+        width: 56
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b349132b1fb651460800000000000000
-      internalID: 7211789064124601403
+      spriteID: a5336fc5ec12c8520800000000000000
+      internalID: 2705574646349443930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_1
+      name: wooden doors2-vertical-leftwards-closing_1
       rect:
         serializedVersion: 2
-        x: 163
-        y: 55
-        width: 57
-        height: 50
+        x: 156
+        y: 35
+        width: 52
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62b1171b0faaf4310800000000000000
-      internalID: 1391518760626625318
+      spriteID: ce57511dcab0b7c70800000000000000
+      internalID: 8969775919708599788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_2
+      name: wooden doors2-vertical-leftwards-closing_2
       rect:
         serializedVersion: 2
-        x: 291
-        y: 55
-        width: 57
-        height: 37
+        x: 289
+        y: 35
+        width: 47
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac6cac6f6d75a82d0800000000000000
-      internalID: -3275709198183512374
+      spriteID: df5afff051d52da00800000000000000
+      internalID: 779788030532625917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_3
+      name: wooden doors2-vertical-leftwards-closing_3
       rect:
         serializedVersion: 2
-        x: 419
-        y: 55
-        width: 57
-        height: 37
+        x: 423
+        y: 35
+        width: 43
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +217,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8f87403da2714b00800000000000000
-      internalID: 811055496068304782
+      spriteID: 56b46cc23f92dfee0800000000000000
+      internalID: -1225777399169922203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_4
+      name: wooden doors2-vertical-leftwards-closing_4
       rect:
         serializedVersion: 2
-        x: 547
-        y: 55
-        width: 57
-        height: 37
+        x: 561
+        y: 35
+        width: 34
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +238,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b16b68eb34883500800000000000000
-      internalID: 376195961722724788
+      spriteID: ac1c425c58d3b1720800000000000000
+      internalID: 2817913636597842378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_5
+      name: wooden doors2-vertical-leftwards-closing_5
       rect:
         serializedVersion: 2
-        x: 675
-        y: 55
-        width: 57
-        height: 36
+        x: 714
+        y: 35
+        width: 10
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 503ed475826d5a1f0800000000000000
-      internalID: -1034185070659902715
+      spriteID: 8dff228d47d870de0800000000000000
+      internalID: -1366968428901761064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_6
+      name: wooden doors2-vertical-leftwards-closing_6
       rect:
         serializedVersion: 2
-        x: 803
-        y: 55
-        width: 57
-        height: 37
+        x: 844
+        y: 35
+        width: 8
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +280,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 81920c553a1353fa0800000000000000
-      internalID: -5821692365718410984
+      spriteID: bec9a2296eab21100800000000000000
+      internalID: 77329643076230379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wooden chest anim-closing-color sheme1_7
+      name: wooden doors2-vertical-leftwards-closing_7
       rect:
         serializedVersion: 2
-        x: 931
-        y: 55
-        width: 57
-        height: 37
+        x: 970
+        y: 35
+        width: 10
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,8 +301,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5bccb7b21dad7e170800000000000000
-      internalID: 8207769437818571957
+      spriteID: 2b340ca2f1fcb7390800000000000000
+      internalID: -7819428595230555214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden doors2-vertical-leftwards-closing_8
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 35
+        width: 8
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c151a9278c38dcc10800000000000000
+      internalID: 2075459900227065116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden doors2-vertical-leftwards-closing_9
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 35
+        width: 8
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdaef7e84307e26d0800000000000000
+      internalID: -3013347729632924965
       vertices: []
       indices: 
       edges: []
@@ -312,14 +360,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wooden chest anim-closing-color sheme1_0: 7211789064124601403
-      wooden chest anim-closing-color sheme1_1: 1391518760626625318
-      wooden chest anim-closing-color sheme1_2: -3275709198183512374
-      wooden chest anim-closing-color sheme1_3: 811055496068304782
-      wooden chest anim-closing-color sheme1_4: 376195961722724788
-      wooden chest anim-closing-color sheme1_5: -1034185070659902715
-      wooden chest anim-closing-color sheme1_6: -5821692365718410984
-      wooden chest anim-closing-color sheme1_7: 8207769437818571957
+      wooden doors2-vertical-leftwards-closing_0: 2705574646349443930
+      wooden doors2-vertical-leftwards-closing_1: 8969775919708599788
+      wooden doors2-vertical-leftwards-closing_2: 779788030532625917
+      wooden doors2-vertical-leftwards-closing_3: -1225777399169922203
+      wooden doors2-vertical-leftwards-closing_4: 2817913636597842378
+      wooden doors2-vertical-leftwards-closing_5: -1366968428901761064
+      wooden doors2-vertical-leftwards-closing_6: 77329643076230379
+      wooden doors2-vertical-leftwards-closing_7: -7819428595230555214
+      wooden doors2-vertical-leftwards-closing_8: 2075459900227065116
+      wooden doors2-vertical-leftwards-closing_9: -3013347729632924965
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
