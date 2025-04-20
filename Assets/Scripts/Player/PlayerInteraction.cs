@@ -18,11 +18,12 @@ public class PlayerInteraction : MonoBehaviour
         Vector2 origin = transform.position;
         Vector2 direction = interactionDirection.normalized;
 
-        RaycastHit2D hit = Physics2D.Raycast(origin, direction, interactDistance, LayerMask.GetMask("Interacteble"));
+        //RaycastHit2D hit = Physics2D.Raycast(origin, direction, interactDistance, LayerMask.GetMask("Interacteble"));
+        Collider2D hit = Physics2D.OverlapCircle(origin, interactDistance, LayerMask.GetMask("Interacteble"));
 
-        if (hit.collider != null)
+        if (hit != null)
         {
-            IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+            IInteractable interactable = hit.GetComponent<IInteractable>();
             if (interactable != null)
             {
                 PlayerKeysAndSkills player = GetComponent<PlayerKeysAndSkills>(); // Предполагаем, что у игрока есть свой скрипт
@@ -36,6 +37,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Vector3 dir = (Vector3)interactionDirection.normalized * interactDistance;
+        Gizmos.DrawSphere(transform.position, interactDistance);
         Gizmos.DrawLine(transform.position, transform.position + dir);
     }
 }
