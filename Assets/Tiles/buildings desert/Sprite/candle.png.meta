@@ -1,27 +1,27 @@
 fileFormatVersion: 2
-guid: 80976070e4da51c4a8756a970da57ad0
+guid: 119ba1733b2bd94409e4c95424712008
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5698017828174702254
-    second: fireplace_0
+      213: 1365539031471768751
+    second: candle_0
   - first:
-      213: 3555795224932194294
-    second: fireplace_1
+      213: 3164754189931214212
+    second: candle_1
   - first:
-      213: 2692201480731268342
-    second: fireplace_2
+      213: 765352457440723577
+    second: candle_2
   - first:
-      213: 2497313390202381326
-    second: fireplace_3
+      213: 8724906649512049868
+    second: candle_3
   - first:
-      213: -5130110956873843884
-    second: fireplace_4
+      213: -2738225903744057452
+    second: candle_4
   - first:
-      213: -8485822813022745045
-    second: fireplace_5
+      213: -1815409441862610991
+    second: candle_5
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,127 +128,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireplace_0
+      name: candle_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 11
-        width: 49
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 37
+        width: 8
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea6223c760d631f40800000000000000
-      internalID: 5698017828174702254
+      spriteID: fa44ec1a38e53f210800000000000000
+      internalID: 1365539031471768751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireplace_1
+      name: candle_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 11
-        width: 49
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 44
+        y: 37
+        width: 8
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f71d1ceae8b85130800000000000000
-      internalID: 3555795224932194294
+      spriteID: 485774c0b277beb20800000000000000
+      internalID: 3164754189931214212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireplace_2
+      name: candle_2
       rect:
         serializedVersion: 2
-        x: 136
-        y: 11
-        width: 49
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 37
+        width: 8
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f494ca9bfe9c5520800000000000000
-      internalID: 2692201480731268342
+      spriteID: 9720ab941041f9a00800000000000000
+      internalID: 765352457440723577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireplace_3
+      name: candle_3
       rect:
         serializedVersion: 2
-        x: 200
-        y: 11
-        width: 49
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 108
+        y: 37
+        width: 8
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e04e6db0c4d38a220800000000000000
-      internalID: 2497313390202381326
+      spriteID: cccfb960f58151970800000000000000
+      internalID: 8724906649512049868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireplace_4
+      name: candle_4
       rect:
         serializedVersion: 2
-        x: 264
-        y: 11
-        width: 49
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 12
+        y: 5
+        width: 8
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45bf135e34f2ec8b0800000000000000
-      internalID: -5130110956873843884
+      spriteID: 49fff8c5c0edff9d0800000000000000
+      internalID: -2738225903744057452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireplace_5
+      name: candle_5
       rect:
         serializedVersion: 2
-        x: 328
-        y: 11
-        width: 49
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 44
+        y: 5
+        width: 8
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2e8fd28c1d4c3a80800000000000000
-      internalID: -8485822813022745045
+      spriteID: 1df83e72bbe5ec6e0800000000000000
+      internalID: -1815409441862610991
       vertices: []
       indices: 
       edges: []
@@ -256,7 +256,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 93c024a9d1394b745b9ada30817400a2
     internalID: 0
     vertices: []
     indices: 
@@ -264,12 +264,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fireplace_0: 5698017828174702254
-      fireplace_1: 3555795224932194294
-      fireplace_2: 2692201480731268342
-      fireplace_3: 2497313390202381326
-      fireplace_4: -5130110956873843884
-      fireplace_5: -8485822813022745045
+      candle_0: 1365539031471768751
+      candle_1: 3164754189931214212
+      candle_2: 765352457440723577
+      candle_3: 8724906649512049868
+      candle_4: -2738225903744057452
+      candle_5: -1815409441862610991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

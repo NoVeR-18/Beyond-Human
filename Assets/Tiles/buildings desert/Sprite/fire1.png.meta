@@ -39,7 +39,7 @@ TextureImporter:
       213: -8783266251655316604
     second: fire1_11
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -149,12 +149,12 @@ TextureImporter:
       name: fire1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 14
-        width: 31
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1
+        y: 15
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: fire1_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 14
-        width: 31
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 15
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,36 +188,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire1_2
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 62
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6c418d4e64bb4df10800000000000000
-      internalID: 2293664023399896262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: fire1_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 14
-        width: 31
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 65
+        y: 15
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,120 +209,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fire1_4
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 65
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc87e709f4d98a960800000000000000
-      internalID: 7613508135122008267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire1_5
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 60
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02b3b6bdee7f51390800000000000000
-      internalID: -7848094170367706336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire1_6
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 69
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4563b76fccc371d90800000000000000
-      internalID: -7127161034284255660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire1_7
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 14
-        width: 31
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41db545e272825d50800000000000000
-      internalID: 6724580623602007316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fire1_8
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 62
-        width: 9
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ee837ea191c60f30800000000000000
-      internalID: 4541530105690951392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: fire1_9
       rect:
         serializedVersion: 2
-        x: 168
-        y: 64
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 97
+        y: 15
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -359,12 +233,12 @@ TextureImporter:
       name: fire1_10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 14
-        width: 31
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 129
+        y: 15
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,12 +254,12 @@ TextureImporter:
       name: fire1_11
       rect:
         serializedVersion: 2
-        x: 160
-        y: 14
-        width: 31
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 161
+        y: 15
+        width: 29
+        height: 66
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,7 +274,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5adb3268c028038498772f1de944978e
     internalID: 0
     vertices: []
     indices: 
