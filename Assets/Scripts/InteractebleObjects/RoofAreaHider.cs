@@ -1,102 +1,161 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+[RequireComponent(typeof(PolygonCollider2D))]
 public class RoofAreaHider : MonoBehaviour
 {
-    public Tilemap WallsTilemap;                     // Общий Tilemap с крышами
-    public Tilemap floorTilemap;                     // Общий Tilemap с крышами
-    public BoundsInt roofArea;                      // Область крыши, которую скрывать
-    public TileBase[] savedTiles;                  // Сохраняем, чтобы вернуть при выходе
-    public BoxCollider2D roofAreaCollider;          // Коллайдер для определения области крыши
+    public Tilemap floorTilemap;          // Tilemap с полом (по нему строится область)
+    public GameObject roofObject;         // Объект с крышей, который нужно скрывать
+
+    public float offset = -0.2f; // Отступ внутрь (отрицательный)
+
+    private PolygonCollider2D polygon;
+
     public void Start()
     {
-        //roofAreaCollider = GetComponent<BoxCollider2D>();
-
-        //// Центр коллайдера в мировых координатах
-        //Vector2 worldCenter = (Vector2)transform.position;
-
-        //// Границы коллайдера (левая нижняя и правая верхняя точки)
-        //Vector2 worldMin = worldCenter - (Vector2)FloorTilemap.size * 0.5f;
-        //Vector2 worldMax = worldCenter + (Vector2)FloorTilemap.size * 0.5f;
-
-        //// Переводим в клеточные координаты тайлмапа
-        //Vector3Int cellMin = WallsTilemap.WorldToCell(worldMin);
-        //Vector3Int cellMax = WallsTilemap.WorldToCell(worldMax);
-
-        //// Считаем размер области (не забываем +1, чтобы включить край)
-        //Vector3Int areaSize = cellMax - cellMin + Vector3Int.one;
-
-        // Назначаем область
-        //roofArea = new BoundsInt(cellMin, areaSize);
-        //roofAreaCollider.size = new Vector2(FloorTilemap.size.x, FloorTilemap.size.y);
-        roofAreaCollider = GetComponent<BoxCollider2D>();
-        roofAreaCollider.isTrigger = true;
-
-        // Получим реальные занятые клетки
-        BoundsInt bounds = floorTilemap.cellBounds;
-
-        Vector3Int minPos = new Vector3Int(int.MaxValue, int.MaxValue, 0);
-        Vector3Int maxPos = new Vector3Int(int.MinValue, int.MinValue, 0);
-
-        foreach (Vector3Int pos in bounds.allPositionsWithin)
-        {
-            if (floorTilemap.HasTile(pos))
-            {
-                minPos = Vector3Int.Min(minPos, pos);
-                maxPos = Vector3Int.Max(maxPos, pos);
-            }
-        }
-
-        if (minPos.x > maxPos.x || minPos.y > maxPos.y)
-        {
-            Debug.LogWarning("Не найдено ни одного тайла в tilemap");
-            return;
-        }
-
-        // Добавим +1 к maxPos, так как max не включается в размеры
-        maxPos += Vector3Int.one;
-
-        Vector3 worldMin = floorTilemap.CellToWorld(minPos);
-        Vector3 worldMax = floorTilemap.CellToWorld(maxPos);
-        Vector3 center = (worldMin + worldMax) / 2f;
-        Vector3 size = worldMax - worldMin;
-
-        // Уменьшим размер для безопасной зоны
-        size -= new Vector3(0.4f, 0.4f);
-
-        roofAreaCollider.offset = floorTilemap.transform.InverseTransformPoint(center) - transform.localPosition;
-        roofAreaCollider.size = size;
-
-        savedTiles = WallsTilemap.GetTilesBlock(WallsTilemap.cellBounds);
+        polygon = GetComponent<PolygonCollider2D>();
+        GenerateOutlineColliderWithOffset();
     }
-
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && roofObject != null)
         {
-            ClearRoofArea(); // Скрываем плитки крыши
+            roofObject.SetActive(false);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && roofObject != null)
         {
-            RestoreRoofArea(); // Возвращаем плитки
+            roofObject.SetActive(true);
         }
     }
 
-    private void ClearRoofArea()
+    void GenerateOutlineColliderWithOffset()
     {
-        TileBase[] emptyTiles = new TileBase[savedTiles.Length];
-        WallsTilemap.SetTilesBlock(WallsTilemap.cellBounds, emptyTiles);
-    }
+        if (floorTilemap == null)
+        {
+            Debug.LogError("Tilemap не назначен");
+            return;
+        }
 
-    private void RestoreRoofArea()
+        List<Vector2> outline = new();
+        var bounds = floorTilemap.cellBounds;
+        Vector2 tileSize = floorTilemap.cellSize;
+
+        HashSet<(Vector2, Vector2)> edges = new();
+
+        for (int x = bounds.xMin; x < bounds.xMax; x++)
+        {
+            for (int y = bounds.yMin; y < bounds.yMax; y++)
+            {
+                Vector3Int pos = new Vector3Int(x, y, 0);
+                if (!floorTilemap.HasTile(pos)) continue;
+
+                Vector3 tileWorldPos = floorTilemap.CellToWorld(pos);
+                Vector2 center = (Vector2)tileWorldPos + tileSize / 2;
+                float w = tileSize.x / 2;
+                float h = tileSize.y / 2;
+
+                Vector2 topLeft = new Vector2(center.x - w, center.y + h);
+                Vector2 topRight = new Vector2(center.x + w, center.y + h);
+                Vector2 bottomLeft = new Vector2(center.x - w, center.y - h);
+                Vector2 bottomRight = new Vector2(center.x + w, center.y - h);
+                AddEdge(edges, topLeft, topRight);     // верх
+                AddEdge(edges, topRight, bottomRight); // право
+                AddEdge(edges, bottomRight, bottomLeft); // низ
+                AddEdge(edges, bottomLeft, topLeft);   // лево
+            }
+        }
+
+        // Преобразуем края в цепочку точек (outline)
+        outline = TraceOutline(edges);
+
+        // Смещаем точки наружу
+        List<Vector2> offsetOutline = OffsetOutline(outline, offset);
+
+        polygon.pathCount = 1;
+        polygon.SetPath(0, offsetOutline.Select(p => (Vector2)transform.InverseTransformPoint(p)).ToArray());
+
+        Debug.Log("Контур с отступом сгенерирован");
+    }
+    void AddEdge(HashSet<(Vector2, Vector2)> edges, Vector2 a, Vector2 b)
     {
-        WallsTilemap.SetTilesBlock(WallsTilemap.cellBounds, savedTiles);
+        var edge = (a, b);
+        var reverseEdge = (b, a);
+
+        if (edges.Contains(reverseEdge))
+            edges.Remove(reverseEdge);
+        else
+            edges.Add(edge);
+    }
+    List<Vector2> TraceOutline(HashSet<(Vector2, Vector2)> edges)
+    {
+        if (edges.Count == 0) return new List<Vector2>();
+
+        var outline = new List<Vector2>();
+        var edgeList = new List<(Vector2, Vector2)>(edges);
+
+        // Начнем с первой точки
+        var currentEdge = edgeList[0];
+        outline.Add(currentEdge.Item1);
+        outline.Add(currentEdge.Item2);
+
+        edgeList.RemoveAt(0);
+
+        Vector2 currentPoint = currentEdge.Item2;
+
+        while (edgeList.Count > 0)
+        {
+            var nextEdgeIndex = edgeList.FindIndex(e => e.Item1 == currentPoint);
+            if (nextEdgeIndex == -1)
+            {
+                // Может быть, ребро задано в обратном порядке
+                nextEdgeIndex = edgeList.FindIndex(e => e.Item2 == currentPoint);
+                if (nextEdgeIndex == -1) break; // не замкнутый контур
+                var reversed = (edgeList[nextEdgeIndex].Item2, edgeList[nextEdgeIndex].Item1);
+                outline.Add(reversed.Item2);
+                currentPoint = reversed.Item2;
+            }
+            else
+            {
+                var nextEdge = edgeList[nextEdgeIndex];
+                outline.Add(nextEdge.Item2);
+                currentPoint = nextEdge.Item2;
+            }
+
+            edgeList.RemoveAt(nextEdgeIndex);
+        }
+
+        return outline;
+    }
+    List<Vector2> OffsetOutline(List<Vector2> original, float offsetAmount)
+    {
+        List<Vector2> offsetPoints = new();
+        int count = original.Count;
+
+        for (int i = 0; i < count; i++)
+        {
+            Vector2 prev = original[(i - 1 + count) % count];
+            Vector2 curr = original[i];
+            Vector2 next = original[(i + 1) % count];
+
+            Vector2 dir1 = (curr - prev).normalized;
+            Vector2 dir2 = (next - curr).normalized;
+
+            Vector2 normal1 = new Vector2(-dir1.y, dir1.x);
+            Vector2 normal2 = new Vector2(-dir2.y, dir2.x);
+
+            Vector2 offsetDir = (normal1 + normal2).normalized;
+            offsetPoints.Add(curr + offsetDir * offsetAmount);
+        }
+
+        return offsetPoints;
     }
 }
 [CustomEditor(typeof(RoofAreaHider))]
