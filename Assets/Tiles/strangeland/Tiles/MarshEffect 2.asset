@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: MarshEffect 2
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 6771889860205596952, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: -2785420668921314424, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: -8775487051708947315, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: -3200686519407332482, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: 1403636438765073394, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: -6425043989949707281, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: 7386862679424673145, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: -6548420388172204623, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: -1539050033691821523, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  - {fileID: 3732545715248326630, guid: 9b956949144cea046876bd22aded1bd4, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 14
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
