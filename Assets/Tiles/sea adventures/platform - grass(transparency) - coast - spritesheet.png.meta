@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: be01fd3aafa87ac44ada974ca05282d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7477103554155402406
+    second: platform - grass(transparency) - coast - spritesheet_0
+  - first:
+      213: -2594898707828240571
+    second: platform - grass(transparency) - coast - spritesheet_1
+  - first:
+      213: -4135677631145800971
+    second: platform - grass(transparency) - coast - spritesheet_2
+  - first:
+      213: 2288032474852588896
+    second: platform - grass(transparency) - coast - spritesheet_3
+  - first:
+      213: -3276013393285070495
+    second: platform - grass(transparency) - coast - spritesheet_4
+  - first:
+      213: 6310256832149372621
+    second: platform - grass(transparency) - coast - spritesheet_5
+  - first:
+      213: 3734139916946751098
+    second: platform - grass(transparency) - coast - spritesheet_6
+  - first:
+      213: -9057573932614827333
+    second: platform - grass(transparency) - coast - spritesheet_7
+  - first:
+      213: 7124720278112252170
+    second: platform - grass(transparency) - coast - spritesheet_8
+  - first:
+      213: -1063214431790083245
+    second: platform - grass(transparency) - coast - spritesheet_9
+  - first:
+      213: 679084052318241127
+    second: platform - grass(transparency) - coast - spritesheet_10
+  - first:
+      213: -4096388507298778361
+    second: platform - grass(transparency) - coast - spritesheet_11
+  - first:
+      213: -8187273798157209633
+    second: platform - grass(transparency) - coast - spritesheet_12
+  - first:
+      213: -5556956023873171809
+    second: platform - grass(transparency) - coast - spritesheet_13
+  - first:
+      213: 7812754901635323297
+    second: platform - grass(transparency) - coast - spritesheet_14
+  - first:
+      213: -2303246823724294433
+    second: platform - grass(transparency) - coast - spritesheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 739
+        width: 673
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ba1c1deedfb3890800000000000000
+      internalID: -7477103554155402406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 637
+        width: 513
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f07c3af511dfbd0800000000000000
+      internalID: -2594898707828240571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 664
+        width: 514
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fa86023b1f1b96c0800000000000000
+      internalID: -4135677631145800971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 504
+        width: 514
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d7522d969b0cf10800000000000000
+      internalID: 2288032474852588896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 581
+        width: 513
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16142d50d234982d0800000000000000
+      internalID: -3276013393285070495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 513
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcebeb9d729829750800000000000000
+      internalID: 6310256832149372621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 454
+        width: 1019
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7eb73b587452d330800000000000000
+      internalID: 3734139916946751098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 444
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2c7a35f780d4280800000000000000
+      internalID: -9057573932614827333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 513
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0137e4385710e260800000000000000
+      internalID: 7124720278112252170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 420
+        width: 514
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35355118b14be31f0800000000000000
+      internalID: -1063214431790083245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 389
+        width: 514
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761cf0ff8579c6900800000000000000
+      internalID: 679084052318241127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 350
+        width: 514
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703b6703b54b627c0800000000000000
+      internalID: -4096388507298778361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 322
+        width: 514
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfe9fdcbd5f06e80800000000000000
+      internalID: -8187273798157209633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 248
+        width: 514
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e829430f9b1e2b0800000000000000
+      internalID: -5556956023873171809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 513
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a55a25703b7c6c60800000000000000
+      internalID: 7812754901635323297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform - grass(transparency) - coast - spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 513
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdeddd987393900e0800000000000000
+      internalID: -2303246823724294433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
