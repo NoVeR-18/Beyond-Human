@@ -12,6 +12,7 @@ public class HouseFader : MonoBehaviour
 
     public Tilemap roofTilemap; // Крыша
     public Tilemap floorTilemap; // Пол
+    public Tilemap wallTilemap; // Пол
     [SerializeField]
     private List<SpriteRenderer> spriteRenderers = new();
     [SerializeField]
@@ -107,7 +108,7 @@ public class HouseFader : MonoBehaviour
 
     void GenerateOffsetTilesCollider()
     {
-        if (floorTilemap == null || roofTilemap == null)
+        if (floorTilemap == null || roofTilemap == null || wallTilemap == null)
         {
             Debug.LogError("Один из Tilemap не назначен");
             return;
@@ -127,7 +128,7 @@ public class HouseFader : MonoBehaviour
                 Vector3Int floorPos = new Vector3Int(x, y, 0);
 
                 // Проверяем, есть ли плитка в roofTilemap, но нет плитки в floorTilemap
-                if (roofTilemap.HasTile(roofPos) && !floorTilemap.HasTile(floorPos))
+                if (roofTilemap.HasTile(roofPos) && !floorTilemap.HasTile(floorPos) && !wallTilemap.HasTile(floorPos))
                 {
                     // Получаем мировую позицию плитки в roofTilemap
                     Vector3 roofWorldPos = roofTilemap.CellToWorld(roofPos);
