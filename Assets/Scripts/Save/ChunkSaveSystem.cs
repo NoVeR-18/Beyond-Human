@@ -9,27 +9,253 @@ public class ChunkSaveSystem : MonoBehaviour
     public int chunkSize = 64;
     public string saveFolder = "Chunks";
 
+    private HashSet<Vector2Int> loadedChunks = new();
     private Dictionary<string, TilePaletteData> paletteLookup = new();
+    [SerializeField]
+    private List<TilePaletteData> palettes = new();
 
     private void LoadPalettesFromResources()
     {
-        TilePaletteData[] palettes = Resources.LoadAll<TilePaletteData>("");
-        foreach (var palette in palettes)
+        if (palettes == null)
         {
-            paletteLookup[palette.paletteName] = palette;
+            paletteLookup.Clear();
+            TilePaletteData[] palettes = Resources.LoadAll<TilePaletteData>("TilePalettes");
+            foreach (var palette in palettes)
+            {
+                paletteLookup[palette.paletteName] = palette;
+            }
         }
-    }
+        else
+        {
+            foreach (var palette in palettes)
+            {
+                if (!paletteLookup.ContainsKey(palette.paletteName))
+                {
+                    paletteLookup[palette.paletteName] = palette;
+                }
+            }
+        }
 
-    public void SaveAllChunks()
+
+    }
+    public void SaveChunkAt(Vector2Int chunkCoord)
     {
         LoadPalettesFromResources();
         var tilemaps = gridHierarchy.GetNamedTilemaps();
 
-        Dictionary<Vector2Int, ChunkData> allChunks = new();
+        List<ChunkData> tiles = new();
 
         foreach (var kvp in tilemaps)
         {
             string layerName = kvp.Key;
+            Tilemap map = kvp.Value;
+            Vector3Int offset = Vector3Int.zero;
+            if (gridHierarchy.tilemapOffsets.TryGetValue(layerName, out var foundOffset))
+            {
+                offset = foundOffset;
+            }
+
+            BoundsInt bounds = map.cellBounds;
+
+            for (int x = bounds.xMin; x < bounds.xMax; x++)
+            {
+                for (int y = bounds.yMin; y < bounds.yMax; y++)
+                {
+                    int cx = Mathf.FloorToInt((float)(x + offset.x) / chunkSize);
+                    int cy = Mathf.FloorToInt((float)(y + offset.y) / chunkSize);
+                    if (cx != chunkCoord.x || cy != chunkCoord.y) continue;
+
+                    Vector3Int pos = new(x, y, 0);
+                    TileBase tile = map.GetTile(pos);
+                    if (tile == null) continue;
+
+                    foreach (var palette in paletteLookup.Values)
+                    {
+                        int index = palette.tiles.IndexOf(tile);
+                        if (index >= 0)
+                        {
+                            tiles.Add(new ChunkData
+                            {
+                                position = pos + offset,
+                                paletteName = palette.paletteName,
+                                tileIndexInPalette = index,
+                                layerName = layerName
+                            });
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        string path = Path.Combine(saveFolder, $"chunk_{chunkCoord.x}_{chunkCoord.y}.dat");
+        Debug.Log($"Save chunk {chunkCoord}");
+        Directory.CreateDirectory(saveFolder);
+        using (BinaryWriter writer = new(File.Open(path, FileMode.Create)))
+        {
+            writer.Write(tiles.Count);
+            foreach (var tile in tiles)
+            {
+                writer.Write(tile.position.x);
+                writer.Write(tile.position.y);
+                writer.Write(tile.layerName);
+                writer.Write(tile.paletteName);
+                writer.Write(tile.tileIndexInPalette);
+            }
+        }
+    }
+
+    public void LoadChunk(Vector2Int chunkPos)
+    {
+        LoadPalettesFromResources();
+        var tilemaps = gridHierarchy.GetNamedTilemaps();
+
+        string path = Path.Combine(saveFolder, $"chunk_{chunkPos.x}_{chunkPos.y}.dat");
+        if (!File.Exists(path))
+        {
+            Debug.LogWarning($"Chunk not found: {chunkPos}");
+            return;
+        }
+
+        List<ChunkData> tiles = new();
+
+        using (BinaryReader reader = new(File.Open(path, FileMode.Open)))
+        {
+            int count = reader.ReadInt32();
+            Debug.Log($"Load chunk {chunkPos}");
+
+            for (int i = 0; i < count; i++)
+            {
+                int x = reader.ReadInt32();
+                int y = reader.ReadInt32();
+                string layerName = reader.ReadString();
+                string paletteName = reader.ReadString();
+                int tileIndex = reader.ReadInt32();
+
+                tiles.Add(new ChunkData
+                {
+                    position = new Vector3Int(x, y, 0),
+                    layerName = layerName,
+                    paletteName = paletteName,
+                    tileIndexInPalette = tileIndex
+                });
+            }
+        }
+
+        foreach (var tile in tiles)
+        {
+            if (!tilemaps.ContainsKey(tile.layerName)) continue;
+            if (!paletteLookup.ContainsKey(tile.paletteName)) continue;
+
+            Tilemap map = tilemaps[tile.layerName];
+            Vector3Int offset = Vector3Int.zero;
+            if (gridHierarchy.tilemapOffsets.TryGetValue(tile.layerName, out var foundOffset))
+            {
+                offset = foundOffset;
+            }
+
+            TileBase tileAsset = paletteLookup[tile.paletteName].tiles[tile.tileIndexInPalette];
+            map.SetTile(tile.position - offset, tileAsset);
+        }
+
+        loadedChunks.Add(chunkPos);
+    }
+
+    public void LoadChunksAround(Vector2 worldPos, int radius)
+    {
+        Vector2Int centerChunk = WorldToChunk(worldPos);
+
+        for (int x = -radius; x <= radius; x++)
+        {
+            for (int y = -radius; y <= radius; y++)
+            {
+                Vector2Int pos = new(centerChunk.x + x, centerChunk.y + y);
+                if (!loadedChunks.Contains(pos))
+                {
+                    LoadChunk(pos);
+
+                    // ѕроверка Ч был ли загружен файл
+                    string path = Path.Combine(saveFolder, $"chunk_{pos.x}_{pos.y}.dat");
+                    if (!File.Exists(path))
+                    {
+                        Debug.LogWarning($"File of chunk not found: {path}");
+                    }
+                    else
+                    {
+                        Debug.Log($"Chunk load: {pos}");
+                    }
+                }
+            }
+        }
+    }
+
+
+    public void UnloadChunksOutside(Vector2 worldPos, int radius)
+    {
+        Vector2Int center = WorldToChunk(worldPos);
+        var toRemove = new List<Vector2Int>();
+        foreach (var chunk in loadedChunks)
+        {
+            if (Mathf.Abs(chunk.x - center.x) > radius || Mathf.Abs(chunk.y - center.y) > radius)
+            {
+                toRemove.Add(chunk);
+            }
+        }
+
+        foreach (var chunk in toRemove)
+        {
+            loadedChunks.Remove(chunk);
+            ClearChunk(chunk);
+        }
+    }
+
+    public void ClearChunk(Vector2Int chunk)
+    {
+        var tilemaps = gridHierarchy.GetNamedTilemaps();
+
+        foreach (var kvp in tilemaps)
+        {
+            string layerName = kvp.Key;
+            Tilemap map = kvp.Value;
+
+            Vector3Int offset = Vector3Int.zero;
+            if (gridHierarchy.tilemapOffsets.TryGetValue(layerName, out var foundOffset))
+            {
+                offset = foundOffset;
+            }
+
+            // —читаем границы чанка с учЄтом оффсета
+            int startX = chunk.x * chunkSize - offset.x;
+            int startY = chunk.y * chunkSize - offset.y;
+
+            BoundsInt bounds = new(startX, startY, 0, chunkSize, chunkSize, 1);
+
+            for (int x = bounds.xMin; x < bounds.xMax; x++)
+            {
+                for (int y = bounds.yMin; y < bounds.yMax; y++)
+                {
+                    map.SetTile(new Vector3Int(x, y, 0), null);
+                }
+            }
+        }
+    }
+
+
+    private Vector2Int WorldToChunk(Vector2 pos)
+    {
+        Vector3Int tile = gridHierarchy.ground.WorldToCell(pos);
+        int cx = Mathf.FloorToInt((float)tile.x / chunkSize);
+        int cy = Mathf.FloorToInt((float)tile.y / chunkSize);
+        return new Vector2Int(cx, cy);
+    }
+    public void SaveAllChunks()
+    {
+        LoadPalettesFromResources();
+        var tilemaps = gridHierarchy.GetNamedTilemaps();
+        HashSet<Vector2Int> foundChunks = new();
+
+        foreach (var kvp in tilemaps)
+        {
             Tilemap map = kvp.Value;
             BoundsInt bounds = map.cellBounds;
 
@@ -41,65 +267,33 @@ public class ChunkSaveSystem : MonoBehaviour
                     TileBase tile = map.GetTile(pos);
                     if (tile == null) continue;
 
-                    string paletteName = null;
-                    int tileIndex = -1;
-
-                    foreach (var palette in paletteLookup.Values)
+                    Vector2Int chunk = new(x / chunkSize, y / chunkSize);
+                    if (!foundChunks.Contains(chunk))
                     {
-                        int index = palette.tiles.IndexOf(tile);
-                        if (index >= 0)
-                        {
-                            paletteName = palette.paletteName;
-                            tileIndex = index;
-                            break;
-                        }
+                        foundChunks.Add(chunk);
+                        SaveChunkAt(chunk);
                     }
-
-                    if (paletteName == null) continue;
-
-                    Vector2Int chunkPos = new(x / chunkSize, y / chunkSize);
-                    if (!allChunks.ContainsKey(chunkPos))
-                        allChunks[chunkPos] = new ChunkData { chunkPosition = chunkPos };
-
-                    allChunks[chunkPos].tiles.Add(new ChunkTile
-                    {
-                        position = pos,
-                        paletteName = paletteName,
-                        tileIndexInPalette = tileIndex,
-                        layerName = layerName
-                    });
                 }
             }
         }
-
-        if (!Directory.Exists(saveFolder)) Directory.CreateDirectory(saveFolder);
-
-        foreach (var chunk in allChunks)
-        {
-            string path = Path.Combine(saveFolder, $"chunk_{chunk.Key.x}_{chunk.Key.y}.json");
-            File.WriteAllText(path, JsonUtility.ToJson(chunk.Value));
-        }
     }
-
-    public void LoadChunk(Vector2Int chunkPos)
+    public void LoadAllChunks()
     {
-        LoadPalettesFromResources();
-        var tilemaps = gridHierarchy.GetNamedTilemaps();
+        if (!Directory.Exists(saveFolder)) return;
 
-        string path = Path.Combine(saveFolder, $"chunk_{chunkPos.x}_{chunkPos.y}.json");
-        if (!File.Exists(path)) return;
+        string[] files = Directory.GetFiles(saveFolder, "chunk_*.dat");
 
-        ChunkData chunk = JsonUtility.FromJson<ChunkData>(File.ReadAllText(path));
-
-        foreach (var chunkTile in chunk.tiles)
+        foreach (string file in files)
         {
-            if (!tilemaps.ContainsKey(chunkTile.layerName)) continue;
-            if (!paletteLookup.ContainsKey(chunkTile.paletteName)) continue;
-
-            Tilemap map = tilemaps[chunkTile.layerName];
-            TileBase tile = paletteLookup[chunkTile.paletteName].tiles[chunkTile.tileIndexInPalette];
-
-            map.SetTile(chunkTile.position, tile);
+            string fileName = Path.GetFileNameWithoutExtension(file);
+            string[] parts = fileName.Split('_');
+            if (parts.Length == 3 &&
+                int.TryParse(parts[1], out int x) &&
+                int.TryParse(parts[2], out int y))
+            {
+                Vector2Int chunkCoord = new Vector2Int(x, y);
+                LoadChunk(chunkCoord);
+            }
         }
     }
 }

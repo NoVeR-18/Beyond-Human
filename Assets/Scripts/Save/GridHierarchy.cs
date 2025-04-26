@@ -11,9 +11,11 @@ public class GridHierarchy : MonoBehaviour
     public Tilemap walls;
     public Tilemap decor;
 
+    public Transform housesRoot;
 
     public List<HouseData> houses = new();
-
+    private Dictionary<string, Tilemap> namedTilemaps;
+    public Dictionary<string, Vector3Int> tilemapOffsets = new();
     public List<Tilemap> GetAllTilemaps()
     {
         var list = new List<Tilemap> { cliffs, background, ground, backDecor, walls, decor };
@@ -26,9 +28,13 @@ public class GridHierarchy : MonoBehaviour
         }
         return list;
     }
+
+
     public Dictionary<string, Tilemap> GetNamedTilemaps()
     {
-        var dict = new Dictionary<string, Tilemap>
+        if (namedTilemaps != null) return namedTilemaps;
+
+        namedTilemaps = new Dictionary<string, Tilemap>()
         {
             { "cliffs", cliffs },
             { "background", background },
@@ -37,25 +43,41 @@ public class GridHierarchy : MonoBehaviour
             { "walls", walls },
             { "decor", decor }
         };
-
-        foreach (var house in houses)
+        // Подключаем все дома автоматически
+        if (housesRoot != null)
         {
-            dict[$"{house.houseName}_roof"] = house.roof;
-            dict[$"{house.houseName}_walls"] = house.walls;
-            dict[$"{house.houseName}_floor"] = house.floor;
-            dict[$"{house.houseName}_furniture"] = house.furniture;
+            foreach (Transform house in housesRoot)
+            {
+                var houseData = house.GetComponent<HouseData>();
+                houseData.houseName = house.name;
+                if (houseData != null)
+                {
+                    AddTilemapIfExists(houseData.floor, $"House_{houseData.houseName}_Floor");
+                    AddTilemapIfExists(houseData.walls, $"House_{houseData.houseName}_Walls");
+                    AddTilemapIfExists(houseData.roof, $"House_{houseData.houseName}_Roof");
+                    AddTilemapIfExists(houseData.furniture, $"House_{houseData.houseName}_Furniture");
+                }
+            }
         }
 
-        return dict;
+        return namedTilemaps;
     }
-}
-[System.Serializable]
-public class HouseData : MonoBehaviour
-{
-    public string houseName;
-    public GameObject houseObject;
-    public Tilemap roof;
-    public Tilemap walls;
-    public Tilemap floor;
-    public Tilemap furniture;
+
+
+    private void AddTilemapIfExists(Tilemap tilemap, string name)
+    {
+        if (tilemap != null)
+        {
+            namedTilemaps[name] = tilemap;
+            if (tilemap.transform.parent != null && tilemap.transform.parent.parent == housesRoot)
+            {
+                Vector3Int offset = tilemap.WorldToCell(tilemap.transform.parent.position);
+                tilemapOffsets[name] = offset;
+            }
+            else
+            {
+                tilemapOffsets[name] = Vector3Int.zero;
+            }
+        }
+    }
 }
