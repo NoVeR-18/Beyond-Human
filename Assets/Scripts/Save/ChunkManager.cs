@@ -24,17 +24,28 @@ public class ChunkManager : MonoBehaviour
     }
     private void OnTileChanged(Tilemap tilemap, Tilemap.SyncTile[] changes)
     {
-        if (tilemap == null)
+        if (tilemap == null || changes == null || changes.Length == 0)
             return;
 
+        HashSet<Vector2Int> changedChunks = new HashSet<Vector2Int>();
 
         foreach (var change in changes)
         {
             Vector3Int cellPosition = change.position;
-            Vector2Int chunkCoord = new(cellPosition.x / chunkSaveSystem.chunkSize, cellPosition.y / chunkSaveSystem.chunkSize);
-            dirtyChunks.Add(chunkCoord);
-            chunkPoss = dirtyChunks.ToList();
+            Vector2Int chunkCoord = new(
+                Mathf.FloorToInt((float)cellPosition.x / chunkSaveSystem.chunkSize),
+                Mathf.FloorToInt((float)cellPosition.y / chunkSaveSystem.chunkSize)
+            );
+
+            changedChunks.Add(chunkCoord);
         }
+
+        foreach (var chunk in changedChunks)
+        {
+            dirtyChunks.Add(chunk);
+        }
+
+        chunkPoss = dirtyChunks.ToList();
     }
 
 
@@ -45,14 +56,18 @@ public class ChunkManager : MonoBehaviour
         {
             chunkSaveSystem.SaveChunkAt(chunkPos);
         }
+        dirtyChunks.Clear();
+        chunkPoss.Clear();
     }
-    [ContextMenu("Remove Selected Chunks")]
-    public void RemoveChunk()
+    [ContextMenu("Clear Selected Chunks")]
+    public void ClearChunk()
     {
         foreach (var chunkPos in chunkPoss)
         {
             chunkSaveSystem.ClearChunk(chunkPos);
         }
+        dirtyChunks.Clear();
+        chunkPoss.Clear();
     }
 
     [ContextMenu("Save All Chunks")]
@@ -68,26 +83,12 @@ public class ChunkManager : MonoBehaviour
         {
             chunkSaveSystem.LoadChunk(chunkPos);
         }
-    }
-
-    [ContextMenu("Save Dirty Chunks")]
-    public void SaveDirtyChunks()
-    {
-        if (dirtyChunks.Count == 0)
-        {
-            Debug.Log("Нет изменённых чанков для сохранения.");
-            return;
-        }
-
-        foreach (var chunkCoord in dirtyChunks)
-        {
-            chunkSaveSystem.SaveChunkAt(chunkCoord);
-        }
 
         dirtyChunks.Clear();
         chunkPoss.Clear();
-        Debug.Log("Все изменённые чанки успешно сохранены!");
     }
+
+
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {

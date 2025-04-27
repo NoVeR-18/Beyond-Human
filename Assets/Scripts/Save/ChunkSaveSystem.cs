@@ -61,8 +61,13 @@ public class ChunkSaveSystem : MonoBehaviour
             {
                 for (int y = bounds.yMin; y < bounds.yMax; y++)
                 {
-                    int cx = Mathf.FloorToInt((float)(x + offset.x) / chunkSize);
-                    int cy = Mathf.FloorToInt((float)(y + offset.y) / chunkSize);
+                    // —читаем мировые координаты тайла
+                    int worldX = x + offset.x;
+                    int worldY = y + offset.y;
+
+                    int cx = Mathf.FloorToInt((float)worldX / chunkSize);
+                    int cy = Mathf.FloorToInt((float)worldY / chunkSize);
+
                     if (cx != chunkCoord.x || cy != chunkCoord.y) continue;
 
                     Vector3Int pos = new(x, y, 0);
@@ -76,7 +81,7 @@ public class ChunkSaveSystem : MonoBehaviour
                         {
                             tiles.Add(new ChunkData
                             {
-                                position = pos + offset,
+                                position = new Vector3Int(worldX, worldY, 0),
                                 paletteName = palette.paletteName,
                                 tileIndexInPalette = index,
                                 layerName = layerName
@@ -104,6 +109,7 @@ public class ChunkSaveSystem : MonoBehaviour
             }
         }
     }
+
 
     public void LoadChunk(Vector2Int chunkPos)
     {
@@ -141,7 +147,13 @@ public class ChunkSaveSystem : MonoBehaviour
                 });
             }
         }
-
+#if UNITY_EDITOR
+        // --- Undo до начала изменений
+        foreach (var map in tilemaps.Values)
+        {
+            UnityEditor.Undo.RegisterCompleteObjectUndo(map, "Load Chunk");
+        }
+#endif
         foreach (var tile in tiles)
         {
             if (!tilemaps.ContainsKey(tile.layerName)) continue;
@@ -217,7 +229,7 @@ public class ChunkSaveSystem : MonoBehaviour
         {
             string layerName = kvp.Key;
             Tilemap map = kvp.Value;
-
+            UnityEditor.Undo.RegisterCompleteObjectUndo(map, "Clear Chunk");
             Vector3Int offset = Vector3Int.zero;
             if (gridHierarchy.tilemapOffsets.TryGetValue(layerName, out var foundOffset))
             {

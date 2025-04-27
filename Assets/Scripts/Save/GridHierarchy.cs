@@ -32,7 +32,7 @@ public class GridHierarchy : MonoBehaviour
 
     public Dictionary<string, Tilemap> GetNamedTilemaps()
     {
-        if (namedTilemaps != null) return namedTilemaps;
+        //if (namedTilemaps != null) return namedTilemaps;
 
         namedTilemaps = new Dictionary<string, Tilemap>()
         {
@@ -71,7 +71,8 @@ public class GridHierarchy : MonoBehaviour
             namedTilemaps[name] = tilemap;
             if (tilemap.transform.parent != null && tilemap.transform.parent.parent == housesRoot)
             {
-                Vector3Int offset = tilemap.WorldToCell(tilemap.transform.parent.position);
+                var poss = tilemap.transform.parent.position;
+                Vector3Int offset = new Vector3Int((int)poss.x, (int)poss.y, (int)poss.z);
                 tilemapOffsets[name] = offset;
             }
             else

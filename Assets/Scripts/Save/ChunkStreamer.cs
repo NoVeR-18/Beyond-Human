@@ -11,7 +11,7 @@ public class ChunkStreamer : MonoBehaviour
         Vector2Int lastChunkPos = WorldToChunk(transform.position);
         chunkSystem.LoadChunksAround(transform.position, radius);
     }
-    void FixedUpdate()
+    void LateUpdate()
     {
         Vector2Int currentChunk = WorldToChunk(transform.position);
 
