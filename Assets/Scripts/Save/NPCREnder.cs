@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(CapsuleCollider2D))]
-public class NPCREnder : MonoBehaviour, IDynamicObject
+public class NPCRender : MonoBehaviour, IDynamicObject
 {
     [SerializeField] private Renderer renderComponent;
     [SerializeField] private Animator animatorComponent;
