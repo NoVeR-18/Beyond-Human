@@ -149,12 +149,12 @@ TextureImporter:
       name: Blue Sword Idle_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 317
-        width: 28
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 315
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: Blue Sword Idle_1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 314
-        width: 17
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 252
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Blue Sword Idle_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 251
-        width: 28
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 189
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Blue Sword Idle_3
       rect:
         serializedVersion: 2
-        x: 30
-        y: 251
-        width: 17
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 126
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: Blue Sword Idle_4
       rect:
         serializedVersion: 2
-        x: 5
-        y: 188
-        width: 28
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 63
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: Blue Sword Idle_5
       rect:
         serializedVersion: 2
-        x: 30
-        y: 188
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,136 +271,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Blue Sword Idle_6
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 125
-        width: 31
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cb10958d7e5ecda90800000000000000
-      internalID: -7287697313062387268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue Sword Idle_7
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 125
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c25437fd7581acbc0800000000000000
-      internalID: -3762167773024533204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue Sword Idle_8
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 64
-        width: 31
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ed05d72f300592e0800000000000000
-      internalID: -2119787778356736542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue Sword Idle_9
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 62
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1daefb34372334540800000000000000
-      internalID: 4990888282695920337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue Sword Idle_10
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 32
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40fd85af1ce082bd0800000000000000
-      internalID: -2654855754043302140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue Sword Idle_11
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b127441fb8bcb47c0800000000000000
-      internalID: -4085948434999905765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c3f445dafc394a84cac87e97709b2fca
     internalID: 0
     vertices: []
     indices: 
@@ -410,16 +284,10 @@ TextureImporter:
     nameFileIdTable:
       Blue Sword Idle_0: -6772390430891098613
       Blue Sword Idle_1: -617570356601206188
-      Blue Sword Idle_10: -2654855754043302140
-      Blue Sword Idle_11: -4085948434999905765
       Blue Sword Idle_2: -7557847059092583510
       Blue Sword Idle_3: -8417840513716886495
       Blue Sword Idle_4: -3197017425459629236
       Blue Sword Idle_5: -2864319013435358238
-      Blue Sword Idle_6: -7287697313062387268
-      Blue Sword Idle_7: -3762167773024533204
-      Blue Sword Idle_8: -2119787778356736542
-      Blue Sword Idle_9: 4990888282695920337
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

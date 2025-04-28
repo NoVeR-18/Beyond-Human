@@ -149,12 +149,12 @@ TextureImporter:
       name: Green Sword Idle_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 317
-        width: 28
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 315
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: Green Sword Idle_1
       rect:
         serializedVersion: 2
-        x: 30
-        y: 314
-        width: 17
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 252
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Green Sword Idle_2
       rect:
         serializedVersion: 2
-        x: 5
-        y: 251
-        width: 28
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 189
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Green Sword Idle_3
       rect:
         serializedVersion: 2
-        x: 30
-        y: 251
-        width: 17
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 126
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: Green Sword Idle_4
       rect:
         serializedVersion: 2
-        x: 5
-        y: 188
-        width: 28
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 63
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: Green Sword Idle_5
       rect:
         serializedVersion: 2
-        x: 30
-        y: 188
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 93
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,136 +271,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Green Sword Idle_6
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 125
-        width: 31
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4250477e0a7857490800000000000000
-      internalID: -7749138458673412828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green Sword Idle_7
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 125
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fac4a77ce13bfc30800000000000000
-      internalID: 4394160753119382264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green Sword Idle_8
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 64
-        width: 31
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c12f0999ae9356270800000000000000
-      internalID: 8243058372733104668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green Sword Idle_9
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 62
-        width: 17
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 910aebbb3d34d5900800000000000000
-      internalID: 674770095842435097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green Sword Idle_10
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 32
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a296fba050ba77360800000000000000
-      internalID: 7167385370126936362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green Sword Idle_11
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 0
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 272db3c094c5d73c0800000000000000
-      internalID: -4360227395417157006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f059b142733558844a3958daf111c6d8
     internalID: 0
     vertices: []
     indices: 
@@ -410,16 +284,10 @@ TextureImporter:
     nameFileIdTable:
       Green Sword Idle_0: -6948148301037260782
       Green Sword Idle_1: 6455334351282155380
-      Green Sword Idle_10: 7167385370126936362
-      Green Sword Idle_11: -4360227395417157006
       Green Sword Idle_2: 8378545921044114187
       Green Sword Idle_3: -825755606274697065
       Green Sword Idle_4: 1001853749674450491
       Green Sword Idle_5: -3710872372185505836
-      Green Sword Idle_6: -7749138458673412828
-      Green Sword Idle_7: 4394160753119382264
-      Green Sword Idle_8: 8243058372733104668
-      Green Sword Idle_9: 674770095842435097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

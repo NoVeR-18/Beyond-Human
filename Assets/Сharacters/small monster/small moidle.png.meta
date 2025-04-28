@@ -137,9 +137,9 @@ TextureImporter:
         x: 0
         y: 195
         width: 20
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,9 +158,9 @@ TextureImporter:
         x: 0
         y: 156
         width: 20
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,10 +178,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 117
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 20
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,10 +199,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 78
-        width: 22
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 21
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,36 +215,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: small moidle_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 35
-        width: 22
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b59161249e502d40800000000000000
-      internalID: 5557545930483406258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: small moidle_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 20
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 39
+        width: 21
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,22 +236,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: small moidle_6
+      name: small moidle_7
       rect:
         serializedVersion: 2
-        x: 7
-        y: 22
-        width: 15
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 21
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eb93707bb93ba09c0800000000000000
-      internalID: -3960155440946923074
+      spriteID: 539d855afc420604e9a08d4d0b476587
+      internalID: 1726048424
       vertices: []
       indices: 
       edges: []
@@ -280,7 +259,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c2695219fdb24614c91b311236f666c5
     internalID: 0
     vertices: []
     indices: 
@@ -295,6 +274,8 @@ TextureImporter:
       small moidle_4: 5557545930483406258
       small moidle_5: 8451570905908477144
       small moidle_6: -3960155440946923074
+      small moidle_7: 1726048424
+      small moidle_8: 1000355844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

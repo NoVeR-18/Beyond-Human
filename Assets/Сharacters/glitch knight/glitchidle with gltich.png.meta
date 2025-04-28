@@ -161,12 +161,12 @@ TextureImporter:
       name: glitchidle with gltich_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: glitchidle with gltich_1
       rect:
         serializedVersion: 2
-        x: 259
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 195
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: glitchidle with gltich_2
       rect:
         serializedVersion: 2
-        x: 454
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 390
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: glitchidle with gltich_3
       rect:
         serializedVersion: 2
-        x: 649
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 585
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: glitchidle with gltich_4
       rect:
         serializedVersion: 2
-        x: 801
-        y: 14
-        width: 25
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 780
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: glitchidle with gltich_5
       rect:
         serializedVersion: 2
-        x: 844
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 975
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: glitchidle with gltich_6
       rect:
         serializedVersion: 2
-        x: 1039
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1170
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: glitchidle with gltich_7
       rect:
         serializedVersion: 2
-        x: 1234
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1365
+        y: 0
+        width: 195
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,178 +325,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_8
-      rect:
-        serializedVersion: 2
-        x: 1429
-        y: 46
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebe6c8778539e1e00800000000000000
-      internalID: 1017412574004407998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_9
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 14
-        width: 25
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 004606eb1f6cecc60800000000000000
-      internalID: 7840422742882018304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_10
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 14
-        width: 28
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2bf794d390e2e5c0800000000000000
-      internalID: -4187537777969595602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_11
-      rect:
-        serializedVersion: 2
-        x: 411
-        y: 14
-        width: 25
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8112a9c633335d3f0800000000000000
-      internalID: -876738256495304424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_12
-      rect:
-        serializedVersion: 2
-        x: 603
-        y: 14
-        width: 22
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df63573524aa03ef0800000000000000
-      internalID: -130417187348990211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_13
-      rect:
-        serializedVersion: 2
-        x: 996
-        y: 14
-        width: 25
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 092a6d2c1d60590f0800000000000000
-      internalID: -1110974235090181488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_14
-      rect:
-        serializedVersion: 2
-        x: 1191
-        y: 14
-        width: 25
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 75a597c9a1f6521c0800000000000000
-      internalID: -4529091690166134185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitchidle with gltich_15
-      rect:
-        serializedVersion: 2
-        x: 1386
-        y: 14
-        width: 25
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17deba3dbe19559e0800000000000000
-      internalID: -1633238847797334671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6926d29b14a4fab43a30e4d1eace8775
     internalID: 0
     vertices: []
     indices: 
@@ -506,20 +338,12 @@ TextureImporter:
     nameFileIdTable:
       glitchidle with gltich_0: -6787946802840590234
       glitchidle with gltich_1: -5332283957034036742
-      glitchidle with gltich_10: -4187537777969595602
-      glitchidle with gltich_11: -876738256495304424
-      glitchidle with gltich_12: -130417187348990211
-      glitchidle with gltich_13: -1110974235090181488
-      glitchidle with gltich_14: -4529091690166134185
-      glitchidle with gltich_15: -1633238847797334671
       glitchidle with gltich_2: 8168349374530391856
       glitchidle with gltich_3: -9038601990855385528
       glitchidle with gltich_4: 984835142078386783
       glitchidle with gltich_5: -2380775942979353128
       glitchidle with gltich_6: -5631655907257837206
       glitchidle with gltich_7: -6867350373157712888
-      glitchidle with gltich_8: 1017412574004407998
-      glitchidle with gltich_9: 7840422742882018304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

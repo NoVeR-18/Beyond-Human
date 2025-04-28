@@ -137,12 +137,12 @@ TextureImporter:
       name: fly_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 19
-        width: 37
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 12
+        y: 39
+        width: 27
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,12 +158,12 @@ TextureImporter:
       name: fly_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 18
-        width: 34
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 58
+        y: 38
+        width: 23
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,36 +176,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fly_2
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 17
-        width: 35
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6c7a75837a76cf7f0800000000000000
-      internalID: -577472684307798074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: fly_3
       rect:
         serializedVersion: 2
-        x: 139
-        y: 20
-        width: 37
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 104
+        y: 37
+        width: 20
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,36 +197,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fly_4
-      rect:
-        serializedVersion: 2
-        x: 183
-        y: 21
-        width: 37
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f9a5b7f44c9cc860800000000000000
-      internalID: 7551582495221066229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: fly_6
       rect:
         serializedVersion: 2
-        x: 227
-        y: 20
-        width: 37
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 191
+        y: 29
+        width: 21
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,22 +218,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fly_7
+      name: fly_5
       rect:
         serializedVersion: 2
-        x: 271
-        y: 20
-        width: 37
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 151
+        y: 30
+        width: 14
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a80ef9f3b79ea5ff0800000000000000
-      internalID: -46468130576277366
+      spriteID: c598ec282a8b5ef408e8008742d238cd
+      internalID: 7052353571005762725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_8
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 40
+        width: 29
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f3e780bb6ad614f8f273d067979280
+      internalID: -1618102436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly_9
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 40
+        width: 29
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40a193c4777cd94799cb4eb45f108c4
+      internalID: -1525642852
       vertices: []
       indices: 
       edges: []
@@ -293,12 +293,21 @@ TextureImporter:
     nameFileIdTable:
       fly_0: 5352286359449648278
       fly_1: 6843129032921346866
+      fly_10: -2126874959
+      fly_11: -1020000462
+      fly_12: -304012266
+      fly_13: -345228555
+      fly_14: -747380578
+      fly_15: 2142140116
+      fly_16: -12427805
       fly_2: -577472684307798074
       fly_3: -7030490577846672973
       fly_4: 7551582495221066229
       fly_5: 7052353571005762725
       fly_6: 5571602402917622367
       fly_7: -46468130576277366
+      fly_8: -1618102436
+      fly_9: -1525642852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

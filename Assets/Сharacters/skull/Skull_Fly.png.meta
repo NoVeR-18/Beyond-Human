@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: e0010b3fe92b8d442b8dde22f4e6ddcd
+guid: c8b6522e29d0f22479516753eee363b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1899660215422612224
-    second: idle - Copy_0
+      213: 4058254702925930087
+    second: Bones_SingleSkull_Fly_0
   - first:
-      213: 17594141013553566
-    second: idle - Copy_1
+      213: 1438289987400495239
+    second: Bones_SingleSkull_Fly_1
   - first:
-      213: 6771342325727246751
-    second: idle - Copy_2
+      213: 4784100166936662140
+    second: Bones_SingleSkull_Fly_2
   - first:
-      213: -3785683745136953543
-    second: idle - Copy_3
+      213: -2837967834670498393
+    second: Bones_SingleSkull_Fly_3
   - first:
-      213: 4662216788522534729
-    second: idle - Copy_4
+      213: -8910987609444008887
+    second: Bones_SingleSkull_Fly_4
   - first:
-      213: 6721875780950975789
-    second: idle - Copy_5
+      213: -2093020775249833328
+    second: Bones_SingleSkull_Fly_5
+  - first:
+      213: -5234458825987850488
+    second: Bones_SingleSkull_Fly_6
+  - first:
+      213: -4807177847907190495
+    second: Bones_SingleSkull_Fly_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,127 +134,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle - Copy_0
+      name: Skull_Fly_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 28
+        y: 92
+        width: 7
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 00d0bc1591d03a5e0800000000000000
-      internalID: -1899660215422612224
+      spriteID: 75abc713b930b46489a632dad0a89433
+      internalID: -983661051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle - Copy_1
+      name: Skull_Fly_1
       rect:
         serializedVersion: 2
-        x: 149
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 95
+        y: 93
+        width: 7
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e91bd3d27c18e3000800000000000000
-      internalID: 17594141013553566
+      spriteID: d72cc55ea0f10244eab98536ca9f49b2
+      internalID: 1654863081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle - Copy_2
+      name: Skull_Fly_2
       rect:
         serializedVersion: 2
-        x: 277
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 164
+        y: 94
+        width: 7
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f993a8918f3a8fd50800000000000000
-      internalID: 6771342325727246751
+      spriteID: ceb8adf667ae5fc43b52c981da062da5
+      internalID: -360165424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle - Copy_3
+      name: Skull_Fly_3
       rect:
         serializedVersion: 2
-        x: 405
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 229
+        y: 93
+        width: 8
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9373423f0bc867bc0800000000000000
-      internalID: -3785683745136953543
+      spriteID: 8044a0d58b53f19439abaafd674ad8e8
+      internalID: 911318481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle - Copy_4
+      name: Skull_Fly_4
       rect:
         serializedVersion: 2
-        x: 533
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 38
+        y: 28
+        width: 8
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9478fb9b77583b040800000000000000
-      internalID: 4662216788522534729
+      spriteID: 39e084254d2f01a4da87223cbadfab92
+      internalID: 1240292937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle - Copy_5
+      name: Skull_Fly_5
       rect:
         serializedVersion: 2
-        x: 661
-        y: 15
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 101
+        y: 28
+        width: 7
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d2562e3a866e84d50800000000000000
-      internalID: 6721875780950975789
+      spriteID: 890268f4f3ae3244fb66429bdb4c5769
+      internalID: 1783504169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_Fly_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 27
+        width: 7
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bd57c972d86664bb6ff0d44f41eb64
+      internalID: -989318920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull_Fly_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 28
+        width: 7
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe3096471f894543ae427783e0d72cd
+      internalID: 361835112
       vertices: []
       indices: 
       edges: []
@@ -256,7 +304,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 46844ec573cf21a4494cd9717b50318e
     internalID: 0
     vertices: []
     indices: 
@@ -264,12 +312,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle - Copy_0: -1899660215422612224
-      idle - Copy_1: 17594141013553566
-      idle - Copy_2: 6771342325727246751
-      idle - Copy_3: -3785683745136953543
-      idle - Copy_4: 4662216788522534729
-      idle - Copy_5: 6721875780950975789
+      Skull_Fly_0: -983661051
+      Skull_Fly_1: 1654863081
+      Skull_Fly_2: -360165424
+      Skull_Fly_3: 911318481
+      Skull_Fly_4: 1240292937
+      Skull_Fly_5: 1783504169
+      Skull_Fly_6: -989318920
+      Skull_Fly_7: 361835112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
