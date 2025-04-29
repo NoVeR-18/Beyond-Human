@@ -141,11 +141,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 100
-        height: 432
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 324
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: Tech Shop_1
       rect:
         serializedVersion: 2
-        x: 99
-        y: 0
-        width: 109
-        height: 432
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 108
+        y: 324
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: Tech Shop_2
       rect:
         serializedVersion: 2
-        x: 207
-        y: 0
-        width: 109
-        height: 432
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 216
+        y: 324
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: Tech Shop_3
       rect:
         serializedVersion: 2
-        x: 315
-        y: 107
-        width: 109
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 324
+        y: 324
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Tech Shop_4
       rect:
         serializedVersion: 2
-        x: 423
-        y: 107
-        width: 109
-        height: 325
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 432
+        y: 324
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: Tech Shop_5
       rect:
         serializedVersion: 2
-        x: 531
-        y: 323
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 216
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: Tech Shop_6
       rect:
         serializedVersion: 2
-        x: 531
-        y: 215
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 108
+        y: 216
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: Tech Shop_7
       rect:
         serializedVersion: 2
-        x: 531
-        y: 107
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 216
+        y: 216
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: Tech Shop_8
       rect:
         serializedVersion: 2
-        x: 315
-        y: 0
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 324
+        y: 216
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,10 +325,199 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Tech Shop_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 216
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5122e6819159142b263f64fb62b44a
+      internalID: 713373828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971cbe1fef412324d8e2da6a4d1db260
+      internalID: 1056742590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 108
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0e16844ce540149b0186ca84c9ad67
+      internalID: -1965699106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 108
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989208aa25262cf40922906cd3506c99
+      internalID: 345523282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_13
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 108
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c05f054f661073449f3645ccd85e939
+      internalID: 615264471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 108
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60adaa108966eaa4dab8894f3dc32444
+      internalID: 700131716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453c7dfe6d3f8354da50632952320b3e
+      internalID: -48426306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69839f10bfdccd4e9180179a6f48440
+      internalID: -917391922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tech Shop_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 108
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc7ab2d4f71b4b41b18ae879d3df6c7
+      internalID: -992029654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 28aa9664118195a408dfaae3971a58bb
     internalID: 0
     vertices: []
     indices: 
@@ -338,6 +527,14 @@ TextureImporter:
     nameFileIdTable:
       Tech Shop_0: -7770525626038099100
       Tech Shop_1: 3242986492516083124
+      Tech Shop_10: 1056742590
+      Tech Shop_11: -1965699106
+      Tech Shop_12: 345523282
+      Tech Shop_13: 615264471
+      Tech Shop_14: 700131716
+      Tech Shop_15: -48426306
+      Tech Shop_16: -917391922
+      Tech Shop_17: -992029654
       Tech Shop_2: -7164312518391146732
       Tech Shop_3: -5853734561372489887
       Tech Shop_4: -5752567573998391720
@@ -345,6 +542,7 @@ TextureImporter:
       Tech Shop_6: -5486662094139044561
       Tech Shop_7: 2974526156980109636
       Tech Shop_8: -1909084611161208567
+      Tech Shop_9: 713373828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

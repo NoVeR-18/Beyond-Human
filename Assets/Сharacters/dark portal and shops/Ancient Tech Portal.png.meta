@@ -123,11 +123,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 179
-        width: 4536
-        height: 84
+        y: 180
+        width: 189
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: Ancient Tech Portal_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 85
-        width: 3214
-        height: 88
+        x: 189
+        y: 180
+        width: 189
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,12 +164,12 @@ TextureImporter:
       name: Ancient Tech Portal_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1324
-        height: 87
+        x: 378
+        y: 180
+        width: 189
+        height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,10 +181,955 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_3
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ea49076d7c54341a91a7bbf3d651bb
+      internalID: 1343102423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_4
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55712fd55877dc5409b4f4a3885f353d
+      internalID: 546328908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_5
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec4fbac269ebbb4d9983153a3b09c85
+      internalID: 348475760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_6
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc40b46715d18c4a959bc59fb71676f
+      internalID: -150738135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_7
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbdfa1afc3c54d4bb3f09d7754dba54
+      internalID: 1502535544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_8
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3776a2a55bdbf74d825c240b403396a
+      internalID: -2023964916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_9
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc65db4a9edb5214daa8e8d534d5a01f
+      internalID: -302641728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_10
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d11f7dfccb87046a94ae56d4833253
+      internalID: 1434922630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_11
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a7a4e0279930142909315b2d6c8b03
+      internalID: 509178712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_12
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26548fe557214f14b87d0907b65cc36b
+      internalID: 2121601731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_13
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cff19901bdc7e64b8d2d54314212609
+      internalID: 392849719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_14
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385888cd522f1504ab5b5b8dd0580312
+      internalID: -1239867091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_15
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd40587606bdc442b82863ecfa9a737
+      internalID: 241804851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_16
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31eb39887d21c4e479da9b9d337404bb
+      internalID: 1635595512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_17
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b36c9a130b269d45a0f49b1560808fb
+      internalID: -285552349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_18
+      rect:
+        serializedVersion: 2
+        x: 3402
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d2e11aadf3b8c4f95c77b3f3f328bf
+      internalID: -1050781497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_19
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c12270ce9b81e4488a280118b98a0a8
+      internalID: 109433166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_20
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5edc11512ccd454a88323a9e0e1429d
+      internalID: -1317910967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_21
+      rect:
+        serializedVersion: 2
+        x: 3969
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d21baad0ade3b24da61b9b9f1d79bfa
+      internalID: -1115925275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_22
+      rect:
+        serializedVersion: 2
+        x: 4158
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f903f635fd31da4e87ea7d1f1407187
+      internalID: -1187863977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_23
+      rect:
+        serializedVersion: 2
+        x: 4347
+        y: 180
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c449f54e52c64094c993cc2edd3b114a
+      internalID: -68062408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b9c256fdd468a48af6b2d72054350f
+      internalID: 620167576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_25
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c733792a4083a24dae6e5a6f209031c
+      internalID: 2006369100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_26
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523da2e8a3c78374d9d244f83f0aee6f
+      internalID: 1535401321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_27
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c606db6b06dcfe244b279fe105b82777
+      internalID: 662137512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_28
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7e17c04db3aaa41b56fb1a105b12f3
+      internalID: 1821333899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_29
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e30936d889003d4dbc200f16035ddc9
+      internalID: 1851240740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_30
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb7eca7cead5c347bfbf618a9c20fc2
+      internalID: 1960922283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_31
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3fc8b33aea50054398ea005460043ed
+      internalID: -1993105154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_32
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321bf2086a70fb844a57992b5722ba49
+      internalID: 1741176896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_33
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1c1f94f117b434b98339fc2a381d39
+      internalID: 77677786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_34
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9526a53b276b6c54eac344a1b6b50ef8
+      internalID: 1805239306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_35
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1437faf0ed6f5984ebcfc706318401ce
+      internalID: -1252187738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_36
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3ec38ad1125a6428342c6a5ee4cf50
+      internalID: -1332401606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_37
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e998c112fb6694391af3acf15d111b
+      internalID: -797664462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_38
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f22262da9e5f9841af95eba7083041b
+      internalID: -1465203859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_39
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a66a76b5bd08474f9488d5b85dd074c
+      internalID: -649892211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_40
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 90
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf057663cb1a7b4fa2e0a622a93772e
+      internalID: 1035507706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643a9b43e4715f242912b298ecf085b7
+      internalID: 1730520292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_49
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ebe34e946b70a44844eb54e20c40c9
+      internalID: -911399729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_50
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 0
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513b916b4ef928f479e4aee6ef0c0d6c
+      internalID: 1123482448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_51
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 0
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cedb9f15894694195db7e63f796c02
+      internalID: 805366501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_52
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337b85ecfed55c3429bd199f66c52c22
+      internalID: -400682012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_53
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5abc766b549f514fae582ce64ea7ecf
+      internalID: 1227021463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient Tech Portal_54
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 0
+        width: 189
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968f16950691e2f4090ded99cd5de030
+      internalID: 1719411697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 72383d8169fd72944bfadc6e305b6fb0
     internalID: 0
     vertices: []
     indices: 
@@ -194,7 +1139,71 @@ TextureImporter:
     nameFileIdTable:
       Ancient Tech Portal_0: 6709526696378330890
       Ancient Tech Portal_1: 756996465495896069
+      Ancient Tech Portal_10: 1434922630
+      Ancient Tech Portal_11: 509178712
+      Ancient Tech Portal_12: 2121601731
+      Ancient Tech Portal_13: 392849719
+      Ancient Tech Portal_14: -1239867091
+      Ancient Tech Portal_15: 241804851
+      Ancient Tech Portal_16: 1635595512
+      Ancient Tech Portal_17: -285552349
+      Ancient Tech Portal_18: -1050781497
+      Ancient Tech Portal_19: 109433166
       Ancient Tech Portal_2: 5107604282763427795
+      Ancient Tech Portal_20: -1317910967
+      Ancient Tech Portal_21: -1115925275
+      Ancient Tech Portal_22: -1187863977
+      Ancient Tech Portal_23: -68062408
+      Ancient Tech Portal_24: 620167576
+      Ancient Tech Portal_25: 2006369100
+      Ancient Tech Portal_26: 1535401321
+      Ancient Tech Portal_27: 662137512
+      Ancient Tech Portal_28: 1821333899
+      Ancient Tech Portal_29: 1851240740
+      Ancient Tech Portal_3: 1343102423
+      Ancient Tech Portal_30: 1960922283
+      Ancient Tech Portal_31: -1993105154
+      Ancient Tech Portal_32: 1741176896
+      Ancient Tech Portal_33: 77677786
+      Ancient Tech Portal_34: 1805239306
+      Ancient Tech Portal_35: -1252187738
+      Ancient Tech Portal_36: -1332401606
+      Ancient Tech Portal_37: -797664462
+      Ancient Tech Portal_38: -1465203859
+      Ancient Tech Portal_39: -649892211
+      Ancient Tech Portal_4: 546328908
+      Ancient Tech Portal_40: 1035507706
+      Ancient Tech Portal_41: -495131062
+      Ancient Tech Portal_42: 2001731944
+      Ancient Tech Portal_43: -271152894
+      Ancient Tech Portal_44: -1536959159
+      Ancient Tech Portal_45: 812400279
+      Ancient Tech Portal_46: 1738818982
+      Ancient Tech Portal_47: 2130592971
+      Ancient Tech Portal_48: 1730520292
+      Ancient Tech Portal_49: -911399729
+      Ancient Tech Portal_5: 348475760
+      Ancient Tech Portal_50: 1123482448
+      Ancient Tech Portal_51: 805366501
+      Ancient Tech Portal_52: -400682012
+      Ancient Tech Portal_53: 1227021463
+      Ancient Tech Portal_54: 1719411697
+      Ancient Tech Portal_55: -871840287
+      Ancient Tech Portal_56: -1019840653
+      Ancient Tech Portal_57: -1453198197
+      Ancient Tech Portal_58: -216918444
+      Ancient Tech Portal_59: -1729436004
+      Ancient Tech Portal_6: -150738135
+      Ancient Tech Portal_60: -623786712
+      Ancient Tech Portal_61: 1993536116
+      Ancient Tech Portal_62: 2066348215
+      Ancient Tech Portal_63: -396194893
+      Ancient Tech Portal_64: 1355381412
+      Ancient Tech Portal_65: -1703916248
+      Ancient Tech Portal_66: 1601328269
+      Ancient Tech Portal_7: 1502535544
+      Ancient Tech Portal_8: -2023964916
+      Ancient Tech Portal_9: -302641728
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

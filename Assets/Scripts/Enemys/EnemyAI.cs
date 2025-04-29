@@ -2,6 +2,7 @@ using GameUtils.Utils;
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(NPCRender))]
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Animator))]
 public class EnemyAI : MonoBehaviour
