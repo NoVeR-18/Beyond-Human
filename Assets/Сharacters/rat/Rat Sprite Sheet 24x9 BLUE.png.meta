@@ -163,10 +163,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 15
-        width: 18
-        height: 7
+        width: 24
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,11 +183,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 7
-        width: 18
-        height: 8
+        y: 6
+        width: 24
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,11 +204,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 7
-        width: 18
+        y: 6
+        width: 24
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -225,11 +225,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
-        width: 19
-        height: 15
+        y: 6
+        width: 24
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: Rat Sprite Sheet 24x9 BLUE_4
       rect:
         serializedVersion: 2
-        x: 73
-        y: 7
-        width: 17
-        height: 8
+        x: 72
+        y: 6
+        width: 24
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: Rat Sprite Sheet 24x9 BLUE_5
       rect:
         serializedVersion: 2
-        x: 97
-        y: 7
-        width: 17
-        height: 8
+        x: 96
+        y: 6
+        width: 24
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,220 +283,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_6
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 18
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b526aafd905563f30800000000000000
-      internalID: 4554921574027387483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_7
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 184dfd8cfcb594850800000000000000
-      internalID: 6361716896624006273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_8
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 0
-        width: 14
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 863984268dffbda00800000000000000
-      internalID: 782500265105855336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_9
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 2
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e1df07a6d4ff4510800000000000000
-      internalID: 1535715200719639016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_10
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 0
-        width: 15
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2f7b7009b8180f1e0800000000000000
-      internalID: -2166088984348346382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_11
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 0
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 876b581f3df38ea50800000000000000
-      internalID: 6550555837533107832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_12
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed6091727cc5d6b60800000000000000
-      internalID: 7740945344943949534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_13
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 20
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b4f7ba80c3459790800000000000000
-      internalID: -7524033108212452175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_14
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 0
-        width: 19
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3dee6d3f4d9bbdc0800000000000000
-      internalID: -3622128511630774977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rat Sprite Sheet 24x9 BLUE_15
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 0
-        width: 54
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c91db17362bd2e0b0800000000000000
-      internalID: -5700753221117816420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 31942f28e3871094083d207aee5764bf
     internalID: 0
     vertices: []
     indices: 
@@ -506,20 +296,10 @@ TextureImporter:
     nameFileIdTable:
       Rat Sprite Sheet 24x9 BLUE_0: 6228545216473944671
       Rat Sprite Sheet 24x9 BLUE_1: 524588227021812369
-      Rat Sprite Sheet 24x9 BLUE_10: -2166088984348346382
-      Rat Sprite Sheet 24x9 BLUE_11: 6550555837533107832
-      Rat Sprite Sheet 24x9 BLUE_12: 7740945344943949534
-      Rat Sprite Sheet 24x9 BLUE_13: -7524033108212452175
-      Rat Sprite Sheet 24x9 BLUE_14: -3622128511630774977
-      Rat Sprite Sheet 24x9 BLUE_15: -5700753221117816420
       Rat Sprite Sheet 24x9 BLUE_2: -8391605811049402678
       Rat Sprite Sheet 24x9 BLUE_3: 7780529367991752800
       Rat Sprite Sheet 24x9 BLUE_4: -2975960305582885072
       Rat Sprite Sheet 24x9 BLUE_5: 4535590683860175255
-      Rat Sprite Sheet 24x9 BLUE_6: 4554921574027387483
-      Rat Sprite Sheet 24x9 BLUE_7: 6361716896624006273
-      Rat Sprite Sheet 24x9 BLUE_8: 782500265105855336
-      Rat Sprite Sheet 24x9 BLUE_9: 1535715200719639016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
