@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: BloodWallTGrass
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -87592549, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1918230501, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 884157238, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1502004556, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 415504639, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -1825907371, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1276536290, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -2057415669, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1486828370, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1775112190, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -1636874310, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 878891130, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 38212478, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1572253458, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1159486680, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 15
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

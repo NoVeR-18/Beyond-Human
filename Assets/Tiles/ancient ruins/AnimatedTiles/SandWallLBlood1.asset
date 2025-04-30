@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: SandWallLBlood1
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 251527888, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -458646910, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -639546627, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1260565244, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -223396075, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -560104591, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -1788784686, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -1192372791, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 639529339, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 582253674, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 812433592, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 988319242, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 2060925112, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -353591266, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -174824778, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

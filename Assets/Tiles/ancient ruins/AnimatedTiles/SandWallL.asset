@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: SandWallL
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 1564548112, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -2050478604, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 1116235383, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -418172476, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 1330651142, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -1251557897, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 803360934, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 1096935431, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 1980084952, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 1456683968, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -793079605, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -2134095553, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 1904777623, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -767578053, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -1123092731, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: SandWallTGrass
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -1356389886, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -282908512, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -296921695, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1430294119, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -835768114, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1946737231, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1227346179, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1527675515, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1699144722, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -657627907, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 966173013, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 813949210, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -1463449464, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: -1510289035, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  - {fileID: 1262982093, guid: e71e0fcb5f6b8e14e8b454660bf41d2c, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 15
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
