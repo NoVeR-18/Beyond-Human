@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: WaterGrassIn 19
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -1789980212, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  - {fileID: 1252150622, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  - {fileID: 1299784169, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  - {fileID: -133996964, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  - {fileID: -2024571554, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  - {fileID: -352046751, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  - {fileID: -777065026, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  - {fileID: -205224983, guid: 33fd9b66162e0e84b99ea687f30ab583, type: 3}
+  m_MinSpeed: 8
+  m_MaxSpeed: 8
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

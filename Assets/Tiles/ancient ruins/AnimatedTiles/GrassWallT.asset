@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: GrassWallT
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 3950973816015503025, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 9181436224149748586, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -3564330376040482426, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 7911551448788798828, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -2565516935229458879, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 8024568233735448134, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 6036183040775087357, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -3526223861337596767, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 956305927540021089, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 6797412820874936941, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -3581219622754992300, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -446363066988448806, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: 3555634066050115611, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -7664692571895414410, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  - {fileID: -5367874238084026238, guid: adc4156f668aba041a3869e547dacea1, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 15
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

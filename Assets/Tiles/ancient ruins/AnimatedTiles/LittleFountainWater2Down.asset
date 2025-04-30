@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: LittleFountainWater2Down
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 883262304, guid: 287230c8a33b7e6419e4e3f25ea1f1bb, type: 3}
+  - {fileID: 1319828272, guid: 287230c8a33b7e6419e4e3f25ea1f1bb, type: 3}
+  - {fileID: -1479463903, guid: 287230c8a33b7e6419e4e3f25ea1f1bb, type: 3}
+  - {fileID: -896461920, guid: 287230c8a33b7e6419e4e3f25ea1f1bb, type: 3}
+  m_MinSpeed: 4
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
