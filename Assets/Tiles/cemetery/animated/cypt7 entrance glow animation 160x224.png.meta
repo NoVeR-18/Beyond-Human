@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -161,18 +161,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 18
-        width: 128
-        height: 198
+        x: 0
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 195a07043caf1fc00800000000000000
+      spriteID: 074f23204cd3db44ebee26119bf299fc
       internalID: 932802314349094289
       vertices: []
       indices: 
@@ -182,18 +182,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_1
       rect:
         serializedVersion: 2
-        x: 178
-        y: 18
-        width: 128
-        height: 198
+        x: 160
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2de24a04ce91e69f0800000000000000
+      spriteID: d8e9e8da32295194686813b703d414d2
       internalID: -473412408339845422
       vertices: []
       indices: 
@@ -203,18 +203,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_2
       rect:
         serializedVersion: 2
-        x: 338
-        y: 18
-        width: 128
-        height: 198
+        x: 320
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c7d7c721b97365030800000000000000
+      spriteID: a40409be9400e4d448a5bb71262a780e
       internalID: 3483032500987264380
       vertices: []
       indices: 
@@ -224,18 +224,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_3
       rect:
         serializedVersion: 2
-        x: 498
-        y: 18
-        width: 128
-        height: 198
+        x: 480
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 643435511ca889e20800000000000000
+      spriteID: 1e894cb8628fee64082cdbf7fe07dcd2
       internalID: 3357586084095804230
       vertices: []
       indices: 
@@ -245,18 +245,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_4
       rect:
         serializedVersion: 2
-        x: 658
-        y: 18
-        width: 128
-        height: 198
+        x: 640
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04f79702958903260800000000000000
+      spriteID: 9681e45ecd9576b4590e5e59f7a6eb29
       internalID: 7075322523163393856
       vertices: []
       indices: 
@@ -266,18 +266,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_5
       rect:
         serializedVersion: 2
-        x: 818
-        y: 18
-        width: 128
-        height: 198
+        x: 800
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 39f42afdef5b21790800000000000000
+      spriteID: 867281cecb35ee340a41d6200814d3c4
       internalID: -7560780718123364461
       vertices: []
       indices: 
@@ -287,18 +287,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_6
       rect:
         serializedVersion: 2
-        x: 978
-        y: 18
-        width: 128
-        height: 198
+        x: 960
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bf2ac6f2171261b20800000000000000
+      spriteID: cb6fee229fed0e447a1acc65faf4babe
       internalID: 3104705763129205499
       vertices: []
       indices: 
@@ -308,18 +308,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_7
       rect:
         serializedVersion: 2
-        x: 1138
-        y: 18
-        width: 128
-        height: 198
+        x: 1120
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cdc985048aa9277f0800000000000000
+      spriteID: 73e28f8fc08c87244a4aa46668f44123
       internalID: -616260151571604260
       vertices: []
       indices: 
@@ -329,18 +329,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_8
       rect:
         serializedVersion: 2
-        x: 1298
-        y: 18
-        width: 128
-        height: 198
+        x: 1280
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 66c5542307c57df30800000000000000
+      spriteID: 13dc2f18bec4c0f4dacd5aeed62d1798
       internalID: 4600247181331749990
       vertices: []
       indices: 
@@ -350,18 +350,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_9
       rect:
         serializedVersion: 2
-        x: 1458
-        y: 18
-        width: 128
-        height: 198
+        x: 1440
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 37a735873c1490cb0800000000000000
+      spriteID: 427b0a93725d30d46867edd9c6405b87
       internalID: -4897310811995538829
       vertices: []
       indices: 
@@ -371,18 +371,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_10
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 18
-        width: 128
-        height: 198
+        x: 1600
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 406ce2cd520d68a60800000000000000
+      spriteID: 0ae30af32bdf5214db3816ade2f4a255
       internalID: 7676051475926009348
       vertices: []
       indices: 
@@ -392,18 +392,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_11
       rect:
         serializedVersion: 2
-        x: 1778
-        y: 18
-        width: 128
-        height: 198
+        x: 1760
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 61b58a3e765d237d0800000000000000
+      spriteID: 01fa965e4e3b3e04180509520956e33e
       internalID: -2940052964541703402
       vertices: []
       indices: 
@@ -413,18 +413,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_12
       rect:
         serializedVersion: 2
-        x: 1938
-        y: 18
-        width: 128
-        height: 198
+        x: 1920
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eccd4a50628be9140800000000000000
+      spriteID: 07488ea654db43b4f96bb8e0d08dad85
       internalID: 4728419132228558030
       vertices: []
       indices: 
@@ -434,18 +434,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_13
       rect:
         serializedVersion: 2
-        x: 2098
-        y: 18
-        width: 128
-        height: 198
+        x: 2080
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 982b787c125589d80800000000000000
+      spriteID: bfde9734c551a6545813e842006eebeb
       internalID: -8243745514331852151
       vertices: []
       indices: 
@@ -455,18 +455,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_14
       rect:
         serializedVersion: 2
-        x: 2258
-        y: 18
-        width: 128
-        height: 198
+        x: 2240
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c37625bb296c01c00800000000000000
+      spriteID: 53029eb4bccae454fa4ed4bae5573044
       internalID: 869413061592770364
       vertices: []
       indices: 
@@ -476,18 +476,18 @@ TextureImporter:
       name: cypt7 entrance glow animation 160x224_15
       rect:
         serializedVersion: 2
-        x: 2418
-        y: 18
-        width: 128
-        height: 198
+        x: 2400
+        y: 0
+        width: 160
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c4dab1bf14e143e00800000000000000
+      spriteID: 66ce7fa4a485b224388cfa396190f741
       internalID: 1023476284054547788
       vertices: []
       indices: 
@@ -496,14 +496,30 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: baae0fda60d87744496ed8389c1fd0c9
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cypt7 entrance glow animation 160x224_0: 932802314349094289
+      cypt7 entrance glow animation 160x224_1: -473412408339845422
+      cypt7 entrance glow animation 160x224_10: 7676051475926009348
+      cypt7 entrance glow animation 160x224_11: -2940052964541703402
+      cypt7 entrance glow animation 160x224_12: 4728419132228558030
+      cypt7 entrance glow animation 160x224_13: -8243745514331852151
+      cypt7 entrance glow animation 160x224_14: 869413061592770364
+      cypt7 entrance glow animation 160x224_15: 1023476284054547788
+      cypt7 entrance glow animation 160x224_2: 3483032500987264380
+      cypt7 entrance glow animation 160x224_3: 3357586084095804230
+      cypt7 entrance glow animation 160x224_4: 7075322523163393856
+      cypt7 entrance glow animation 160x224_5: -7560780718123364461
+      cypt7 entrance glow animation 160x224_6: 3104705763129205499
+      cypt7 entrance glow animation 160x224_7: -616260151571604260
+      cypt7 entrance glow animation 160x224_8: 4600247181331749990
+      cypt7 entrance glow animation 160x224_9: -4897310811995538829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
