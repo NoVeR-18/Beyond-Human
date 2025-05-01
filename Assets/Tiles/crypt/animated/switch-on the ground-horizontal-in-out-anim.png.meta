@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -215,7 +215,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      switch-on the ground-horizontal-in-out-anim_0: 2419174479148690876
+      switch-on the ground-horizontal-in-out-anim_1: 8753450119189513769
+      switch-on the ground-horizontal-in-out-anim_2: 7624020846530166760
+      switch-on the ground-horizontal-in-out-anim_3: -7116739638242844235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

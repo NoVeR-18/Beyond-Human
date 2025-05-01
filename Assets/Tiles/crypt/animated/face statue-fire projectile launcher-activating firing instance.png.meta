@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -263,7 +263,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      face statue-fire projectile launcher-activating firing instance_0: -8975825965895767068
+      face statue-fire projectile launcher-activating firing instance_1: -1883801090554202571
+      face statue-fire projectile launcher-activating firing instance_2: 2870468137260732007
+      face statue-fire projectile launcher-activating firing instance_3: 6540010118891999157
+      face statue-fire projectile launcher-activating firing instance_4: 8828571390924339166
+      face statue-fire projectile launcher-activating firing instance_5: 5707389840872298911
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

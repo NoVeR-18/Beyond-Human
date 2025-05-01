@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -215,7 +215,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      arrow launcher-launch_0: -6819582893270636883
+      arrow launcher-launch_1: -6174287869819277943
+      arrow launcher-launch_2: 8411666985092335781
+      arrow launcher-launch_3: 7697858138479547442
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

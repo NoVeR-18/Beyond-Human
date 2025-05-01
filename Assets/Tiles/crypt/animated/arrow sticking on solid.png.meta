@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -215,7 +215,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      arrow sticking on solid_0: -6801358020740946576
+      arrow sticking on solid_1: -660640850942231525
+      arrow sticking on solid_2: -717181921354775676
+      arrow sticking on solid_3: 2850690821373672162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
