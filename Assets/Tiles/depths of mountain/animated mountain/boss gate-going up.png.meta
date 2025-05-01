@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,12 +149,12 @@ TextureImporter:
       name: boss gate-going up_0
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 14
-        width: 158
+        width: 160
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,8 +174,8 @@ TextureImporter:
         y: 14
         width: 158
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: boss gate-going up_2
       rect:
         serializedVersion: 2
-        x: 481
+        x: 480
         y: 14
-        width: 158
+        width: 160
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: boss gate-going up_3
       rect:
         serializedVersion: 2
-        x: 705
+        x: 704
         y: 14
-        width: 158
+        width: 160
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,8 +237,8 @@ TextureImporter:
         y: 14
         width: 158
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: boss gate-going up_5
       rect:
         serializedVersion: 2
-        x: 1153
+        x: 1152
         y: 14
-        width: 158
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 160
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: boss gate-going up_6
       rect:
         serializedVersion: 2
-        x: 1377
+        x: 1376
         y: 14
-        width: 158
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 160
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,9 +299,9 @@ TextureImporter:
         x: 1601
         y: 14
         width: 158
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,12 +317,12 @@ TextureImporter:
       name: boss gate-going up_8
       rect:
         serializedVersion: 2
-        x: 1825
+        x: 1824
         y: 14
-        width: 158
+        width: 160
         height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: boss gate-going up_9
       rect:
         serializedVersion: 2
-        x: 2049
+        x: 2048
         y: 14
-        width: 158
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 160
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -363,8 +363,8 @@ TextureImporter:
         y: 14
         width: 158
         height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,12 +380,12 @@ TextureImporter:
       name: boss gate-going up_11
       rect:
         serializedVersion: 2
-        x: 2497
+        x: 2496
         y: 14
-        width: 158
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 160
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,14 +400,26 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cfb15f2034f5dc1499b353155f1bd9c3
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boss gate-going up_0: 8974717668830675603
+      boss gate-going up_1: 1204033537147597039
+      boss gate-going up_10: -306331539541891081
+      boss gate-going up_11: 4061873687796284152
+      boss gate-going up_2: -7564234979286743065
+      boss gate-going up_3: 2558941274784839187
+      boss gate-going up_4: 6021681938765624382
+      boss gate-going up_5: -173201745155045947
+      boss gate-going up_6: 8078581914524021160
+      boss gate-going up_7: -8118934702327412535
+      boss gate-going up_8: -8103962154429438580
+      boss gate-going up_9: 1151556322443036466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

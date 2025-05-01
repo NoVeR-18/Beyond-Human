@@ -222,7 +222,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -287,12 +287,12 @@ TextureImporter:
       name: golden monument anim-going up_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 34
+        y: 16
+        width: 91
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: golden monument anim-going up_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 197
+        y: 16
+        width: 86
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -329,12 +329,12 @@ TextureImporter:
       name: golden monument anim-going up_2
       rect:
         serializedVersion: 2
-        x: 360
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 356
+        y: 16
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,12 +350,12 @@ TextureImporter:
       name: golden monument anim-going up_3
       rect:
         serializedVersion: 2
-        x: 520
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 514
+        y: 16
+        width: 91
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: golden monument anim-going up_4
       rect:
         serializedVersion: 2
-        x: 680
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 675
+        y: 16
+        width: 88
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: golden monument anim-going up_5
       rect:
         serializedVersion: 2
-        x: 840
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 836
+        y: 16
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -413,12 +413,12 @@ TextureImporter:
       name: golden monument anim-going up_6
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 995
+        y: 16
+        width: 90
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,12 +434,12 @@ TextureImporter:
       name: golden monument anim-going up_7
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1154
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -455,12 +455,12 @@ TextureImporter:
       name: golden monument anim-going up_8
       rect:
         serializedVersion: 2
-        x: 1320
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1316
+        y: 16
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -476,12 +476,12 @@ TextureImporter:
       name: golden monument anim-going up_9
       rect:
         serializedVersion: 2
-        x: 1480
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1475
+        y: 16
+        width: 90
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: golden monument anim-going up_10
       rect:
         serializedVersion: 2
-        x: 1640
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1634
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,12 +518,12 @@ TextureImporter:
       name: golden monument anim-going up_11
       rect:
         serializedVersion: 2
-        x: 1800
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1797
+        y: 16
+        width: 86
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -539,12 +539,12 @@ TextureImporter:
       name: golden monument anim-going up_12
       rect:
         serializedVersion: 2
-        x: 1960
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1955
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -560,12 +560,12 @@ TextureImporter:
       name: golden monument anim-going up_13
       rect:
         serializedVersion: 2
-        x: 2120
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2114
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -581,12 +581,12 @@ TextureImporter:
       name: golden monument anim-going up_14
       rect:
         serializedVersion: 2
-        x: 2280
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2277
+        y: 16
+        width: 86
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -602,12 +602,12 @@ TextureImporter:
       name: golden monument anim-going up_15
       rect:
         serializedVersion: 2
-        x: 2440
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2436
+        y: 16
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -623,12 +623,12 @@ TextureImporter:
       name: golden monument anim-going up_16
       rect:
         serializedVersion: 2
-        x: 2600
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2594
+        y: 16
+        width: 91
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -644,12 +644,12 @@ TextureImporter:
       name: golden monument anim-going up_17
       rect:
         serializedVersion: 2
-        x: 2760
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2757
+        y: 16
+        width: 86
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -665,12 +665,12 @@ TextureImporter:
       name: golden monument anim-going up_18
       rect:
         serializedVersion: 2
-        x: 2920
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2916
+        y: 16
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -686,12 +686,12 @@ TextureImporter:
       name: golden monument anim-going up_19
       rect:
         serializedVersion: 2
-        x: 3080
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3075
+        y: 16
+        width: 90
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -707,12 +707,12 @@ TextureImporter:
       name: golden monument anim-going up_20
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3234
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -728,12 +728,12 @@ TextureImporter:
       name: golden monument anim-going up_21
       rect:
         serializedVersion: 2
-        x: 3400
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3396
+        y: 16
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -749,12 +749,12 @@ TextureImporter:
       name: golden monument anim-going up_22
       rect:
         serializedVersion: 2
-        x: 3560
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3555
+        y: 16
+        width: 90
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -770,12 +770,12 @@ TextureImporter:
       name: golden monument anim-going up_23
       rect:
         serializedVersion: 2
-        x: 3720
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3714
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -791,12 +791,12 @@ TextureImporter:
       name: golden monument anim-going up_24
       rect:
         serializedVersion: 2
-        x: 3880
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3877
+        y: 16
+        width: 86
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -812,12 +812,12 @@ TextureImporter:
       name: golden monument anim-going up_25
       rect:
         serializedVersion: 2
-        x: 4040
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4035
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -833,12 +833,12 @@ TextureImporter:
       name: golden monument anim-going up_26
       rect:
         serializedVersion: 2
-        x: 4200
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4194
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -854,12 +854,12 @@ TextureImporter:
       name: golden monument anim-going up_27
       rect:
         serializedVersion: 2
-        x: 4360
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4357
+        y: 16
+        width: 86
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -875,12 +875,12 @@ TextureImporter:
       name: golden monument anim-going up_28
       rect:
         serializedVersion: 2
-        x: 4520
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4515
+        y: 16
+        width: 90
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -896,12 +896,12 @@ TextureImporter:
       name: golden monument anim-going up_29
       rect:
         serializedVersion: 2
-        x: 4680
-        y: 19
-        width: 79
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4674
+        y: 16
+        width: 91
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -917,12 +917,12 @@ TextureImporter:
       name: golden monument anim-going up_30
       rect:
         serializedVersion: 2
-        x: 4840
-        y: 19
-        width: 79
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4837
+        y: 16
+        width: 86
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -938,12 +938,12 @@ TextureImporter:
       name: golden monument anim-going up_31
       rect:
         serializedVersion: 2
-        x: 5000
-        y: 19
-        width: 79
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4996
+        y: 16
+        width: 86
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -959,12 +959,12 @@ TextureImporter:
       name: golden monument anim-going up_32
       rect:
         serializedVersion: 2
-        x: 5160
-        y: 19
-        width: 79
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5154
+        y: 16
+        width: 91
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -980,12 +980,12 @@ TextureImporter:
       name: golden monument anim-going up_33
       rect:
         serializedVersion: 2
-        x: 5320
-        y: 19
-        width: 79
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5315
+        y: 16
+        width: 88
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1001,12 +1001,12 @@ TextureImporter:
       name: golden monument anim-going up_34
       rect:
         serializedVersion: 2
-        x: 5480
-        y: 19
-        width: 79
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5476
+        y: 16
+        width: 86
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1022,12 +1022,12 @@ TextureImporter:
       name: golden monument anim-going up_35
       rect:
         serializedVersion: 2
-        x: 5640
-        y: 19
-        width: 79
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5635
+        y: 16
+        width: 90
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1043,12 +1043,12 @@ TextureImporter:
       name: golden monument anim-going up_36
       rect:
         serializedVersion: 2
-        x: 5800
-        y: 19
-        width: 79
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5794
+        y: 16
+        width: 90
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1064,12 +1064,12 @@ TextureImporter:
       name: golden monument anim-going up_37
       rect:
         serializedVersion: 2
-        x: 5960
-        y: 19
-        width: 79
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5956
+        y: 16
+        width: 86
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1085,12 +1085,12 @@ TextureImporter:
       name: golden monument anim-going up_38
       rect:
         serializedVersion: 2
-        x: 6120
-        y: 19
-        width: 79
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6115
+        y: 16
+        width: 90
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1106,12 +1106,12 @@ TextureImporter:
       name: golden monument anim-going up_39
       rect:
         serializedVersion: 2
-        x: 6280
-        y: 19
-        width: 79
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6274
+        y: 16
+        width: 90
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1127,12 +1127,12 @@ TextureImporter:
       name: golden monument anim-going up_40
       rect:
         serializedVersion: 2
-        x: 6440
-        y: 19
-        width: 79
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6437
+        y: 16
+        width: 86
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1148,12 +1148,12 @@ TextureImporter:
       name: golden monument anim-going up_41
       rect:
         serializedVersion: 2
-        x: 6600
-        y: 19
-        width: 79
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6595
+        y: 16
+        width: 90
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1169,12 +1169,12 @@ TextureImporter:
       name: golden monument anim-going up_42
       rect:
         serializedVersion: 2
-        x: 6760
-        y: 19
-        width: 79
-        height: 93
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6754
+        y: 16
+        width: 90
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1190,12 +1190,12 @@ TextureImporter:
       name: golden monument anim-going up_43
       rect:
         serializedVersion: 2
-        x: 6920
-        y: 19
-        width: 79
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 6917
+        y: 16
+        width: 86
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1211,12 +1211,12 @@ TextureImporter:
       name: golden monument anim-going up_44
       rect:
         serializedVersion: 2
-        x: 7080
-        y: 19
-        width: 79
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7076
+        y: 16
+        width: 86
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1232,12 +1232,12 @@ TextureImporter:
       name: golden monument anim-going up_45
       rect:
         serializedVersion: 2
-        x: 7240
-        y: 19
-        width: 79
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7234
+        y: 16
+        width: 91
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1253,12 +1253,12 @@ TextureImporter:
       name: golden monument anim-going up_46
       rect:
         serializedVersion: 2
-        x: 7400
-        y: 19
-        width: 79
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7397
+        y: 16
+        width: 86
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1274,12 +1274,12 @@ TextureImporter:
       name: golden monument anim-going up_47
       rect:
         serializedVersion: 2
-        x: 7560
-        y: 19
-        width: 79
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7556
+        y: 16
+        width: 86
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1295,12 +1295,12 @@ TextureImporter:
       name: golden monument anim-going up_48
       rect:
         serializedVersion: 2
-        x: 7720
-        y: 19
-        width: 79
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7715
+        y: 16
+        width: 90
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1316,12 +1316,12 @@ TextureImporter:
       name: golden monument anim-going up_49
       rect:
         serializedVersion: 2
-        x: 7880
-        y: 19
-        width: 79
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7874
+        y: 16
+        width: 90
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1337,12 +1337,12 @@ TextureImporter:
       name: golden monument anim-going up_50
       rect:
         serializedVersion: 2
-        x: 8040
-        y: 19
-        width: 79
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8036
+        y: 16
+        width: 86
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1358,12 +1358,12 @@ TextureImporter:
       name: golden monument anim-going up_51
       rect:
         serializedVersion: 2
-        x: 8200
-        y: 19
-        width: 79
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8195
+        y: 16
+        width: 90
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1379,12 +1379,12 @@ TextureImporter:
       name: golden monument anim-going up_52
       rect:
         serializedVersion: 2
-        x: 8360
-        y: 19
-        width: 79
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8354
+        y: 16
+        width: 90
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1400,12 +1400,12 @@ TextureImporter:
       name: golden monument anim-going up_53
       rect:
         serializedVersion: 2
-        x: 8520
-        y: 19
-        width: 79
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8517
+        y: 16
+        width: 86
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1421,12 +1421,12 @@ TextureImporter:
       name: golden monument anim-going up_54
       rect:
         serializedVersion: 2
-        x: 8680
-        y: 19
-        width: 79
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8675
+        y: 16
+        width: 90
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1442,12 +1442,12 @@ TextureImporter:
       name: golden monument anim-going up_55
       rect:
         serializedVersion: 2
-        x: 8840
-        y: 19
-        width: 79
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8834
+        y: 16
+        width: 90
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1463,12 +1463,12 @@ TextureImporter:
       name: golden monument anim-going up_56
       rect:
         serializedVersion: 2
-        x: 9000
-        y: 19
-        width: 79
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 8997
+        y: 16
+        width: 86
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1484,12 +1484,12 @@ TextureImporter:
       name: golden monument anim-going up_57
       rect:
         serializedVersion: 2
-        x: 9160
-        y: 19
-        width: 79
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9155
+        y: 16
+        width: 90
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1504,14 +1504,72 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f80226588e67ea54182615eeefc39407
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      golden monument anim-going up_0: -5025111354179658631
+      golden monument anim-going up_1: 3202073036614206319
+      golden monument anim-going up_10: -2782669285876187129
+      golden monument anim-going up_11: -2992366242509041402
+      golden monument anim-going up_12: 8605259550760122662
+      golden monument anim-going up_13: -5676596722739808458
+      golden monument anim-going up_14: -6765892172184174279
+      golden monument anim-going up_15: -103416323059062424
+      golden monument anim-going up_16: -9037208180444837114
+      golden monument anim-going up_17: -2732626562776503932
+      golden monument anim-going up_18: -1985593296469062381
+      golden monument anim-going up_19: -6032286944515343052
+      golden monument anim-going up_2: -2060918237801004795
+      golden monument anim-going up_20: 693758268076525907
+      golden monument anim-going up_21: 1829220977915556668
+      golden monument anim-going up_22: 1586334431346681354
+      golden monument anim-going up_23: -7130855713845108565
+      golden monument anim-going up_24: -3171001177067220788
+      golden monument anim-going up_25: -827190790232778541
+      golden monument anim-going up_26: -8157272054369852258
+      golden monument anim-going up_27: -9030820889423072865
+      golden monument anim-going up_28: 6216352745063163897
+      golden monument anim-going up_29: -121115083530723052
+      golden monument anim-going up_3: 8383554766219592917
+      golden monument anim-going up_30: 3014719476260293449
+      golden monument anim-going up_31: -5831443369428193876
+      golden monument anim-going up_32: -1107848686055015476
+      golden monument anim-going up_33: 2301068484743541709
+      golden monument anim-going up_34: -7091808047361571174
+      golden monument anim-going up_35: -8841044553033109410
+      golden monument anim-going up_36: 8148172629895747488
+      golden monument anim-going up_37: 950978807514674481
+      golden monument anim-going up_38: 6104245649581617801
+      golden monument anim-going up_39: -2842143173139972708
+      golden monument anim-going up_4: 6412720724165085552
+      golden monument anim-going up_40: 8393464456756314423
+      golden monument anim-going up_41: -5148586633810648950
+      golden monument anim-going up_42: -2867413100937935728
+      golden monument anim-going up_43: 2827514894100573142
+      golden monument anim-going up_44: 3165289283512050939
+      golden monument anim-going up_45: 5090936488525195690
+      golden monument anim-going up_46: 1440471372743679159
+      golden monument anim-going up_47: -5906150691256087498
+      golden monument anim-going up_48: -8431018059657648234
+      golden monument anim-going up_49: -375614807283716285
+      golden monument anim-going up_5: -9078931064212646557
+      golden monument anim-going up_50: -1490788904536857909
+      golden monument anim-going up_51: -3624720427306350631
+      golden monument anim-going up_52: -8812005958249466836
+      golden monument anim-going up_53: -7426062583851109968
+      golden monument anim-going up_54: -4825666699771243111
+      golden monument anim-going up_55: 6444570254712798406
+      golden monument anim-going up_56: 487917956485132934
+      golden monument anim-going up_57: -3933479758950849734
+      golden monument anim-going up_6: 1257060197297713746
+      golden monument anim-going up_7: -5921130451685495724
+      golden monument anim-going up_8: -50679546876177049
+      golden monument anim-going up_9: 995333512939377966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
