@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,12 +149,12 @@ TextureImporter:
       name: 32x32_tree3_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 383
-        width: 288
-        height: 356
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 384
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: 32x32_tree3_1
       rect:
         serializedVersion: 2
-        x: 335
-        y: 383
-        width: 288
-        height: 356
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 320
+        y: 384
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: 32x32_tree3_2
       rect:
         serializedVersion: 2
-        x: 655
-        y: 383
-        width: 288
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 640
+        y: 384
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: 32x32_tree3_3
       rect:
         serializedVersion: 2
-        x: 975
-        y: 383
-        width: 288
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 960
+        y: 384
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: 32x32_tree3_4
       rect:
         serializedVersion: 2
-        x: 1295
-        y: 383
-        width: 290
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1280
+        y: 384
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: 32x32_tree3_5
       rect:
         serializedVersion: 2
-        x: 1613
-        y: 383
-        width: 292
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1600
+        y: 384
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: 32x32_tree3_6
       rect:
         serializedVersion: 2
-        x: 13
+        x: 0
         y: 0
-        width: 292
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: 32x32_tree3_7
       rect:
         serializedVersion: 2
-        x: 333
+        x: 320
         y: 0
-        width: 292
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,12 +317,12 @@ TextureImporter:
       name: 32x32_tree3_8
       rect:
         serializedVersion: 2
-        x: 655
+        x: 640
         y: 0
-        width: 290
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: 32x32_tree3_9
       rect:
         serializedVersion: 2
-        x: 975
+        x: 960
         y: 0
-        width: 288
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -359,12 +359,12 @@ TextureImporter:
       name: 32x32_tree3_10
       rect:
         serializedVersion: 2
-        x: 1295
+        x: 1280
         y: 0
-        width: 288
-        height: 355
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,12 +380,12 @@ TextureImporter:
       name: 32x32_tree3_11
       rect:
         serializedVersion: 2
-        x: 1615
+        x: 1600
         y: 0
-        width: 288
-        height: 355
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 320
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,14 +400,26 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dbc0393812efcc243bfe1485ef5167a1
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32x32_tree3_0: -323736811529465340
+      32x32_tree3_1: -5843902938815215815
+      32x32_tree3_10: -479578213537551074
+      32x32_tree3_11: 8141081237396085730
+      32x32_tree3_2: 2304887739874396638
+      32x32_tree3_3: 5701826757397455871
+      32x32_tree3_4: -2235313490470776827
+      32x32_tree3_5: -7029662308255326201
+      32x32_tree3_6: 295293887536369743
+      32x32_tree3_7: -8936106466409463191
+      32x32_tree3_8: -5346016332277201697
+      32x32_tree3_9: -2464857017573307901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

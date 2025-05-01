@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -161,12 +161,12 @@ TextureImporter:
       name: 32x32_bonfire_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 171
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 96
+        width: 64
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: 32x32_bonfire_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 83
-        width: 62
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 96
+        width: 64
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: 32x32_bonfire_2
       rect:
         serializedVersion: 2
-        x: 155
-        y: 155
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 128
+        y: 96
+        width: 64
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: 32x32_bonfire_3
       rect:
         serializedVersion: 2
-        x: 215
-        y: 163
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 192
+        y: 96
+        width: 64
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: 32x32_bonfire_4
       rect:
         serializedVersion: 2
-        x: 227
-        y: 175
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 64
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: 32x32_bonfire_5
       rect:
         serializedVersion: 2
-        x: 229
-        y: 163
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 0
+        width: 64
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,227 +283,23 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_6
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 159
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d256d88862ff93110800000000000000
-      internalID: 1241303713282090285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_7
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 155
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39b4be26df3235cf0800000000000000
-      internalID: -264828381891441773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_8
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 95
-        width: 62
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b4d3c90b69845170800000000000000
-      internalID: 8166303117147886775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_9
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 95
-        width: 62
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 983e04970200f5110800000000000000
-      internalID: 1251719360905536393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_10
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 95
-        width: 62
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d7d7faea5101c110800000000000000
-      internalID: 1279305259150727121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_11
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 81
-        width: 14
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9004b98655e8341e0800000000000000
-      internalID: -2214770094257782775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_12
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 62
-        height: 77
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f37dd607e5b7db6d0800000000000000
-      internalID: -2973084533451270337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_13
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 65
-        width: 26
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72f77958d170802a0800000000000000
-      internalID: -6771154216374796505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_14
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 57
-        width: 12
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 51fa957b042b89860800000000000000
-      internalID: 7536969967428284181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32_bonfire_15
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 62
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ccb3a70a29033450800000000000000
-      internalID: 6067203199119637704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ba1801a376a61804bbc8ee7e7018551e
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      32x32_bonfire_0: -7876481623975123868
+      32x32_bonfire_1: 559206312684729400
+      32x32_bonfire_2: -8785071319695987037
+      32x32_bonfire_3: 4883250189130705825
+      32x32_bonfire_4: 5435348551856211927
+      32x32_bonfire_5: -4745657534921196183
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
