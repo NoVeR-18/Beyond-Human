@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class ChunkSaveSystem : MonoBehaviour
 {
     public GridHierarchy gridHierarchy;
-    public int chunkSize = 64;
+    public int chunkSize = 32;
     public string saveFolder = "Chunks";
 
     private HashSet<Vector2Int> loadedChunks = new();
