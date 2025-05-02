@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: LavaRiver8
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 160860802, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: 837795500, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: 840880815, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: 1624784828, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: 232467898, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -587474889, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -129845107, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -1963063415, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -28740907, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -1357475796, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -1887425499, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -417634874, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -1838393509, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: 1143927465, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -2073847845, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  - {fileID: -1589839215, guid: 76df69aa53a2c304e9be92a08dd8c41d, type: 3}
+  m_MinSpeed: 16
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

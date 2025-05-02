@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: LavaPassage7
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 1499674782, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: -702668596, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: -2071162604, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 215232256, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 11849537, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: -1446046192, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: -599063576, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 585467767, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 481691729, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: -409991318, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: -849213435, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 2140401433, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 1910481722, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 1469190198, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: 1332499446, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  - {fileID: -171513113, guid: a322516b1f647de4283709bd32c83fdb, type: 3}
+  m_MinSpeed: 16
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
