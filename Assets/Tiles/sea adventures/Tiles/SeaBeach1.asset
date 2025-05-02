@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: SeaBeach1
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 1585838054, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 1208299956, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 1308513432, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 1936865061, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 753931870, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 904096259, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 1780302453, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: -1469683268, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: -1123062027, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: -2145856112, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 161451531, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: -1545971335, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: -1347184675, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: 878807098, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  - {fileID: -1267752840, guid: e9dbc7a43abe86342ba842efd9d03411, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

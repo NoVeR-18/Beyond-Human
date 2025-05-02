@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: BeachTransition7
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 1945984023, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -316351173, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -905463068, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -796150067, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -408610341, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: 1199492953, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: 583140075, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -53050459, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -1599493826, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -883059934, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -2007943757, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: 2105107279, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -1819857111, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: -1770834768, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  - {fileID: 169903306, guid: 70924f7d2efeeaf42a49c8b94a7dd4ab, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: GrassCoast
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -5300816512408640971, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  - {fileID: 3242699888796112062, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  - {fileID: -3329624390419523569, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  - {fileID: 7664807726636836012, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  - {fileID: 5683953482080074649, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  - {fileID: -8165667015995327148, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  - {fileID: 9032443313002576227, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  - {fileID: -7740828796621346120, guid: dccf2860d6e871d4ea13a8e70a87f187, type: 3}
+  m_MinSpeed: 8
+  m_MaxSpeed: 8
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
