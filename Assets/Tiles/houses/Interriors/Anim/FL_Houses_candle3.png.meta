@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -137,12 +137,12 @@ TextureImporter:
       name: FL_Houses_candle3_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 40
-        width: 8
-        height: 22
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,12 +158,12 @@ TextureImporter:
       name: FL_Houses_candle3_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 40
-        width: 8
-        height: 17
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,12 +179,12 @@ TextureImporter:
       name: FL_Houses_candle3_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 40
-        width: 8
-        height: 19
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +200,12 @@ TextureImporter:
       name: FL_Houses_candle3_3
       rect:
         serializedVersion: 2
-        x: 108
-        y: 40
-        width: 8
-        height: 22
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: FL_Houses_candle3_4
       rect:
         serializedVersion: 2
-        x: 12
-        y: 8
-        width: 8
-        height: 18
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,12 +242,12 @@ TextureImporter:
       name: FL_Houses_candle3_5
       rect:
         serializedVersion: 2
-        x: 44
-        y: 8
-        width: 8
-        height: 20
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,12 +263,12 @@ TextureImporter:
       name: FL_Houses_candle3_6
       rect:
         serializedVersion: 2
-        x: 76
-        y: 8
-        width: 8
-        height: 17
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,12 +284,12 @@ TextureImporter:
       name: FL_Houses_candle3_7
       rect:
         serializedVersion: 2
-        x: 108
-        y: 8
-        width: 8
-        height: 19
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,14 +304,22 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 870f0b30ae7f1a84f8911465b2b83803
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FL_Houses_candle3_0: 4651639719547293333
+      FL_Houses_candle3_1: 3036667438811830288
+      FL_Houses_candle3_2: 4134841549311414197
+      FL_Houses_candle3_3: 8594042704366970545
+      FL_Houses_candle3_4: 536844403690787086
+      FL_Houses_candle3_5: 4746009638395564179
+      FL_Houses_candle3_6: -6223081636167412518
+      FL_Houses_candle3_7: -7372873671687469120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
