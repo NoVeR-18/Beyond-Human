@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Skelet4
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 2069251901, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  - {fileID: -1897276211, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  - {fileID: 1771508398, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  - {fileID: 1926374994, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  - {fileID: -782721359, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  - {fileID: -1308052052, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  - {fileID: -1741660130, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  - {fileID: -185865118, guid: 70c217bfe18dbec4497c3debb157ace7, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0
