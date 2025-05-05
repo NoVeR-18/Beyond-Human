@@ -7,8 +7,11 @@ public class GridHierarchy : MonoBehaviour
     public Tilemap cliffs;
     public Tilemap background;
     public Tilemap ground;
+    public Tilemap stairs;
+    public Tilemap groundUp;
     public Tilemap backDecor;
     public Tilemap walls;
+    public Tilemap colliders;
     public Tilemap decor;
 
     public Transform housesRoot;
@@ -18,7 +21,7 @@ public class GridHierarchy : MonoBehaviour
     public Dictionary<string, Vector3Int> tilemapOffsets = new();
     public List<Tilemap> GetAllTilemaps()
     {
-        var list = new List<Tilemap> { cliffs, background, ground, backDecor, walls, decor };
+        var list = new List<Tilemap> { cliffs, background, ground, stairs, groundUp, backDecor, walls, decor };
         foreach (var house in houses)
         {
             list.Add(house.roof);
@@ -39,8 +42,11 @@ public class GridHierarchy : MonoBehaviour
             { "cliffs", cliffs },
             { "background", background },
             { "ground", ground },
+            { "stairs", stairs },
+            { "groundUp", groundUp },
             { "backDecor", backDecor },
             { "walls", walls },
+            { "walls", colliders },
             { "decor", decor }
         };
         // Подключаем все дома автоматически
