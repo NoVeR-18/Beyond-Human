@@ -1,32 +1,34 @@
 ﻿using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class StairZone : MonoBehaviour
 {
-    public float zStart = 0f;
-    public float zEnd = 1f;
-    public Vector2 stairDirection = new Vector2(1, 1); // ↗ по умолчанию
+    public Tilemap ladderTilemap;
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player")) return;
+
+        PlayerController player = other.GetComponent<PlayerController>();
+        if (player == null) return;
+
+        Vector3 worldPos = other.transform.position;
+        Vector3Int cellPos = ladderTilemap.WorldToCell(worldPos);
+        TileBase tile = ladderTilemap.GetTile(cellPos);
+
+        if (tile is LadderTile ladder)
         {
-            var controller = other.GetComponent<PlayerController>();
-            if (controller != null)
-            {
-                controller.SetOnStairs(true, zStart, zEnd, stairDirection);
-            }
+            player.SetOnStairs(true, 0f, 1f, ladder.stairDirection);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            var controller = other.GetComponent<PlayerController>();
-            if (controller != null)
-            {
-                controller.SetOnStairs(false, 0f, 0f, Vector2.zero);
-            }
-        }
+        if (!other.CompareTag("Player")) return;
+
+        PlayerController player = other.GetComponent<PlayerController>();
+        if (player == null) return;
+
+        player.SetOnStairs(false, 0f, 0f, Vector2.zero);
     }
 }
