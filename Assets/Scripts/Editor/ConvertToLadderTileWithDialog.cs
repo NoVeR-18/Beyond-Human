@@ -42,17 +42,6 @@ public class ConvertTileToLadderInlineEditor : EditorWindow
         DrawDirectionButton("↗", new Vector2(1, 1));
         GUILayout.EndHorizontal();
 
-        GUILayout.BeginHorizontal();
-        DrawDirectionButton("←", new Vector2(-1, 0));
-        GUILayout.Space(30);
-        DrawDirectionButton("→", new Vector2(1, 0));
-        GUILayout.EndHorizontal();
-
-        GUILayout.BeginHorizontal();
-        DrawDirectionButton("↙", new Vector2(-1, -1));
-        DrawDirectionButton("↓", new Vector2(0, -1));
-        DrawDirectionButton("↘", new Vector2(1, -1));
-        GUILayout.EndHorizontal();
     }
 
     private void DrawDirectionButton(string label, Vector2 dir)

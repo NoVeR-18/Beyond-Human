@@ -24,10 +24,10 @@ public class GridHierarchy : MonoBehaviour
         var list = new List<Tilemap> { cliffs, background, ground, stairs, groundUp, backDecor, walls, decor };
         foreach (var house in houses)
         {
-            list.Add(house.roof);
-            list.Add(house.walls);
-            list.Add(house.floor);
-            list.Add(house.furniture);
+            //list.Add(house.roof);
+            //list.Add(house.walls);
+            //list.Add(house.floor);
+            //list.Add(house.furniture);
         }
         return list;
     }
@@ -58,10 +58,10 @@ public class GridHierarchy : MonoBehaviour
                 houseData.houseName = house.name;
                 if (houseData != null)
                 {
-                    AddTilemapIfExists(houseData.floor, $"House_{houseData.houseName}_Floor");
-                    AddTilemapIfExists(houseData.walls, $"House_{houseData.houseName}_Walls");
-                    AddTilemapIfExists(houseData.roof, $"House_{houseData.houseName}_Roof");
-                    AddTilemapIfExists(houseData.furniture, $"House_{houseData.houseName}_Furniture");
+                    //AddTilemapIfExists(houseData.floor, $"House_{houseData.houseName}_Floor");
+                    //AddTilemapIfExists(houseData.walls, $"House_{houseData.houseName}_Walls");
+                    //AddTilemapIfExists(houseData.roof, $"House_{houseData.houseName}_Roof");
+                    //AddTilemapIfExists(houseData.furniture, $"House_{houseData.houseName}_Furniture");
                 }
             }
         }
