@@ -16,6 +16,7 @@ public class RoofAreaHider : MonoBehaviour
 
     public void Start()
     {
+        roofObject.SetActive(true);
         polygon = GetComponent<PolygonCollider2D>();
         GenerateOutlineColliderWithOffset();
     }

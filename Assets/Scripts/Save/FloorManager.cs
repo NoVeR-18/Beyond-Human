@@ -5,6 +5,22 @@ public class FloorManager : MonoBehaviour
     public HouseData house;
     private int currentFloor = 0;
 
+    private void Start()
+    {
+        if (house == null)
+
+            house = GetComponent<HouseData>();
+        if (house.floors == null || house.floors.Count > 1)
+        {
+            for (int i = 1; i < house.floors.Count; i++)
+            {
+                SetFloorVisibility(house.floors[i], false);
+            }
+        }
+        SetFloorVisibility(house.floors[0], false);
+    }
+
+
     public void ChangeFloor(int delta)
     {
         int newFloor = currentFloor + delta;
