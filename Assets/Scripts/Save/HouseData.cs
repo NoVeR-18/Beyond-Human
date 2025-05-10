@@ -14,5 +14,7 @@ public class HouseData : MonoBehaviour
 {
     public string houseName;
     public Tilemap roof;
-    public List<HouseFloor> floors = new(); // По индексу = номер этажа
+    public int entranceFloor = 0;
+
+    public List<HouseFloor> floors = new();
 }

@@ -8,6 +8,7 @@ using UnityEngine.Tilemaps;
 public class RoofAreaHider : MonoBehaviour
 {
     public Tilemap floorTilemap;          // Tilemap с полом (по нему строится область)
+    public Tilemap furnitureTilemap;
     public GameObject roofObject;         // Объект с крышей, который нужно скрывать
 
     public float offset = -0.2f; // Отступ внутрь (отрицательный)
@@ -19,13 +20,16 @@ public class RoofAreaHider : MonoBehaviour
         roofObject.SetActive(true);
         polygon = GetComponent<PolygonCollider2D>();
         GenerateOutlineColliderWithOffset();
+        furnitureTilemap.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && roofObject != null)
         {
+            furnitureTilemap.gameObject.SetActive(true);
             roofObject.SetActive(false);
+
         }
     }
 
@@ -34,6 +38,7 @@ public class RoofAreaHider : MonoBehaviour
         if (other.CompareTag("Player") && roofObject != null)
         {
             roofObject.SetActive(true);
+            furnitureTilemap.gameObject.SetActive(false);
         }
     }
 

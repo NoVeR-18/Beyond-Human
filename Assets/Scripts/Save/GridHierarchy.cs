@@ -46,7 +46,7 @@ public class GridHierarchy : MonoBehaviour
             { "groundUp", groundUp },
             { "backDecor", backDecor },
             { "walls", walls },
-            { "walls", colliders },
+            { "colliders", colliders },
             { "decor", decor }
         };
         // Подключаем все дома автоматически
@@ -55,12 +55,20 @@ public class GridHierarchy : MonoBehaviour
             foreach (Transform house in housesRoot)
             {
                 var houseData = house.GetComponent<HouseData>();
-                houseData.houseName = house.name;
+                houseData.houseName = house.GetInstanceID().ToString();
                 if (houseData != null)
                 {
+                    for (int i = 0; i < houseData.floors.Count; i++)
+                    {
+                        if (houseData.floors[i].walls != null) AddTilemapIfExists(houseData.floors[i].walls, $"House_Floor{i}_{houseData.houseName}_Walls");
+                        if (houseData.floors[i].floor != null) AddTilemapIfExists(houseData.floors[i].floor, $"House_Floor{i}_{houseData.houseName}_Floor");
+                        if (houseData.floors[i].furniture != null) AddTilemapIfExists(houseData.floors[i].furniture, $"House_Floor{i}_{houseData.houseName}_Furniture");
+                    }
+                    AddTilemapIfExists(houseData.roof, $"House_{houseData.houseName}_Roof");
+
+
                     //AddTilemapIfExists(houseData.floor, $"House_{houseData.houseName}_Floor");
                     //AddTilemapIfExists(houseData.walls, $"House_{houseData.houseName}_Walls");
-                    //AddTilemapIfExists(houseData.roof, $"House_{houseData.houseName}_Roof");
                     //AddTilemapIfExists(houseData.furniture, $"House_{houseData.houseName}_Furniture");
                 }
             }

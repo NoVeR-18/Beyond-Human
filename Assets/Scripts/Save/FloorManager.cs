@@ -17,7 +17,7 @@ public class FloorManager : MonoBehaviour
                 SetFloorVisibility(house.floors[i], false);
             }
         }
-        SetFloorVisibility(house.floors[0], false);
+        SetFloorVisibility(house.floors[house.entranceFloor], true);
     }
 
 
