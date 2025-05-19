@@ -72,7 +72,6 @@ public class NPCController : MonoBehaviour
         }
         return closest;
     }
-
     private void SwitchActivity(ScheduleEntry entry)
     {
         switch (entry.activity)
@@ -84,8 +83,26 @@ public class NPCController : MonoBehaviour
             case NPCActivityType.Guard:
                 StateMachine.ChangeState(new RoamState(this));
                 break;
+
             case NPCActivityType.Work:
-                StateMachine.ChangeState(new GoToLocationState(this, entry.destination.position));
+                StateMachine.ChangeState(new GoToLocationState(this, entry.destination.position, () =>
+                {
+                    StateMachine.ChangeState(new WorkState(this)); // Здесь ты можешь выполнять работу (анимация, диалог и т.д.)
+                }));
+                break;
+
+            case NPCActivityType.Sleep:
+                StateMachine.ChangeState(new GoToLocationState(this, entry.destination.position, () =>
+                {
+                    StateMachine.ChangeState(new SleepState(this));
+                }));
+                break;
+
+            case NPCActivityType.Trade:
+                StateMachine.ChangeState(new GoToLocationState(this, entry.destination.position, () =>
+                {
+                    StateMachine.ChangeState(new TradeState(this));
+                }));
                 break;
 
             default:
@@ -93,6 +110,7 @@ public class NPCController : MonoBehaviour
                 break;
         }
     }
+
 
     public bool CanSeePlayer(out Transform player)
     {

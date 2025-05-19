@@ -1,15 +1,17 @@
+using System;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class GoToLocationState : INPCState
 {
     private NPCController npc;
     private Vector3 destination;
+    private Action onReachedDestination;
 
-    public GoToLocationState(NPCController npc, Vector3 destination)
+    public GoToLocationState(NPCController npc, Vector3 destination, Action onReachedDestination = null)
     {
         this.npc = npc;
         this.destination = destination;
+        this.onReachedDestination = onReachedDestination;
     }
 
     public void Enter()
@@ -22,7 +24,17 @@ public class GoToLocationState : INPCState
     {
         if (!npc.Agent.pathPending && npc.Agent.remainingDistance <= npc.Agent.stoppingDistance)
         {
-            npc.StateMachine.ChangeState(new IdleState(npc)); // Стоит на месте, ждет следующее событие
+            npc.Agent.ResetPath();
+            npc.Animator.SetFloat("Speed", 0f);
+
+            if (onReachedDestination != null)
+            {
+                onReachedDestination.Invoke();
+            }
+            else
+            {
+                npc.StateMachine.ChangeState(new IdleState(npc)); // или состояние ожидания
+            }
         }
     }
 
