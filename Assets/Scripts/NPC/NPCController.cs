@@ -1,4 +1,5 @@
 using NPCEnums;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -49,7 +50,7 @@ public class NPCController : MonoBehaviour
 
     private void OnTimeChanged(GameTime time)
     {
-        ScheduleEntry next = GetScheduleEntry(time.Hour, time.Minute);
+        ScheduleEntry next = GetScheduleEntry(time);
         if (next != null && next != currentEntry)
         {
             currentEntry = next;
@@ -57,16 +58,17 @@ public class NPCController : MonoBehaviour
         }
     }
 
-    private ScheduleEntry GetScheduleEntry(int hour, int minute)
+    private ScheduleEntry GetScheduleEntry(GameTime gameTime)
     {
         ScheduleEntry closest = null;
         foreach (var entry in schedule)
         {
-            if (entry.hour == hour && entry.minute <= minute)
-            {
-                if (closest == null || entry.minute > closest.minute)
-                    closest = entry;
-            }
+            if (entry.day == gameTime.Day)
+                if (entry.hour == gameTime.Hour && entry.minute <= gameTime.Minute)
+                {
+                    if (closest == null || entry.minute > closest.minute)
+                        closest = entry;
+                }
         }
         return closest;
     }
@@ -75,7 +77,7 @@ public class NPCController : MonoBehaviour
     {
         switch (entry.activity)
         {
-            case NPCActivityType.Relax:
+            case NPCActivityType.Idle:
                 StateMachine.ChangeState(new IdleState(this));
                 break;
 
@@ -118,6 +120,9 @@ public class ScheduleEntry
 {
     [Range(0, 23)] public int hour;
     [Range(0, 59)] public int minute;
+    public DayOfWeek day;
     public NPCActivityType activity;
     public Transform destination;
 }
+
+

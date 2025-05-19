@@ -6,10 +6,12 @@ public struct GameTime : IEquatable<GameTime>
 {
     public int Hour;
     public int Minute;
+    public DayOfWeek Day;
 
-    public GameTime(int hour, int minute)
+    public GameTime(int hour, int minute, DayOfWeek days)
     {
         Hour = hour;
+        Day = days;
         Minute = minute;
     }
 
@@ -31,14 +33,12 @@ public class TimeManager : MonoBehaviour
 
     [Header("Time Settings")]
     public float timeScale = 60f; // 1 реальная секунда = 1 игровая минута
-    public GameTime startTime = new GameTime(8, 0);
+    public GameTime startTime = new GameTime(8, 0, DayOfWeek.Monday);
 
     public GameTime CurrentTime;
-    public int CurrentDay { get; private set; } = 1;
-    public DayOfWeek CurrentWeekDay { get; private set; } = DayOfWeek.Monday;
 
     public event Action<GameTime> OnTimeChanged;
-    public event Action<int, DayOfWeek> OnDayChanged;
+    public event Action<DayOfWeek> OnDayChanged;
 
     private float timeAccumulator;
 
@@ -80,26 +80,25 @@ public class TimeManager : MonoBehaviour
 
     private void AdvanceDay()
     {
-        CurrentDay++;
-        CurrentWeekDay = (DayOfWeek)(((int)CurrentWeekDay + 1) % 7);
-        OnDayChanged?.Invoke(CurrentDay, CurrentWeekDay);
+        CurrentTime.Day++;
+        CurrentTime.Day = (DayOfWeek)(((int)CurrentTime.Day + 1) % 7);
+        OnDayChanged?.Invoke(CurrentTime.Day);
     }
 
     public void SaveTime()
     {
         PlayerPrefs.SetInt("Hour", CurrentTime.Hour);
         PlayerPrefs.SetInt("Minute", CurrentTime.Minute);
-        PlayerPrefs.SetInt("Day", CurrentDay);
-        PlayerPrefs.SetInt("WeekDay", (int)CurrentWeekDay);
+        PlayerPrefs.SetInt("WeekDay", (int)CurrentTime.Day);
     }
 
     public void LoadTime()
     {
         int hour = PlayerPrefs.GetInt("Hour", startTime.Hour);
         int minute = PlayerPrefs.GetInt("Minute", startTime.Minute);
-        CurrentTime = new GameTime(hour, minute);
-        CurrentDay = PlayerPrefs.GetInt("Day", 1);
-        CurrentWeekDay = (DayOfWeek)PlayerPrefs.GetInt("WeekDay", 1);
+        DayOfWeek CurrentWeekDay = (DayOfWeek)PlayerPrefs.GetInt("WeekDay", 1);
+
+        CurrentTime = new GameTime(hour, minute, CurrentWeekDay);
     }
 
     private void OnApplicationQuit()

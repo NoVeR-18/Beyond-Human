@@ -5,12 +5,15 @@ namespace NPCEnums
     {
         Sleep,
         Work,
-        Relax,
+        Idle,
         Wander,
         Trade,
         Guard,
         Eat,
         FightClub,
-        Fishing
+        Fishing,
+        Travel,
+        Hide,
+        Camp
     }
 }
