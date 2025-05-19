@@ -1,6 +1,6 @@
 public interface INPCState
 {
-    void Enter(NPCController npc);
+    void Enter();
     void Exit();
     void Update();
 }

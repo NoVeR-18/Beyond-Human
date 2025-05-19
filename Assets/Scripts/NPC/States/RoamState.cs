@@ -6,11 +6,15 @@ public class RoamState : INPCState
     private NPCController npc;
     private Vector3 roamPos;
 
-    public void Enter(NPCController npc)
+    public RoamState(NPCController npc)
     {
         this.npc = npc;
+    }
+
+    public void Enter()
+    {
         roamPos = npc.transform.position + Utils.GetRandomDir() * Random.Range(3f, 7f);
-        npc.agent.SetDestination(roamPos);
+        npc.Agent.SetDestination(roamPos);
     }
 
     public void Exit() { }
@@ -20,13 +24,13 @@ public class RoamState : INPCState
         if (npc.CanSeePlayer(out var player) && npc.isAggressive)
         {
             npc.target = player;
-            npc.stateMachine.ChangeState(new ChaseState());
+            npc.StateMachine.ChangeState(new ChaseState(npc));
             return;
         }
 
-        if (!npc.agent.pathPending && npc.agent.remainingDistance < npc.agent.stoppingDistance)
+        if (!npc.Agent.pathPending && npc.Agent.remainingDistance < npc.Agent.stoppingDistance)
         {
-            npc.stateMachine.ChangeState(new IdleState());
+            npc.StateMachine.ChangeState(new IdleState(npc));
         }
     }
 }

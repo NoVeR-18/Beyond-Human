@@ -37,7 +37,7 @@ public class TimeManager : MonoBehaviour
     public int CurrentDay { get; private set; } = 1;
     public DayOfWeek CurrentWeekDay { get; private set; } = DayOfWeek.Monday;
 
-    public event Action<GameTime> OnMinuteChanged;
+    public event Action<GameTime> OnTimeChanged;
     public event Action<int, DayOfWeek> OnDayChanged;
 
     private float timeAccumulator;
@@ -75,7 +75,7 @@ public class TimeManager : MonoBehaviour
             }
         }
 
-        OnMinuteChanged?.Invoke(CurrentTime);
+        OnTimeChanged?.Invoke(CurrentTime);
     }
 
     private void AdvanceDay()

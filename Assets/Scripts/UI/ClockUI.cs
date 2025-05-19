@@ -9,7 +9,7 @@ public class ClockUI : MonoBehaviour
     private void Start()
     {
         UpdateClock(TimeManager.Instance.CurrentTime);
-        TimeManager.Instance.OnMinuteChanged += UpdateClock;
+        TimeManager.Instance.OnTimeChanged += UpdateClock;
     }
 
     private void UpdateClock(GameTime time)
@@ -20,6 +20,6 @@ public class ClockUI : MonoBehaviour
     private void OnDestroy()
     {
         if (TimeManager.Instance != null)
-            TimeManager.Instance.OnMinuteChanged -= UpdateClock;
+            TimeManager.Instance.OnTimeChanged -= UpdateClock;
     }
 }

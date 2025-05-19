@@ -4,37 +4,43 @@ public class ChaseState : INPCState
 {
     private NPCController npc;
 
-    public void Enter(NPCController npc)
+    public ChaseState(NPCController npc)
     {
         this.npc = npc;
     }
 
+    public void Enter()
+    {
+
+
+    }
+
     public void Exit()
     {
-        npc.agent.ResetPath();
+        npc.Agent.ResetPath();
     }
 
     public void Update()
     {
         if (npc.target == null)
         {
-            npc.stateMachine.ChangeState(new IdleState());
+            npc.StateMachine.ChangeState(new IdleState(npc));
             return;
         }
 
-        npc.agent.SetDestination(npc.target.position);
+        npc.Agent.SetDestination(npc.target.position);
 
         float distance = Vector3.Distance(npc.transform.position, npc.target.position);
         if (distance <= 1.5f) // Радиус поимки
         {
             Debug.Log("Поймал игрока!");
-            npc.agent.ResetPath();
+            npc.Agent.ResetPath();
             // Здесь можно вставить анимацию, переход в другое состояние и т.п.
         }
 
         if (!npc.CanSeePlayer(out var seenPlayer))
         {
-            npc.stateMachine.ChangeState(new IdleState()); // Можно сделать GoToLastSeenPositionState
+            npc.StateMachine.ChangeState(new IdleState(npc)); // Можно сделать GoToLastSeenPositionState
         }
     }
 }

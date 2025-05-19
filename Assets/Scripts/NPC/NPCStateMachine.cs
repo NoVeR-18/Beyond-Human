@@ -15,7 +15,7 @@ public class NPCStateMachine
     {
         CurrentState?.Exit();
         CurrentState = newState;
-        CurrentState.Enter(npc);
+        CurrentState.Enter();
         npc.StateName = newState.ToString();
     }
 }
