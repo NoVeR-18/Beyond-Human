@@ -60,9 +60,9 @@ public class GridHierarchy : MonoBehaviour
                 {
                     for (int i = 0; i < houseData.floors.Count; i++)
                     {
-                        if (houseData.floors[i].walls != null) AddTilemapIfExists(houseData.floors[i].walls, $"House_Floor{i}_{houseData.houseName}_Walls");
-                        if (houseData.floors[i].floor != null) AddTilemapIfExists(houseData.floors[i].floor, $"House_Floor{i}_{houseData.houseName}_Floor");
-                        if (houseData.floors[i].furniture != null) AddTilemapIfExists(houseData.floors[i].furniture, $"House_Floor{i}_{houseData.houseName}_Furniture");
+                        if (houseData.floors[i].walls != null) AddTilemapIfExistsInParrent(houseData.floors[i].walls, $"House_Floor{i}_{houseData.houseName}_Walls");
+                        if (houseData.floors[i].floor != null) AddTilemapIfExistsInParrent(houseData.floors[i].floor, $"House_Floor{i}_{houseData.houseName}_Floor");
+                        if (houseData.floors[i].furniture != null) AddTilemapIfExistsInParrent(houseData.floors[i].furniture, $"House_Floor{i}_{houseData.houseName}_Furniture");
                     }
                     AddTilemapIfExists(houseData.roof, $"House_{houseData.houseName}_Roof");
 
@@ -86,6 +86,24 @@ public class GridHierarchy : MonoBehaviour
             if (tilemap.transform.parent != null && tilemap.transform.parent.parent == housesRoot)
             {
                 var poss = tilemap.transform.parent.position;
+                Vector3Int offset = new Vector3Int((int)poss.x, (int)poss.y, (int)poss.z);
+                tilemapOffsets[name] = offset;
+            }
+            else
+            {
+                tilemapOffsets[name] = Vector3Int.zero;
+            }
+        }
+    }
+
+    private void AddTilemapIfExistsInParrent(Tilemap tilemap, string name)
+    {
+        if (tilemap != null)
+        {
+            namedTilemaps[name] = tilemap;
+            if (tilemap.transform.parent.transform.parent != null && tilemap.transform.parent.parent.transform.parent == housesRoot)
+            {
+                var poss = tilemap.transform.parent.transform.parent.position;
                 Vector3Int offset = new Vector3Int((int)poss.x, (int)poss.y, (int)poss.z);
                 tilemapOffsets[name] = offset;
             }

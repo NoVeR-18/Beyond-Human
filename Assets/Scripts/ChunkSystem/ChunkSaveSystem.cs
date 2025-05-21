@@ -278,17 +278,20 @@ public class ChunkSaveSystem : MonoBehaviour
                     Vector3Int pos = new(x, y, 0);
                     TileBase tile = map.GetTile(pos);
                     if (tile == null) continue;
-
-                    Vector2Int chunk = new(x / chunkSize, y / chunkSize);
-                    if (!foundChunks.Contains(chunk))
-                    {
-                        foundChunks.Add(chunk);
-                        SaveChunkAt(chunk);
-                    }
+                    int chunkX = Mathf.FloorToInt((float)x / chunkSize);
+                    int chunkY = Mathf.FloorToInt((float)y / chunkSize);
+                    Vector2Int chunk = new(chunkX, chunkY);
+                    foundChunks.Add(chunk);
                 }
             }
         }
+
+        foreach (var chunk in foundChunks)
+        {
+            SaveChunkAt(chunk);
+        }
     }
+
     public void LoadAllChunks()
     {
         if (!Directory.Exists(saveFolder)) return;
