@@ -1,10 +1,9 @@
-using UnityEngine;
+using NPCEnums;
 
 public class TradeState : INPCState
 {
     private NPCController npc;
-    private float tradeDuration;
-    private float timer;
+
 
     public TradeState(NPCController npc)
     {
@@ -13,11 +12,8 @@ public class TradeState : INPCState
 
     public void Enter()
     {
-        tradeDuration = Random.Range(10f, 20f); // или фиксированное время в зависимости от расписания
-        timer = tradeDuration;
-
-        npc.Animator.SetTrigger("StartTrading");
-        // Возможно включить взаимодействие с игроком — открытие торговли, если игрок рядом
+        npc.Speak(DialogueContext.Trade);
+        npc.Agent.ResetPath();
     }
 
     public void Update()
@@ -33,6 +29,6 @@ public class TradeState : INPCState
 
     public void Exit()
     {
-        npc.Animator.SetTrigger("StopTrading");
+
     }
 }

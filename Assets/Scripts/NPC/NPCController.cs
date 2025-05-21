@@ -1,5 +1,6 @@
 using NPCEnums;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -7,13 +8,13 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class NPCController : MonoBehaviour
 {
-    [Header("Параметры поведения")]
+    [Header("Global settings")]
     public bool isAggressive;
     public float viewDistance = 6f;
     public float viewAngle = 90f;
     public LayerMask obstacleMask, playerMask;
 
-    [Header("Расписание NPC")]
+    [Header("NPC Schedule")]
     public List<ScheduleEntry> schedule = new();
 
     [HideInInspector] public NavMeshAgent Agent;
@@ -24,6 +25,29 @@ public class NPCController : MonoBehaviour
     public string StateName;
 
     private ScheduleEntry currentEntry;
+
+    public NPCDialogueSet dialogueSet;
+
+    public void Speak(DialogueContext context)
+    {
+        var lines = dialogueSet?.GetDialogue(context);
+        if (lines == null || lines.Count == 0) return;
+
+        StartCoroutine(RunDialogue(lines));
+    }
+
+    private IEnumerator RunDialogue(List<DialogueLine> lines)
+    {
+        foreach (var line in lines)
+        {
+            Debug.Log($"{gameObject.name} says: {line.text}");
+            UIManager.Instance.dialogueWindow.ShowDialogue(line.text);
+
+            //  Here can integrate in UI system
+            yield return new WaitForSeconds(line.delayAfter);
+        }
+    }
+
 
     private void Awake()
     {

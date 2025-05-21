@@ -16,4 +16,16 @@ namespace NPCEnums
         Hide,
         Camp
     }
+
+    public enum DialogueContext
+    {
+        Idle,
+        Work,
+        Trade,
+        Threatened,
+        Sleep,
+        Greeting,
+        Quest,
+    }
+
 }
