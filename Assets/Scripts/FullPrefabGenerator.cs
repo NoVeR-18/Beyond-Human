@@ -1,3 +1,4 @@
+using Assets.Scripts.NPC;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

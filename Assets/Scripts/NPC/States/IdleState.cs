@@ -1,37 +1,40 @@
-using System.Xml;
 using UnityEngine;
 
-public class IdleState : INPCState
+namespace Assets.Scripts.NPC.States
 {
-    private NPCController npc;
-    private float idleTimer = 2f;
-    
-    public IdleState(NPCController npc)
-    {
-        this.npc = npc;
-    }
 
-    public void Enter()
+    public class IdleState : INPCState
     {
-        npc.Agent.ResetPath();
-        idleTimer = Random.Range(1.5f, 3f);
-    }
+        private NPCController npc;
+        private float idleTimer = 2f;
 
-    public void Exit() { }
-
-    public void Update()
-    {
-        if (npc.CanSeePlayer(out var player) && npc.isAggressive)
+        public IdleState(NPCController npc)
         {
-            npc.target = player;
-            npc.StateMachine.ChangeState(new ChaseState(npc));
-            return;
+            this.npc = npc;
         }
 
-        idleTimer -= Time.deltaTime;
-        if (idleTimer <= 0)
+        public void Enter()
         {
-            npc.StateMachine.ChangeState(new RoamState(npc));
+            npc.Agent.ResetPath();
+            idleTimer = Random.Range(1.5f, 3f);
+        }
+
+        public void Exit() { }
+
+        public void Update()
+        {
+            if (npc.CanSeePlayer(out var player) && npc.isAggressive)
+            {
+                npc.target = player;
+                npc.StateMachine.ChangeState(new ChaseState(npc));
+                return;
+            }
+
+            idleTimer -= Time.deltaTime;
+            if (idleTimer <= 0)
+            {
+                npc.StateMachine.ChangeState(new RoamState(npc));
+            }
         }
     }
 }

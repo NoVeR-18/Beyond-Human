@@ -1,6 +1,11 @@
-public interface INPCState
+
+namespace Assets.Scripts.NPC
 {
-    void Enter();
-    void Exit();
-    void Update();
+
+    public interface INPCState
+    {
+        void Enter();
+        void Exit();
+        void Update();
+    }
 }

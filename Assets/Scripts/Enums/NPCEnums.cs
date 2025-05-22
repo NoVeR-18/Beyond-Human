@@ -27,5 +27,13 @@ namespace NPCEnums
         Greeting,
         Quest,
     }
-
+    public enum InterruptReason
+    {
+        PlayerNearby,
+        PlayerInteracted,
+        AlarmTriggered,
+        TimeToWakeUp,
+        DangerDetected,
+        // Add more reasons as needed
+    }
 }

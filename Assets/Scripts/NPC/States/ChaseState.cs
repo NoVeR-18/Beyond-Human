@@ -1,46 +1,51 @@
 using UnityEngine;
 
-public class ChaseState : INPCState
+namespace Assets.Scripts.NPC.States
 {
-    private NPCController npc;
 
-    public ChaseState(NPCController npc)
+    public class ChaseState : INPCState
     {
-        this.npc = npc;
-    }
+        private NPCController npc;
 
-    public void Enter()
-    {
-
-
-    }
-
-    public void Exit()
-    {
-        npc.Agent.ResetPath();
-    }
-
-    public void Update()
-    {
-        if (npc.target == null)
+        public ChaseState(NPCController npc)
         {
-            npc.StateMachine.ChangeState(new IdleState(npc));
-            return;
+            this.npc = npc;
         }
 
-        npc.Agent.SetDestination(npc.target.position);
-
-        float distance = Vector3.Distance(npc.transform.position, npc.target.position);
-        if (distance <= 1.5f) // Радиус поимки
+        public void Enter()
         {
-            Debug.Log("Поймал игрока!");
+
+
+        }
+
+        public void Exit()
+        {
             npc.Agent.ResetPath();
-            // Здесь можно вставить анимацию, переход в другое состояние и т.п.
         }
 
-        if (!npc.CanSeePlayer(out var seenPlayer))
+        public void Update()
         {
-            npc.StateMachine.ChangeState(new IdleState(npc)); // Можно сделать GoToLastSeenPositionState
+            if (npc.target == null)
+            {
+                npc.StateMachine.ChangeState(new IdleState(npc));
+                return;
+            }
+
+            npc.Agent.SetDestination(npc.target.position);
+
+            float distance = Vector3.Distance(npc.transform.position, npc.target.position);
+            if (distance <= 1.5f) // Радиус поимки
+            {
+                Debug.Log("Поймал игрока!");
+                npc.Agent.ResetPath();
+                // Здесь можно вставить анимацию, переход в другое состояние и т.п.
+            }
+
+            if (!npc.CanSeePlayer(out var seenPlayer))
+            {
+                npc.StateMachine.ChangeState(new IdleState(npc)); // Можно сделать GoToLastSeenPositionState
+            }
         }
     }
+
 }
