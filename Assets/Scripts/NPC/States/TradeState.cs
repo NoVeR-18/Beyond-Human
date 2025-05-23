@@ -16,8 +16,8 @@ namespace Assets.Scripts.NPC.States
 
         public void Enter()
         {
-            npc.Speak(DialogueContext.Trade);
             npc.Agent.ResetPath();
+            npc.StartContextDialogue(DialogueContext.Trade);
         }
 
         public void Update()
@@ -33,14 +33,14 @@ namespace Assets.Scripts.NPC.States
 
         public void Exit()
         {
-
+            npc.StopContextDialogue();
         }
 
 
         public void Interact(NPCController npc)
         {
             Debug.Log("Open trade window.");
-            //TradeUI.Instance.Open(npc);
+            UIManager.Instance.tradeWindow.Show();
         }
     }
 }

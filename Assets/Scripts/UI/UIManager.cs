@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
 
     public List<WindowBinding> windows;
     public DialogueWindow dialogueWindow;
+    public TradeWindow tradeWindow;
+
 
     private Dictionary<UISection, UIWindow> _windowMap;
     private UISection? _currentSection;
@@ -40,13 +42,20 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         _windowMap = new Dictionary<UISection, UIWindow>();
+        CloseTabs();
+    }
+
+    private void CloseTabs()
+    {
         foreach (var w in windows)
         {
             _windowMap[w.section] = w.window;
             w.window.Hide();
         }
         dialogueWindow.HideDialogue();
+        tradeWindow.Hide();
     }
+
     void Update()
     {
         foreach (var pair in _hotkeys)
@@ -69,6 +78,11 @@ public class UIManager : MonoBehaviour
                 break;
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseTabs();
+        }
+
     }
     public void OpenSection(UISection section)
     {

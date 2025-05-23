@@ -34,7 +34,7 @@ namespace Assets.Scripts.NPC
 
         public void Speak(DialogueContext context)
         {
-            var lines = dialogueSet?.GetDialogue(context);
+            var lines = dialogueSet?.GetRandomDialogue(context);
             if (lines == null || lines.Count == 0) return;
 
             StartCoroutine(RunDialogue(lines));
@@ -85,21 +85,35 @@ namespace Assets.Scripts.NPC
                 SwitchActivity(next);
             }
         }
-
         private ScheduleEntry GetScheduleEntry(GameTime gameTime)
         {
-            ScheduleEntry closest = null;
+            ScheduleEntry bestEntry = null;
+
             foreach (var entry in schedule)
             {
-                if (entry.day == gameTime.Day)
-                    if (entry.hour == gameTime.Hour && entry.minute <= gameTime.Minute)
+                if (entry.day != gameTime.Day) continue;
+
+                int entryTime = entry.hour * 60 + entry.minute;
+                int currentTime = gameTime.Hour * 60 + gameTime.Minute;
+
+                if (entryTime <= currentTime)
+                {
+                    if (bestEntry == null)
                     {
-                        if (closest == null || entry.minute > closest.minute)
-                            closest = entry;
+                        bestEntry = entry;
                     }
+                    else
+                    {
+                        int bestTime = bestEntry.hour * 60 + bestEntry.minute;
+                        if (entryTime > bestTime)
+                            bestEntry = entry;
+                    }
+                }
             }
-            return closest;
+
+            return bestEntry;
         }
+
         private void SwitchActivity(ScheduleEntry entry)
         {
             switch (entry.activity)
@@ -160,6 +174,44 @@ namespace Assets.Scripts.NPC
             player = null;
             return false;
         }
+
+        private Coroutine dialogueRoutine;
+
+        public void StartContextDialogue(DialogueContext context)
+        {
+            if (dialogueRoutine != null)
+                StopCoroutine(dialogueRoutine);
+
+            dialogueRoutine = StartCoroutine(ContextDialogueRoutine(context));
+        }
+
+        public void StopContextDialogue()
+        {
+            if (dialogueRoutine != null)
+                StopCoroutine(dialogueRoutine);
+            dialogueRoutine = null;
+        }
+
+        private IEnumerator ContextDialogueRoutine(DialogueContext context)
+        {
+            while (true)
+            {
+                var lines = dialogueSet?.GetRandomDialogue(context);
+                if (lines != null && lines.Count > 0)
+                {
+                    var line = lines[UnityEngine.Random.Range(0, lines.Count)];
+                    ShowFloatingText(line.text);
+                }
+
+                yield return new WaitForSeconds(UnityEngine.Random.Range(10f, 25f)); // случайный интервал
+            }
+        }
+
+        private void ShowFloatingText(string text)
+        {
+            UIFloatingText.Create(transform.position + Vector3.up * 1.5f, text);
+        }
+
     }
     [System.Serializable]
     public class ScheduleEntry

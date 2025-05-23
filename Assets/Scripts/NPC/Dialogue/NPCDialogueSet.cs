@@ -9,28 +9,32 @@ namespace Assets.Scripts.NPC.Dialogue
     {
         public List<DialogueSequence> sequences;
 
-        private Dictionary<DialogueContext, List<DialogueLine>> _dialogueDict;
+        private Dictionary<DialogueContext, List<DialogueSequence>> _dialogueDict;
 
         public void Init()
         {
-            _dialogueDict = new Dictionary<DialogueContext, List<DialogueLine>>();
+            _dialogueDict = new Dictionary<DialogueContext, List<DialogueSequence>>();
+
             foreach (var seq in sequences)
             {
                 if (!_dialogueDict.ContainsKey(seq.context))
-                {
-                    _dialogueDict[seq.context] = seq.lines;
-                }
-                else
-                {
-                    Debug.LogWarning($"Duplicate context {seq.context} in dialogue set");
-                }
+                    _dialogueDict[seq.context] = new List<DialogueSequence>();
+
+                _dialogueDict[seq.context].Add(seq);
             }
         }
-
-        public List<DialogueLine> GetDialogue(DialogueContext context)
+        public List<DialogueLine> GetRandomDialogue(DialogueContext context)
         {
-            if (_dialogueDict == null) Init();
-            return _dialogueDict.TryGetValue(context, out var lines) ? lines : null;
+            if (_dialogueDict == null || _dialogueDict.Count == 0)
+                Init();
+
+            if (_dialogueDict.TryGetValue(context, out var list) && list.Count > 0)
+            {
+                var randomSeq = list[Random.Range(0, list.Count)];
+                return randomSeq.lines;
+            }
+
+            return null;
         }
     }
     [System.Serializable]

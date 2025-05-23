@@ -3433,7 +3433,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4379,7 +4379,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5342,7 +5342,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7084,7 +7084,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7764,7 +7764,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8460,7 +8460,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9019,6 +9019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2563995991581784197, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7797980157559178246, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
       propertyPath: m_Name
       value: light2a
@@ -9086,6 +9090,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4878998181656881612, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7190384543495676694, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
       propertyPath: m_Name
       value: light1a
@@ -9153,6 +9161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2563995991581784197, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7797980157559178246, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
       propertyPath: m_Name
       value: light2a
@@ -9220,6 +9232,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4878998181656881612, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7190384543495676694, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
       propertyPath: m_Name
       value: light1a
@@ -9291,6 +9307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wooden chest
       objectReference: {fileID: 0}
+    - target: {fileID: 8620233493657490281, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9314,6 +9334,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2741549577125722908}
     m_Modifications:
+    - target: {fileID: 1117001388981054268, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 3318237716366874631, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9999995
@@ -9425,6 +9449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wooden chest
       objectReference: {fileID: 0}
+    - target: {fileID: 8620233493657490281, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9448,6 +9476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8985480392413282863}
     m_Modifications:
+    - target: {fileID: 1117001388981054268, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 3318237716366874631, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9999995
@@ -9515,6 +9547,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2741549577125722908}
     m_Modifications:
+    - target: {fileID: 1117001388981054268, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 3318237716366874631, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9999995
@@ -9622,6 +9658,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4878998181656881612, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7190384543495676694, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
       propertyPath: m_Name
       value: light1a
@@ -9689,6 +9729,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2563995991581784197, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7797980157559178246, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
       propertyPath: m_Name
       value: light2a
@@ -9756,6 +9800,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2563995991581784197, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7797980157559178246, guid: 84f7dc3b96f34fc4a8405918d665d4e8, type: 3}
       propertyPath: m_Name
       value: light2a
@@ -9823,6 +9871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4878998181656881612, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 7190384543495676694, guid: a684c95548ada574eae8cf6d30b671fb, type: 3}
       propertyPath: m_Name
       value: light1a
@@ -9850,6 +9902,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8985480392413282863}
     m_Modifications:
+    - target: {fileID: 706428834456761515, guid: 8290d8cfa8cc3d543b5efddbf5330ead, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 5298134136004263693, guid: 8290d8cfa8cc3d543b5efddbf5330ead, type: 3}
       propertyPath: m_Name
       value: wooden doors2-horizontal-downwards-closing_0 (1)
@@ -9917,6 +9973,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8985480392413282863}
     m_Modifications:
+    - target: {fileID: 1117001388981054268, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 14c01724d107e994e9b40bdfe8b42b91, type: 2}
     - target: {fileID: 3318237716366874631, guid: 8427edf7fa2e5bf4ca15418175f01d84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9999995
