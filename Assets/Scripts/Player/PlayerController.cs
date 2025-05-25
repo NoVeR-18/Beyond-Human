@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using NPCEnums;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
+    public InteractionEmitter emitter;
     public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
@@ -23,41 +25,50 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (emitter == null)
+        {
+            var prefab = Resources.Load<InteractionEmitter>("Prefabs/InteractionEmitter");
+            emitter = Instantiate(prefab, transform.position, Quaternion.identity, transform);
+        }
     }
 
     void Update()
     {
         float inputX = Input.GetAxisRaw("Horizontal");
+        float inputY = Input.GetAxisRaw("Vertical");
 
         if (onStairs && stairDirection != Vector2.zero)
         {
-            // Управляем движением по лестнице (влево/вправо → вниз/вверх)
             if (inputX > 0.01f)
             {
-                movement = stairDirection.normalized;     // вверх по лестнице
+                movement = stairDirection.normalized;
             }
             else if (inputX < -0.01f)
             {
-                movement = -stairDirection.normalized;    // вниз по лестнице
+                movement = -stairDirection.normalized;
             }
             else
             {
                 movement = Vector2.zero;
                 movement.y = Input.GetAxisRaw("Vertical") * stairDirection.magnitude;
-
             }
         }
         else
         {
-            // Обычное движение
-            movement.x = inputX;
-            movement.y = Input.GetAxisRaw("Vertical");
+            movement = new Vector2(inputX, inputY);
         }
 
+        // Обновление параметров анимации
         animator.SetFloat("Speed", movement.sqrMagnitude);
+        if (movement.sqrMagnitude > 0.01f)
+        {
+            animator.SetFloat("MoveX", movement.x);
+            animator.SetFloat("MoveY", movement.y);
+        }
+
         Flip();
 
-        // Z-позиция и сортировка на лестнице
+        // Обработка Z-позиции на лестнице
         if (onStairs)
         {
             float progress = Mathf.InverseLerp(zStart, zEnd, transform.position.y);
@@ -67,17 +78,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+        if (movement.sqrMagnitude > 0.1f)
+        {
+            emitter.Activate(InterruptReason.PlayerWalking);
+        }
     }
 
     void Flip()
     {
-        if (movement.x > 0.01f)
-            spriteRenderer.flipX = false;
-        else if (movement.x < -0.01f)
-            spriteRenderer.flipX = true;
+        if (Mathf.Abs(movement.x) > 0.01f)
+        {
+            spriteRenderer.flipX = movement.x < 0f;
+        }
     }
 
     // === Вход на лестницу ===

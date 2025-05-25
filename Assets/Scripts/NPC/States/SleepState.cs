@@ -1,3 +1,4 @@
+using Assets.Scripts.NPC.Dialogue;
 using NPCEnums;
 using UnityEngine;
 
@@ -34,12 +35,13 @@ namespace Assets.Scripts.NPC.States
             npc.Animator.SetBool("IsSleeping", false);
         }
 
-        public void Interrupt(NPCController npc, InterruptReason reason)
+
+        public void Interrupt(NPCController source, InterruptReason reason)
         {
-            if (reason == InterruptReason.PlayerNearby || reason == InterruptReason.AlarmTriggered)
+            if (reason == InterruptReason.PlayerBreakingIn || reason == InterruptReason.PlayerWalking)
             {
-                Debug.Log("NPC просыпается по причине: " + reason);
                 npc.StateMachine.ChangeState(new IdleState(npc));
+                UIFloatingText.Create(npc.transform.position + Vector3.up, "Who are you?");
             }
         }
     }

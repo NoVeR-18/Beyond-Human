@@ -18,6 +18,7 @@ namespace Assets.Scripts.Level
             worldLight = GetComponent<Light2D>();
             timeManager = TimeManager.Instance;
             timeManager.OnTimeChanged += UpdateLightColor;
+            worldLight.color = lightColorGradient.Evaluate(percentOfDay(timeManager.CurrentTime));
         }
 
         private void UpdateLightColor(GameTime time)

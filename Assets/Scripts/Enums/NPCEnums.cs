@@ -26,6 +26,7 @@ namespace NPCEnums
         Sleep,
         Greeting,
         Quest,
+        Scared
     }
     public enum InterruptReason
     {
@@ -34,6 +35,11 @@ namespace NPCEnums
         AlarmTriggered,
         TimeToWakeUp,
         DangerDetected,
+        PlayerWalking,
+        PlayerSneaking,
+        PlayerBreakingIn,
+        HelpCry,
+        PursuitAlert
         // Add more reasons as needed
     }
 }

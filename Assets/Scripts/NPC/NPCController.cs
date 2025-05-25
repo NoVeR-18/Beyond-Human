@@ -32,6 +32,7 @@ namespace Assets.Scripts.NPC
 
         public NPCDialogueSet dialogueSet;
 
+        private InteractionEmitter emitter;
         public void Speak(DialogueContext context)
         {
             var lines = dialogueSet?.GetRandomDialogue(context);
@@ -64,6 +65,11 @@ namespace Assets.Scripts.NPC
         {
             StateMachine.ChangeState(new IdleState(this));
             TimeManager.Instance.OnTimeChanged += OnTimeChanged;
+            if (emitter == null)
+            {
+                var prefab = Resources.Load<InteractionEmitter>("Prefabs/InteractionEmitter");
+                emitter = Instantiate(prefab, transform.position, Quaternion.identity, transform);
+            }
         }
 
         private void OnDestroy()
