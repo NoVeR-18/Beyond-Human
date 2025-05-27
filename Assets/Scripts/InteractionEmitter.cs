@@ -21,6 +21,8 @@ public class InteractionEmitter : MonoBehaviour
 
     public void Activate(InterruptReason reason, float radius = 1f, float duration = 0.1f)
     {
+        if (reason == InterruptReason.None)
+            return;
         currentReason = reason;
         triggerCollider.radius = radius;
         spriteRenderer.size = new Vector2(radius * 2f, radius * 2f);

@@ -1,5 +1,6 @@
 using Assets.Scripts.NPC.Dialogue;
 using Assets.Scripts.NPC.States;
+using Assets.Scripts.NPC.States.Assets.Scripts.NPC.States;
 using NPCEnums;
 using System;
 using System.Collections;
@@ -30,9 +31,25 @@ namespace Assets.Scripts.NPC
 
         private ScheduleEntry currentEntry;
 
-        public NPCDialogueSet dialogueSet;
+        public NPCDialogueSet dialogueSet; private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
 
-        private InteractionEmitter emitter;
+        private void InitializeStateFactory()
+        {
+            _activityStateFactory = new Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>>
+            {
+                { NPCActivityType.Idle, _ => new IdleState(this) },
+                { NPCActivityType.Guard, _ => new GuardState(this) },
+                { NPCActivityType.Work, entry => CreateGoTo(entry, () => new WorkState(this)) },
+                { NPCActivityType.Sleep, entry => CreateGoTo(entry, () => new SleepState(this)) },
+                { NPCActivityType.Trade, entry => CreateGoTo(entry, () => new TradeState(this)) },
+                { NPCActivityType.Wander, _ => new RoamState(this) },
+                { NPCActivityType.Hide, entry => CreateGoTo(entry, () => new HiddenState(this)) },
+                { NPCActivityType.Chill, entry => CreateGoTo(entry, () => new ChillState(this, GetDestination(entry))) },
+                { NPCActivityType.Hunt, _ => new HuntState(this) },
+            };
+        }
+
+        [HideInInspector] public InteractionEmitter emitter;
         public void Speak(DialogueContext context)
         {
             var lines = dialogueSet?.GetRandomDialogue(context);
@@ -122,43 +139,39 @@ namespace Assets.Scripts.NPC
 
         private void SwitchActivity(ScheduleEntry entry)
         {
-            switch (entry.activity)
+            if (_activityStateFactory == null)
+                InitializeStateFactory();
+
+            if (_activityStateFactory.TryGetValue(entry.activity, out var factory))
             {
-                case NPCActivityType.Idle:
-                    StateMachine.ChangeState(new IdleState(this));
-                    break;
-
-                case NPCActivityType.Guard:
-                    StateMachine.ChangeState(new RoamState(this));
-                    break;
-
-                case NPCActivityType.Work:
-                    StateMachine.ChangeState(new GoToLocationState(this, entry.destination.position, () =>
-                    {
-                        StateMachine.ChangeState(new WorkState(this)); // Здесь ты можешь выполнять работу (анимация, диалог и т.д.)
-                    }));
-                    break;
-
-                case NPCActivityType.Sleep:
-                    StateMachine.ChangeState(new GoToLocationState(this, entry.destination.position, () =>
-                    {
-                        StateMachine.ChangeState(new SleepState(this));
-                    }));
-                    break;
-
-                case NPCActivityType.Trade:
-                    StateMachine.ChangeState(new GoToLocationState(this, entry.destination.position, () =>
-                    {
-                        StateMachine.ChangeState(new TradeState(this));
-                    }));
-                    break;
-
-                default:
-                    StateMachine.ChangeState(new IdleState(this));
-                    break;
+                StateMachine.ChangeState(factory(entry));
+            }
+            else
+            {
+                Debug.LogWarning($"{name}: Unknown activity type {entry.activity}, switching to Idle.");
+                StateMachine.ChangeState(new IdleState(this));
+            }
+        }
+        private INPCState CreateGoTo(ScheduleEntry entry, Func<INPCState> nextState)
+        {
+            if (entry.destination != null)
+            {
+                return new GoToLocationState(this, entry.destination.position, () =>
+                {
+                    StateMachine.ChangeState(nextState());
+                });
+            }
+            else
+            {
+                Debug.LogWarning($"{name}: Destination missing for {entry.activity}, skipping movement.");
+                return nextState();
             }
         }
 
+        private Vector3 GetDestination(ScheduleEntry entry)
+        {
+            return entry.destination != null ? entry.destination.position : transform.position;
+        }
 
         public bool CanSeePlayer(out Transform player)
         {

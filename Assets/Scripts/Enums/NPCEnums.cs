@@ -14,7 +14,9 @@ namespace NPCEnums
         Fishing,
         Travel,
         Hide,
-        Camp
+        Camp,
+        Hunt,
+        Chill
     }
 
     public enum DialogueContext
@@ -28,18 +30,16 @@ namespace NPCEnums
         Quest,
         Scared
     }
+    [System.Flags]
     public enum InterruptReason
     {
-        PlayerNearby,
-        PlayerInteracted,
-        AlarmTriggered,
-        TimeToWakeUp,
-        DangerDetected,
-        PlayerWalking,
-        PlayerSneaking,
-        PlayerBreakingIn,
-        HelpCry,
-        PursuitAlert
-        // Add more reasons as needed
+        None = 0,
+        PlayerWalking = 1 << 0,
+        PlayerRunning = 1 << 1,
+        Lockpicking = 1 << 2,
+        ScreamHelp = 1 << 3,
+        ChaseAlert = 1 << 4,
+        Hunting = 1 << 5,
+        // Добавляй по мере нужды
     }
 }

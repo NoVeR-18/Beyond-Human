@@ -1,49 +1,118 @@
-﻿
-using GameUtils.Utils;
-using NPCEnums;
-using UnityEngine;
+﻿using NPCEnums;
 
 namespace Assets.Scripts.NPC.States
 {
-    public class GuardState : INPCState, IInterruptible
+
+    using UnityEngine;
+
+    namespace Assets.Scripts.NPC.States
     {
-        private NPCController npc;
-        private Vector3 roamPos;
-
-        public GuardState(NPCController npc)
+        public class GuardState : INPCState, IInterruptible
         {
-            this.npc = npc;
-        }
+            private NPCController npc;
+            private Vector3 guardPoint;
+            private float idleLookAroundTimer;
+            private float idleLookAroundInterval = 3f;
+            private float patrolRadius = 2f;
+            private float patrolWaitTime = 2f;
+            private float patrolTimer;
+            private Vector3 patrolTarget;
+            private bool hasPoint;
 
-        public void Enter()
-        {
-            roamPos = npc.transform.position + Utils.GetRandomDir() * Random.Range(3f, 7f);
-            npc.Agent.SetDestination(roamPos);
-        }
-
-        public void Exit() { }
-
-        public void Update()
-        {
-            if (npc.CanSeePlayer(out var player) && npc.isAggressive)
+            public GuardState(NPCController npc, Transform guardPoint = null)
             {
-                npc.target = player;
-                npc.StateMachine.ChangeState(new ChaseState(npc));
-                return;
+                this.npc = npc;
+                if (guardPoint == null)
+                {
+                    hasPoint = false;
+                }
+                else
+                {
+                    hasPoint = true;
+                    this.guardPoint = guardPoint.position;
+                }
             }
 
-            if (!npc.Agent.pathPending && npc.Agent.remainingDistance < npc.Agent.stoppingDistance)
+            public void Enter()
             {
-                npc.StateMachine.ChangeState(new IdleState(npc));
+                npc.Agent.ResetPath();
+                if (hasPoint)
+                {
+                    npc.Agent.SetDestination(guardPoint);
+                }
+                else
+                {
+                    patrolTimer = 0;
+                    SetNewPatrolPoint();
+                }
             }
-        }
-        public void Interrupt(NPCController source, InterruptReason reason)
-        {
-            if (reason == InterruptReason.HelpCry || reason == InterruptReason.PursuitAlert)
+
+            public void Exit()
             {
-                npc.target = source?.transform;
-                npc.StateMachine.ChangeState(new ChaseState(npc));
+                npc.Agent.ResetPath();
+            }
+
+            public void Update()
+            {
+                //// Реакция на игрока
+                //if (npc.CanSeePlayer(out var player))
+                //{
+                //    npc.target = player;
+                //    npc.StateMachine.ChangeState(new ChaseState(npc, InterruptReason.ChaseAlert));
+                //    return;
+                //}
+
+                if (hasPoint)
+                {
+                    float dist = Vector3.Distance(npc.transform.position, guardPoint);
+                    if (dist > 0.5f)
+                    {
+                        npc.Agent.SetDestination(guardPoint);
+                    }
+                    else
+                    {
+                        npc.Agent.ResetPath();
+                        // Можно добавить Idle-анимацию и периодическое "осматривание"
+                        idleLookAroundTimer -= Time.deltaTime;
+                        if (idleLookAroundTimer <= 0)
+                        {
+                            // Анимация или поворот
+                            idleLookAroundTimer = idleLookAroundInterval;
+                        }
+                    }
+                }
+                else
+                {
+                    // Примитивное патрулирование
+                    if (!npc.Agent.pathPending && npc.Agent.remainingDistance < 0.5f)
+                    {
+                        patrolTimer -= Time.deltaTime;
+                        if (patrolTimer <= 0)
+                        {
+                            SetNewPatrolPoint();
+                        }
+                    }
+                }
+            }
+
+            private void SetNewPatrolPoint()
+            {
+                Vector2 randomPoint = Random.insideUnitCircle * patrolRadius;
+                patrolTarget = npc.transform.position + new Vector3(randomPoint.x, randomPoint.y, 0);
+                npc.Agent.SetDestination(patrolTarget);
+                patrolTimer = patrolWaitTime;
+            }
+
+            public void Interrupt(NPCController source, InterruptReason reason)
+            {
+                if (reason == InterruptReason.ScreamHelp || reason == InterruptReason.ChaseAlert)
+                {
+                    npc.target = source.transform;
+                    npc.StateMachine.ChangeState(new ChaseState(npc, InterruptReason.ChaseAlert));
+                }
             }
         }
     }
+
+
 }

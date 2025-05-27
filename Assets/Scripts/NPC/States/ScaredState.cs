@@ -1,4 +1,4 @@
-﻿using GameUtils.Utils;
+﻿using NPCEnums;
 using UnityEngine;
 
 namespace Assets.Scripts.NPC.States
@@ -6,34 +6,29 @@ namespace Assets.Scripts.NPC.States
     public class ScaredState : INPCState
     {
         private NPCController npc;
-        private Vector3 roamPos;
+        private Transform threat;
+        private float fleeDistance = 10f;
 
-        public ScaredState(NPCController npc)
+        public ScaredState(NPCController npc, Transform threat)
         {
             this.npc = npc;
+            this.threat = threat;
         }
 
         public void Enter()
         {
-            roamPos = npc.transform.position + Utils.GetRandomDir() * Random.Range(3f, 7f);
-            npc.Agent.SetDestination(roamPos);
-        }
+            Vector2 fleeDirection = (npc.transform.position - threat.position).normalized;
+            Vector2 fleeTarget = npc.transform.position + (Vector3)(fleeDirection * fleeDistance);
+            npc.Agent.SetDestination(fleeTarget);
 
-        public void Exit() { }
+            npc.emitter.Activate(InterruptReason.ScreamHelp, 4f, 1f);
+        }
 
         public void Update()
         {
-            if (npc.CanSeePlayer(out var player) && npc.isAggressive)
-            {
-                npc.target = player;
-                npc.StateMachine.ChangeState(new ChaseState(npc));
-                return;
-            }
-
-            if (!npc.Agent.pathPending && npc.Agent.remainingDistance < npc.Agent.stoppingDistance)
-            {
-                npc.StateMachine.ChangeState(new IdleState(npc));
-            }
+            // Можно добавить проверку "достаточно ли далеко"
         }
+
+        public void Exit() { }
     }
 }

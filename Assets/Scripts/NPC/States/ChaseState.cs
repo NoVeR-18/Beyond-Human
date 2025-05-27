@@ -1,3 +1,4 @@
+using NPCEnums;
 using UnityEngine;
 
 namespace Assets.Scripts.NPC.States
@@ -6,10 +7,12 @@ namespace Assets.Scripts.NPC.States
     public class ChaseState : INPCState
     {
         private NPCController npc;
+        private InterruptReason alertReason;
 
-        public ChaseState(NPCController npc)
+        public ChaseState(NPCController npc, InterruptReason reason = InterruptReason.None)
         {
             this.npc = npc;
+            alertReason = reason;
         }
 
         public void Enter()
@@ -32,6 +35,7 @@ namespace Assets.Scripts.NPC.States
             }
 
             npc.Agent.SetDestination(npc.target.position);
+            npc.emitter.Activate(alertReason);
 
             float distance = Vector3.Distance(npc.transform.position, npc.target.position);
             if (distance <= 1.5f) // Радиус поимки

@@ -38,7 +38,7 @@ namespace Assets.Scripts.NPC.States
 
         public void Interrupt(NPCController source, InterruptReason reason)
         {
-            if (reason == InterruptReason.PlayerBreakingIn || reason == InterruptReason.PlayerWalking)
+            if (reason == InterruptReason.PlayerRunning || reason == InterruptReason.PlayerWalking)
             {
                 npc.StateMachine.ChangeState(new IdleState(npc));
                 UIFloatingText.Create(npc.transform.position + Vector3.up, "Who are you?");
