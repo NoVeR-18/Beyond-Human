@@ -299,6 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8f88b27da5e8a44b71bd895eea87dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emitter: {fileID: 0}
   moveSpeed: 5
 --- !u!50 &8745529086009176887
 Rigidbody2D:
@@ -373,4 +374,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderRadius: 30
   animationRadius: 20
-  logicRadius: 10
+  logicRadius: 100

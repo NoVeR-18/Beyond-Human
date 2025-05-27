@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Assets.Scripts.NPC
 {
@@ -21,6 +22,19 @@ namespace Assets.Scripts.NPC
             CurrentState.Enter();
             npc.StateName = newState.ToString();
         }
+        public void ForceStateByName(string stateName)
+        {
+            var type = Type.GetType(stateName);
+            if (type != null && Activator.CreateInstance(type, npc) is INPCState state)
+            {
+                ChangeState(state);
+            }
+            else
+            {
+                Debug.LogWarning($"State {stateName} could not be created");
+            }
+        }
+
     }
 
 }

@@ -69,13 +69,36 @@ namespace Assets.Scripts.NPC
                 yield return new WaitForSeconds(line.delayAfter);
             }
         }
+        [HideInInspector] public string npcId;
+        [HideInInspector] public NPCActivityType CurrentActivity { get; private set; } = NPCActivityType.Idle;
 
+        public NPCSaveData GetSaveData()
+        {
+            return new NPCSaveData
+            {
+                npcId = npcId,
+                position = transform.position,
+                currentActivity = CurrentActivity
+            };
+        }
+
+        public void LoadFromData(NPCSaveData data)
+        {
+            transform.position = data.position;
+            SwitchActivity(new ScheduleEntry
+            {
+                activity = data.currentActivity,
+                destination = null // можно доработать для восстановления destination
+            });
+        }
 
         private void Awake()
         {
             Agent = GetComponent<NavMeshAgent>();
             Animator = GetComponent<Animator>();
             StateMachine = new NPCStateMachine(this);
+            npcId = gameObject.GetInstanceID().ToString();
+            SaveSystem.Instance.RegisterNPC(this);
         }
 
         private void Start()
@@ -145,6 +168,7 @@ namespace Assets.Scripts.NPC
             if (_activityStateFactory.TryGetValue(entry.activity, out var factory))
             {
                 StateMachine.ChangeState(factory(entry));
+                CurrentActivity = entry.activity;
             }
             else
             {

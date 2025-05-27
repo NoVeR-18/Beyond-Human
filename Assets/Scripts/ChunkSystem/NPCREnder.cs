@@ -1,3 +1,4 @@
+using Assets.Scripts.NPC;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class NPCRender : MonoBehaviour, IDynamicObject
     [SerializeField] private Animator animatorComponent;
     [SerializeField] private List<MonoBehaviour> logicScripts;
 
-    private void Start()
+    private void Awake()
     {
         if (renderComponent == null)
             renderComponent = GetComponent<Renderer>();
@@ -16,10 +17,12 @@ public class NPCRender : MonoBehaviour, IDynamicObject
             animatorComponent = GetComponent<Animator>();
         foreach (var script in transform.GetComponentsInChildren<MonoBehaviour>())
         {
-            if (script != this)
+            if (script != this && !(script as NPCController))
                 logicScripts.Add(script);
         }
-
+        SetRenderActive(false);
+        SetAnimationActive(false);
+        SetLogicActive(false);
     }
 
     public void SetRenderActive(bool active)
