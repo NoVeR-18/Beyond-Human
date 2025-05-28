@@ -25,7 +25,19 @@ public struct GameTime : IEquatable<GameTime>
         return $"{Hour:D2}:{Minute:D2}";
     }
 }
+[System.Serializable]
+public struct TimeRange
+{
+    public float startHour;
+    public float endHour;
 
+    public bool Contains(float currentTime)
+    {
+        return startHour < endHour
+            ? currentTime >= startHour && currentTime < endHour
+            : currentTime >= startHour || currentTime < endHour;
+    }
+}
 
 public class TimeManager : MonoBehaviour
 {

@@ -31,7 +31,13 @@ namespace Assets.Scripts.NPC
 
         private ScheduleEntry currentEntry;
 
-        public NPCDialogueSet dialogueSet; private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
+        public NPCDialogueSet dialogueSet;
+        private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
+
+        [Header("House control")]
+        public HouseData CurrentHouse;
+        public int CurrentFloor;
+
 
         private void InitializeStateFactory()
         {
@@ -78,6 +84,8 @@ namespace Assets.Scripts.NPC
             {
                 npcId = npcId,
                 position = transform.position,
+                CurrentHouse = CurrentHouse,
+                CurrentFloor = CurrentFloor,
                 currentActivity = CurrentActivity
             };
         }
@@ -85,6 +93,8 @@ namespace Assets.Scripts.NPC
         public void LoadFromData(NPCSaveData data)
         {
             transform.position = data.position;
+            CurrentHouse = data.CurrentHouse;
+            CurrentFloor = data.CurrentFloor;
             SwitchActivity(new ScheduleEntry
             {
                 activity = data.currentActivity,
@@ -178,9 +188,9 @@ namespace Assets.Scripts.NPC
         }
         private INPCState CreateGoTo(ScheduleEntry entry, Func<INPCState> nextState)
         {
-            if (entry.destination != null)
+            if (entry.destination.transform.position != null)
             {
-                return new GoToLocationState(this, entry.destination.position, () =>
+                return new GoToLocationState(this, entry.destination, () =>
                 {
                     StateMachine.ChangeState(nextState());
                 });
@@ -194,7 +204,7 @@ namespace Assets.Scripts.NPC
 
         private Vector3 GetDestination(ScheduleEntry entry)
         {
-            return entry.destination != null ? entry.destination.position : transform.position;
+            return entry.destination != null ? entry.destination.transform.position : transform.position;
         }
 
         public bool CanSeePlayer(out Transform player)
@@ -254,6 +264,23 @@ namespace Assets.Scripts.NPC
         {
             UIFloatingText.Create(transform.position + Vector3.up * 1.5f, text);
         }
+        public void SetVisible(bool isVisible)
+        {
+            GetComponent<SpriteRenderer>().enabled = isVisible;
+        }
+
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            collision.gameObject.TryGetComponent<HouseLadderZone>(out var ladder);
+            if (ladder != null)
+            {
+                // NPC во входной зоне лестницы
+                CurrentFloor += ladder.direction;
+                ladder.floorManager.ChangeFloor(ladder.direction);
+            }
+
+        }
 
     }
     [System.Serializable]
@@ -263,7 +290,7 @@ namespace Assets.Scripts.NPC
         [Range(0, 59)] public int minute;
         public DayOfWeek day;
         public NPCActivityType activity;
-        public Transform destination;
+        public NavTargetPoint destination;
     }
 
 

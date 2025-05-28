@@ -8,10 +8,12 @@ public class NPCSaveData
     public string npcId; // Уникальное имя или ID
     public Vector2 position;
     public NPCActivityType currentActivity;
+    public HouseData CurrentHouse;
+    public int CurrentFloor;
 }
 
 [System.Serializable]
-public class NPCSaveContainer
+public class SaveContainer
 {
     public List<NPCSaveData> allNpcData = new List<NPCSaveData>();
 }

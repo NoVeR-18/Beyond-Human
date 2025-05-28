@@ -8,7 +8,7 @@ public static class NPCSaveManager
 
     public static void SaveNPCs(List<NPCSaveData> npcData)
     {
-        var container = new NPCSaveContainer { allNpcData = npcData };
+        var container = new SaveContainer { allNpcData = npcData };
         var json = JsonUtility.ToJson(container, true);
         File.WriteAllText(SavePath, json);
     }
@@ -19,7 +19,7 @@ public static class NPCSaveManager
             return new List<NPCSaveData>();
 
         var json = File.ReadAllText(SavePath);
-        var container = JsonUtility.FromJson<NPCSaveContainer>(json);
+        var container = JsonUtility.FromJson<SaveContainer>(json);
         return container.allNpcData;
     }
 }

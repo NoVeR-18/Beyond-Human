@@ -1,3 +1,4 @@
+using Assets.Scripts.NPC;
 using UnityEngine;
 
 public class FloorManager : MonoBehaviour
@@ -46,5 +47,10 @@ public class FloorManager : MonoBehaviour
             foreach (Transform child in floor.furniture.transform)
                 child.gameObject.SetActive(visible);
         }
+    }
+    public void UpdateNPCVisibility(NPCController npc)
+    {
+        bool isOnCurrentFloor = npc.CurrentFloor == currentFloor;
+        npc.SetVisible(isOnCurrentFloor);
     }
 }

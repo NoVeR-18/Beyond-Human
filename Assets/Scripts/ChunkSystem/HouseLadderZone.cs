@@ -1,3 +1,4 @@
+using Assets.Scripts.NPC;
 using System.Collections;
 using UnityEngine;
 
@@ -43,16 +44,27 @@ public class HouseLadderZone : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!readyToTrigger) return;
-        if (!other.CompareTag("Player")) return;
-
-        if (playerWasInside)
+        if (other.CompareTag("Player"))
         {
-            playerWasInside = false;
-            return;
+            if (playerWasInside)
+            {
+                playerWasInside = false;
+                return;
+            }
+
+            floorManager?.ChangeFloor(direction);
+            readyToTrigger = false;
+        }
+        else if (other.TryGetComponent<NPCController>(out var npc))
+        {
+            // NPC поднимается/спускается
+            npc.CurrentFloor += direction;
+            npc.CurrentHouse = floorManager.house;
+
+            floorManager.UpdateNPCVisibility(npc);
         }
 
-        floorManager?.ChangeFloor(direction);
-        readyToTrigger = false;
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
