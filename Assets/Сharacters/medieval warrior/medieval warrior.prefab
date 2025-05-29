@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6317836695661236782}
   - component: {fileID: 4461009859031832417}
   - component: {fileID: 8048758772810383631}
-  - component: {fileID: 5204588656212660023}
   - component: {fileID: 4586029979465188213}
   - component: {fileID: 8376681325075035663}
+  - component: {fileID: 2946420323460123640}
   m_Layer: 0
   m_Name: medieval warrior
   m_TagString: Untagged
@@ -135,34 +135,6 @@ NavMeshAgent:
   m_BaseOffset: 1.28125
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &5204588656212660023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9078147493913949335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d46685b265400d408aa551d3beb2dac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingState: 1
-  idleDuration: 2
-  roamTimerMax: 2
-  roamingDistanceMax: 7
-  roamingDistanceMin: 3
-  viewDistance: 6
-  viewAngle: 90
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 0
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  chaseMemoryDuration: 3
-  catchDistance: 1.5
-  state: 0
 --- !u!70 &4586029979465188213
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -215,3 +187,34 @@ MonoBehaviour:
   renderComponent: {fileID: 0}
   animatorComponent: {fileID: 0}
   logicScripts: []
+--- !u!114 &2946420323460123640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078147493913949335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a4dd2df97d065489e0949ef6c25e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAggressive: 0
+  viewDistance: 6
+  viewAngle: 90
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  schedule: []
+  Agent: {fileID: 0}
+  Animator: {fileID: 0}
+  target: {fileID: 0}
+  StateName: 
+  dialogueSet: {fileID: 0}
+  CurrentHouse: {fileID: 0}
+  CurrentFloor: 0
+  emitter: {fileID: 0}
+  npcId: 

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3721031934994075810}
   - component: {fileID: 2297712973899275555}
   - component: {fileID: 615407890846858820}
+  - component: {fileID: 2902709518699333143}
+  - component: {fileID: 3990959042720494408}
   m_Layer: 0
   m_Name: Blood Shop
   m_TagString: Untagged
@@ -109,3 +111,56 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &2902709518699333143
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592078269176955089}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.296875
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 4.3125
+  m_BaseOffset: 2.15625
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &3990959042720494408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592078269176955089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a4dd2df97d065489e0949ef6c25e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAggressive: 0
+  viewDistance: 6
+  viewAngle: 90
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  schedule: []
+  Agent: {fileID: 0}
+  Animator: {fileID: 0}
+  target: {fileID: 0}
+  StateName: 
+  dialogueSet: {fileID: 0}
+  CurrentHouse: {fileID: 0}
+  CurrentFloor: 0
+  emitter: {fileID: 0}
+  npcId: 

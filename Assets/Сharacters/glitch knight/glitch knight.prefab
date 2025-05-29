@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7191087015968473439}
   - component: {fileID: 4673207269520446243}
   - component: {fileID: 4647895787978647201}
-  - component: {fileID: 7477304694398434768}
   - component: {fileID: 1088494540582475304}
   - component: {fileID: 4436164906929836581}
+  - component: {fileID: 6883411164486530251}
   m_Layer: 0
   m_Name: glitch knight
   m_TagString: Untagged
@@ -135,34 +135,6 @@ NavMeshAgent:
   m_BaseOffset: 2.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7477304694398434768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197756844050660496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d46685b265400d408aa551d3beb2dac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingState: 1
-  idleDuration: 2
-  roamTimerMax: 2
-  roamingDistanceMax: 7
-  roamingDistanceMin: 3
-  viewDistance: 6
-  viewAngle: 90
-  obstacleMask:
-    serializedVersion: 2
-    m_Bits: 0
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  chaseMemoryDuration: 3
-  catchDistance: 1.5
-  state: 0
 --- !u!70 &1088494540582475304
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -215,3 +187,34 @@ MonoBehaviour:
   renderComponent: {fileID: 0}
   animatorComponent: {fileID: 0}
   logicScripts: []
+--- !u!114 &6883411164486530251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197756844050660496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a4dd2df97d065489e0949ef6c25e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAggressive: 0
+  viewDistance: 6
+  viewAngle: 90
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  schedule: []
+  Agent: {fileID: 0}
+  Animator: {fileID: 0}
+  target: {fileID: 0}
+  StateName: 
+  dialogueSet: {fileID: 0}
+  CurrentHouse: {fileID: 0}
+  CurrentFloor: 0
+  emitter: {fileID: 0}
+  npcId: 

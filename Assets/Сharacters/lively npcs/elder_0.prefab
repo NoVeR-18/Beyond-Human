@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6399699084983524732}
   - component: {fileID: 2816216829531846699}
   - component: {fileID: 5535290703378405194}
+  - component: {fileID: 4810774286885328710}
+  - component: {fileID: 6432886830756750975}
   m_Layer: 0
   m_Name: elder_0
   m_TagString: Untagged
@@ -163,3 +165,56 @@ MonoBehaviour:
   renderComponent: {fileID: 0}
   animatorComponent: {fileID: 0}
   logicScripts: []
+--- !u!195 &4810774286885328710
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032761209585837149}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.3125
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.5
+  m_BaseOffset: 0.75
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &6432886830756750975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032761209585837149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a4dd2df97d065489e0949ef6c25e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAggressive: 0
+  viewDistance: 6
+  viewAngle: 90
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  schedule: []
+  Agent: {fileID: 0}
+  Animator: {fileID: 0}
+  target: {fileID: 0}
+  StateName: 
+  dialogueSet: {fileID: 0}
+  CurrentHouse: {fileID: 0}
+  CurrentFloor: 0
+  emitter: {fileID: 0}
+  npcId: 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4065583401035831809}
   - component: {fileID: 6302832764089069087}
   - component: {fileID: 2945637909889921565}
-  - component: {fileID: 1283442056442609648}
+  - component: {fileID: 780521290681590479}
   m_Layer: 0
   m_Name: Sci-fi Samurai with Spear
   m_TagString: Untagged
@@ -187,7 +187,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1283442056442609648
+--- !u!114 &780521290681590479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,14 +196,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4657800412769669101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d46685b265400d408aa551d3beb2dac, type: 3}
+  m_Script: {fileID: 11500000, guid: a6a4dd2df97d065489e0949ef6c25e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingState: 1
-  idleDuration: 2
-  roamTimerMax: 2
-  roamingDistanceMax: 7
-  roamingDistanceMin: 3
+  isAggressive: 0
   viewDistance: 6
   viewAngle: 90
   obstacleMask:
@@ -212,6 +208,13 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 0
-  chaseMemoryDuration: 3
-  catchDistance: 1.5
-  state: 0
+  schedule: []
+  Agent: {fileID: 0}
+  Animator: {fileID: 0}
+  target: {fileID: 0}
+  StateName: 
+  dialogueSet: {fileID: 0}
+  CurrentHouse: {fileID: 0}
+  CurrentFloor: 0
+  emitter: {fileID: 0}
+  npcId: 

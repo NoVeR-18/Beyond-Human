@@ -195,4 +195,58 @@ public class FullSmartPrefabGenerator : MonoBehaviour
         Debug.Log(message);
         logLines.Add(message);
     }
+    [MenuItem("Tools/Update Character Prefabs — Replace EnemyAI with NPCController")]
+    static void ReplaceEnemyAIWithNPCController()
+    {
+        string rootSpritesPath = "Assets/Ñharacters/";
+        string[] prefabFiles = Directory.GetFiles(rootSpritesPath, "*.prefab", SearchOption.AllDirectories);
+
+        foreach (string prefabPath in prefabFiles)
+        {
+            string prefabAssetPath = prefabPath.Replace("\\", "/");
+            GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabAssetPath);
+            if (prefab == null)
+            {
+                Debug.LogWarning($"[SKIPPED] Could not load prefab at {prefabAssetPath}");
+                continue;
+            }
+
+            GameObject prefabInstance = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
+            if (prefabInstance == null)
+            {
+                Debug.LogWarning($"[SKIPPED] Could not instantiate prefab {prefab.name}");
+                continue;
+            }
+
+            bool modified = false;
+
+            var enemyAI = prefabInstance.GetComponent<EnemyAI>();
+            if (enemyAI != null)
+            {
+                GameObject.DestroyImmediate(enemyAI, true);
+                Debug.Log($"Removed EnemyAI from '{prefab.name}'");
+                modified = true;
+            }
+
+            if (prefabInstance.GetComponent<NPCController>() == null)
+            {
+                prefabInstance.AddComponent<NPCController>();
+                Debug.Log($"Added NPCController to '{prefab.name}'");
+                modified = true;
+            }
+
+            if (modified)
+            {
+                PrefabUtility.SaveAsPrefabAsset(prefabInstance, prefabAssetPath);
+                Debug.Log($"<color=cyan>[UPDATED]</color> Prefab '{prefab.name}' updated successfully.");
+            }
+
+            GameObject.DestroyImmediate(prefabInstance);
+        }
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log("<color=lime>All applicable prefabs updated.</color>");
+    }
+
 }
