@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using NPCEnums;
+using UnityEngine;
 
 namespace Assets.Scripts.NPC.States
 {
@@ -18,6 +19,8 @@ namespace Assets.Scripts.NPC.States
         public void Enter()
         {
             MoveToRandomPoint();
+
+            npc.StartContextDialogue(DialogueContext.Hunt);
         }
 
         public void Exit() { }

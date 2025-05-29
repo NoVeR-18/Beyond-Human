@@ -34,9 +34,8 @@ namespace Assets.Scripts.NPC
         public NPCDialogueSet dialogueSet;
         private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
 
-        [Header("House control")]
-        public HouseData CurrentHouse;
-        public int CurrentFloor;
+        [HideInInspector] public HouseData CurrentHouse;
+        [HideInInspector] public int CurrentFloor;
 
 
         private void InitializeStateFactory()
@@ -44,7 +43,8 @@ namespace Assets.Scripts.NPC
             _activityStateFactory = new Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>>
             {
                 { NPCActivityType.Idle, _ => new IdleState(this) },
-                { NPCActivityType.Guard, _ => new GuardState(this) },
+                { NPCActivityType.Guard, entry => CreateGoTo(entry, () => new GuardState(this, entry.destination.transform)) },
+                { NPCActivityType.Patrol, entry => CreateGoTo(entry, () => new GuardState(this))},
                 { NPCActivityType.Work, entry => CreateGoTo(entry, () => new WorkState(this)) },
                 { NPCActivityType.Sleep, entry => CreateGoTo(entry, () => new SleepState(this)) },
                 { NPCActivityType.Trade, entry => CreateGoTo(entry, () => new TradeState(this)) },

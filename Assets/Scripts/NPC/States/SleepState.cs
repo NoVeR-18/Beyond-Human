@@ -18,6 +18,8 @@ namespace Assets.Scripts.NPC.States
         {
             npc.Agent.ResetPath();
             npc.Animator.SetBool("IsSleeping", true);
+
+            npc.StartContextDialogue(DialogueContext.Sleep);
         }
 
         public void Update()

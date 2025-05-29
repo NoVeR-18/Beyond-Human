@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using NPCEnums;
+using System.Collections;
 using UnityEngine;
 
 namespace Assets.Scripts.NPC.States
@@ -20,6 +21,8 @@ namespace Assets.Scripts.NPC.States
 
         public void Enter()
         {
+
+            npc.StartContextDialogue(DialogueContext.Idle);
             MoveToNextPoint();
         }
 

@@ -52,7 +52,6 @@ public class HouseData : MonoBehaviour
     public List<Transform> entrances = new();
     [Header("Privacy")]
     public HousePrivacyType privacyType;
-    public Vector2Int activePrivateHours;
 
     public Vector2Int privateHours = new Vector2Int(20, 6);
 

@@ -9,14 +9,16 @@ namespace NPCEnums
         Wander,
         Trade,
         Guard,
-        Eat,
-        FightClub,
-        Fishing,
-        Travel,
+        //Eat,
+        //FightClub,
+        //Fishing,
+        //Travel,
         Hide,
-        Camp,
+        //Camp,
         Hunt,
-        Chill
+        Chill,
+        Patrol
+
     }
 
     public enum DialogueContext
@@ -24,10 +26,9 @@ namespace NPCEnums
         Idle,
         Work,
         Trade,
-        Threatened,
+        Guard,
         Sleep,
-        Greeting,
-        Quest,
+        Hunt,
         Scared
     }
     [System.Flags]

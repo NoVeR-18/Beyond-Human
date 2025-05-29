@@ -1,3 +1,4 @@
+using NPCEnums;
 using UnityEngine;
 
 namespace Assets.Scripts.NPC.States
@@ -17,6 +18,8 @@ namespace Assets.Scripts.NPC.States
         {
             npc.Agent.ResetPath();
             idleTimer = Random.Range(1.5f, 3f);
+
+            npc.StartContextDialogue(DialogueContext.Idle);
         }
 
         public void Exit() { }

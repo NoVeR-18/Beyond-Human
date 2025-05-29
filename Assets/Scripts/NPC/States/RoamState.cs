@@ -1,6 +1,7 @@
 using Assets.Scripts.NPC;
 using Assets.Scripts.NPC.States;
 using GameUtils.Utils;
+using NPCEnums;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -34,6 +35,7 @@ public class RoamState : INPCState
             }
         }
 
+        npc.StartContextDialogue(DialogueContext.Idle);
         npc.Agent.SetDestination(roamPos);
         npc.Animator.SetFloat("Speed", 1f);
     }
