@@ -6,8 +6,8 @@ using UnityEngine;
 public class HouseLadderZone : MonoBehaviour
 {
     public FloorManager floorManager;
-    public int direction = 1;
-
+    public int TargetFloor = 1;
+    public int IndextFloor = 1;
     private bool readyToTrigger = false;
     private bool playerWasInside = false;
     private Collider2D triggerCollider;
@@ -52,13 +52,18 @@ public class HouseLadderZone : MonoBehaviour
                 return;
             }
 
-            floorManager?.ChangeFloor(direction);
+            floorManager?.ChangeFloor(TargetFloor);
             readyToTrigger = false;
         }
         else if (other.TryGetComponent<NPCController>(out var npc))
         {
             // NPC поднимается/спускается
-            npc.CurrentFloor += direction;
+            if (npc.CurrentFloor == TargetFloor)
+            {
+                npc.CurrentFloor = IndextFloor;
+            }
+            else
+                npc.CurrentFloor = TargetFloor;
             npc.CurrentHouse = floorManager.house;
 
             floorManager.UpdateNPCVisibility(npc);

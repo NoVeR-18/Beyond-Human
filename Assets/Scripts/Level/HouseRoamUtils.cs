@@ -3,31 +3,25 @@ using UnityEngine.AI;
 
 public static class HouseRoamUtils
 {
-    public static Vector3 GetRandomNavMeshPointInsideFloor(HouseFloor floor, int maxAttempts = 10)
+    public static Vector3 GetRandomNavMeshPointInsideFloor(HouseFloor floor)
     {
-        if (floor.floor == null)
+        Bounds floorBounds = floor.GetBounds();
+        int attempts = 10;
+
+        for (int i = 0; i < attempts; i++)
         {
-            Debug.LogWarning("Floor tilemap missing!");
-            return Vector3.zero;
-        }
+            Vector3 randomPoint = new Vector3(
+                Random.Range(floorBounds.min.x + 1, floorBounds.max.x - 1),
+                Random.Range(floorBounds.min.y + 1, floorBounds.max.y - 1),
+                floorBounds.center.z
+            );
 
-        var bounds = floor.floor.cellBounds;
-        var tilemap = floor.floor;
-
-        for (int i = 0; i < maxAttempts; i++)
-        {
-            int x = Random.Range(bounds.xMin, bounds.xMax);
-            int y = Random.Range(bounds.yMin, bounds.yMax);
-            Vector3 worldPoint = tilemap.GetCellCenterWorld(new Vector3Int(x, y, 0));
-
-            if (NavMesh.SamplePosition(worldPoint, out NavMeshHit hit, 0.5f, NavMesh.AllAreas))
+            if (NavMesh.SamplePosition(randomPoint, out NavMeshHit hit, 1.0f, NavMesh.AllAreas))
             {
                 return hit.position;
             }
         }
 
-        // fallback: возвращаем текущую позицию NPC
-        Debug.LogWarning("Couldn't find valid NavMesh position inside floor.");
-        return Vector3.zero;
+        return floorBounds.center;
     }
 }

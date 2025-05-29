@@ -276,8 +276,8 @@ namespace Assets.Scripts.NPC
             if (ladder != null)
             {
                 // NPC во входной зоне лестницы
-                CurrentFloor += ladder.direction;
-                ladder.floorManager.ChangeFloor(ladder.direction);
+                CurrentFloor += ladder.TargetFloor;
+                ladder.floorManager.ChangeFloor(ladder.TargetFloor);
             }
 
         }

@@ -463,6 +463,11 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!4 &241120939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2352026025905874970, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+  m_PrefabInstance: {fileID: 2105628117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &317363555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1755,8 +1760,18 @@ MonoBehaviour:
   - hour: 10
     minute: 0
     day: 1
-    activity: 3
+    activity: 4
     destination: {fileID: 1055516101}
+  - hour: 10
+    minute: 30
+    day: 1
+    activity: 3
+    destination: {fileID: 0}
+  - hour: 11
+    minute: 0
+    day: 1
+    activity: 4
+    destination: {fileID: 990445920}
   Agent: {fileID: 0}
   Animator: {fileID: 0}
   target: {fileID: 0}
@@ -2090,6 +2105,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3983100149421135823, guid: 451560fa13c232e4c8abb779b04a34f7, type: 3}
   m_PrefabInstance: {fileID: 3874516125126384310}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &990445920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5823289255070733220, guid: 451560fa13c232e4c8abb779b04a34f7, type: 3}
+  m_PrefabInstance: {fileID: 3874516125126384310}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fe1fa21f807a374e9772161872e2f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1031663336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76996,6 +77022,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1977961600}
     m_Modifications:
+    - target: {fileID: 78188745709688080, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: entrances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 78188745709688080, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: 'entrances.Array.data[0]'
+      value: 
+      objectReference: {fileID: 241120939}
     - target: {fileID: 281437885837506577, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_Size.x
       value: 11
@@ -78043,6 +78077,10 @@ PrefabInstance:
     - target: {fileID: 281437885837506577, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_Tiles.Array.data[44].second.m_TileObjectToInstantiateIndex
       value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323619525921820154, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: IndextFloor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1443176843413971706, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_IsActive

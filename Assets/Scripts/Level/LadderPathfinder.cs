@@ -6,47 +6,45 @@ public static class LadderPathfinder
     public static List<Vector3> FindPath(int fromFloor, int toFloor, HouseData house)
     {
         List<Vector3> path = new();
-
-        if (house == null || house.floors == null)
-            return path;
-
         int step = toFloor > fromFloor ? 1 : -1;
 
         for (int f = fromFloor; f != toFloor; f += step)
         {
-            var ladder = FindLadder(house, f, step);
+            int nextFloor = f + step;
+            HouseLadderZone ladder = FindLadder(house, f, nextFloor);
+
             if (ladder != null)
             {
                 path.Add(ladder.transform.position);
             }
             else
             {
-                Debug.LogWarning($"No ladder from floor {f} to {f + step} in house {house.houseName}");
-                break;
+                Debug.LogError($"[LadderPathfinder] Не найдена лестница из {f} на {nextFloor} этаж в доме {house.name}");
+                break; // чтобы не продолжать построение некорректного пути
             }
         }
 
         return path;
     }
 
-    private static HouseLadderZone FindLadder(HouseData house, int floorIndex, int direction)
+
+    public static HouseLadderZone FindLadder(HouseData house, int fromFloor, int toFloor)
     {
-        if (floorIndex < 0 || floorIndex >= house.floors.Count)
-            return null;
+        HouseLadderZone[] allLadders = house.GetComponentsInChildren<HouseLadderZone>(true); // ← ВАЖНО: true включает неактивные
 
-        var floor = house.floors[floorIndex];
-        if (floor.furniture == null)
-            return null;
-
-        foreach (Transform child in floor.furniture.transform)
+        foreach (var ladder in allLadders)
         {
-            var ladder = child.GetComponent<HouseLadderZone>();
-            if (ladder != null && ladder.direction == direction && ladder.floorManager.house == house)
+            if (ladder.floorManager == null) continue;
+            if (ladder.floorManager.house != house) continue;
+
+            if (ladder.IndextFloor == fromFloor && ladder.TargetFloor == toFloor)
             {
                 return ladder;
             }
         }
 
+        Debug.LogWarning($"Не найдена лестница из {fromFloor} на {toFloor} этаж в доме {house.name}");
         return null;
     }
+
 }
