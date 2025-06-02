@@ -1917,8 +1917,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2038932781
-  m_SortingLayer: 1
+  m_SortingLayerID: 1313301391
+  m_SortingLayer: -1
   m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -7201,7 +7201,6 @@ MonoBehaviour:
   entrances:
   - {fileID: 2352026025905874970}
   privacyType: 0
-  activePrivateHours: {x: 0, y: 0}
   privateHours: {x: 20, y: 6}
 --- !u!114 &121584319353802882
 MonoBehaviour:
