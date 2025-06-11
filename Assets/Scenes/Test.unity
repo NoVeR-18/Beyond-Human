@@ -76902,6 +76902,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1977961600}
     m_Modifications:
+    - target: {fileID: 1864415813455984813, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: m_ChunkCullingBounds.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2803167344244707270, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -30
@@ -77955,6 +77959,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1443176843413971706, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864415813455984813, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: m_ChunkCullingBounds.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2803167344244707270, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
