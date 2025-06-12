@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,55 +9,60 @@ namespace BattleSystem
         public List<BattleCharacter> teamA = new();
         public List<BattleCharacter> teamB = new();
 
-        private bool battleStarted = false;
+        [Header("Timing")]
+        public float actionInterval = 1f; // how often to process character turns
+        private float timer = 0f;
+
         [Header("UI")]
         public AbilityBarUI playerAbilityUI;
         public AbilityBarUI enemyAbilityUI;
         public DamagePopup damagePopupPrefab;
+
         private void Start()
         {
             teamA = FindObjectsOfType<BattleCharacter>().Where(c => c.Team == BattleTeam.Player).ToList();
             teamB = FindObjectsOfType<BattleCharacter>().Where(c => c.Team == BattleTeam.Enemy).ToList();
-            if (teamA.Count > 0)
-                playerAbilityUI.Setup(teamA[0].Abilities);
 
-            if (teamB.Count > 0)
-                enemyAbilityUI.Setup(teamB[0].Abilities);
-            StartCoroutine(BattleLoop());
+            if (teamA.Count > 0) playerAbilityUI.Setup(teamA[0].Abilities);
+            if (teamB.Count > 0) enemyAbilityUI.Setup(teamB[0].Abilities);
         }
 
-        private IEnumerator BattleLoop()
+        private void Update()
         {
-            battleStarted = true;
-            Debug.Log("Battle started!");
+            if (IsBattleOver()) return;
 
-            while (battleStarted)
+            timer += Time.deltaTime;
+            playerAbilityUI?.UpdateCooldowns(teamA[0]);
+            enemyAbilityUI?.UpdateCooldowns(teamB[0]);
+            if (timer >= actionInterval)
             {
-                var allCharacters = GetAllCharacters().Where(c => c.IsAlive).ToList();
-
-                foreach (var character in allCharacters)
-                {
-                    if (!character.IsAlive) continue;
-
-                    AbilityData ability = character.GetNextAbility();
-                    if (ability == null) continue;
-
-                    BattleCharacter target = SelectTarget(character, ability.TargetType);
-                    yield return new WaitForSeconds(ability.castTime); // simulate cast
-
-                    ApplyAbility(character, target, ability);
-
-                    yield return new WaitForSeconds(ability.cooldown); // wait for next action
-                }
-
-                if (teamA.All(c => !c.IsAlive) || teamB.All(c => !c.IsAlive))
-                {
-                    Debug.Log("Battle over!");
-                    battleStarted = false;
-                }
-
-                yield return null;
+                timer = 0f;
+                ProcessTurn();
             }
+        }
+
+        private void ProcessTurn()
+        {
+            var allCharacters = GetAllCharacters().Where(c => c.IsAlive).ToList();
+
+            foreach (var character in allCharacters)
+            {
+                character.TickCooldowns(actionInterval);
+
+                AbilityData ability = character.GetNextReadyAbility();
+                if (ability == null) continue;
+
+                BattleCharacter target = SelectTarget(character, ability.TargetType);
+                if (target == null) continue;
+
+                ApplyAbility(character, target, ability);
+                character.StartCooldown(ability);
+            }
+        }
+
+        private bool IsBattleOver()
+        {
+            return teamA.All(c => !c.IsAlive) || teamB.All(c => !c.IsAlive);
         }
 
         private List<BattleCharacter> GetAllCharacters()
@@ -94,17 +98,15 @@ namespace BattleSystem
 
             int totalDamage = ability.baseDamage + caster.CurrentStats.GetBonusDamage(ability.damageType);
             target.CurrentStats.CurrentHP -= totalDamage;
-            Debug.Log($"{caster.characterName} used {ability.abilityName} on {target.characterName}, dealing {totalDamage} damage!");
-
             target.CurrentStats.CurrentHP = Mathf.Max(0, target.CurrentStats.CurrentHP);
 
-            if (target.CurrentStats.CurrentHP <= 0)
-            {
-                Debug.Log($"{target.characterName} has been defeated!");
-            }
+            Debug.Log($"{caster.characterName} used {ability.abilityName} on {target.characterName}, dealing {totalDamage} damage!");
 
+            if (target.CurrentStats.CurrentHP <= 0)
+                Debug.Log($"{target.characterName} has been defeated!");
             ShowDamagePopup(target, totalDamage);
         }
+
         private void ShowDamagePopup(BattleCharacter target, int damage)
         {
             if (damagePopupPrefab == null) return;
@@ -113,6 +115,4 @@ namespace BattleSystem
             popup.Setup(damage);
         }
     }
-
 }
-

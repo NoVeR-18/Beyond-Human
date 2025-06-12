@@ -17,10 +17,19 @@ namespace BattleSystem
             cooldownOverlay.fillAmount = 0;
         }
 
-        public void SetCooldown(float current, float max)
+        public void UpdateCooldown(float remaining, float max)
         {
-            cooldownOverlay.fillAmount = current / max;
+            if (remaining > 0)
+            {
+                cooldownOverlay.fillAmount = remaining / max;
+            }
+            else
+            {
+                cooldownOverlay.fillAmount = 0;
+            }
         }
+
+        public AbilityData GetAbility() => ability;
     }
 
 }
