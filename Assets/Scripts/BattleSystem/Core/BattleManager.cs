@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -22,43 +23,30 @@ namespace BattleSystem
         {
             teamA = FindObjectsOfType<BattleCharacter>().Where(c => c.Team == BattleTeam.Player).ToList();
             teamB = FindObjectsOfType<BattleCharacter>().Where(c => c.Team == BattleTeam.Enemy).ToList();
+            Init();
 
-            if (teamA.Count > 0) playerAbilityUI.Setup(teamA[0].Abilities);
-            if (teamB.Count > 0) enemyAbilityUI.Setup(teamB[0].Abilities);
+            StartCoroutine(BattleLoop());
         }
 
-        private void Update()
+        private void Init()
         {
-            if (IsBattleOver()) return;
-
-            timer += Time.deltaTime;
-            playerAbilityUI?.UpdateCooldowns(teamA[0]);
-            enemyAbilityUI?.UpdateCooldowns(teamB[0]);
-            if (timer >= actionInterval)
+            foreach (var character in teamA.Concat(teamB))
             {
-                timer = 0f;
-                ProcessTurn();
+                if (character.Team == BattleTeam.Player && playerAbilityUI != null)
+                {
+                    playerAbilityUI.Setup(character.Abilities);
+                    character.abilityUI = playerAbilityUI;
+                }
+                else if (character.Team == BattleTeam.Enemy && enemyAbilityUI != null)
+                {
+                    enemyAbilityUI.Setup(character.Abilities);
+                    character.abilityUI = enemyAbilityUI;
+
+                }
             }
+
         }
 
-        private void ProcessTurn()
-        {
-            var allCharacters = GetAllCharacters().Where(c => c.IsAlive).ToList();
-
-            foreach (var character in allCharacters)
-            {
-                character.TickCooldowns(actionInterval);
-
-                AbilityData ability = character.GetNextReadyAbility();
-                if (ability == null) continue;
-
-                BattleCharacter target = SelectTarget(character, ability.TargetType);
-                if (target == null) continue;
-
-                ApplyAbility(character, target, ability);
-                character.StartCooldown(ability);
-            }
-        }
 
         private bool IsBattleOver()
         {
@@ -97,13 +85,9 @@ namespace BattleSystem
             if (target == null || !target.IsAlive) return;
 
             int totalDamage = ability.baseDamage + caster.CurrentStats.GetBonusDamage(ability.damageType);
-            target.CurrentStats.CurrentHP -= totalDamage;
-            target.CurrentStats.CurrentHP = Mathf.Max(0, target.CurrentStats.CurrentHP);
-
+            target.TakeDamage(totalDamage);
             Debug.Log($"{caster.characterName} used {ability.abilityName} on {target.characterName}, dealing {totalDamage} damage!");
 
-            if (target.CurrentStats.CurrentHP <= 0)
-                Debug.Log($"{target.characterName} has been defeated!");
             ShowDamagePopup(target, totalDamage);
         }
 
@@ -111,8 +95,86 @@ namespace BattleSystem
         {
             if (damagePopupPrefab == null) return;
 
-            var popup = Instantiate(damagePopupPrefab, target.transform.position + Vector3.up, Quaternion.identity);
+            var popup = Instantiate(damagePopupPrefab, target.transform.position + Vector3.up + (Vector3.right * Random.Range(-1f, 1f)), Quaternion.identity);
             popup.Setup(damage);
         }
+        private IEnumerator BattleLoop()
+        {
+            while (!IsBattleOver())
+            {
+                var allCharacters = GetAllCharacters().Where(c => c.IsAlive).ToList();
+
+                foreach (var character in allCharacters)
+                {
+                    AbilityData ability = character.GetNextReadyAbility();
+                    if (ability == null) continue;
+
+                    BattleCharacter target = SelectTarget(character, ability.TargetType);
+                    if (target == null) continue;
+
+                    ApplyAbility(character, target, ability);
+
+                    character.PlayAttackAnimation(ability.animationTrigger);
+                    character.StartCooldown(ability);
+
+                    yield return new WaitForSeconds(actionInterval);
+                }
+
+                yield return null;
+            }
+
+            Debug.Log("Battle Over!");
+        }
+
+
+        private void Update()
+        {
+            UpdateAllCooldowns(Time.deltaTime);
+
+        }
+
+        private void UpdateAllCooldowns(float deltaTime)
+        {
+            foreach (var character in teamA.Concat(teamB))
+            {
+                character.UpdateCooldowns(deltaTime);
+            }
+
+            // Обновляем UI с агрегированными кулдаунами для каждой команды
+            if (playerAbilityUI != null)
+            {
+                var aggregatedPlayerCooldowns = AggregateCooldowns(teamA);
+                playerAbilityUI.UpdateCooldowns(aggregatedPlayerCooldowns);
+            }
+
+            if (enemyAbilityUI != null)
+            {
+                var aggregatedEnemyCooldowns = AggregateCooldowns(teamB);
+                enemyAbilityUI.UpdateCooldowns(aggregatedEnemyCooldowns);
+            }
+        }
+
+        private Dictionary<AbilityData, float> AggregateCooldowns(List<BattleCharacter> characters)
+        {
+            Dictionary<AbilityData, float> aggregated = new();
+
+            foreach (var character in characters)
+            {
+                foreach (var ability in character.Abilities)
+                {
+                    float cd = character.GetRemainingCooldown(ability);
+                    if (aggregated.TryGetValue(ability, out float existingCd))
+                    {
+                        aggregated[ability] = Mathf.Max(existingCd, cd);
+                    }
+                    else
+                    {
+                        aggregated[ability] = cd;
+                    }
+                }
+            }
+            return aggregated;
+        }
     }
+
 }

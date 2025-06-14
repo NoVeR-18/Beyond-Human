@@ -16,6 +16,9 @@ namespace BattleSystem
         public AbilityTargetType TargetType;
         public AbilityType abilityType;
         public List<StatusEffect> effects; // статус + длительность и т.д.
+
+
+        public string animationTrigger = "Attack";
     }
 
 

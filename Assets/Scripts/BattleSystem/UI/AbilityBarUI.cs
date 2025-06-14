@@ -10,13 +10,15 @@ namespace BattleSystem
 
 
         private List<AbilitySlotUI> slots = new();
-
-        public void Setup(List<AbilityData> abilities)
+        private void Awake()
         {
             foreach (Transform child in abilityContainer)
                 Destroy(child.gameObject);
-
             slots.Clear();
+
+        }
+        public void Setup(List<AbilityData> abilities)
+        {
 
             foreach (var ability in abilities)
             {
@@ -27,16 +29,23 @@ namespace BattleSystem
             }
         }
 
-        public void UpdateCooldowns(BattleCharacter character)
+        public void UpdateCooldowns(Dictionary<AbilityData, float> cooldowns)
         {
             foreach (var slot in slots)
             {
                 var ability = slot.GetAbility();
-                float max = ability.cooldown;
-                float remaining = character.GetRemainingCooldown(ability);
-                slot.UpdateCooldown(remaining, max);
+
+                if (cooldowns.TryGetValue(ability, out float remaining))
+                {
+                    slot.UpdateCooldown(remaining, ability.cooldown);
+                }
+                else
+                {
+                    slot.UpdateCooldown(0, ability.cooldown);
+                }
             }
         }
+
     }
 
 

@@ -7,7 +7,7 @@ namespace BattleSystem
     {
         [SerializeField] private Image icon;
         [SerializeField] private Image cooldownOverlay;
-
+        [SerializeField]
         private AbilityData ability;
 
         public void Init(AbilityData abilityData)
@@ -28,6 +28,7 @@ namespace BattleSystem
                 cooldownOverlay.fillAmount = 0;
             }
         }
+
 
         public AbilityData GetAbility() => ability;
     }
