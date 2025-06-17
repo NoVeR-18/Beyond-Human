@@ -84,6 +84,7 @@ namespace BattleSystem
             if (target == null || !target.IsAlive) return;
 
             int totalDamage = ability.baseDamage + caster.CurrentStats.GetBonusDamage(ability.damageType);
+            target.ApplyStatusEffect(ability.effects);
             target.TakeDamage(totalDamage);
             Debug.Log($"{caster.characterName} used {ability.abilityName} on {target.characterName}, dealing {totalDamage} damage!");
 
@@ -105,6 +106,8 @@ namespace BattleSystem
 
                 foreach (var character in allCharacters)
                 {
+                    //character.StatusEffectTick(actionInterval);
+
                     AbilityData ability = character.GetNextReadyAbility();
                     if (ability == null) continue;
 
@@ -116,10 +119,9 @@ namespace BattleSystem
                     character.PlayAttackAnimation(ability.animationTrigger);
                     character.StartCooldown(ability);
 
-                    yield return new WaitForSeconds(actionInterval);
                 }
+                yield return new WaitForSeconds(actionInterval);
 
-                yield return null;
             }
 
             Debug.Log("Battle Over!");

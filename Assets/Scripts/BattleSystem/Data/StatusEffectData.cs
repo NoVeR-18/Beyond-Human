@@ -1,9 +1,6 @@
-﻿using UnityEngine;
-
-namespace BattleSystem
+﻿namespace BattleSystem
 {
-    [CreateAssetMenu(menuName = "Battle/Status Effect")]
-    public class StatusEffectData : ScriptableObject
+    public class StatusEffectData
     {
         public string effectName;
         public StatusType type; // Affliction, Buff, Debuff, Control

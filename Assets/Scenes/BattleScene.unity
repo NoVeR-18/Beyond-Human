@@ -1090,14 +1090,15 @@ MonoBehaviour:
   characterName: human
   Team: 0
   CurrentStats:
-    MaxHP: 100
-    CurrentHP: 100
+    MaxHP: 1000
+    CurrentHP: 1000
     FireDamage: 0
     WaterDamage: 0
     BluntDamage: 0
   Abilities:
   - {fileID: 11400000, guid: c6dd6e5ed9c3bd944bcc312a5cc6909d, type: 2}
   - {fileID: 11400000, guid: 12e8e1258ff266448ba0b30503758102, type: 2}
+  - {fileID: 11400000, guid: a2825cbab9bee5542a50a69248cc3d18, type: 2}
   abilityUI: {fileID: 0}
   animator: {fileID: 970021052}
   healthBarPrefab: {fileID: 2686340596934472318, guid: 475c79737ddca164e95234839c507d4e, type: 3}

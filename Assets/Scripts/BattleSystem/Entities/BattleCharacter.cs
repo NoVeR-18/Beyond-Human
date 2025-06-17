@@ -22,7 +22,7 @@ namespace BattleSystem
 
         [SerializeField] private GameObject healthBarPrefab;
         private HealthBarUI healthBarInstance;
-
+        private List<StatusEffect> statusEffects;
 
         public bool IsAlive => CurrentStats.CurrentHP > 0;
         private void Start()
@@ -179,7 +179,42 @@ namespace BattleSystem
 
             return false;
         }
+        public void ApplyStatusEffect(List<StatusEffect> effects)
+        {
+            foreach (var data in effects)
+            {
 
+                var existing = statusEffects.FirstOrDefault(e => e == data);
+                if (existing != null)
+                {
+                    existing.Duration = data.Duration;
+                }
+                else
+                {
+                    statusEffects.Add(data);
+                }
+            }
+
+        }
+        public void StatusEffectTick(float timeRemaining)
+        {
+            if (statusEffects == null || statusEffects.Count == 0) return;
+            foreach (var effect in statusEffects)
+            {
+                effect.Duration -= timeRemaining;
+                switch (effect.Type)
+                {
+
+                    case StatusType.Affliction:
+                        TakeDamage(effect.damagePerTick);
+                        var popup = Instantiate(Resources.Load<DamagePopup>("DamagePopUp"), transform.position + Vector3.up + (Vector3.right * UnityEngine.Random.Range(-1f, 1f)), Quaternion.identity);
+                        popup.Setup(effect.damagePerTick);
+                        break;
+                }
+            }
+
+
+        }
 
     }
 
