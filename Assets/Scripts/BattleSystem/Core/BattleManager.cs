@@ -12,7 +12,6 @@ namespace BattleSystem
 
         [Header("Timing")]
         public float actionInterval = 1f; // how often to process character turns
-        private float timer = 0f;
 
         [Header("UI")]
         public AbilityBarUI playerAbilityUI;

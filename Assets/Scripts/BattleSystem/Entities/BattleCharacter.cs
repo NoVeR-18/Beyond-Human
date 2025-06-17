@@ -1,6 +1,8 @@
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 namespace BattleSystem
 {
@@ -26,7 +28,10 @@ namespace BattleSystem
         private void Start()
         {
             cooldowns = new Dictionary<AbilityData, float>();
-
+            if (animator == null)
+            {
+                TryGetComponent(out animator);
+            }
             foreach (var ability in Abilities)
             {
                 if (!cooldowns.ContainsKey(ability))
@@ -100,10 +105,27 @@ namespace BattleSystem
             }
         }
 
-        private void Die()
+        public async void Die()
         {
             Debug.Log($"{characterName} has been defeated!");
-            Destroy(gameObject);
+
+            if (animator != null && HasParameter("Die", AnimatorControllerParameterType.Trigger))
+            {
+                animator.SetTrigger("Die");
+
+                // Подождать длину анимации или фиксированную задержку
+                float delay = GetAnimationLength();
+                await Task.Delay(TimeSpan.FromSeconds(delay));
+            }
+
+            gameObject.SetActive(false);
+        }
+        private float GetAnimationLength()
+        {
+            if (animator == null) return 0.5f;
+
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0); // 0 — первый слой
+            return stateInfo.length;
         }
         public void PlayAttackAnimation(string skillTrigger = "Attack")
         {

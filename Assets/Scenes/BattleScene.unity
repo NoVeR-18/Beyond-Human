@@ -207,15 +207,15 @@ MonoBehaviour:
   characterName: bear
   Team: 1
   CurrentStats:
-    MaxHP: 100
-    CurrentHP: 100
+    MaxHP: 50
+    CurrentHP: 50
     FireDamage: 0
     WaterDamage: 0
     BluntDamage: 0
   Abilities:
   - {fileID: 11400000, guid: b41d238b138b6ac40aa0713abe642c8c, type: 2}
   abilityUI: {fileID: 0}
-  animator: {fileID: 261028232}
+  animator: {fileID: 0}
   healthBarPrefab: {fileID: 2686340596934472318, guid: 475c79737ddca164e95234839c507d4e, type: 3}
 --- !u!4 &261028231
 Transform:
@@ -887,8 +887,8 @@ MonoBehaviour:
   characterName: bear
   Team: 1
   CurrentStats:
-    MaxHP: 100
-    CurrentHP: 100
+    MaxHP: 50
+    CurrentHP: 50
     FireDamage: 0
     WaterDamage: 0
     BluntDamage: 0
@@ -1090,8 +1090,8 @@ MonoBehaviour:
   characterName: human
   Team: 0
   CurrentStats:
-    MaxHP: 1000
-    CurrentHP: 1000
+    MaxHP: 100
+    CurrentHP: 100
     FireDamage: 0
     WaterDamage: 0
     BluntDamage: 0
@@ -1226,8 +1226,8 @@ MonoBehaviour:
   characterName: bear
   Team: 1
   CurrentStats:
-    MaxHP: 100
-    CurrentHP: 100
+    MaxHP: 50
+    CurrentHP: 50
     FireDamage: 0
     WaterDamage: 0
     BluntDamage: 0
