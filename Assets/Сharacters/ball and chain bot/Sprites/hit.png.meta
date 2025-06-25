@@ -131,57 +131,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hit_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 44
-        width: 23
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c4fa9f791b72e2ff0800000000000000
-      internalID: -59066101396820148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hit_1
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 44
-        width: 19
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af1375bad8d839280800000000000000
-      internalID: -9037724387597929990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hit_2
       rect:
         serializedVersion: 2
         x: 47
-        y: 44
-        width: 51
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 45
+        width: 33
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,57 +152,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hit_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 5
-        width: 23
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 65f532a0a4ad4bb60800000000000000
-      internalID: 7761068069398732630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hit_4
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 17
-        width: 15
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9736a2c24cee2c910800000000000000
-      internalID: 1856308522752041849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hit_5
       rect:
         serializedVersion: 2
-        x: 40
-        y: 5
-        width: 42
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 47
+        y: 6
+        width: 33
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,31 +172,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: hit_6
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 5
-        width: 17
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd5a49a007ddcbd00800000000000000
-      internalID: 989909491398256093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a286060c8b3c02740a1058671b0fbecb
     internalID: 0
     vertices: []
     indices: 

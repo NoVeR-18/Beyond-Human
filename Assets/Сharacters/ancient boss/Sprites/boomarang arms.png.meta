@@ -173,12 +173,12 @@ TextureImporter:
       name: boomarang arms_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 23
-        width: 41
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 201
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: boomarang arms_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 26
-        width: 24
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 201
+        y: 0
+        width: 201
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: boomarang arms_2
       rect:
         serializedVersion: 2
-        x: 226
-        y: 20
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 402
+        y: 0
+        width: 201
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: boomarang arms_3
       rect:
         serializedVersion: 2
-        x: 259
-        y: 25
-        width: 9
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 603
+        y: 0
+        width: 201
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: boomarang arms_4
       rect:
         serializedVersion: 2
-        x: 281
-        y: 26
-        width: 25
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 804
+        y: 0
+        width: 201
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,12 +278,12 @@ TextureImporter:
       name: boomarang arms_5
       rect:
         serializedVersion: 2
-        x: 427
-        y: 18
-        width: 81
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1005
+        y: 0
+        width: 201
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: boomarang arms_6
       rect:
         serializedVersion: 2
-        x: 638
-        y: 21
-        width: 48
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1206
+        y: 0
+        width: 201
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,283 +316,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: boomarang arms_7
-      rect:
-        serializedVersion: 2
-        x: 686
-        y: 28
-        width: 15
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37f054f929c7b4350800000000000000
-      internalID: 6002027897580490611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_8
-      rect:
-        serializedVersion: 2
-        x: 701
-        y: 38
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac46193363fc14670800000000000000
-      internalID: 8521319801662039242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_9
-      rect:
-        serializedVersion: 2
-        x: 830
-        y: 16
-        width: 20
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81b27c9b8825fe3a0800000000000000
-      internalID: -6633992978907583720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_10
-      rect:
-        serializedVersion: 2
-        x: 849
-        y: 26
-        width: 23
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d9b216f123f2f5e0800000000000000
-      internalID: -1877170767472182830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_11
-      rect:
-        serializedVersion: 2
-        x: 872
-        y: 24
-        width: 36
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5dd9ac656d3e96b0800000000000000
-      internalID: -5287721406662320802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_12
-      rect:
-        serializedVersion: 2
-        x: 1040
-        y: 16
-        width: 33
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57ecff2b5f9ddd510800000000000000
-      internalID: 1575655093942865525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_13
-      rect:
-        serializedVersion: 2
-        x: 1073
-        y: 24
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf16532e633bf2760800000000000000
-      internalID: 7435358558116733436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_14
-      rect:
-        serializedVersion: 2
-        x: 1243
-        y: 19
-        width: 34
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 557588e9fd2f3bc70800000000000000
-      internalID: 8985792723785635669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_15
-      rect:
-        serializedVersion: 2
-        x: 1279
-        y: 25
-        width: 29
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed2c4bd08d2ec1350800000000000000
-      internalID: 5988911022066680542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_16
-      rect:
-        serializedVersion: 2
-        x: 628
-        y: 17
-        width: 7
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db22568f2e6f9bf80800000000000000
-      internalID: -8090163800903966019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_17
-      rect:
-        serializedVersion: 2
-        x: 635
-        y: 17
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d13e8af9977648310800000000000000
-      internalID: 1406362755713786653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_18
-      rect:
-        serializedVersion: 2
-        x: 855
-        y: 20
-        width: 19
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17785625f006ae580800000000000000
-      internalID: -8797113303191681167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boomarang arms_19
-      rect:
-        serializedVersion: 2
-        x: 1066
-        y: 19
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6cc0b362488b4fa50800000000000000
-      internalID: 6554066235447512262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dbc30a2c2c3b8c54282518cf9b3b46bb
     internalID: 0
     vertices: []
     indices: 
@@ -602,24 +329,11 @@ TextureImporter:
     nameFileIdTable:
       boomarang arms_0: -1604732616014962315
       boomarang arms_1: -631935762426835960
-      boomarang arms_10: -1877170767472182830
-      boomarang arms_11: -5287721406662320802
-      boomarang arms_12: 1575655093942865525
-      boomarang arms_13: 7435358558116733436
-      boomarang arms_14: 8985792723785635669
-      boomarang arms_15: 5988911022066680542
-      boomarang arms_16: -8090163800903966019
-      boomarang arms_17: 1406362755713786653
-      boomarang arms_18: -8797113303191681167
-      boomarang arms_19: 6554066235447512262
       boomarang arms_2: -6193921434232963486
       boomarang arms_3: -7570312897559334083
       boomarang arms_4: 8062464734084097672
       boomarang arms_5: 1921095940597740989
       boomarang arms_6: 2816912967478438002
-      boomarang arms_7: 6002027897580490611
-      boomarang arms_8: 8521319801662039242
-      boomarang arms_9: -6633992978907583720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
