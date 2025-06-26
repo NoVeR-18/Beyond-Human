@@ -36,12 +36,14 @@ namespace BattleSystem
 
             if (healthBarPrefab == null)
                 healthBarPrefab = Resources.Load<GameObject>("UI/HealthBar");
+            if (animator == null)
+                animator = GetComponent<Animator>();
         }
 
         private void Start()
         {
             cooldowns = Abilities.ToDictionary(a => a, a => 0f);
-            animator ??= GetComponent<Animator>();
+
 
             var go = Instantiate(healthBarPrefab, transform);
             go.transform.localPosition = new Vector3(0, 1.5f, 0);

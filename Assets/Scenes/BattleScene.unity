@@ -1826,6 +1826,13 @@ MonoBehaviour:
       CurrentHP: 100
     abilities:
     - {fileID: 11400000, guid: c6dd6e5ed9c3bd944bcc312a5cc6909d, type: 2}
+  - prefab: {fileID: 8569716536209996708, guid: a554626d6a6a1be41b5d8be415bc54ac, type: 3}
+    team: 0
+    stats:
+      MaxHP: 100
+      CurrentHP: 100
+    abilities:
+    - {fileID: 11400000, guid: c6dd6e5ed9c3bd944bcc312a5cc6909d, type: 2}
   returnSceneName: 
   returnPointID: 
   npcIDsToRemove: []
