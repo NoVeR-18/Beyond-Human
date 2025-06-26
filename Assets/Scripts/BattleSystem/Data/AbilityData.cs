@@ -17,8 +17,10 @@ namespace BattleSystem
         public AbilityType abilityType;
         public List<StatusEffect> effects; // статус + длительность и т.д.
 
-
+        public GameObject summonPrefab;
         public string animationTrigger = "Attack";
+
+
     }
 
 

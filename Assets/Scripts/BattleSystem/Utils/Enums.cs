@@ -11,8 +11,9 @@ namespace BattleSystem
 
     public enum BattleTeam
     {
-        Player,
-        Enemy
+        Team1,
+        Team2,
+        Team3
     }
     public enum AbilityTargetType
     {
@@ -45,5 +46,12 @@ namespace BattleSystem
         Magical,
         Neutral
     }
-
+    public enum EffectTrigger
+    {
+        None,
+        OnApply,
+        OnTick,
+        OnRemove,
+        OnHitByAbility
+    }
 }

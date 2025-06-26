@@ -108,7 +108,8 @@ namespace Assets.Scripts.NPC
             Animator = GetComponent<Animator>();
             StateMachine = new NPCStateMachine(this);
             npcId = gameObject.GetInstanceID().ToString();
-            SaveSystem.Instance.RegisterNPC(this);
+            if (SaveSystem.Instance != null)
+                SaveSystem.Instance.RegisterNPC(this);
         }
 
         private void Start()

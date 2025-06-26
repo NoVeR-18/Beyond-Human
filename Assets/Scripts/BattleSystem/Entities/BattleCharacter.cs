@@ -1,106 +1,103 @@
+// BattleCharacter.cs
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
+
 namespace BattleSystem
 {
-
     public class BattleCharacter : MonoBehaviour
     {
         public string characterName;
         public BattleTeam Team;
         public CharacterStats CurrentStats;
+        public DamagePopup damagePopupPrefab;
 
         public List<AbilityData> Abilities = new();
         public AbilityBarUI abilityUI;
+        public StatusEffectPanel statusEffectPanel;
+
         private Dictionary<AbilityData, float> cooldowns = new();
+        private Dictionary<StatusEffect, float> statusEffects = new();
 
-        [SerializeField]
-        private Animator animator;
-
+        [SerializeField] private Animator animator;
         [SerializeField] private GameObject healthBarPrefab;
         private HealthBarUI healthBarInstance;
-        private List<StatusEffect> statusEffects;
 
         public bool IsAlive => CurrentStats.CurrentHP > 0;
-        private void Start()
+
+        private void Awake()
         {
-            cooldowns = new Dictionary<AbilityData, float>();
-            if (animator == null)
-            {
-                TryGetComponent(out animator);
-            }
-            foreach (var ability in Abilities)
-            {
-                if (!cooldowns.ContainsKey(ability))
-                    cooldowns[ability] = 0f;
-            }
+
+            if (damagePopupPrefab == null)
+                damagePopupPrefab = Resources.Load<DamagePopup>("UI/DamagePopUp");
 
             if (healthBarPrefab == null)
-            {
-                Resources.Load<GameObject>("HealthBar");
-            }
-            GameObject go = Instantiate(healthBarPrefab, transform);
+                healthBarPrefab = Resources.Load<GameObject>("UI/HealthBar");
+        }
+
+        private void Start()
+        {
+            cooldowns = Abilities.ToDictionary(a => a, a => 0f);
+            animator ??= GetComponent<Animator>();
+
+            var go = Instantiate(healthBarPrefab, transform);
             go.transform.localPosition = new Vector3(0, 1.5f, 0);
             healthBarInstance = go.GetComponent<HealthBarUI>();
             healthBarInstance.SetHealth(CurrentStats.CurrentHP, CurrentStats.MaxHP);
-
         }
+
         public void StartCooldown(AbilityData ability)
         {
-            if (ability == null) return;
-            cooldowns[ability] = ability.cooldown;
+            if (ability != null)
+                cooldowns[ability] = ability.cooldown;
         }
+
         public void TickCooldowns(float deltaTime)
         {
-            var keys = cooldowns.Keys.ToList();
-            foreach (var key in keys)
+            foreach (var key in cooldowns.Keys.ToList())
             {
-                cooldowns[key] -= deltaTime;
-                if (cooldowns[key] <= 0)
-                {
-                    cooldowns[key] = 0;
-                }
+                cooldowns[key] = Mathf.Max(0, cooldowns[key] - deltaTime);
             }
         }
-        public AbilityData GetNextReadyAbility()
+
+        public AbilityData GetNextReadyAbility(BattleManager manager)
         {
             foreach (var ability in Abilities)
             {
                 if (cooldowns.TryGetValue(ability, out float remaining) && remaining <= 0)
-                    return ability;
-            }
-            return null;
-        }
-        public float GetRemainingCooldown(AbilityData ability)
-        {
-            if (!cooldowns.ContainsKey(ability)) return 0;
-            return cooldowns[ability];
-        }
-        public void UpdateCooldowns(float deltaTime)
-        {
-            foreach (var ability in Abilities)
-            {
-                if (cooldowns.ContainsKey(ability) && cooldowns[ability] > 0f)
                 {
-                    cooldowns[ability] -= deltaTime;
-                    cooldowns[ability] = Mathf.Max(0f, cooldowns[ability]);
+                    if (ability.summonPrefab != null)
+                    {
+                        if (manager.GetFreeSpawnPoint(Team) == null)
+                            continue; // Пропускаем эту способность, места нет
+                    }
+
+                    return ability;
                 }
             }
 
+            return null;
         }
+
+
+        public float GetRemainingCooldown(AbilityData ability) =>
+            cooldowns.ContainsKey(ability) ? cooldowns[ability] : 0f;
+
         public void TakeDamage(int amount)
         {
-            CurrentStats.CurrentHP -= amount;
-            CurrentStats.CurrentHP = Mathf.Max(0, CurrentStats.CurrentHP);
+            ShowDamagePopup(amount);
+            CurrentStats.CurrentHP = Mathf.Max(0, CurrentStats.CurrentHP - amount);
 
-            if (healthBarInstance != null)
-                healthBarInstance.SetHealth(CurrentStats.CurrentHP, CurrentStats.MaxHP);
+            healthBarInstance?.SetHealth(CurrentStats.CurrentHP, CurrentStats.MaxHP);
             PlayHitReaction();
+
             if (CurrentStats.CurrentHP <= 0)
             {
+                statusEffectPanel.RemoveDissabledEffects(statusEffects.Keys.ToList(), this);
+                abilityUI.RemoveDissabledAbilities(Abilities, this);
                 Die();
             }
         }
@@ -108,115 +105,189 @@ namespace BattleSystem
         public async void Die()
         {
             Debug.Log($"{characterName} has been defeated!");
-
-            if (animator != null && HasParameter("Die", AnimatorControllerParameterType.Trigger))
+            if (animator && HasParameter("Die", AnimatorControllerParameterType.Trigger))
             {
                 animator.SetTrigger("Die");
-
-                // Подождать длину анимации или фиксированную задержку
-                float delay = GetAnimationLength();
-                await Task.Delay(TimeSpan.FromSeconds(delay));
+                await Task.Delay(TimeSpan.FromSeconds(GetAnimationLength()));
             }
-
             gameObject.SetActive(false);
+        }
+
+        public BattleSpawnPoint FindMySpawnPoint()
+        {
+            var allPoints = FindObjectsOfType<BattleSpawnPoint>();
+            return allPoints.FirstOrDefault(p => Vector3.Distance(p.transform.position, transform.position) < 0.1f);
         }
         private float GetAnimationLength()
         {
-            if (animator == null) return 0.5f;
-
-            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0); // 0 — первый слой
-            return stateInfo.length;
+            return animator ? animator.GetCurrentAnimatorStateInfo(0).length : 0.5f;
         }
+
         public void PlayAttackAnimation(string skillTrigger = "Attack")
         {
-            if (animator != null && HasParameter(skillTrigger, AnimatorControllerParameterType.Trigger))
-            {
+            if (animator && HasParameter(skillTrigger, AnimatorControllerParameterType.Trigger))
                 animator.SetTrigger(skillTrigger);
-            }
             else
-            {
-                Debug.LogWarning($"Animator: нет триггера {skillTrigger}, проигрываю обычную анимацию");
-                FlashColor(Color.yellow, 0.2f); // или проигрываем базовую атаку
-            }
+                FlashColor(Color.yellow, 0.2f);
         }
+
         public void PlayHitReaction()
         {
-            if (animator != null)
-            {
-                if (HasParameter("Hit", AnimatorControllerParameterType.Trigger))
-                {
-                    animator.SetTrigger("Hit");
-                }
-                else
-                {
-                    FlashColor(Color.red, 0.2f);
-                }
-            }
+            if (animator && HasParameter("Hit", AnimatorControllerParameterType.Trigger))
+                animator.SetTrigger("Hit");
+            else
+                FlashColor(Color.red, 0.2f);
         }
+
         public void FlashColor(Color flashColor, float duration)
         {
-            var renderers = GetComponentsInChildren<SpriteRenderer>();
-
-            foreach (var r in renderers)
+            foreach (var r in GetComponentsInChildren<SpriteRenderer>())
             {
                 var originalColor = r.color;
-
-                r.DOColor(flashColor, 0.05f) // Быстро покрасить
-                 .OnComplete(() =>
-                     r.DOColor(originalColor, duration) // Затем вернуть назад
-                 );
+                r.DOColor(flashColor, 0.05f).OnComplete(() => r.DOColor(originalColor, duration));
             }
         }
+
         public bool HasParameter(string name, AnimatorControllerParameterType type)
         {
-            if (animator == null) return false;
-
-            foreach (var param in animator.parameters)
-            {
-                if (param.name == name && param.type == type)
-                    return true;
-            }
-
-            return false;
+            return animator != null && animator.parameters.Any(p => p.name == name && p.type == type);
         }
-        public void ApplyStatusEffect(List<StatusEffect> effects)
-        {
-            foreach (var data in effects)
-            {
 
-                var existing = statusEffects.FirstOrDefault(e => e == data);
-                if (existing != null)
+        public void ApplyStatusEffect(List<StatusEffect> newEffects)
+        {
+            foreach (var newEffect in newEffects)
+            {
+                bool isComboApplied = false;
+
+                foreach (var existing in statusEffects.Keys.ToList())
                 {
-                    existing.Duration = data.Duration;
+                    foreach (var combo in existing.comboEffects)
+                    {
+                        if (combo.otherEffect == newEffect)
+                        {
+                            ApplyComboEffect(existing, newEffect, combo);
+                            isComboApplied = true;
+                            break;
+                        }
+                    }
+                    if (isComboApplied) break;
+
+                    foreach (var combo in newEffect.comboEffects)
+                    {
+                        if (combo.otherEffect == existing)
+                        {
+                            ApplyComboEffect(existing, newEffect, combo);
+                            isComboApplied = true;
+                            break;
+                        }
+                    }
+                    if (isComboApplied) break;
                 }
+
+                if (isComboApplied) continue;
+
+                if (statusEffects.ContainsKey(newEffect))
+                    statusEffects[newEffect] = newEffect.Duration;
                 else
                 {
-                    statusEffects.Add(data);
+                    statusEffects.Add(newEffect, newEffect.Duration);
                 }
             }
-
+            statusEffectPanel.Setup(statusEffects.Keys.ToList(), this);
         }
-        public void StatusEffectTick(float timeRemaining)
+
+        private void ApplyComboEffect(StatusEffect a, StatusEffect b, StatusCombo combo)
         {
-            if (statusEffects == null || statusEffects.Count == 0) return;
-            foreach (var effect in statusEffects)
+            if (combo.removeOriginals)
             {
-                effect.Duration -= timeRemaining;
-                switch (effect.Type)
-                {
+                statusEffects.Remove(a);
+                statusEffects.Remove(b);
+            }
 
-                    case StatusType.Affliction:
-                        TakeDamage(effect.damagePerTick);
-                        var popup = Instantiate(Resources.Load<DamagePopup>("DamagePopUp"), transform.position + Vector3.up + (Vector3.right * UnityEngine.Random.Range(-1f, 1f)), Quaternion.identity);
-                        popup.Setup(effect.damagePerTick);
-                        break;
+            if (combo.resultingEffect != null)
+            {
+                statusEffects[combo.resultingEffect] = combo.resultingEffect.Duration;
+            }
+        }
+
+        public void StatusEffectTick(float deltaTime)
+        {
+            var expired = new List<StatusEffect>();
+
+            foreach (var effect in statusEffects.Keys.ToList())
+            {
+                statusEffects[effect] -= deltaTime;
+
+
+                if (effect.Type == StatusType.Affliction && effect.damagePerTick > 0)
+                    TakeDamage(effect.damagePerTick);
+
+                if (effect.regenHP && effect.regenAmount > 0)
+                    Heal((int)effect.regenAmount);
+
+                if (statusEffects[effect] <= 0)
+                {
+                    expired.Add(effect);
                 }
             }
 
+            foreach (var effect in expired)
+                statusEffects.Remove(effect);
 
+            statusEffectPanel.UpdateStatusEffects(statusEffects, this);
         }
 
+        public void Heal(int amount)
+        {
+            if (statusEffects.Keys.Any(e => e.regenHP)) return;
+            CurrentStats.CurrentHP = Mathf.Min(CurrentStats.CurrentHP + amount, CurrentStats.MaxHP);
+            healthBarInstance?.SetHealth(CurrentStats.CurrentHP, CurrentStats.MaxHP);
+        }
+
+        private void ShowDamagePopup(int damage)
+        {
+            if (!damagePopupPrefab) return;
+
+            var popup = Instantiate(damagePopupPrefab, transform.position + Vector3.up + (Vector3.right * UnityEngine.Random.Range(-1f, 1f)), Quaternion.identity);
+            popup.Setup(damage);
+        }
+
+        public bool CanAct() => !statusEffects.Keys.Any(e => e.preventAction || e.sleep || e.isFeared);
+
+        public bool CanUseMagic() => !statusEffects.Keys.Any(e => e.preventMagic || e.silence);
+
+        public bool CanUsePhysical() => !statusEffects.Keys.Any(e => e.preventPhysical);
+
+        public float GetCastSpeedMultiplier()
+        {
+            float multiplier = 1f;
+            foreach (var e in statusEffects.Keys)
+                multiplier *= e.castSpeedMultiplier;
+            return multiplier;
+        }
+
+        public float GetMagicDamageMultiplier()
+        {
+            float multiplier = 1f;
+            foreach (var e in statusEffects.Keys)
+                multiplier *= e.magicDamageModifier;
+            return multiplier;
+        }
+
+        public float GetPhysicalDamageMultiplier()
+        {
+            float multiplier = 1f;
+            foreach (var e in statusEffects.Keys)
+                multiplier *= e.physicalDamageModifier;
+            return multiplier;
+        }
+
+        public List<StatusEffect> GetCurrentEffects() => statusEffects.Keys.ToList();
+
+        public float GetRemainingCooldown(StatusEffect effect) =>
+            statusEffects.TryGetValue(effect, out float t) ? t : 0f;
+
+        public Dictionary<AbilityData, float> GetCooldowns() => cooldowns;
+        public Dictionary<StatusEffect, float> GetStatusEffects() => statusEffects;
     }
-
-
 }
