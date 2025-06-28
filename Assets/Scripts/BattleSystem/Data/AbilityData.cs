@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,8 +12,7 @@ namespace BattleSystem
         public Sprite icon;
         public float castTime;
         public float cooldown;
-        public int baseDamage;
-        public DamageType damageType;
+        public List<DamageClass> damages;
         public AbilityTargetType TargetType;
         public AbilityType abilityType;
         public List<StatusEffect> effects; // статус + длительность и т.д.
@@ -23,5 +23,11 @@ namespace BattleSystem
 
     }
 
+    [Serializable]
+    public class DamageClass
+    {
+        public DamageType damageType;
+        public int baseDamage;
+    }
 
 }

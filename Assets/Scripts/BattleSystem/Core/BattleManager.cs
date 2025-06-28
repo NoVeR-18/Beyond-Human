@@ -168,26 +168,30 @@ namespace BattleSystem
             if (ability.abilityType == AbilityType.Magical && !caster.CanUseMagic()) return;
             if (ability.abilityType == AbilityType.Physical && !caster.CanUsePhysical()) return;
 
-            int totalDamage = ability.baseDamage;
-            if (ability.abilityType == AbilityType.Magical)
-                totalDamage = Mathf.RoundToInt(totalDamage * caster.GetMagicDamageMultiplier());
-            if (ability.abilityType == AbilityType.Physical)
-                totalDamage = Mathf.RoundToInt(totalDamage * caster.GetPhysicalDamageMultiplier());
-            foreach (var effect in target.GetCurrentEffects())
+            foreach (var damage in ability.damages)
             {
-                if (effect.weaknessToDamageType == ability.damageType)
+
+                int totalDamage = damage.baseDamage;
+                if (ability.abilityType == AbilityType.Magical)
+                    totalDamage = Mathf.RoundToInt(totalDamage * caster.GetMagicDamageMultiplier());
+                if (ability.abilityType == AbilityType.Physical)
+                    totalDamage = Mathf.RoundToInt(totalDamage * caster.GetPhysicalDamageMultiplier());
+                foreach (var effect in target.GetCurrentEffects())
                 {
-                    totalDamage = Mathf.RoundToInt(totalDamage * effect.weaknessMultiplier);
+                    if (effect.weaknessToDamageType == damage.damageType)
+                    {
+                        totalDamage = Mathf.RoundToInt(totalDamage * effect.weaknessMultiplier);
+                    }
                 }
+
+                if (ability.effects != null && ability.effects.Count > 0)
+                    target.ApplyStatusEffect(ability.effects);
+
+                if (totalDamage > 0)
+                    target.TakeDamage(totalDamage);
+
+                Debug.Log($"{caster.characterName} used {ability.abilityName} on {target.characterName}, dealing {totalDamage} damage!");
             }
-
-            if (ability.effects != null && ability.effects.Count > 0)
-                target.ApplyStatusEffect(ability.effects);
-
-            if (totalDamage > 0)
-                target.TakeDamage(totalDamage);
-
-            Debug.Log($"{caster.characterName} used {ability.abilityName} on {target.characterName}, dealing {totalDamage} damage!");
 
             if (ability.summonPrefab != null)
             {
