@@ -43,7 +43,13 @@ namespace BattleSystem
 
             SpawnParticipantsFromSetup();
             Init();
-            StartCoroutine(BattleLoop());
+
+            foreach (var character in GetAllCharacters())
+            {
+                StartCoroutine(AbilityLoop(character));
+            }
+
+            StartCoroutine(StatusEffectLoop());
         }
 
         private void SpawnParticipantsFromSetup()
@@ -184,14 +190,14 @@ namespace BattleSystem
                     }
                 }
 
-                if (ability.effects != null && ability.effects.Count > 0)
-                    target.ApplyStatusEffect(ability.effects);
-
                 if (totalDamage > 0)
                     target.TakeDamage(totalDamage);
 
                 Debug.Log($"{caster.characterName} used {ability.abilityName} on {target.characterName}, dealing {totalDamage} damage!");
             }
+
+            if (ability.effects != null && ability.effects.Count > 0)
+                target.ApplyStatusEffect(ability.effects);
 
             if (ability.summonPrefab != null)
             {
@@ -253,66 +259,56 @@ namespace BattleSystem
             }
         }
 
-        private IEnumerator BattleLoop()
+        private IEnumerator StatusEffectLoop()
         {
-            while (true)
+            while (!IsBattleOver())
             {
-                CleanDeadCharactersAndFreeSpawns();
-
-                if (IsBattleOver())
-                    break;
                 foreach (var character in GetAllCharacters())
                 {
                     if (character.IsAlive)
-                    {
                         character.StatusEffectTick(actionInterval);
-                    }
                 }
 
-                yield return ProcessTeamTurn(teamA);
-                yield return ProcessTeamTurn(teamB);
-                yield return ProcessTeamTurn(teamC);
+                CleanDeadCharactersAndFreeSpawns();
 
                 yield return new WaitForSeconds(actionInterval);
             }
 
             Debug.Log("Battle Over!");
         }
-
-        private IEnumerator ProcessTeamTurn(List<BattleCharacter> team)
+        private IEnumerator AbilityLoop(BattleCharacter character)
         {
-            List<BattleCharacter> turnOrder = new(team);
-
-            foreach (var character in turnOrder)
+            while (!IsBattleOver())
             {
-                if (!character.IsAlive || !character.CanAct())
-                    continue;
-
-                AbilityData ability = character.GetNextReadyAbility(this);
-                if (ability == null) continue;
-
-                List<BattleCharacter> targets = SelectTargets(character, ability.TargetType);
-                if (targets == null || targets.Count == 0) continue;
-
-                if (ability.castTime > 0)
-                    yield return new WaitForSeconds(ability.castTime * character.GetCastSpeedMultiplier());
-
-                foreach (var target in targets)
+                if (character == null || !character.IsAlive || !character.CanAct())
                 {
-                    ApplyAbility(character, target, ability);
+                    yield return null;
+                    continue;
                 }
 
-                character.PlayAttackAnimation(ability.animationTrigger);
-                character.StartCooldown(ability);
+                AbilityData ability = character.GetNextReadyAbility(this);
 
-                team.Remove(character);
-                team.Add(character);
+                if (ability != null)
+                {
+                    var targets = SelectTargets(character, ability.TargetType);
 
-                yield break;
+                    if (targets != null && targets.Count > 0)
+                    {
+                        if (ability.castTime > 0)
+                            yield return new WaitForSeconds(ability.castTime * character.GetCastSpeedMultiplier());
+
+                        foreach (var target in targets)
+                            ApplyAbility(character, target, ability);
+
+                        character.PlayAttackAnimation(ability.animationTrigger);
+                        character.StartCooldown(ability);
+                    }
+                }
+
+                yield return new WaitForSeconds(0.1f); // маленький интервал между проверками
             }
-
-            yield return new WaitForSeconds(actionInterval);
         }
+
 
         private void Update()
         {

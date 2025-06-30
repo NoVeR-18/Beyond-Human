@@ -16,8 +16,11 @@ MonoBehaviour:
   icon: {fileID: 1009049853055315898, guid: 83913ae551e483646b8564947a940ab8, type: 3}
   castTime: 0
   cooldown: 3
-  baseDamage: 10
-  damageType: 0
+  damages:
+  - damageType: 0
+    baseDamage: 5
   TargetType: 0
   abilityType: 0
   effects: []
+  summonPrefab: {fileID: 0}
+  animationTrigger: Attack

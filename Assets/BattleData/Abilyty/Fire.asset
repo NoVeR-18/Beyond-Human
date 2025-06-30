@@ -16,8 +16,9 @@ MonoBehaviour:
   icon: {fileID: 534960623560536297, guid: 180a1375982285c44a85ec327a2472c7, type: 3}
   castTime: 0
   cooldown: 1
-  baseDamage: 1
-  damageType: 0
+  damages:
+  - damageType: 0
+    baseDamage: 5
   TargetType: 0
   abilityType: 0
   effects:

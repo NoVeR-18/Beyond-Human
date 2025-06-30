@@ -16,7 +16,7 @@ MonoBehaviour:
   Icon: {fileID: -556974013050493502, guid: d1b9c4ed814fa744a84a0fc5dc2fb47e, type: 3}
   Type: 0
   Duration: 3
-  damagePerTick: 5
+  damagePerTick: 1
   weaknessToDamageType: 2
   weaknessMultiplier: 0.5
   preventAction: 0
@@ -40,4 +40,3 @@ MonoBehaviour:
   - otherEffect: {fileID: 0}
     resultingEffect: {fileID: 0}
     removeOriginals: 0
-  trigger: 2
