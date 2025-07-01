@@ -12,6 +12,7 @@ namespace BattleSystem
         public Sprite icon;
         public float castTime;
         public float cooldown;
+        public int shieldAmount;
         public List<DamageClass> damages;
         public AbilityTargetType TargetType;
         public AbilityType abilityType;

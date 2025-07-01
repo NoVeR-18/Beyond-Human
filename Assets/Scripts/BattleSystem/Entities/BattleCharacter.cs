@@ -90,11 +90,25 @@ namespace BattleSystem
 
         public void TakeDamage(int amount)
         {
-            ShowDamagePopup(amount);
-            CurrentStats.CurrentHP = Mathf.Max(0, CurrentStats.CurrentHP - amount);
+            int remainingDamage = amount;
 
-            healthBarInstance?.SetHealth(CurrentStats.CurrentHP, CurrentStats.MaxHP);
-            PlayHitReaction();
+            if (CurrentStats.CurrentShield > 0)
+            {
+                int shieldAbsorbed = Mathf.Min(CurrentStats.CurrentShield, remainingDamage);
+                CurrentStats.CurrentShield -= shieldAbsorbed;
+                remainingDamage -= shieldAbsorbed;
+
+                // Можно визуально показать: "Щит -X"
+                ShowShieldPopup(shieldAbsorbed);
+            }
+
+            if (remainingDamage > 0)
+            {
+                ShowDamagePopup(remainingDamage);
+                CurrentStats.CurrentHP = Mathf.Max(0, CurrentStats.CurrentHP - remainingDamage);
+                healthBarInstance?.SetHealth(CurrentStats.CurrentHP, CurrentStats.MaxHP);
+                PlayHitReaction();
+            }
 
             if (CurrentStats.CurrentHP <= 0)
             {
@@ -102,6 +116,13 @@ namespace BattleSystem
                 abilityUI.RemoveDissabledAbilities(Abilities, this);
                 Die();
             }
+        }
+        public void ShowShieldPopup(int shieldValue)
+        {
+            if (!damagePopupPrefab) return;
+
+            var popup = Instantiate(damagePopupPrefab, transform.position + Vector3.up + (Vector3.right * UnityEngine.Random.Range(-1f, 1f)), Quaternion.identity);
+            popup.Setup(shieldValue, Color.blue);
         }
 
         public async void Die()

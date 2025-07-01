@@ -173,7 +173,11 @@ namespace BattleSystem
 
             if (ability.abilityType == AbilityType.Magical && !caster.CanUseMagic()) return;
             if (ability.abilityType == AbilityType.Physical && !caster.CanUsePhysical()) return;
-
+            if (ability.shieldAmount > 0)
+            {
+                target.CurrentStats.CurrentShield += ability.shieldAmount;
+                target.ShowShieldPopup(ability.shieldAmount);
+            }
             foreach (var damage in ability.damages)
             {
 

@@ -8,6 +8,7 @@ namespace BattleSystem
         public int CurrentHP = 100;
 
 
+        public int CurrentShield;
     }
 
 

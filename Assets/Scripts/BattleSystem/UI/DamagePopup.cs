@@ -15,5 +15,12 @@ namespace BattleSystem
             transform.DOMoveY(transform.position.y + 1, 0.5f).SetEase(Ease.OutCubic);
             damageText.DOFade(0, 0.5f).SetDelay(0.3f).OnComplete(() => Destroy(gameObject));
         }
+        public void Setup(int amount, Color color)
+        {
+            damageText.text = amount.ToString();
+            damageText.color = color;
+            transform.DOMoveY(transform.position.y + 1, 0.5f).SetEase(Ease.OutCubic);
+            damageText.DOFade(0, 0.5f).SetDelay(0.3f).OnComplete(() => Destroy(gameObject));
+        }
     }
 }
