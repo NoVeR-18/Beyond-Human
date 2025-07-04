@@ -7,17 +7,13 @@ public class InventorySlot : MonoBehaviour
     [HideInInspector]
     public int SlotID = 0;
     public Image icon;
-    public Button removeButton;
+    public Button IconButton;
     public TextMeshProUGUI stackText;
 
     private Item item;
     private int quantity;
-    private void Start()
-    {
-        removeButton.onClick.AddListener(() => { ClearSlot(); });
 
 
-    }
     public void AddItem(Item newItem, int count)
     {
         item = newItem;
@@ -25,7 +21,7 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = item.icon;
         icon.enabled = true;
-        removeButton.interactable = true;
+        IconButton.interactable = true;
         UpdateStackText();
     }
 
@@ -36,7 +32,7 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = null;
         icon.enabled = false;
-        removeButton.interactable = false;
+        IconButton.interactable = false;
         stackText.text = "";
     }
 

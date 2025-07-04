@@ -18,7 +18,6 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
     public List<InventoryItem> items = new List<InventoryItem>();
-    public InventoryWindow inventoryUI;
 
     void Awake()
     {

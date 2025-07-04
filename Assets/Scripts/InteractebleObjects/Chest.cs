@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Chest : MonoBehaviour, IInteractable
@@ -6,6 +7,11 @@ public class Chest : MonoBehaviour, IInteractable
     public int requiredLockpickingLevel = 0;
     public bool isOpened = false;
     private Animator animator;
+
+    [SerializeField]
+    private List<InventoryItem> items = new List<InventoryItem>();
+    public List<InventoryItem> GetItems() => items;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -37,12 +43,28 @@ public class Chest : MonoBehaviour, IInteractable
         isOpened = true;
         animator.SetTrigger("Open");
         Debug.Log("Chest opened! Rewards received.");
+        UIManager.Instance.chestWindow.Open(this);
         // Here you can give a reward to the player
     }
     void CloseChest()
     {
         isOpened = false;
         animator.SetTrigger("Close");
+        UIManager.Instance.chestWindow.Hide();
         Debug.Log("Chest closed!");
+    }
+    public void RemoveItem(InventoryItem item, int amount = 1)
+    {
+        item.quantity -= amount;
+        if (item.quantity <= 0)
+            items.Remove(item);
+    }
+    public void AddItem(Item item, int amount = 1)
+    {
+        var existing = items.Find(i => i.item == item);
+        if (existing != null)
+            existing.quantity += amount;
+        else
+            items.Add(new InventoryItem(item, amount));
     }
 }

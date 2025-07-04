@@ -6,7 +6,7 @@ public class InventoryWindow : UIWindow
     [SerializeField]
     private List<InventorySlot> slots;
     [SerializeField]
-    private GameObject SlotUIPrefab;
+    private InventorySlot SlotUIPrefab;
     [SerializeField]
     private Transform SlotContainer;
 
@@ -16,7 +16,7 @@ public class InventoryWindow : UIWindow
         var itemCount = Inventory.instance.items.Count;
         for (int i = 0; i < itemCount; i++)
         {
-            var slot = Instantiate(SlotUIPrefab, SlotContainer).GetComponent<InventorySlot>();
+            var slot = Instantiate(SlotUIPrefab, SlotContainer);
             slot.icon.sprite = null;
             slot.SlotID = i;
             slots.Add(slot);

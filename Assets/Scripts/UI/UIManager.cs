@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     public List<WindowBinding> windows;
     public DialogueWindow dialogueWindow;
     public TradeWindow tradeWindow;
+    public ChestWindow chestWindow;
 
 
     private Dictionary<UISection, UIWindow> _windowMap;
@@ -54,6 +55,7 @@ public class UIManager : MonoBehaviour
         }
         dialogueWindow.HideDialogue();
         tradeWindow.Hide();
+        chestWindow.Hide();
     }
 
     void Update()
