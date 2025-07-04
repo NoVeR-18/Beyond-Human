@@ -38,7 +38,7 @@ public class RoofAreaHider : MonoBehaviour
         if (other.CompareTag("Player") && roofObject != null)
         {
             roofObject.SetActive(true);
-            furnitureTilemap.gameObject.SetActive(false);
+            furnitureTilemap.gameObject.SetActive(true);
         }
     }
 
