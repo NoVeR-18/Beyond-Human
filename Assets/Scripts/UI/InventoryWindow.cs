@@ -43,7 +43,7 @@ public class InventoryWindow : UIWindow
             // Добавляем недостающие слоты
             for (int i = slots.Count; i < itemCount; i++)
             {
-                var slot = Instantiate(SlotUIPrefab, SlotContainer).GetComponent<InventorySlot>();
+                var slot = Instantiate(SlotUIPrefab, SlotContainer);
                 slot.icon.sprite = null;
                 slot.SlotID = i;
                 slots.Add(slot);

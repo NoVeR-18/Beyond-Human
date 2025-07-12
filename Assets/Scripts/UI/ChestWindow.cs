@@ -21,7 +21,11 @@ public class ChestWindow : UIWindow
     public override void Hide()
     {
         gameObject.SetActive(false);
-        currentChest = null;
+        if (currentChest != null)
+        {
+            currentChest.CloseChest();
+            currentChest = null;
+        }
     }
 
     private void UpdateUI()

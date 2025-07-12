@@ -75,6 +75,14 @@ public class UIManager : MonoBehaviour
                 }
                 else
                 {
+                    foreach (var w in windows)
+                    {
+                        _windowMap[w.section] = w.window;
+                        w.window.Hide();
+                    }
+                    dialogueWindow.HideDialogue();
+                    tradeWindow.Hide();
+                    chestWindow.Hide();
                     OpenSection(pair.Value);
                 }
                 break;

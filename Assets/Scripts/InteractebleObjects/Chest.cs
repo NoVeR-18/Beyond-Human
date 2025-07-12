@@ -24,7 +24,7 @@ public class Chest : MonoBehaviour, IInteractable
     {
         if (isOpened)
         {
-            CloseChest();
+            UIManager.Instance.chestWindow.Hide();
             Debug.Log("Chest is opened.");
             return;
         }
@@ -46,11 +46,10 @@ public class Chest : MonoBehaviour, IInteractable
         UIManager.Instance.chestWindow.Open(this);
         // Here you can give a reward to the player
     }
-    void CloseChest()
+    public void CloseChest()
     {
         isOpened = false;
         animator.SetTrigger("Close");
-        UIManager.Instance.chestWindow.Hide();
         Debug.Log("Chest closed!");
     }
     public void RemoveItem(InventoryItem item, int amount = 1)

@@ -91,4 +91,8 @@ public class Inventory : MonoBehaviour
             JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString("Inventory"), this);
         }
     }
+    private void OnApplicationQuit()
+    {
+        SaveInventory();
+    }
 }
