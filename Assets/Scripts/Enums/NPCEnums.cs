@@ -41,6 +41,7 @@ namespace NPCEnums
         ScreamHelp = 1 << 3,
         ChaseAlert = 1 << 4,
         Hunting = 1 << 5,
+        CombatJoin = 1 << 6,
         // Добавляй по мере нужды
     }
 }

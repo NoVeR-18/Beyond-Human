@@ -110,6 +110,47 @@ namespace Assets.Scripts.NPC.States
                     npc.target = source.transform;
                     npc.StateMachine.ChangeState(new ChaseState(npc, InterruptReason.ChaseAlert));
                 }
+                if (reason == InterruptReason.CombatJoin)
+                {
+                    Debug.Log("GuardState: CombatJoin interrupt received");
+                    if (!CanJoin())
+                    {
+                        BattleContext.Instance.NotifySpreadComplete(); // Я ничего не сделал
+                        return;
+                    }
+
+                    // Присоединяем себя
+                    BattleContext.Instance.AddParticipant(npc);
+
+                    bool someoneCalled = false;
+                    // Ищем других
+                    Collider2D[] hits = Physics2D.OverlapCircleAll(npc.transform.position, 10f);
+                    foreach (var hit in hits)
+                    {
+                        if (hit.TryGetComponent<NPCController>(out var npc))
+                            if (npc != this.npc)
+                            {
+                                var interruptible = npc.StateMachine.CurrentState as IInterruptible;
+                                if (interruptible != null)
+                                {
+                                    if (!BattleContext.Instance.Charackters.Contains(npc.battleParticipantData))
+                                    {
+                                        someoneCalled = true;
+                                        interruptible.Interrupt(this.npc, InterruptReason.CombatJoin);
+                                    }
+                                }
+                            }
+                    }
+                    if (!someoneCalled)
+                    {
+                        BattleContext.Instance.NotifySpreadComplete(); // Я ничего не сделал
+                    }
+
+                }
+            }
+            private bool CanJoin()
+            {
+                return true;
             }
         }
     }

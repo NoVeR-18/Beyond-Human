@@ -19,6 +19,8 @@ namespace BattleSystem
         public AbilityBarUI abilityUI;
         public StatusEffectPanel statusEffectPanel;
 
+        [HideInInspector] public string nameIDInWorld;
+
         private Dictionary<AbilityData, float> cooldowns = new();
         private Dictionary<StatusEffect, float> statusEffects = new();
 
@@ -114,6 +116,8 @@ namespace BattleSystem
             {
                 statusEffectPanel.RemoveDissabledEffects(statusEffects.Keys.ToList(), this);
                 abilityUI.RemoveDissabledAbilities(Abilities, this);
+
+                BattleContext.Instance.npcIDsToRemove.Add(nameIDInWorld); // добавляем в список на удаление
                 Die();
             }
         }
@@ -133,7 +137,6 @@ namespace BattleSystem
                 animator.SetTrigger("Die");
                 await Task.Delay(TimeSpan.FromSeconds(GetAnimationLength()));
             }
-            gameObject.SetActive(false);
         }
 
         public BattleSpawnPoint FindMySpawnPoint()
@@ -164,11 +167,12 @@ namespace BattleSystem
 
         public void FlashColor(Color flashColor, float duration)
         {
-            foreach (var r in GetComponentsInChildren<SpriteRenderer>())
-            {
-                var originalColor = r.color;
-                r.DOColor(flashColor, 0.05f).OnComplete(() => r.DOColor(originalColor, duration));
-            }
+            if (gameObject != null)
+                foreach (var r in GetComponentsInChildren<SpriteRenderer>())
+                {
+                    var originalColor = r.color;
+                    r.DOColor(flashColor, 0.05f).OnComplete(() => r.DOColor(originalColor, duration));
+                }
         }
 
         public bool HasParameter(string name, AnimatorControllerParameterType type)

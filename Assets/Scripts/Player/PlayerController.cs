@@ -1,4 +1,6 @@
 ﻿using NPCEnums;
+using System;
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -11,7 +13,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-
+    public BattleParticipantData battleParticipantData;
     private Vector2 movement;
 
     // === Лестница ===
@@ -20,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private float zEnd = 1f;
     private Vector2 stairDirection = Vector2.zero; // ↗ направление лестницы
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -105,4 +107,20 @@ public class PlayerController : MonoBehaviour
         this.zEnd = zEnd;
         this.stairDirection = stairDirection;
     }
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        // Автогенерация при добавлении компонента
+        if (string.IsNullOrEmpty(battleParticipantData.nameID))
+        {
+            battleParticipantData.nameID = GenerateId();
+            EditorUtility.SetDirty(this); // помечаем объект как изменённый
+        }
+    }
+
+    private string GenerateId()
+    {
+        return $"{gameObject.scene.name}_{gameObject.name}_{Guid.NewGuid().ToString().Substring(0, 8)}";
+    }
+#endif
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace BattleSystem
 {
@@ -60,7 +61,7 @@ namespace BattleSystem
         { BattleTeam.Team3, teamC }
     };
 
-            foreach (var unit in BattleContext.Instance.Participants)
+            foreach (var unit in BattleContext.Instance.Charackters)
             {
                 if (!spawnPoints.ContainsKey(unit.team))
                 {
@@ -79,6 +80,7 @@ namespace BattleSystem
                 var go = Instantiate(unit.prefab, spawnPoint.transform.position, Quaternion.identity);
                 var bc = go.GetComponent<BattleCharacter>();
 
+                bc.nameIDInWorld = unit.nameID;
                 bc.Team = unit.team;
                 bc.CurrentStats = unit.stats;
                 bc.Abilities = unit.abilities;
@@ -86,7 +88,7 @@ namespace BattleSystem
                 teamDict[unit.team].Add(bc);
             }
 
-            BattleContext.Instance.Participants.Clear();
+            BattleContext.Instance.Charackters.Clear();
 
         }
         public BattleSpawnPoint GetFreeSpawnPoint(BattleTeam team)
@@ -279,6 +281,8 @@ namespace BattleSystem
             }
 
             Debug.Log("Battle Over!");
+            if (BattleContext.Instance != null && !string.IsNullOrEmpty(BattleContext.Instance.returnSceneName))
+                SceneManager.LoadSceneAsync(BattleContext.Instance.returnSceneName);
         }
         private IEnumerator AbilityLoop(BattleCharacter character)
         {

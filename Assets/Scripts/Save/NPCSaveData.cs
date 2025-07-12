@@ -8,8 +8,10 @@ public class NPCSaveData
     public string npcId; // Уникальное имя или ID
     public Vector2 position;
     public NPCActivityType currentActivity;
+    public string destinationId; // вместо NavTargetPoint
     public HouseData CurrentHouse;
     public int CurrentFloor;
+    public bool isDead = false;
 }
 
 [System.Serializable]

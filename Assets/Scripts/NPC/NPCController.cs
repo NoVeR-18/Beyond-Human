@@ -5,6 +5,7 @@ using NPCEnums;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -29,6 +30,9 @@ namespace Assets.Scripts.NPC
 
         public string StateName;
 
+        [Header("StatsForBattle")]
+        public BattleParticipantData battleParticipantData;
+        public bool isDead = false;
         private ScheduleEntry currentEntry;
 
         public NPCDialogueSet dialogueSet;
@@ -86,7 +90,9 @@ namespace Assets.Scripts.NPC
                 position = transform.position,
                 CurrentHouse = CurrentHouse,
                 CurrentFloor = CurrentFloor,
-                currentActivity = CurrentActivity
+                currentActivity = CurrentActivity,
+                destinationId = currentEntry?.destination?.PointId,
+                isDead = isDead
             };
         }
 
@@ -95,11 +101,17 @@ namespace Assets.Scripts.NPC
             transform.position = data.position;
             CurrentHouse = data.CurrentHouse;
             CurrentFloor = data.CurrentFloor;
-            SwitchActivity(new ScheduleEntry
+            isDead = data.isDead;
+            if (!isDead)
             {
-                activity = data.currentActivity,
-                destination = null // можно доработать для восстановления destination
-            });
+                NavTargetPoint dest = SaveSystem.Instance.GetById(data.destinationId);
+
+                SwitchActivity(new ScheduleEntry
+                {
+                    activity = data.currentActivity,
+                    destination = dest
+                });
+            }
         }
 
         private void Awake()
@@ -107,7 +119,7 @@ namespace Assets.Scripts.NPC
             Agent = GetComponent<NavMeshAgent>();
             Animator = GetComponent<Animator>();
             StateMachine = new NPCStateMachine(this);
-            npcId = gameObject.GetInstanceID().ToString();
+            battleParticipantData.nameID = npcId;
             if (SaveSystem.Instance != null)
                 SaveSystem.Instance.RegisterNPC(this);
         }
@@ -189,6 +201,11 @@ namespace Assets.Scripts.NPC
         }
         private INPCState CreateGoTo(ScheduleEntry entry, Func<INPCState> nextState)
         {
+            if (entry.destination == null)
+            {
+                Debug.LogWarning($"{name}: Destination missing for {entry.activity}, skipping movement.");
+                return nextState();
+            }
             if (entry.destination.transform.position != null)
             {
                 return new GoToLocationState(this, entry.destination, () =>
@@ -282,6 +299,38 @@ namespace Assets.Scripts.NPC
             }
 
         }
+
+        public void Destroy()
+        {
+            if (isDead)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Debug.Log("Droped items");
+                isDead = true;
+                Destroy(gameObject);
+            }
+
+        }
+#if UNITY_EDITOR
+        private void OnValidate()
+        {
+            // Автогенерация при добавлении компонента
+            if (string.IsNullOrEmpty(npcId))
+            {
+                npcId = GenerateId();
+                battleParticipantData.nameID = npcId;
+                EditorUtility.SetDirty(this); // помечаем объект как изменённый
+            }
+        }
+
+        private string GenerateId()
+        {
+            return $"{gameObject.scene.name}_{gameObject.name}_{Guid.NewGuid().ToString().Substring(0, 8)}";
+        }
+#endif
 
     }
     [System.Serializable]
