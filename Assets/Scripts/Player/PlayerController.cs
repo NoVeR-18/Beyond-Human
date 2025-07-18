@@ -5,7 +5,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IFactionMember
 {
     public InteractionEmitter emitter;
     public float moveSpeed = 5f;
@@ -22,6 +22,14 @@ public class PlayerController : MonoBehaviour
     private float zEnd = 1f;
     private Vector2 stairDirection = Vector2.zero; // ↗ направление лестницы
 
+
+    private FactionData factionData;
+    public FactionData FactionData => factionData;
+    [SerializeField] private FactionType factionType;
+    //private FactionData factionData;
+
+    public FactionType FactionType => factionType;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,6 +40,9 @@ public class PlayerController : MonoBehaviour
             var prefab = Resources.Load<InteractionEmitter>("Prefabs/InteractionEmitter");
             emitter = Instantiate(prefab, transform.position, Quaternion.identity, transform);
         }
+        factionData = FactionManager.Instance.GetFaction(factionType);
+        if (factionData == null)
+            Debug.LogWarning($"FactionData not found for {factionType} on {gameObject.name}");
     }
 
     void Update()
@@ -116,6 +127,11 @@ public class PlayerController : MonoBehaviour
             battleParticipantData.nameID = GenerateId();
             EditorUtility.SetDirty(this); // помечаем объект как изменённый
         }
+    }
+    public bool IsEnemyTo(IFactionMember other)
+    {
+        if (factionData == null || other.FactionData == null) return false;
+        return factionData.IsHostileTowards(other.FactionData);
     }
 
     private string GenerateId()

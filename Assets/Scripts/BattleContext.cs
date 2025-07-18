@@ -15,6 +15,8 @@ public class BattleContext : MonoBehaviour
     public static BattleContext Instance;
 
     private int activeSpreaders = 0;
+    private Dictionary<FactionData, BattleTeam> factionToTeam = new();
+    private int teamIndex = 1;
 
     private bool joining = false;
     private void Awake()
@@ -43,15 +45,72 @@ public class BattleContext : MonoBehaviour
     public void AddParticipant(NPCController npc)
     {
         if (!joining) return;
-        if (!Charackters.Add(npc.battleParticipantData)) return;
+        if (npc.battleParticipantData == null || npc.battleParticipantData.faction == null) return;
 
-        activeSpreaders++; // этот NPC начнёт звать других
-        var interruptible = npc.StateMachine.CurrentState as IInterruptible;
-        if (interruptible != null)
+        var faction = npc.battleParticipantData.faction;
+
+        // === Пробуем добавить в список участников ===
+        if (!Charackters.Add(npc.battleParticipantData))
         {
-            interruptible.Interrupt(npc, InterruptReason.CombatJoin);
+            return; // уже есть — выходим, не дублируем
         }
+
+        // === Назначаем команду (если нужно) ===
+        if (!factionToTeam.TryGetValue(faction, out var team))
+        {
+            if (factionToTeam.Count == 0)
+            {
+                team = (BattleTeam)teamIndex++;
+                factionToTeam.Add(faction, team);
+            }
+            else
+            {
+                bool foundEnemy = false;
+
+                foreach (var kvp in factionToTeam)
+                {
+                    var otherFaction = kvp.Key;
+                    var rel = faction.GetAttitudeTowards(otherFaction);
+                    var reverseRel = otherFaction.GetAttitudeTowards(faction);
+
+                    if (rel < 0 || reverseRel < 0)
+                    {
+                        foundEnemy = true;
+                        break;
+                    }
+                }
+
+                if (!foundEnemy)
+                {
+                    Debug.Log($"{faction.name} дружественен всем, не вступает в бой.");
+                    Charackters.Remove(npc.battleParticipantData); // ❗ убираем из боевой группы
+                    NotifySpreadComplete();
+                    return;
+                }
+
+                if (factionToTeam.Count >= 3)
+                {
+                    Debug.LogWarning($"Слишком много фракций в бою — {faction.name} не добавлен.");
+                    Charackters.Remove(npc.battleParticipantData); // ❗ убираем из боевой группы
+                    NotifySpreadComplete();
+                    return;
+                }
+
+                team = (BattleTeam)teamIndex++;
+                factionToTeam.Add(faction, team);
+            }
+        }
+
+        // Присваиваем боевую команду
+        npc.battleParticipantData.team = team;
+
+        activeSpreaders++;
+
+        var interruptible = npc.StateMachine.CurrentState as IInterruptible;
+        interruptible?.Interrupt(npc, InterruptReason.CombatJoin);
     }
+
+
     public void AddPlayer(PlayerController npc)
     {
         if (!joining) return;
@@ -78,7 +137,7 @@ public class BattleContext : MonoBehaviour
             Charackters.Clear();
             return;
         }
-
+        teamIndex = 1;
         Debug.Log($"Бой начинается! Участников: {Charackters.Count}");
         returnSceneName = SceneManager.GetActiveScene().name;
         SaveSystem.Instance.SaveAll();
@@ -91,7 +150,11 @@ public class BattleParticipantData
 {
     public GameObject prefab;
     [HideInInspector] public string nameID;
+    [HideInInspector]
     public BattleTeam team;
     public CharacterStats stats;
     public List<AbilityData> abilities = new();
+
+    [HideInInspector]
+    public FactionData faction;
 }

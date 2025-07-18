@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f91e45a09335748a0df1eca6954baf, type: 3}
+  m_Name: Animals
+  m_EditorClassIdentifier: 
+  factionType: 6
+  factionName: Animals
+  factionColor: {r: 0, g: 0, b: 0, a: 0}
+  factionIcon: {fileID: 0}
+  relations:
+  - otherFaction: {fileID: 11400000, guid: 5db80c5f3005daf4fbad4a8f25bc9278, type: 2}
+    attitude: -100
+  - otherFaction: {fileID: 11400000, guid: b53a5954a737bcc4ba475a40f7d4c0a2, type: 2}
+    attitude: 100
+  - otherFaction: {fileID: 11400000, guid: 0867bf12359e86d4e83851510d932b5e, type: 2}
+    attitude: -100
+  - otherFaction: {fileID: 11400000, guid: 635a7b4fd21b3194f9182e9caadbe185, type: 2}
+    attitude: -98

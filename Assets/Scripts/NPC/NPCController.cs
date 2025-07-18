@@ -12,7 +12,7 @@ using UnityEngine.AI;
 namespace Assets.Scripts.NPC
 {
     [RequireComponent(typeof(NavMeshAgent))]
-    public class NPCController : MonoBehaviour
+    public class NPCController : MonoBehaviour, IFactionMember
     {
         [Header("Global settings")]
         public bool isAggressive;
@@ -33,7 +33,27 @@ namespace Assets.Scripts.NPC
         [Header("StatsForBattle")]
         public BattleParticipantData battleParticipantData;
         public bool isDead = false;
+        private FactionData factionData;
+        [HideInInspector]
+        public FactionData FactionData => factionData;
+        [SerializeField] private FactionType factionType;
+
+        public FactionType FactionType => factionType;
+
         private ScheduleEntry currentEntry;
+
+        public ScheduleEntry ScheduleEntry
+        {
+            get => currentEntry;
+            set
+            {
+                currentEntry = value;
+                if (currentEntry != null)
+                {
+                    StateName = currentEntry.activity.ToString();
+                }
+            }
+        }
 
         public NPCDialogueSet dialogueSet;
         private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
@@ -79,7 +99,7 @@ namespace Assets.Scripts.NPC
                 yield return new WaitForSeconds(line.delayAfter);
             }
         }
-        [HideInInspector] public string npcId;
+        public string npcId;
         [HideInInspector] public NPCActivityType CurrentActivity { get; private set; } = NPCActivityType.Idle;
 
         public NPCSaveData GetSaveData()
@@ -91,7 +111,7 @@ namespace Assets.Scripts.NPC
                 CurrentHouse = CurrentHouse,
                 CurrentFloor = CurrentFloor,
                 currentActivity = CurrentActivity,
-                destinationId = currentEntry?.destination?.PointId,
+                destinationId = currentEntry?.destination?.pointId,
                 isDead = isDead
             };
         }
@@ -122,6 +142,10 @@ namespace Assets.Scripts.NPC
             battleParticipantData.nameID = npcId;
             if (SaveSystem.Instance != null)
                 SaveSystem.Instance.RegisterNPC(this);
+            factionData = FactionManager.Instance.GetFaction(factionType);
+            if (factionData == null)
+                Debug.LogWarning($"FactionData not found for {factionType} on {gameObject.name}");
+            battleParticipantData.faction = factionData;
         }
 
         private void Start()
@@ -199,6 +223,28 @@ namespace Assets.Scripts.NPC
                 StateMachine.ChangeState(new IdleState(this));
             }
         }
+        public INPCState GetCurrentScheduleState()
+        {
+            if (_activityStateFactory == null)
+                InitializeStateFactory();
+
+            if (currentEntry == null)
+            {
+                Debug.LogWarning($"{name}: currentEntry is null, returning Idle state.");
+                return new IdleState(this);
+            }
+
+            if (_activityStateFactory.TryGetValue(currentEntry.activity, out var factory))
+            {
+                return factory(currentEntry); // ВОТ ТУТ вызывается делегат-фабрика
+            }
+            else
+            {
+                Debug.LogWarning($"{name}: Unknown activity type {currentEntry.activity}, returning Idle state.");
+                return new IdleState(this);
+            }
+        }
+
         private INPCState CreateGoTo(ScheduleEntry entry, Func<INPCState> nextState)
         {
             if (entry.destination == null)
@@ -309,29 +355,54 @@ namespace Assets.Scripts.NPC
             else
             {
                 Debug.Log("Droped items");
+                FactionManager.Instance.ModifyReputationWithPlayer(factionType, -1); // Chenge reputation on death
                 isDead = true;
-                Destroy(gameObject);
+                SaveSystem.Instance.RegisterDeadNPC(this);
+                gameObject.SetActive(false);
             }
 
         }
 #if UNITY_EDITOR
         private void OnValidate()
         {
-            // Автогенерация при добавлении компонента
-            if (string.IsNullOrEmpty(npcId))
+            if (!Application.isPlaying && gameObject.scene.IsValid())
             {
-                npcId = GenerateId();
-                battleParticipantData.nameID = npcId;
-                EditorUtility.SetDirty(this); // помечаем объект как изменённый
+                // Если в сцене уже есть другой объект с таким же ID — перегенерируем
+                var npcs = GameObject.FindObjectsOfType<NPCController>();
+                bool duplicate = false;
+
+                foreach (var other in npcs)
+                {
+                    if (other != this && other.npcId == this.npcId)
+                    {
+                        duplicate = true;
+                        break;
+                    }
+                }
+
+                if (string.IsNullOrEmpty(npcId) || duplicate)
+                {
+                    npcId = GenerateId();
+                    EditorUtility.SetDirty(this);
+                }
+
+                if (battleParticipantData != null)
+                {
+                    battleParticipantData.nameID = npcId;
+                }
             }
         }
 
+        public bool IsEnemyTo(IFactionMember other)
+        {
+            if (factionData == null || other.FactionData == null) return false;
+            return factionData.IsHostileTowards(other.FactionData);
+        }
         private string GenerateId()
         {
             return $"{gameObject.scene.name}_{gameObject.name}_{Guid.NewGuid().ToString().Substring(0, 8)}";
         }
 #endif
-
     }
     [System.Serializable]
     public class ScheduleEntry
@@ -342,7 +413,4 @@ namespace Assets.Scripts.NPC
         public NPCActivityType activity;
         public NavTargetPoint destination;
     }
-
-
-
 }

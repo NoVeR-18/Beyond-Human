@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -242,7 +243,8 @@ namespace BattleSystem
                     {
                         FreeSpawnIfOccupied(character);
                         team.RemoveAt(i);
-                        Destroy(character.gameObject); // или можно делать return to pool
+                        DOTween.Kill(character.gameObject); // stop all tweens
+                        Destroy(character.gameObject);
                     }
                 }
             }
@@ -281,8 +283,36 @@ namespace BattleSystem
             }
 
             Debug.Log("Battle Over!");
+
             if (BattleContext.Instance != null && !string.IsNullOrEmpty(BattleContext.Instance.returnSceneName))
-                SceneManager.LoadSceneAsync(BattleContext.Instance.returnSceneName);
+            {
+                yield return ReturnToWorldScene();
+            }
+        }
+        private IEnumerator ReturnToWorldScene()
+        {
+            Debug.Log("Preparing to return to scene: " + BattleContext.Instance.returnSceneName);
+
+            // Пауза и очистка памяти
+            yield return null;
+            yield return new WaitForEndOfFrame();
+
+            Resources.UnloadUnusedAssets();
+            System.GC.Collect();
+
+            yield return null;
+
+            // Загрузка сцены
+            AsyncOperation op = SceneManager.LoadSceneAsync(BattleContext.Instance.returnSceneName);
+            op.allowSceneActivation = false;
+
+            while (op.progress < 0.9f)
+            {
+                yield return null;
+            }
+
+            Debug.Log("Scene loaded, activating...");
+            op.allowSceneActivation = true;
         }
         private IEnumerator AbilityLoop(BattleCharacter character)
         {

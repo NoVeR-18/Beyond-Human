@@ -128,7 +128,7 @@ public class ChunkSaveSystem : MonoBehaviour
         using (BinaryReader reader = new(File.Open(path, FileMode.Open)))
         {
             int count = reader.ReadInt32();
-            Debug.Log($"Load chunk {chunkPos}");
+            //Debug.Log($"Load chunk {chunkPos}");
 
             for (int i = 0; i < count; i++)
             {

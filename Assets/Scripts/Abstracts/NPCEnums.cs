@@ -42,6 +42,17 @@ namespace NPCEnums
         ChaseAlert = 1 << 4,
         Hunting = 1 << 5,
         CombatJoin = 1 << 6,
-        // Добавляй по мере нужды
+        //add more reasons as needed
+    }
+    public enum FactionType
+    {
+        None,
+        Player,
+        Guards,
+        Bandits,
+        Mages,
+        Undead,
+        Animals
+        // Add more factions as needed
     }
 }

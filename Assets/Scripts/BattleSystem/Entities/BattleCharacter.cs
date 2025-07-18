@@ -1,4 +1,3 @@
-// BattleCharacter.cs
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
@@ -117,7 +116,7 @@ namespace BattleSystem
                 statusEffectPanel.RemoveDissabledEffects(statusEffects.Keys.ToList(), this);
                 abilityUI.RemoveDissabledAbilities(Abilities, this);
 
-                BattleContext.Instance.npcIDsToRemove.Add(nameIDInWorld); // добавляем в список на удаление
+                BattleContext.Instance.npcIDsToRemove.Add(nameIDInWorld); // add to remove list
                 Die();
             }
         }
@@ -218,9 +217,9 @@ namespace BattleSystem
                 else
                 {
                     statusEffects.Add(newEffect, newEffect.Duration);
+                    statusEffectPanel.Setup(statusEffects.Keys.ToList(), this);
                 }
             }
-            statusEffectPanel.Setup(statusEffects.Keys.ToList(), this);
         }
 
         private void ApplyComboEffect(StatusEffect a, StatusEffect b, StatusCombo combo)

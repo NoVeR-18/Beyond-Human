@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEditor;
+using UnityEngine;
 [System.Serializable]
 public class NavTargetPoint : MonoBehaviour
 {
@@ -7,9 +9,8 @@ public class NavTargetPoint : MonoBehaviour
 
     public bool IsInsideHouse => house != null;
 
-    [SerializeField] private string pointId;
+    public string pointId;
 
-    public string PointId => pointId;
 
     private void Awake()
     {
@@ -19,10 +20,32 @@ public class NavTargetPoint : MonoBehaviour
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        if (string.IsNullOrEmpty(pointId))
+        if (!Application.isPlaying && gameObject.scene.IsValid())
         {
-            pointId = $"{gameObject.scene.name}_{gameObject.name}_{System.Guid.NewGuid().ToString().Substring(0, 8)}";
+            // Если в сцене уже есть другой объект с таким же ID — перегенерируем
+            var npcs = GameObject.FindObjectsOfType<NavTargetPoint>();
+            bool duplicate = false;
+
+            foreach (var other in npcs)
+            {
+                if (other != this && other.pointId == this.pointId)
+                {
+                    duplicate = true;
+                    break;
+                }
+            }
+
+            if (string.IsNullOrEmpty(pointId) || duplicate)
+            {
+                pointId = GenerateId();
+                EditorUtility.SetDirty(this);
+            }
         }
+    }
+
+    private string GenerateId()
+    {
+        return $"{gameObject.scene.name}_{gameObject.name}_{Guid.NewGuid().ToString().Substring(0, 8)}";
     }
 #endif
 }

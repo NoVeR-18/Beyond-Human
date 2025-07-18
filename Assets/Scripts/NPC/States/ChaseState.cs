@@ -74,7 +74,8 @@ namespace Assets.Scripts.NPC.States
 
             if (!npc.CanSeePlayer(out var seenPlayer))
             {
-                npc.StateMachine.ChangeState(new IdleState(npc)); // Можно сделать GoToLastSeenPositionState
+                if (npc.ScheduleEntry != null)
+                    npc.StateMachine.ChangeState(npc.GetCurrentScheduleState()); // Можно сделать GoToLastSeenPositionState
             }
         }
     }

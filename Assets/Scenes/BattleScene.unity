@@ -1768,95 +1768,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a78411c757ecec40911865f889b9ce4, type: 3}
---- !u!1 &649489865
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 649489867}
-  - component: {fileID: 649489866}
-  m_Layer: 0
-  m_Name: BatleSetupData
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &649489866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649489865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9899d2bc526063f4ebff8c25c2198008, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Participants:
-  - prefab: {fileID: 7366443917425497611, guid: f49804942df205b4a9e9f6086980bd5c, type: 3}
-    team: 0
-    stats:
-      MaxHP: 100
-      CurrentHP: 100
-      CurrentShield: 0
-    abilities:
-    - {fileID: 11400000, guid: a2825cbab9bee5542a50a69248cc3d18, type: 2}
-    - {fileID: 11400000, guid: 56a967cb537a4464b9f764fa2b6b8b36, type: 2}
-  - prefab: {fileID: 6629683649966031186, guid: b2055c3c7852f7741988a5a90c43bc9c, type: 3}
-    team: 1
-    stats:
-      MaxHP: 100
-      CurrentHP: 100
-      CurrentShield: 0
-    abilities:
-    - {fileID: 11400000, guid: b41d238b138b6ac40aa0713abe642c8c, type: 2}
-  - prefab: {fileID: 6629683649966031186, guid: b2055c3c7852f7741988a5a90c43bc9c, type: 3}
-    team: 1
-    stats:
-      MaxHP: 100
-      CurrentHP: 100
-      CurrentShield: 0
-    abilities:
-    - {fileID: 11400000, guid: 12e8e1258ff266448ba0b30503758102, type: 2}
-  - prefab: {fileID: 6629683649966031186, guid: b2055c3c7852f7741988a5a90c43bc9c, type: 3}
-    team: 1
-    stats:
-      MaxHP: 100
-      CurrentHP: 100
-      CurrentShield: 0
-    abilities:
-    - {fileID: 11400000, guid: c6dd6e5ed9c3bd944bcc312a5cc6909d, type: 2}
-  - prefab: {fileID: 8569716536209996708, guid: a554626d6a6a1be41b5d8be415bc54ac, type: 3}
-    team: 0
-    stats:
-      MaxHP: 100
-      CurrentHP: 100
-      CurrentShield: 0
-    abilities:
-    - {fileID: 11400000, guid: c6dd6e5ed9c3bd944bcc312a5cc6909d, type: 2}
-  returnSceneName: 
-  returnPointID: 
-  npcIDsToRemove: []
---- !u!4 &649489867
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649489865}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 350, y: 205.30763, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658862188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,6 +3777,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a78411c757ecec40911865f889b9ce4, type: 3}
+--- !u!1 &1572564372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572564374}
+  - component: {fileID: 1572564373}
+  m_Layer: 0
+  m_Name: BattleContext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1572564373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572564372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9899d2bc526063f4ebff8c25c2198008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnSceneName: 
+  npcIDsToRemove: []
+--- !u!4 &1572564374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572564372}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.216452, y: -6.5421743, z: -0.0059320843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1602924417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4300,8 +4257,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746308112}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.658401, y: -2.4609466, z: 0.18637604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -26.658447, y: -2.4609375, z: 0.18637604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6396,8 +6353,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 440029121}
-  - {fileID: 1746308114}
   - {fileID: 1034114886}
   - {fileID: 878433168}
-  - {fileID: 649489867}
   - {fileID: 2132987338}
+  - {fileID: 1746308114}
+  - {fileID: 1572564374}

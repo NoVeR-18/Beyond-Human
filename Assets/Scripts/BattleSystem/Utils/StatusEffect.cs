@@ -42,7 +42,16 @@ namespace BattleSystem
         public float resistanceModifier = 1f;    // 0.8f при Shattered
         public List<StatusCombo> comboEffects = new(); // комбо-реакции
 
+        public override bool Equals(object obj)
+        {
+            if (obj is not StatusEffect other) return false;
+            return effectName == other.effectName;
+        }
 
+        public override int GetHashCode()
+        {
+            return effectName.GetHashCode();
+        }
     }
 
 }

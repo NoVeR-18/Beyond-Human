@@ -150,7 +150,28 @@ namespace Assets.Scripts.NPC.States
             }
             private bool CanJoin()
             {
-                return true;
+                var myFaction = npc.battleParticipantData.faction;
+                if (myFaction == null) return false;
+
+                // Если уже есть члены моей фракции — обязательно присоединяюсь
+                foreach (var p in BattleContext.Instance.Charackters)
+                {
+                    if (p.faction == myFaction)
+                        return true;
+                }
+
+                // Проверка отношения к уже участвующим
+                foreach (var p in BattleContext.Instance.Charackters)
+                {
+                    var rel = myFaction.GetAttitudeTowards(p.faction);
+                    var reverseRel = p.faction.GetAttitudeTowards(myFaction);
+
+                    if (rel < 0 || reverseRel < 0)
+                        return true; // враг найден
+                }
+
+                // Дружественен всем — не вступаю
+                return false;
             }
         }
     }
