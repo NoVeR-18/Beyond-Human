@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3935111068394525633}
   - component: {fileID: 4392090989065989302}
   - component: {fileID: 7183316322219068658}
-  - component: {fileID: -9083505363373703730}
+  - component: {fileID: -2276191242947915306}
   m_Layer: 0
   m_Name: skeleton 2
   m_TagString: Untagged
@@ -202,24 +202,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAggressive: 0
   viewDistance: 6
-  viewAngle: 90
+  viewAngle: 360
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   schedule: []
   Agent: {fileID: 0}
   Animator: {fileID: 0}
   target: {fileID: 0}
   StateName: 
+  battleParticipantData:
+    prefab: {fileID: 0}
+    nameID: 
+    team: 0
+    stats:
+      MaxHP: 100
+      CurrentHP: 100
+      CurrentShield: 0
+    abilities: []
+    faction: {fileID: 0}
+  isDead: 0
+  factionType: 0
   dialogueSet: {fileID: 0}
   CurrentHouse: {fileID: 0}
   CurrentFloor: 0
   emitter: {fileID: 0}
   npcId: 
---- !u!114 &-9083505363373703730
+--- !u!114 &-2276191242947915306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,17 +240,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7988705072214191713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37cde1288923a0245adcf5caf0ccebd5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e39f6090724e4a4a8aadeb042afa2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: 
-  Team: 0
-  CurrentStats:
-    MaxHP: 100
-    CurrentHP: 100
-  damagePopupPrefab: {fileID: 0}
-  Abilities: []
-  abilityUI: {fileID: 0}
-  statusEffectPanel: {fileID: 0}
-  animator: {fileID: 0}
-  healthBarPrefab: {fileID: 0}
