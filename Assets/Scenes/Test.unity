@@ -430,6 +430,10 @@ PrefabInstance:
       value: Test_Bat1 (1)_2395c0a0
       objectReference: {fileID: 0}
     - target: {fileID: 5484760131105522147, guid: 91b6c7fa7853f95428589149c975047f, type: 3}
+      propertyPath: isDead
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5484760131105522147, guid: 91b6c7fa7853f95428589149c975047f, type: 3}
       propertyPath: schedule.Array.size
       value: 7
       objectReference: {fileID: 0}
