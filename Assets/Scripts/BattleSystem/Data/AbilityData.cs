@@ -9,6 +9,7 @@ namespace BattleSystem
     public class AbilityData : ScriptableObject
     {
         public string abilityName;
+        public int tier;
         public Sprite icon;
         public float castTime;
         public float cooldown;

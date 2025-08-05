@@ -1,0 +1,70 @@
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+public class EquipmentSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
+{
+    [SerializeField] private Image icon;
+    [SerializeField] private TextMeshProUGUI slotLabel;
+
+
+    public EquipmentSlot slotType;
+    private Character ownerCharacter;
+    private Equipment equipped;
+
+    public void SetSlot(EquipmentSlot slot, Character character)
+    {
+        slotType = slot;
+        ownerCharacter = character;
+
+        equipped = character.GetEquippedBySlot(slot);
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
+        if (equipped != null)
+        {
+            icon.sprite = equipped.icon;
+            icon.enabled = true;
+        }
+        else
+        {
+            icon.sprite = null;
+            icon.enabled = false;
+        }
+
+        slotLabel.text = slotType.ToString();
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        var drag = DragManager.instance.GetDraggedItem();
+        if (drag != null && drag is Equipment eq && eq.equipSlot == slotType)
+        {
+            if (equipped != null)
+            {
+                Inventory.instance.Add(equipped, 1);
+            }
+            ownerCharacter.Equip(eq);
+            Inventory.instance.Remove(eq, 1);
+            equipped = eq;
+            UpdateUI();
+
+        }
+    }
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (equipped != null)
+        {
+            var character = GetComponentInParent<PartyCharacterPanel>().GetCharacter();
+            character.UnequipItem(equipped);
+            Inventory.instance.Add(equipped);
+            equipped = null;
+            UpdateUI();
+
+            PartyWindow.UpdateItems?.Invoke();
+        }
+    }
+}

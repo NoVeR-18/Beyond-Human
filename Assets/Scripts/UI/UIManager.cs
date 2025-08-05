@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         _windowMap = new Dictionary<UISection, UIWindow>();
         CloseTabs();

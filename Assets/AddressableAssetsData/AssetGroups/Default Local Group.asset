@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 06e878f50658b5c44a9834364c16e7f3
+  m_SerializeEntries:
+  - m_GUID: 76ae9e40a8dba0346903d09021338686
+    m_Address: Bite
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b9c03f0f22f58c409d9dc4e980bdb41
+    m_Address: Sword
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 377bfbbc7a97a2d448dd65d7568fb8a5
+    m_Address: WaterBottle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb802c7a71ad2d24d8edabfa8bca9adb
+    m_Address: HealthPoiton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39fcd578edf134f49b6043ccfa749b22
+    m_Address: Bread
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1848959b5a99fd4aaa8890c39cd0a13
+    m_Address: Apple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eeeb8a4ba172f4945bd983b5fa57200d
+    m_Address: Iron Sword
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 146d8c47aa67cba498fb2f958c8891d5
+    m_Address: Dead Chest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3203c14bb2673ae4486c9afc38bb396d
+    m_Address: Roar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d7b026a2f1ad224598cb2e51ef54be8
+    m_Address: Fire
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb297fb533d44194888e8d02bec4a0dd
+    m_Address: Helmet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5a006c797b3c8614fa279df947077cb6, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6777f3a1e5a7c9d428a3ae1f135b34a7, type: 2}
+    - {fileID: 11400000, guid: fec72c0aeca03ab4ab4b666b4c0d38a4, type: 2}

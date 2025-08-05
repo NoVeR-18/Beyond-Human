@@ -7,6 +7,7 @@ using UnityEngine;
 public static class NPCIdBatchGenerator
 {
     [MenuItem("Tools/Generate NPC IDs in Scene")]
+    [Obsolete]
     public static void GenerateIds()
     {
         var npcs = GameObject.FindObjectsOfType<NPCController>();
@@ -29,6 +30,7 @@ public static class NPCIdBatchGenerator
         Debug.Log($"[NPC ID Generator] Сгенерировано ID для {count} NPC");
     }
     [MenuItem("Tools/Generate NavTarget IDs in Scene")]
+    [Obsolete]
     public static void GenerateNavTargetPoinIds()
     {
         var npcs = GameObject.FindObjectsOfType<NavTargetPoint>();

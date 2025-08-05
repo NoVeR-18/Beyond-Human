@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16883397e639b64d8611a5d69ce7290, type: 3}
+  m_Name: Bite
+  m_EditorClassIdentifier: 
+  itemName: Bite
+  icon: {fileID: 8555668886070539820, guid: 5bb110f0643e183469c334432544155d, type: 3}
+  showInInventory: 1
+  maxStack: 5
+  ability: {fileID: 11400000, guid: b41d238b138b6ac40aa0713abe642c8c, type: 2}
+  skillPointCost: 1

@@ -1,5 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 [System.Serializable]
 public class InventoryItem
@@ -13,7 +16,17 @@ public class InventoryItem
         quantity = amount;
     }
 }
-
+[System.Serializable]
+public class InventoryItemSerializable
+{
+    public string itemName;
+    public int quantity;
+}
+[System.Serializable]
+public class InventorySaveData
+{
+    public List<InventoryItemSerializable> savedItems = new();
+}
 public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
@@ -80,15 +93,51 @@ public class Inventory : MonoBehaviour
     }
     public void SaveInventory()
     {
-        PlayerPrefs.SetString("Inventory", JsonUtility.ToJson(this));
+        InventorySaveData saveData = new();
+
+        foreach (var i in items)
+        {
+            saveData.savedItems.Add(new InventoryItemSerializable
+            {
+                itemName = i.item.itemName,
+                quantity = i.quantity
+            });
+        }
+
+        string json = JsonUtility.ToJson(saveData);
+        PlayerPrefs.SetString("Inventory", json);
         PlayerPrefs.Save();
     }
 
     public void LoadInventory()
     {
-        if (PlayerPrefs.HasKey("Inventory"))
+        items.Clear();
+
+        if (!PlayerPrefs.HasKey("Inventory"))
+            return;
+
+        string json = PlayerPrefs.GetString("Inventory");
+        InventorySaveData saveData = JsonUtility.FromJson<InventorySaveData>(json);
+
+        foreach (var entry in saveData.savedItems)
         {
-            JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString("Inventory"), this);
+            // Асинхронная загрузка — нужно через корутину
+            StartCoroutine(LoadItemAsync(entry.itemName, entry.quantity));
+        }
+    }
+    private IEnumerator LoadItemAsync(string itemName, int quantity)
+    {
+        AsyncOperationHandle<Item> handle = Addressables.LoadAssetAsync<Item>(itemName);
+        yield return handle;
+
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            Item loadedItem = handle.Result;
+            items.Add(new InventoryItem(loadedItem, quantity));
+        }
+        else
+        {
+            Debug.LogWarning($"Не удалось загрузить предмет через Addressables: {itemName}");
         }
     }
     private void OnApplicationQuit()

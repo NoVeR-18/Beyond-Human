@@ -18,7 +18,7 @@ public class FactionManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         factionDict = new();
         foreach (var faction in factions)

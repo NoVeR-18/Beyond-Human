@@ -139,9 +139,10 @@ public class BattleContext : MonoBehaviour
         }
         teamIndex = 1;
         Debug.Log($"Бой начинается! Участников: {Charackters.Count}");
-        returnSceneName = SceneManager.GetActiveScene().name;
+        //returnSceneName = SceneManager.GetActiveScene().name;
         SaveSystem.Instance.SaveAll();
-        SceneManager.LoadScene("BattleScene");
+        SceneManager.LoadScene("BattleScene", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("BattleScene");
     }
 }
 

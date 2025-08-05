@@ -284,36 +284,37 @@ namespace BattleSystem
 
             Debug.Log("Battle Over!");
 
-            if (BattleContext.Instance != null && !string.IsNullOrEmpty(BattleContext.Instance.returnSceneName))
-            {
-                yield return ReturnToWorldScene();
-            }
+            //if (BattleContext.Instance != null && !string.IsNullOrEmpty(BattleContext.Instance.returnSceneName))
+            //{
+            //    yield return ReturnToWorldScene();
+            //}
+            SceneManager.UnloadSceneAsync("BattleScene");
         }
-        private IEnumerator ReturnToWorldScene()
-        {
-            Debug.Log("Preparing to return to scene: " + BattleContext.Instance.returnSceneName);
+        //private IEnumerator ReturnToWorldScene()
+        //{
+        //    Debug.Log("Preparing to return to scene: " + BattleContext.Instance.returnSceneName);
 
-            // Пауза и очистка памяти
-            yield return null;
-            yield return new WaitForEndOfFrame();
+        //    // Пауза и очистка памяти
+        //    yield return null;
+        //    yield return new WaitForEndOfFrame();
 
-            Resources.UnloadUnusedAssets();
-            System.GC.Collect();
+        //    Resources.UnloadUnusedAssets();
+        //    System.GC.Collect();
 
-            yield return null;
+        //    yield return null;
 
-            // Загрузка сцены
-            AsyncOperation op = SceneManager.LoadSceneAsync(BattleContext.Instance.returnSceneName);
-            op.allowSceneActivation = false;
+        //    // Загрузка сцены
+        //    AsyncOperation op = SceneManager.LoadSceneAsync(BattleContext.Instance.returnSceneName);
+        //    op.allowSceneActivation = false;
 
-            while (op.progress < 0.9f)
-            {
-                yield return null;
-            }
+        //    while (op.progress < 0.9f)
+        //    {
+        //        yield return null;
+        //    }
 
-            Debug.Log("Scene loaded, activating...");
-            op.allowSceneActivation = true;
-        }
+        //    Debug.Log("Scene loaded, activating...");
+        //    op.allowSceneActivation = true;
+        //}
         private IEnumerator AbilityLoop(BattleCharacter character)
         {
             while (!IsBattleOver())
