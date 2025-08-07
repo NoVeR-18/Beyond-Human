@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.NPC;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
@@ -12,9 +13,11 @@ public class SaveSystem : MonoBehaviour
     private readonly List<NPCController> activeNPCs = new();  // only active NPCs
     public HashSet<string> deadNPCIDs = new();                // ID all dead NPCs
 
-    // Навигационные точки
+    // nav target points
     public Dictionary<string, NavTargetPoint> points = new();
-
+    //interactables objects
+    private readonly List<ISaveableInteractable> interactables = new();
+    private Dictionary<string, InteractableSaveData> interactableCache = new();
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -36,7 +39,71 @@ public class SaveSystem : MonoBehaviour
         points.Clear();
         LoadAll();
     }
+    public void RegisterInteractable(ISaveableInteractable obj)
+    {
+        if (!interactables.Contains(obj))
+            interactables.Add(obj);
+    }
 
+    private void SaveInteractables()
+    {
+        foreach (var obj in interactables)
+        {
+            // Удаляем объект, если он уже уничтожен
+            if (obj.Equals(null))
+                continue;
+
+            var id = obj.GetID();
+            if (string.IsNullOrEmpty(id)) continue;
+
+            try
+            {
+                var data = obj.GetSaveData();
+                interactableCache[id] = data;
+            }
+            catch (MissingReferenceException e)
+            {
+                Debug.LogWarning($"Interactable {id} was destroyed but not removed from list. Skipping. Exception: {e.Message}");
+            }
+        }
+
+        InteractableSaveManager.SaveInteractables(interactableCache.Values.ToList());
+    }
+
+
+    private void LoadInteractables()
+    {
+        var savedData = InteractableSaveManager.LoadInteractables();
+        interactableCache.Clear();
+
+        foreach (var data in savedData)
+        {
+            interactableCache[data.id] = data;
+
+            // Проверка: был ли объект уничтожен ранее?
+            if (data.isDestroyed)
+            {
+                // Удаляем, если объект с таким ID найден
+                var obj = interactables.Find(o => o.GetID() == data.id);
+                if (obj != null)
+                    obj.Destroy();
+
+                continue;
+            }
+
+            // Если объект с ID есть — загружаем данные
+            var existing = interactables.Find(o => o.GetID() == data.id);
+            existing?.LoadFromData(data);
+        }
+    }
+    public void MarkAsDestroyed(InteractableObject obj)
+    {
+        if (obj == null) return;
+
+        var data = obj.GetSaveData();
+        data.isDestroyed = true;
+        interactableCache[data.id] = data;
+    }
     // Register NPC in the system
     public void RegisterNPC(NPCController npc)
     {
@@ -77,6 +144,8 @@ public class SaveSystem : MonoBehaviour
         }
 
         NPCSaveManager.SaveNPCs(data);
+
+        SaveInteractables();
     }
 
     // Load all NPCs from file and filter their states
@@ -103,6 +172,9 @@ public class SaveSystem : MonoBehaviour
                 }
             }
         }
+
+        // Interactables
+        LoadInteractables();
     }
     private void OnApplicationQuit()
     {

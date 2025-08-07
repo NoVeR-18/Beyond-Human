@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : MonoBehaviour, IInteractable
+public class Chest : InteractableObject, IInteractable
 {
     public bool isLocked = false;
     public int requiredLockpickingLevel = 0;
@@ -9,8 +9,33 @@ public class Chest : MonoBehaviour, IInteractable
     private Animator animator;
 
     [SerializeField]
-    private List<InventoryItem> items = new List<InventoryItem>();
+    protected List<InventoryItem> items = new List<InventoryItem>();
     public List<InventoryItem> GetItems() => items;
+
+    public override InteractableSaveData GetSaveData()
+    {
+        return new InteractableSaveData
+        {
+            id = GetID(),
+            isOpened = this.isOpened, // если используется
+            isDestroyed = false, // если применимо
+            items = new List<InventoryItem>(this.GetItems()),
+
+            position = transform.position,
+            rotation = transform.rotation,
+        };
+    }
+
+    public override void LoadFromData(InteractableSaveData data)
+    {
+        this.isOpened = false;
+        this.items = new List<InventoryItem>(data.items);
+
+        if (isOpened)
+            animator?.SetTrigger("Open");
+        else
+            animator?.SetTrigger("Close");
+    }
 
     private void Start()
     {
@@ -38,7 +63,7 @@ public class Chest : MonoBehaviour, IInteractable
         OpenChest();
     }
 
-    void OpenChest()
+    public void OpenChest()
     {
         isOpened = true;
         animator.SetTrigger("Open");
@@ -46,7 +71,7 @@ public class Chest : MonoBehaviour, IInteractable
         UIManager.Instance.chestWindow.Open(this);
         // Here you can give a reward to the player
     }
-    public void CloseChest()
+    public virtual void CloseChest()
     {
         isOpened = false;
         animator.SetTrigger("Close");
@@ -65,5 +90,9 @@ public class Chest : MonoBehaviour, IInteractable
             existing.quantity += amount;
         else
             items.Add(new InventoryItem(item, amount));
+    }
+
+    public override void Destroy()
+    {
     }
 }

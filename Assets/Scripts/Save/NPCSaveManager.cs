@@ -1,24 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using GameUtils.Utils;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
 public static class NPCSaveManager
 {
-    private static string SavePath => Path.Combine(Application.persistentDataPath, "npc_save.json");
-
     public static void SaveNPCs(List<NPCSaveData> npcData)
     {
         var container = new SaveContainer { allNpcData = npcData };
         var json = JsonUtility.ToJson(container, true);
-        File.WriteAllText(SavePath, json);
+        File.WriteAllText(SaveUtils.NPCFile, json);
     }
 
     public static List<NPCSaveData> LoadNPCs()
     {
-        if (!File.Exists(SavePath))
+        if (!File.Exists(SaveUtils.NPCFile))
             return new List<NPCSaveData>();
 
-        var json = File.ReadAllText(SavePath);
+        var json = File.ReadAllText(SaveUtils.NPCFile);
         var container = JsonUtility.FromJson<SaveContainer>(json);
         return container.allNpcData;
     }

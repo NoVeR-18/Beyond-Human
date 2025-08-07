@@ -680,6 +680,10 @@ PrefabInstance:
       value: wooden chest
       objectReference: {fileID: 0}
     - target: {fileID: 8490555590137075972, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
+      propertyPath: objectId
+      value: Test_wooden chest_4ba6e119
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490555590137075972, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
       propertyPath: items.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -690,7 +694,7 @@ PrefabInstance:
     - target: {fileID: 8490555590137075972, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
       propertyPath: items.Array.data[1].item
       value: 
-      objectReference: {fileID: 11400000, guid: bb3909452e37469478db5d588e7dfe9e, type: 2}
+      objectReference: {fileID: 11400000, guid: 4d7b026a2f1ad224598cb2e51ef54be8, type: 2}
     - target: {fileID: 8490555590137075972, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
       propertyPath: items.Array.data[0].quantity
       value: 2
@@ -79157,6 +79161,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5032397009260727410, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: objectId
+      value: Test_wooden chest_9e45b99b
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528775703012276831, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: pointId
+      value: Test_TargetPoint_2071a5a8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522256636192144418, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: objectId
+      value: Test_wooden doors2-horizontal-downwards-closing_0 (1)_7ea3dc23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603461294221790343, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: objectId
+      value: Test_wooden chest_807ad1b3
+      objectReference: {fileID: 0}
     - target: {fileID: 6742926220164920187, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_Name
       value: House1 (1)
@@ -80222,6 +80242,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5032397009260727410, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: objectId
+      value: Test_wooden chest_b7d8a447
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528775703012276831, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: pointId
+      value: Test_TargetPoint_94b58011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522256636192144418, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: objectId
+      value: Test_wooden doors2-horizontal-downwards-closing_0 (1)_8b9fcc85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603461294221790343, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: objectId
+      value: Test_wooden chest_d38c2003
+      objectReference: {fileID: 0}
     - target: {fileID: 6742926220164920187, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_Name
       value: House1
@@ -80431,6 +80467,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451560fa13c232e4c8abb779b04a34f7, type: 3}
+--- !u!1001 &4421359720840152484
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.864716
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.72152
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620872946736868965, guid: 36eaaad228983084c8941678c789d882, type: 3}
+      propertyPath: m_Name
+      value: Fire Torch
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 36eaaad228983084c8941678c789d882, type: 3}
 --- !u!4 &8950682809393902846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2803167344244707270, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
@@ -80453,3 +80546,4 @@ SceneRoots:
   - {fileID: 522249498}
   - {fileID: 2008233851}
   - {fileID: 1595778672}
+  - {fileID: 4421359720840152484}

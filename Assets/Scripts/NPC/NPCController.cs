@@ -40,6 +40,20 @@ namespace Assets.Scripts.NPC
 
         public FactionType FactionType => factionType;
 
+        public NPCDialogueSet dialogueSet;
+        private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
+
+        [HideInInspector] public HouseData CurrentHouse;
+        [HideInInspector] public int CurrentFloor;
+
+        [HideInInspector] public InteractionEmitter emitter;
+        [HideInInspector] public string npcId;
+        [HideInInspector] public NPCActivityType CurrentActivity { get; private set; } = NPCActivityType.Idle;
+
+        [SerializeField]
+        private List<Item> _dropedItems = new List<Item>();
+
+
         private ScheduleEntry currentEntry;
 
         public ScheduleEntry ScheduleEntry
@@ -54,12 +68,6 @@ namespace Assets.Scripts.NPC
                 }
             }
         }
-
-        public NPCDialogueSet dialogueSet;
-        private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
-
-        [HideInInspector] public HouseData CurrentHouse;
-        [HideInInspector] public int CurrentFloor;
 
 
         private void InitializeStateFactory()
@@ -79,7 +87,6 @@ namespace Assets.Scripts.NPC
             };
         }
 
-        [HideInInspector] public InteractionEmitter emitter;
         public void Speak(DialogueContext context)
         {
             var lines = dialogueSet?.GetRandomDialogue(context);
@@ -99,8 +106,6 @@ namespace Assets.Scripts.NPC
                 yield return new WaitForSeconds(line.delayAfter);
             }
         }
-        public string npcId;
-        [HideInInspector] public NPCActivityType CurrentActivity { get; private set; } = NPCActivityType.Idle;
 
         public NPCSaveData GetSaveData()
         {
@@ -363,6 +368,7 @@ namespace Assets.Scripts.NPC
 
         }
 #if UNITY_EDITOR
+        [Obsolete]
         private void OnValidate()
         {
             if (!Application.isPlaying && gameObject.scene.IsValid())

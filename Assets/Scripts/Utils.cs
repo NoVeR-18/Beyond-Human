@@ -20,6 +20,8 @@ namespace GameUtils.Utils
         public static string PartyFile => Path.Combine(SavePath, "party.json");
         public static string InventoryFile => Path.Combine(SavePath, "inventory.json");
 
+        public static string NPCFile => Path.Combine(Application.persistentDataPath, "npc_save.json");
+
         public static void EnsureDirectory()
         {
             if (!Directory.Exists(SavePath))

@@ -146,6 +146,7 @@ public class BattleContext : MonoBehaviour
     }
 }
 
+
 [System.Serializable]
 public class BattleParticipantData
 {
