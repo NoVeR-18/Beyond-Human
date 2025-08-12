@@ -13,7 +13,10 @@ public class SkillSlotUI : MonoBehaviour, IPointerClickHandler
     public void SetSkill(SkillData s)
     {
         skill = s;
-        icon.sprite = skill.icon;
+        if (skill.icon != null)
+            icon.sprite = skill.icon;
+        else
+            icon.sprite = skill.ability.icon; // Fallback icon if none is set
         nameText.text = skill.itemName;
         icon.enabled = true;
     }
