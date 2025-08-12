@@ -10,6 +10,6 @@ public class Item : ScriptableObject
 
     public virtual void Use()
     {
-        Debug.Log("Использован предмет: " + itemName);
+        //Debug.Log("Использован предмет: " + itemName);
     }
 }

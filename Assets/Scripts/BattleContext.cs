@@ -114,7 +114,18 @@ public class BattleContext : MonoBehaviour
     public void AddPlayer(PlayerController npc)
     {
         if (!joining) return;
-        Charackters.Add(npc.battleParticipantData);
+        var playerTeam = PartyManager.Instance.CharacterToBattleParticiant();
+        foreach (var particiant in playerTeam)
+        {
+            if (Charackters.Add(particiant))
+            {
+                particiant.team = BattleTeam.Team1; // Присваиваем команду игрока
+            }
+            else
+            {
+                Debug.LogWarning($"Игрок {particiant.nameID} уже в бою, не добавляем повторно.");
+            }
+        }
 
     }
 
@@ -139,9 +150,9 @@ public class BattleContext : MonoBehaviour
         }
         teamIndex = 1;
         Debug.Log($"Бой начинается! Участников: {Charackters.Count}");
-        //returnSceneName = SceneManager.GetActiveScene().name;
+        returnSceneName = SceneManager.GetActiveScene().name;
         SaveSystem.Instance.SaveAll();
-        SceneManager.LoadScene("BattleScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene("BattleScene");
         //SceneManager.LoadScene("BattleScene");
     }
 }

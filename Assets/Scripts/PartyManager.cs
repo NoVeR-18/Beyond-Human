@@ -1,4 +1,5 @@
-﻿using GameUtils.Utils;
+﻿using BattleSystem;
+using GameUtils.Utils;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -35,13 +36,16 @@ public class PartyManager : MonoBehaviour
             CharacterSaveData data = new()
             {
                 characterName = character.characterName,
-                //if (character.portrait != null) 
-                //portraitName = character.portrait.name,
                 skillDatas = new(),
                 remainingSkillPoints = character.remainingSkillPoints,
                 equipped = new(),
                 mainHandItem = character.weaponMainHand?.itemName,
-                offHandItem = character.weaponOffHand?.itemName
+                offHandItem = character.weaponOffHand?.itemName,
+
+                // Если есть battleCharacter — сохраняем его имя
+                battleCharacterName = character.battleCharacter != null
+        ? character.battleCharacter.name + ".prefab"
+        : null
             };
 
             // Словарь -> список для сериализации
@@ -80,7 +84,6 @@ public class PartyManager : MonoBehaviour
             Character character = new()
             {
                 characterName = data.characterName,
-                portrait = LoadPortraitSprite(data.portraitName),
                 remainingSkillPoints = data.remainingSkillPoints,
                 equippedSkills = new(),
                 equippedItems = new()
@@ -136,19 +139,31 @@ public class PartyManager : MonoBehaviour
                 else
                     Debug.LogWarning($"Не удалось загрузить оружие (off hand): {data.offHandItem}");
             }
-
+            if (!string.IsNullOrEmpty(data.battleCharacterName))
+            {
+                var handle = Addressables.LoadAssetAsync<GameObject>(data.battleCharacterName);
+                yield return handle;
+                if (handle.Status == AsyncOperationStatus.Succeeded)
+                {
+                    var prefab = handle.Result;
+                    var bc = prefab.GetComponent<BattleCharacter>();
+                    if (bc != null)
+                    {
+                        character.battleCharacter = bc;
+                        character.portrait = prefab.GetComponent<SpriteRenderer>()?.sprite;
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Префаб {data.battleCharacterName} не содержит компонент BattleCharacter");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning($"Не удалось загрузить боевой префаб: {data.battleCharacterName}");
+                }
+            }
             activeMembers.Add(character);
         }
-    }
-
-
-    private Sprite LoadPortraitSprite(string spriteName)
-    {
-        if (string.IsNullOrEmpty(spriteName))
-            return null;
-
-        // Portrait должен быть загружен из Resources
-        return Resources.Load<Sprite>($"Portraits/{spriteName}");
     }
 
     public void AddMember(Character character)
@@ -161,6 +176,65 @@ public class PartyManager : MonoBehaviour
     {
         if (activeMembers.Contains(character))
             activeMembers.Remove(character);
+    }
+
+    public List<BattleParticipantData> CharacterToBattleParticiant()
+    {
+        List<BattleParticipantData> participants = new();
+
+        foreach (var character in activeMembers)
+        {
+            BattleParticipantData participant = new()
+            {
+                prefab = character.battleCharacter.gameObject,
+                stats = new CharacterStats(),
+            };
+            foreach (var kvp in character.equippedItems)
+            {
+                if (kvp.Value != null)
+                {
+                    // Добавляем сопротивления
+                    participant.stats.airResistance += kvp.Value.airResistance;
+                    participant.stats.waterResistance += kvp.Value.waterResistance;
+                    participant.stats.fireResistance += kvp.Value.fireResistance;
+                    participant.stats.earthResistance += kvp.Value.earthResistance;
+                    participant.stats.electricResistance += kvp.Value.electricResistance;
+                    participant.stats.iceResistance += kvp.Value.iceResistance;
+                    participant.stats.poisonResistance += kvp.Value.poisonResistance;
+                    participant.stats.bluntResistance += kvp.Value.bluntResistance;
+                    participant.stats.piercingResistance += kvp.Value.piercingResistance;
+                    participant.stats.curseResistance += kvp.Value.curseResistance;
+                    participant.stats.holyResistance += kvp.Value.holyResistance;
+
+                }
+            }
+            foreach (var weapon in new[] { character.weaponMainHand, character.weaponOffHand })
+            {
+                if (weapon != null)
+                {
+                    participant.stats.airDamage += weapon.airDamage;
+                    participant.stats.waterDamage += weapon.waterDamage;
+                    participant.stats.fireDamage += weapon.fireDamage;
+                    participant.stats.earthDamage += weapon.earthDamage;
+                    participant.stats.electricDamage += weapon.electricDamage;
+                    participant.stats.iceDamage += weapon.iceDamage;
+                    participant.stats.poisonDamage += weapon.poisonDamage;
+                    participant.stats.bluntDamage += weapon.bluntDamage;
+                    participant.stats.piercingDamage += weapon.piercingDamage;
+                    participant.stats.curseDamage += weapon.curseDamage;
+                    participant.stats.holyDamage += weapon.holyDamage;
+                }
+            }
+
+
+            foreach (var skill in character.equippedSkills)
+            {
+                participant.abilities.Add(skill.ability);
+            }
+            participants.Add(participant);
+        }
+
+        return participants;
     }
 
     private void OnApplicationQuit()
@@ -186,6 +260,9 @@ public class CharacterSaveData
     public string offHandItem;
 
     public int remainingSkillPoints;
+
+
+    public string battleCharacterName;
 }
 
 [System.Serializable]

@@ -32,10 +32,10 @@ public class InteractablesSaveContainer
 public class InteractableSaveData
 {
     public string id; // уникальный ID объекта
+    public string prefabId;
     public bool isOpened;
     public bool isDestroyed = false;
-    public List<InventoryItem> items = new(); // содержимое (если это сундук)
-
+    public List<InventoryItemSaveData> items = new(); // содержимое (если это сундук)
 
 
     public Vector3 position;
@@ -48,4 +48,16 @@ public interface ISaveableInteractable
     InteractableSaveData GetSaveData();
     void LoadFromData(InteractableSaveData data);
     void Destroy();
+}
+[System.Serializable]
+public class InteractablePrefabEntry
+{
+    public string prefabId;
+    public InteractableObject prefab;
+}
+[System.Serializable]
+public class InventoryItemSaveData
+{
+    public string itemKey; // itemName из Item
+    public int quantity;
 }

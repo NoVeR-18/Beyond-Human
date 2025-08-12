@@ -28,8 +28,10 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         item = newItem;
         quantity = count;
-
-        icon.sprite = item.icon;
+        if (item.icon != null)
+        {
+            icon.sprite = item.icon;
+        }
         icon.enabled = true;
         IconButton.interactable = true;
         UpdateStackText();

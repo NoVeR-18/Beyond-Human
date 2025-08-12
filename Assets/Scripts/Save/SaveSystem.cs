@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class SaveSystem : MonoBehaviour
 {
@@ -18,10 +20,28 @@ public class SaveSystem : MonoBehaviour
     //interactables objects
     private readonly List<ISaveableInteractable> interactables = new();
     private Dictionary<string, InteractableSaveData> interactableCache = new();
+
+    private Dictionary<InteractableObject, string> prefabToId = new();
+    private Dictionary<string, InteractableObject> idToPrefab = new();
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        prefabToId.Clear();
+        idToPrefab.Clear();
+    }
+
+    public string GetPrefabIdForObject(InteractableObject obj)
+    {
+        // Сравниваем с оригинальными префабами по типу
+        foreach (var kvp in prefabToId)
+        {
+            if (obj.name.StartsWith(kvp.Key.name)) // Проверка по имени (без "(Clone)")
+                return kvp.Value;
+        }
+        return null;
     }
 
     private void Start()
@@ -49,17 +69,44 @@ public class SaveSystem : MonoBehaviour
     {
         foreach (var obj in interactables)
         {
-            // Удаляем объект, если он уже уничтожен
-            if (obj.Equals(null))
-                continue;
+            string id = obj?.GetID();
 
-            var id = obj.GetID();
+            // Если объект уничтожен в Unity, но id известен — сохраняем "пустую" запись с isDestroyed = true
+            if (obj == null || obj.Equals(null))
+            {
+                if (!string.IsNullOrEmpty(id))
+                {
+                    if (interactableCache.TryGetValue(id, out var existingData))
+                    {
+                        existingData.isDestroyed = true;
+                        interactableCache[id] = existingData;
+                    }
+                    else
+                    {
+                        interactableCache[id] = new InteractableSaveData
+                        {
+                            id = id,
+                            isDestroyed = true
+                        };
+                    }
+                }
+                continue;
+            }
+
             if (string.IsNullOrEmpty(id)) continue;
 
             try
             {
                 var data = obj.GetSaveData();
-                interactableCache[id] = data;
+                {
+                    interactableCache[id].position = data.position;
+                    interactableCache[id].rotation = data.rotation;
+                    interactableCache[id].isOpened = data.isOpened;
+                    interactableCache[id].items = data.items;
+                    interactableCache[id].prefabId = data.prefabId;
+                    interactableCache[id].isDestroyed = data.isDestroyed; // если объект не уничтожен
+
+                }
             }
             catch (MissingReferenceException e)
             {
@@ -80,22 +127,45 @@ public class SaveSystem : MonoBehaviour
         {
             interactableCache[data.id] = data;
 
-            // Проверка: был ли объект уничтожен ранее?
             if (data.isDestroyed)
-            {
-                // Удаляем, если объект с таким ID найден
-                var obj = interactables.Find(o => o.GetID() == data.id);
-                if (obj != null)
-                    obj.Destroy();
-
                 continue;
-            }
 
-            // Если объект с ID есть — загружаем данные
-            var existing = interactables.Find(o => o.GetID() == data.id);
-            existing?.LoadFromData(data);
+            var existing = interactables.Find(o => o != null && o.GetID() == data.id);
+
+            if (existing == null)
+            {
+                // грузим по ключу из Addressables
+                var handle = Addressables.LoadAssetAsync<GameObject>(data.prefabId);
+                handle.Completed += op =>
+                {
+                    if (op.Status == AsyncOperationStatus.Succeeded)
+                    {
+                        var prefab = op.Result;
+                        var spawned = Instantiate(prefab, data.position, data.rotation)
+                                        .GetComponent<InteractableObject>();
+                        if (spawned != null)
+                        {
+                            spawned.LoadFromData(data);
+                            RegisterInteractable(spawned);
+                        }
+                        else
+                        {
+                            Debug.LogError($"Префаб {data.prefabId} не содержит InteractableObject");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError($"Не удалось загрузить префаб с ключом {data.prefabId}");
+                    }
+                };
+            }
+            else
+            {
+                existing.LoadFromData(data);
+            }
         }
     }
+
     public void MarkAsDestroyed(InteractableObject obj)
     {
         if (obj == null) return;

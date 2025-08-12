@@ -7,14 +7,22 @@ public class Equipment : Item
 {
 
     public EquipmentSlot equipSlot;     // What slot to equip it in
-    public int armorModifier;
-    public int damageModifier;
+    public int healthPoints;
+    public int airResistance;
+    public int waterResistance;
+    public int fireResistance;
+    public int earthResistance;
+    public int electricResistance;
+    public int iceResistance;
+    public int poisonResistance;
+    public int bluntResistance;
+    public int piercingResistance;
+    public int curseResistance;
+    public int holyResistance;
+    public int magicResistance;
 
-    // Called when pressed in the inventory
     public override void Use()
     {
-        //EquipmentManager.instance.Equip(this);	// Equip
-        //RemoveFromInventory();	// Remove from inventory
     }
 
 }

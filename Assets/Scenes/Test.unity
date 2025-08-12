@@ -684,6 +684,10 @@ PrefabInstance:
       value: Test_wooden chest_4ba6e119
       objectReference: {fileID: 0}
     - target: {fileID: 8490555590137075972, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
+      propertyPath: addressableKey
+      value: wooden chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490555590137075972, guid: d6005924d6a1182448b4301d5c4501e8, type: 3}
       propertyPath: items.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -77565,11 +77569,20 @@ MonoBehaviour:
   activeMembers:
   - characterName: Player
     portrait: {fileID: -3332345008988473559, guid: 900125be079a62a4692fbd47899e6d59, type: 3}
-    chest: {fileID: 11400000, guid: 146d8c47aa67cba498fb2f958c8891d5, type: 2}
     weaponMainHand: {fileID: 11400000, guid: eeeb8a4ba172f4945bd983b5fa57200d, type: 2}
     weaponOffHand: {fileID: 11400000, guid: 8b9c03f0f22f58c409d9dc4e980bdb41, type: 2}
     remainingSkillPoints: 5
-    equippedSkills: []
+    battleCharacter: {fileID: 6835940681249617066, guid: d1aeda8639a07c14dac7965971af6684, type: 3}
+    equippedSkills:
+    - {fileID: 11400000, guid: 4d7b026a2f1ad224598cb2e51ef54be8, type: 2}
+  - characterName: 2 Sword
+    portrait: {fileID: 8793639957104055765, guid: d68cc9d218409c74299064cef4c29ff8, type: 3}
+    weaponMainHand: {fileID: 11400000, guid: eeeb8a4ba172f4945bd983b5fa57200d, type: 2}
+    weaponOffHand: {fileID: 11400000, guid: 8b9c03f0f22f58c409d9dc4e980bdb41, type: 2}
+    remainingSkillPoints: 5
+    battleCharacter: {fileID: -7823714547196978794, guid: a554626d6a6a1be41b5d8be415bc54ac, type: 3}
+    equippedSkills:
+    - {fileID: 11400000, guid: 76ae9e40a8dba0346903d09021338686, type: 2}
 --- !u!1001 &1799070778
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79165,6 +79178,10 @@ PrefabInstance:
       propertyPath: objectId
       value: Test_wooden chest_9e45b99b
       objectReference: {fileID: 0}
+    - target: {fileID: 5032397009260727410, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: addressableKey
+      value: wooden chest
+      objectReference: {fileID: 0}
     - target: {fileID: 5528775703012276831, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: pointId
       value: Test_TargetPoint_2071a5a8
@@ -79173,9 +79190,17 @@ PrefabInstance:
       propertyPath: objectId
       value: Test_wooden doors2-horizontal-downwards-closing_0 (1)_7ea3dc23
       objectReference: {fileID: 0}
+    - target: {fileID: 6522256636192144418, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: addressableKey
+      value: wooden doors2-horizontal
+      objectReference: {fileID: 0}
     - target: {fileID: 6603461294221790343, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: objectId
       value: Test_wooden chest_807ad1b3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603461294221790343, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: addressableKey
+      value: wooden chest
       objectReference: {fileID: 0}
     - target: {fileID: 6742926220164920187, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_Name
@@ -80246,6 +80271,10 @@ PrefabInstance:
       propertyPath: objectId
       value: Test_wooden chest_b7d8a447
       objectReference: {fileID: 0}
+    - target: {fileID: 5032397009260727410, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: addressableKey
+      value: wooden chest
+      objectReference: {fileID: 0}
     - target: {fileID: 5528775703012276831, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: pointId
       value: Test_TargetPoint_94b58011
@@ -80254,9 +80283,17 @@ PrefabInstance:
       propertyPath: objectId
       value: Test_wooden doors2-horizontal-downwards-closing_0 (1)_8b9fcc85
       objectReference: {fileID: 0}
+    - target: {fileID: 6522256636192144418, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: addressableKey
+      value: wooden doors2-horizontal
+      objectReference: {fileID: 0}
     - target: {fileID: 6603461294221790343, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: objectId
       value: Test_wooden chest_d38c2003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603461294221790343, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
+      propertyPath: addressableKey
+      value: wooden chest
       objectReference: {fileID: 0}
     - target: {fileID: 6742926220164920187, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
       propertyPath: m_Name
@@ -80378,7 +80415,7 @@ PrefabInstance:
     - target: {fileID: 9032080289581290168, guid: 0f4ca36328080ca438a37b8cb110940d, type: 3}
       propertyPath: battleParticipantData.prefab
       value: 
-      objectReference: {fileID: 8569716536209996708, guid: a554626d6a6a1be41b5d8be415bc54ac, type: 3}
+      objectReference: {fileID: 757385096741592661, guid: d1aeda8639a07c14dac7965971af6684, type: 3}
     - target: {fileID: 9032080289581290168, guid: 0f4ca36328080ca438a37b8cb110940d, type: 3}
       propertyPath: battleParticipantData.stats.MaxHP
       value: 1000
@@ -80467,63 +80504,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451560fa13c232e4c8abb779b04a34f7, type: 3}
---- !u!1001 &4421359720840152484
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -29.864716
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.72152
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2754248507518000195, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3620872946736868965, guid: 36eaaad228983084c8941678c789d882, type: 3}
-      propertyPath: m_Name
-      value: Fire Torch
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 36eaaad228983084c8941678c789d882, type: 3}
 --- !u!4 &8950682809393902846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2803167344244707270, guid: 29e8352e4ce086540bd0f186e8ac06a3, type: 3}
@@ -80546,4 +80526,3 @@ SceneRoots:
   - {fileID: 522249498}
   - {fileID: 2008233851}
   - {fileID: 1595778672}
-  - {fileID: 4421359720840152484}

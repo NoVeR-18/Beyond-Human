@@ -51,7 +51,7 @@ namespace Assets.Scripts.NPC
         [HideInInspector] public NPCActivityType CurrentActivity { get; private set; } = NPCActivityType.Idle;
 
         [SerializeField]
-        private List<Item> _dropedItems = new List<Item>();
+        private List<InventoryItem> _dropedItems = new List<InventoryItem>();
 
 
         private ScheduleEntry currentEntry;
@@ -359,13 +359,36 @@ namespace Assets.Scripts.NPC
             }
             else
             {
-                Debug.Log("Droped items");
-                FactionManager.Instance.ModifyReputationWithPlayer(factionType, -1); // Chenge reputation on death
+                // Создаём сундук на месте NPC
+                SpawnLootChest();
+
+                // Изменяем репутацию
+                FactionManager.Instance.ModifyReputationWithPlayer(factionType, -1);
+
+                // Отмечаем как мёртвого и сохраняем
                 isDead = true;
                 SaveSystem.Instance.RegisterDeadNPC(this);
+
+                // Отключаем NPC
                 gameObject.SetActive(false);
             }
+        }
 
+        private void SpawnLootChest()
+        {
+            // Загружаем префаб сундука из папки Resources
+            var chestPrefab = Resources.Load<DestroyingChest>("DestroyingChest");
+            if (chestPrefab == null)
+            {
+                Debug.LogError("Не найден префаб DestroyingChest в папке Resources!");
+                return;
+            }
+
+            // Создаём сундук на позиции NPC
+            var chestInstance = Instantiate(chestPrefab, transform.position, transform.rotation);
+
+            // Передаём предметы в сундук
+            chestInstance.SetItems(_dropedItems);
         }
 #if UNITY_EDITOR
         [Obsolete]

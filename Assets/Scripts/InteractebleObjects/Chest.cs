@@ -14,27 +14,62 @@ public class Chest : InteractableObject, IInteractable
 
     public override InteractableSaveData GetSaveData()
     {
-        return new InteractableSaveData
+        var saveData = new InteractableSaveData
         {
             id = GetID(),
-            isOpened = this.isOpened, // если используется
-            isDestroyed = false, // если применимо
-            items = new List<InventoryItem>(this.GetItems()),
-
+            prefabId = GetPrefabId(),
+            isOpened = isOpened,
             position = transform.position,
             rotation = transform.rotation,
+            items = new List<InventoryItemSaveData>()
         };
+
+        foreach (var invItem in items)
+        {
+            saveData.items.Add(new InventoryItemSaveData
+            {
+                itemKey = invItem.item.itemName,  // используем itemName как ключ Addressables
+                quantity = invItem.quantity
+            });
+        }
+
+        return saveData;
     }
 
     public override void LoadFromData(InteractableSaveData data)
     {
-        this.isOpened = false;
-        this.items = new List<InventoryItem>(data.items);
+        objectId = data.id;
+        addressableKey = data.prefabId;
+        isOpened = data.isOpened;
+
+        items = new List<InventoryItem>();
+
+        foreach (var savedItem in data.items)
+        {
+            LoadItemAsync(savedItem.itemKey, savedItem.quantity);
+        }
 
         if (isOpened)
             animator?.SetTrigger("Open");
         else
             animator?.SetTrigger("Close");
+    }
+
+    private async void LoadItemAsync(string key, int quantity)
+    {
+        var handle = UnityEngine.AddressableAssets.Addressables.LoadAssetAsync<Item>(key);
+        await handle.Task;
+
+        if (handle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
+        {
+            var loadedItem = handle.Result;
+            var invItem = new InventoryItem(loadedItem, quantity);
+            items.Add(invItem);
+        }
+        else
+        {
+            Debug.LogWarning($"Failed to load Item with key {key}");
+        }
     }
 
     private void Start()

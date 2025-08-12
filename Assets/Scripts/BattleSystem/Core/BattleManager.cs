@@ -196,7 +196,42 @@ namespace BattleSystem
                         totalDamage = Mathf.RoundToInt(totalDamage * effect.weaknessMultiplier);
                     }
                 }
-
+                switch (damage.damageType)
+                {
+                    case DamageType.Fire:
+                        totalDamage -= target.CurrentStats.fireResistance + caster.CurrentStats.fireDamage;
+                        break;
+                    case DamageType.Water:
+                        totalDamage -= target.CurrentStats.waterResistance + caster.CurrentStats.waterDamage;
+                        break;
+                    case DamageType.Ice:
+                        totalDamage -= target.CurrentStats.iceResistance + caster.CurrentStats.iceDamage;
+                        break;
+                    case DamageType.Electric:
+                        totalDamage -= target.CurrentStats.electricResistance + caster.CurrentStats.electricDamage;
+                        break;
+                    case DamageType.Poison:
+                        totalDamage -= target.CurrentStats.poisonResistance + caster.CurrentStats.poisonDamage;
+                        break;
+                    case DamageType.Blunt:
+                        totalDamage -= target.CurrentStats.bluntResistance + caster.CurrentStats.bluntDamage;
+                        break;
+                    case DamageType.Pierce:
+                        totalDamage -= target.CurrentStats.piercingResistance + caster.CurrentStats.piercingDamage;
+                        break;
+                    case DamageType.Holy:
+                        totalDamage -= target.CurrentStats.holyResistance + caster.CurrentStats.holyDamage;
+                        break;
+                    case DamageType.Dark:
+                        totalDamage -= target.CurrentStats.curseResistance + caster.CurrentStats.curseDamage;
+                        break;
+                    case DamageType.Earth:
+                        totalDamage -= target.CurrentStats.earthResistance + caster.CurrentStats.earthDamage;
+                        break;
+                    case DamageType.Air:
+                        totalDamage -= target.CurrentStats.airResistance + caster.CurrentStats.airDamage;
+                        break;
+                }
                 if (totalDamage > 0)
                     target.TakeDamage(totalDamage);
 
@@ -288,7 +323,8 @@ namespace BattleSystem
             //{
             //    yield return ReturnToWorldScene();
             //}
-            SceneManager.UnloadSceneAsync("BattleScene");
+            //SceneManager.UnloadSceneAsync("BattleScene");
+            SceneManager.LoadSceneAsync(BattleContext.Instance.returnSceneName);
         }
         //private IEnumerator ReturnToWorldScene()
         //{

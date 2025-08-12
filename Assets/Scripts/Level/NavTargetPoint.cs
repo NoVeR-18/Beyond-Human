@@ -18,6 +18,7 @@ public class NavTargetPoint : MonoBehaviour
     }
 
 #if UNITY_EDITOR
+    [Obsolete]
     private void OnValidate()
     {
         if (!Application.isPlaying && gameObject.scene.IsValid())

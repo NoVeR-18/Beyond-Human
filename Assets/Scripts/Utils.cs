@@ -28,4 +28,18 @@ namespace GameUtils.Utils
                 Directory.CreateDirectory(SavePath);
         }
     }
+    public static class AddressablesUtility
+    {
+        public static string GetAddressableKey(GameObject obj)
+        {
+#if UNITY_EDITOR
+            var settings = UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject.Settings;
+            var guid = UnityEditor.AssetDatabase.AssetPathToGUID(UnityEditor.AssetDatabase.GetAssetPath(obj));
+            var entry = settings.FindAssetEntry(guid);
+            return entry != null ? entry.address : null;
+#else
+        return null; // В рантайме ключ уже должен быть сохранён в save-файле
+#endif
+        }
+    }
 }

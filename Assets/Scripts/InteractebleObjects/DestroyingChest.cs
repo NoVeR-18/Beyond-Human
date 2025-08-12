@@ -20,7 +20,10 @@ public class DestroyingChest : Chest
             Destroy();
         }
     }
-
+    public void SetItems(List<InventoryItem> items)
+    {
+        this.items = items;
+    }
 
     public override void Destroy()
     {
@@ -39,16 +42,26 @@ public class DestroyingChest : Chest
     }
     public override InteractableSaveData GetSaveData()
     {
-        return new InteractableSaveData
+        var saveData = new InteractableSaveData
         {
             id = GetID(),
-            isOpened = this.isOpened, // если используется
-            isDestroyed = false, // если применимо
-            items = new List<InventoryItem>(this.GetItems()),
-
+            prefabId = GetPrefabId(),
+            isOpened = isOpened,
             position = transform.position,
             rotation = transform.rotation,
+            items = new List<InventoryItemSaveData>()
         };
+
+        foreach (var invItem in items)
+        {
+            saveData.items.Add(new InventoryItemSaveData
+            {
+                itemKey = invItem.item.itemName,  // используем itemName как ключ Addressables
+                quantity = invItem.quantity
+            });
+        }
+
+        return saveData;
     }
 
     public override void LoadFromData(InteractableSaveData data)

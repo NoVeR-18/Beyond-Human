@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5826966151736454087}
   - component: {fileID: 2251951355569296820}
   - component: {fileID: 2602376159574200259}
-  - component: {fileID: 2829715233647731422}
   m_Layer: 11
   m_Name: Fire Torch
   m_TagString: Untagged
@@ -190,22 +189,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2829715233647731422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3620872946736868965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e00c1ed1a33daac4fa749d0f1cb71122, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectId: Test_Fire Torch_932d6f8e
-  isLocked: 0
-  requiredLockpickingLevel: 0
-  isOpened: 0
-  items:
-  - item: {fileID: 11400000, guid: 39fcd578edf134f49b6043ccfa749b22, type: 2}
-    quantity: 2

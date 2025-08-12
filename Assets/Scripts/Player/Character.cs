@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BattleSystem;
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -6,25 +7,17 @@ public class Character
 {
     public string characterName;
     public Sprite portrait;
-    public Equipment chest;
     public Dictionary<EquipmentSlot, Equipment> equippedItems = new(); // Helmet, Chest, Pants, Shoes, Gloves, Amulet
     public Weapon weaponMainHand;
     public Weapon weaponOffHand;
     public int remainingSkillPoints;
+    public BattleCharacter battleCharacter; // Ссылка на BattleCharacter для использования в бою
 
     public List<SkillData> equippedSkills = new();
 
 
     public Equipment GetEquippedBySlot(EquipmentSlot slot)
     {
-        if (slot == EquipmentSlot.Chest)
-        {
-            //if (equippedItems.TryGetValue(EquipmentSlot.Chest, out var chest))
-            //    return chest;
-            if (!equippedItems.ContainsKey(EquipmentSlot.Chest))
-                equippedItems.TryAdd(EquipmentSlot.Chest, chest);
-        }
-
         if (equippedItems.TryGetValue(slot, out var eq))
             return eq;
         return null;
