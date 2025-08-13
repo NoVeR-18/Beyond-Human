@@ -41,6 +41,7 @@ public class FloorManager : MonoBehaviour
 
     void SetFloorVisibility(HouseFloor floor, bool visible)
     {
+        floor.gameObject.SetActive(visible);
         if (floor.walls != null) floor.walls.gameObject.SetActive(visible);
         if (floor.floor != null) floor.floor.gameObject.SetActive(visible);
         if (floor.furniture != null)
