@@ -24,6 +24,8 @@ public class FloorManager : MonoBehaviour
 
     public void ChangeFloor(int delta)
     {
+        if (house.roof.gameObject.activeSelf)
+            return;
         int newFloor = delta; currentFloor = delta;
 
         if (newFloor < 0 || newFloor >= house.floors.Count) return;
