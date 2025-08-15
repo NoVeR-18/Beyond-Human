@@ -163,6 +163,7 @@ public class BattleParticipantData
 {
     public GameObject prefab;
     [HideInInspector] public string nameID;
+    [HideInInspector]
     public BattleTeam team;
     public CharacterStats stats;
     public List<AbilityData> abilities = new();

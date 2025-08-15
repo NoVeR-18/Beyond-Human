@@ -127,35 +127,9 @@ MonoBehaviour:
   CurrentStats:
     MaxHP: 100
     CurrentHP: 100
-    CurrentShield: 0
-    airResistance: 0
-    waterResistance: 0
-    fireResistance: 0
-    earthResistance: 0
-    electricResistance: 0
-    iceResistance: 0
-    poisonResistance: 0
-    bluntResistance: 0
-    piercingResistance: 0
-    curseResistance: 0
-    holyResistance: 0
-    airDamage: 0
-    waterDamage: 0
-    fireDamage: 0
-    earthDamage: 0
-    electricDamage: 0
-    iceDamage: 0
-    poisonDamage: 0
-    bluntDamage: 0
-    piercingDamage: 0
-    curseDamage: 0
-    holyDamage: 0
   damagePopupPrefab: {fileID: 0}
-  Abilities:
-  - {fileID: 11400000, guid: 56a967cb537a4464b9f764fa2b6b8b36, type: 2}
-  - {fileID: 11400000, guid: a2825cbab9bee5542a50a69248cc3d18, type: 2}
+  Abilities: []
   abilityUI: {fileID: 0}
   statusEffectPanel: {fileID: 0}
-  nameIDInWorld: 
   animator: {fileID: 0}
   healthBarPrefab: {fileID: 0}
