@@ -4249,6 +4249,233 @@ MonoBehaviour:
   playerEffectUI: {fileID: 658862191}
   Team2EffectUI: {fileID: 1788189997}
   Team3EffectUI: {fileID: 79758375}
+  testMode: 1
+  testParticipants:
+  - prefab: {fileID: 6977363155785847646, guid: ff9caa348a766da47ae72aafde1ee174, type: 3}
+    nameID: 
+    team: 0
+    stats:
+      MaxHP: 150
+      CurrentHP: 150
+      CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
+    abilities:
+    - {fileID: 11400000, guid: c6dd6e5ed9c3bd944bcc312a5cc6909d, type: 2}
+    faction: {fileID: 0}
+  - prefab: {fileID: 8569716536209996708, guid: a554626d6a6a1be41b5d8be415bc54ac, type: 3}
+    nameID: 
+    team: 0
+    stats:
+      MaxHP: 150
+      CurrentHP: 150
+      CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
+    abilities:
+    - {fileID: 11400000, guid: c6dd6e5ed9c3bd944bcc312a5cc6909d, type: 2}
+    faction: {fileID: 0}
+  - prefab: {fileID: 6977363155785847646, guid: ff9caa348a766da47ae72aafde1ee174, type: 3}
+    nameID: 
+    team: 0
+    stats:
+      MaxHP: 150
+      CurrentHP: 150
+      CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
+    abilities:
+    - {fileID: 11400000, guid: a2825cbab9bee5542a50a69248cc3d18, type: 2}
+    - {fileID: 11400000, guid: 56a967cb537a4464b9f764fa2b6b8b36, type: 2}
+    faction: {fileID: 0}
+  - prefab: {fileID: 7366443917425497611, guid: f49804942df205b4a9e9f6086980bd5c, type: 3}
+    nameID: 
+    team: 1
+    stats:
+      MaxHP: 150
+      CurrentHP: 150
+      CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
+    abilities:
+    - {fileID: 11400000, guid: b41d238b138b6ac40aa0713abe642c8c, type: 2}
+    faction: {fileID: 0}
+  - prefab: {fileID: 7366443917425497611, guid: f49804942df205b4a9e9f6086980bd5c, type: 3}
+    nameID: 
+    team: 1
+    stats:
+      MaxHP: 150
+      CurrentHP: 150
+      CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
+    abilities:
+    - {fileID: 11400000, guid: b41d238b138b6ac40aa0713abe642c8c, type: 2}
+    faction: {fileID: 0}
+  - prefab: {fileID: 6629683649966031186, guid: b2055c3c7852f7741988a5a90c43bc9c, type: 3}
+    nameID: 
+    team: 1
+    stats:
+      MaxHP: 150
+      CurrentHP: 150
+      CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
+    abilities:
+    - {fileID: 11400000, guid: 12e8e1258ff266448ba0b30503758102, type: 2}
+    faction: {fileID: 0}
+  - prefab: {fileID: 6629683649966031186, guid: b2055c3c7852f7741988a5a90c43bc9c, type: 3}
+    nameID: 
+    team: 1
+    stats:
+      MaxHP: 150
+      CurrentHP: 150
+      CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
+    abilities:
+    - {fileID: 11400000, guid: 12e8e1258ff266448ba0b30503758102, type: 2}
+    faction: {fileID: 0}
 --- !u!4 &1746308114
 Transform:
   m_ObjectHideFlags: 0

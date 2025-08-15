@@ -29,21 +29,34 @@ namespace BattleSystem
         private Dictionary<BattleTeam, List<BattleSpawnPoint>> spawnPoints;
         private Dictionary<BattleSpawnPoint, BattleCharacter> occupiedSpawns = new();
 
+        [Header("Test Mode Settings")]
+        [SerializeField] private bool testMode = false;
+        [SerializeField] private List<BattleParticipantData> testParticipants = new();
+
         private void Start()
         {
             var context = BattleContext.Instance;
 
-            if (context == null)
+            if (!testMode && context == null)
             {
                 Debug.LogError("No BattleContext!");
                 return;
             }
 
             spawnPoints = FindObjectsOfType<BattleSpawnPoint>()
-        .GroupBy(sp => sp.team)
-        .ToDictionary(g => g.Key, g => g.OrderBy(sp => sp.index).ToList());
+                .GroupBy(sp => sp.team)
+                .ToDictionary(g => g.Key, g => g.OrderBy(sp => sp.index).ToList());
 
-            SpawnParticipantsFromSetup();
+            // Выбираем источник данных
+            var participantsToSpawn = testMode
+                ? testParticipants
+                : context.Charackters.ToList();
+
+            SpawnParticipants(participantsToSpawn);
+
+            if (!testMode)
+                context.Charackters.Clear();
+
             Init();
 
             foreach (var character in GetAllCharacters())
@@ -54,7 +67,7 @@ namespace BattleSystem
             StartCoroutine(StatusEffectLoop());
         }
 
-        private void SpawnParticipantsFromSetup()
+        private void SpawnParticipants(List<BattleParticipantData> participants)
         {
             var teamDict = new Dictionary<BattleTeam, List<BattleCharacter>> {
         { BattleTeam.Team1, teamA },
@@ -62,7 +75,7 @@ namespace BattleSystem
         { BattleTeam.Team3, teamC }
     };
 
-            foreach (var unit in BattleContext.Instance.Charackters)
+            foreach (var unit in participants)
             {
                 if (!spawnPoints.ContainsKey(unit.team))
                 {
@@ -78,8 +91,14 @@ namespace BattleSystem
                     continue;
                 }
 
+                // Инстанс без лишних скриптов
                 var go = Instantiate(unit.prefab, spawnPoint.transform.position, Quaternion.identity);
                 var bc = go.GetComponent<BattleCharacter>();
+                if (bc == null)
+                {
+                    Debug.LogError($"Prefab {unit.prefab.name} has no BattleCharacter component!");
+                    continue;
+                }
 
                 bc.nameIDInWorld = unit.nameID;
                 bc.Team = unit.team;
@@ -87,11 +106,10 @@ namespace BattleSystem
                 bc.Abilities = unit.abilities;
 
                 teamDict[unit.team].Add(bc);
+                occupiedSpawns[spawnPoint] = bc;
             }
-
-            BattleContext.Instance.Charackters.Clear();
-
         }
+
         public BattleSpawnPoint GetFreeSpawnPoint(BattleTeam team)
         {
             if (!spawnPoints.ContainsKey(team)) return null;
