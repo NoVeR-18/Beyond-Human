@@ -15,17 +15,17 @@ public class ItemsInventoryPanel : MonoBehaviour
         foreach (Transform child in content)
             Destroy(child.gameObject);
 
-        foreach (var entry in Inventory.instance.items)
+        foreach (var entry in Inventory.Instance.items)
         {
             if (entry.item is Weapon weapon)
             {
                 var slot = Instantiate(slotPrefab, content);
-                slot.Set(weapon, Inventory.instance.GetItemCount(entry));
+                slot.Set(weapon, Inventory.Instance.GetItemCount(entry));
             }
             else if (entry.item is Equipment equipment)
             {
                 var slot = Instantiate(slotPrefab, content);
-                slot.Set(equipment, Inventory.instance.GetItemCount(entry));
+                slot.Set(equipment, Inventory.Instance.GetItemCount(entry));
             }
         }
     }

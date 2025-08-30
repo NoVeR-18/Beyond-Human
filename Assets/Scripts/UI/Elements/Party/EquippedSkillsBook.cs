@@ -21,7 +21,7 @@ public class EquippedSkillsBook : MonoBehaviour, IDropHandler
             character.EquipSkill(draggedSkill);
             SetSkills(draggedSkill);
 
-            Inventory.instance.Remove(draggedSkill, 1);
+            Inventory.Instance.Remove(draggedSkill, 1);
         }
 
     }

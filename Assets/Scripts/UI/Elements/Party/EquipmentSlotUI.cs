@@ -45,10 +45,10 @@ public class EquipmentSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
         {
             if (equipped != null)
             {
-                Inventory.instance.Add(equipped, 1);
+                Inventory.Instance.Add(equipped, 1);
             }
             ownerCharacter.Equip(eq);
-            Inventory.instance.Remove(eq, 1);
+            Inventory.Instance.Remove(eq, 1);
             equipped = eq;
             UpdateUI();
 
@@ -60,7 +60,7 @@ public class EquipmentSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
         {
             var character = GetComponentInParent<PartyCharacterPanel>().GetCharacter();
             character.UnequipItem(equipped);
-            Inventory.instance.Add(equipped);
+            Inventory.Instance.Add(equipped);
             equipped = null;
             UpdateUI();
 

@@ -13,7 +13,7 @@ public class InventoryWindow : UIWindow
 
     private void Awake()
     {
-        var itemCount = Inventory.instance.items.Count;
+        var itemCount = Inventory.Instance.items.Count;
         for (int i = 0; i < itemCount; i++)
         {
             var slot = Instantiate(SlotUIPrefab, SlotContainer);
@@ -36,7 +36,7 @@ public class InventoryWindow : UIWindow
     }
     public void UpdateUI()
     {
-        var items = Inventory.instance.items;
+        var items = Inventory.Instance.items;
         int itemCount = items.Count;
         if (slots.Count < itemCount)
         {
@@ -62,7 +62,7 @@ public class InventoryWindow : UIWindow
         {
             if (i < itemCount)
             {
-                slots[i].AddItem(items[i].item, Inventory.instance.GetItemCount(items[i]));
+                slots[i].AddItem(items[i].item, Inventory.Instance.GetItemCount(items[i]));
             }
             else
             {

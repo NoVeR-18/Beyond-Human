@@ -16,6 +16,7 @@ namespace GameUtils.Utils
     public static class SaveUtils
     {
         public static string SavePath => Path.Combine(Application.persistentDataPath, "save");
+        public static string QuestsFile => Path.Combine(SavePath, "quests.json");
 
         public static string PartyFile => Path.Combine(SavePath, "party.json");
         public static string InventoryFile => Path.Combine(SavePath, "inventory.json");

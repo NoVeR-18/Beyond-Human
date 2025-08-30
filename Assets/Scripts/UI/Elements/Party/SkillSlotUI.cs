@@ -38,7 +38,7 @@ public class SkillSlotUI : MonoBehaviour, IPointerClickHandler
         {
             var character = GetComponentInParent<PartyCharacterPanel>().GetCharacter();
             character.UnequipSkill(skill);
-            Inventory.instance.Add(skill);
+            Inventory.Instance.Add(skill);
             ClearSkill();
             PartyWindow.UpdateItems?.Invoke();
         }

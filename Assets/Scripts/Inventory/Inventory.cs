@@ -29,12 +29,12 @@ public class InventorySaveData
 }
 public class Inventory : MonoBehaviour
 {
-    public static Inventory instance;
+    public static Inventory Instance;
     public List<InventoryItem> items = new List<InventoryItem>();
 
     void Awake()
     {
-        instance = this;
+        Instance = this;
         LoadInventory();
     }
 

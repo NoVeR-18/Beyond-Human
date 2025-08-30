@@ -41,7 +41,7 @@ public class WeaponSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
         {
             // Если уже что-то экипировано — вернуть в инвентарь
             if (equippedWeapon != null)
-                Inventory.instance.Add(equippedWeapon);
+                Inventory.Instance.Add(equippedWeapon);
 
             // Убираем старое оружие из персонажа
             if (isMainHand)
@@ -50,7 +50,7 @@ public class WeaponSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
                 ownerCharacter.weaponOffHand = null;
 
             // Убираем из инвентаря и назначаем
-            Inventory.instance.Remove(weapon);
+            Inventory.Instance.Remove(weapon);
             ownerCharacter.EquipWeapon(weapon, isMainHand);
             equippedWeapon = weapon;
             UpdateUI();
@@ -63,7 +63,7 @@ public class WeaponSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
         {
             var character = GetComponentInParent<PartyCharacterPanel>().GetCharacter();
             character.UnequipItem(equippedWeapon);
-            Inventory.instance.Add(equippedWeapon);
+            Inventory.Instance.Add(equippedWeapon);
             equippedWeapon = null;
             UpdateUI();
             PartyWindow.UpdateItems?.Invoke();

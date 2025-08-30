@@ -55,7 +55,7 @@ public class ChestWindow : UIWindow
                 slots[i].IconButton.onClick.RemoveAllListeners();
                 slots[i].IconButton.onClick.AddListener(() =>
                 {
-                    Inventory.instance.Add(invItem.item, invItem.quantity);
+                    Inventory.Instance.Add(invItem.item, invItem.quantity);
                     currentChest.RemoveItem(invItem, invItem.quantity);
                     UpdateUI();
                     inventoryWindow.UpdateUI();
