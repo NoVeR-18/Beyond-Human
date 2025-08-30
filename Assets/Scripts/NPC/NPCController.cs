@@ -14,6 +14,7 @@ namespace Assets.Scripts.NPC
     [RequireComponent(typeof(NavMeshAgent))]
     public class NPCController : MonoBehaviour, IFactionMember
     {
+        public string characterName;
         [Header("Global settings")]
         public bool isAggressive;
         public float viewDistance = 6f;

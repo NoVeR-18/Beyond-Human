@@ -161,7 +161,7 @@ public class BattleContext : MonoBehaviour
 [System.Serializable]
 public class BattleParticipantData
 {
-    public GameObject prefab;
+    public BattleCharacter battleCharacter;
     [HideInInspector] public string nameID;
     [HideInInspector]
     public BattleTeam team;

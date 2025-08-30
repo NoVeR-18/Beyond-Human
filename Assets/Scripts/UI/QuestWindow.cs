@@ -1,3 +1,4 @@
+using Quests;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ public class QuestWindow : UIWindow
     {
         content.SetActive(true);
         if (QuestManager.Instance != null)
-            QuestManager.Instance.OnQuestUpdated += RefreshUI;
+            QuestManager.OnQuestUpdated += RefreshUI;
         RefreshUI();
     }
 
@@ -21,7 +22,7 @@ public class QuestWindow : UIWindow
     {
         content.SetActive(false);
         if (QuestManager.Instance != null)
-            QuestManager.Instance.OnQuestUpdated -= RefreshUI;
+            QuestManager.OnQuestUpdated -= RefreshUI;
         ClearUI();
     }
 
@@ -51,3 +52,4 @@ public class QuestWindow : UIWindow
         activeItems.Clear();
     }
 }
+

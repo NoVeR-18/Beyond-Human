@@ -1,54 +1,59 @@
 ﻿using NPCEnums;
 using UnityEngine;
 
-public enum QuestType { Kill, Collect, Talk, Explore }
-
-public enum QuestTargetType { ById, ByFaction }
-
-[CreateAssetMenu(fileName = "New Quest", menuName = "Quests/Quest")]
-public class QuestData : ScriptableObject
+namespace Quests
 {
-    [Header("Main")]
-    public string questId;
-    public string title;
-    [TextArea] public string description;
 
-    [Header("Task")]
-    public QuestType questType;
+    public enum QuestType { Kill, Collect, Talk, Explore }
 
-    [Tooltip("Для Kill/Collect")]
-    public QuestTargetType targetType;
+    public enum QuestTargetType { ById, ByFaction }
 
-    [Tooltip("ID цели (например, Wolf001). Используется, если TargetType = ById")]
-    public string targetId;
+    [CreateAssetMenu(fileName = "New Quest", menuName = "Quests/Quest")]
+    public class QuestData : ScriptableObject
+    {
+        [Header("Main")]
+        public string questId;
+        public string title;
+        [TextArea] public string description;
 
-    [Tooltip("Фракция цели (например, Animals). Используется, если TargetType = ByFaction")]
-    public FactionType targetFactionId;
+        [Header("Task")]
+        public QuestType questType;
 
-    [Tooltip("Необходимо выполнить (кол-во убитых/собранных и т.д.)")]
-    public int requiredAmount = 1;
+        [Tooltip("Для Kill/Collect")]
+        public QuestTargetType targetType;
 
-    [Header("Rewards")]
-    public int rewardExp;
-    public int rewardGold;
+        [Tooltip("ID цели (например, Wolf001). Используется, если TargetType = ById")]
+        public string targetId;
 
-    [Tooltip("Изменение репутации фракции при завершении квеста")]
-    public FactionReward[] factionRewards;
+        [Tooltip("Фракция цели (например, Animals). Используется, если TargetType = ByFaction")]
+        public FactionType targetFactionId;
 
-    [Tooltip("Предметы, выдаваемые в награду")]
-    public ItemReward[] itemRewards;
-}
+        [Tooltip("Необходимо выполнить (кол-во убитых/собранных и т.д.)")]
+        public int requiredAmount = 1;
 
-[System.Serializable]
-public class FactionReward
-{
-    public FactionType factionId;
-    public int reputationChange;
-}
+        [Header("Rewards")]
+        public int rewardExp;
+        public int rewardGold;
 
-[System.Serializable]
-public class ItemReward
-{
-    public Item item;
-    public int amount = 1;
+        [Tooltip("Изменение репутации фракции при завершении квеста")]
+        public FactionReward[] factionRewards;
+
+        [Tooltip("Предметы, выдаваемые в награду")]
+        public ItemReward[] itemRewards;
+    }
+
+    [System.Serializable]
+    public class FactionReward
+    {
+        public FactionType factionId;
+        public int reputationChange;
+    }
+
+    [System.Serializable]
+    public class ItemReward
+    {
+        public Item item;
+        public int amount = 1;
+    }
+
 }

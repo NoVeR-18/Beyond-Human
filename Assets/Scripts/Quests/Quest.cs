@@ -2,72 +2,77 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Quest
+namespace Quests
 {
-    public QuestData data;
-    public int currentAmount;
-    public bool isCompleted;
 
-    public Quest(QuestData data)
+    [System.Serializable]
+    public class Quest
     {
-        this.data = data;
-        currentAmount = 0;
-        isCompleted = false;
-    }
+        public QuestData data;
+        public int currentAmount;
+        public bool isCompleted;
 
-    public void AddProgress()
-    {
-        if (isCompleted) return;
-
-        currentAmount++;
-        if (currentAmount >= data.requiredAmount)
-            Complete();
-
-    }
-
-    private void Complete()
-    {
-        isCompleted = true;
-        Debug.Log($"Квест {data.title} завершен!");
-
-        // ✅ награда: опыт + золото
-        // PlayerStats.Instance.AddExp(data.rewardExp);
-        // PlayerStats.Instance.AddGold(data.rewardGold);
-
-        // ✅ награда: предметы
-        if (data.itemRewards != null)
+        public Quest(QuestData data)
         {
-            foreach (var reward in data.itemRewards)
-            {
-                Inventory.Instance.Add(reward.item, reward.amount);
-                Debug.Log($"Получен предмет: {reward.item.name} x{reward.amount}");
-            }
+            this.data = data;
+            currentAmount = 0;
+            isCompleted = false;
         }
 
-        // ✅ награда: фракции
-        if (data.factionRewards != null)
+        public void AddProgress()
         {
-            foreach (var reward in data.factionRewards)
-            {
-                FactionManager.Instance.ModifyReputation(FactionType.Player, reward.factionId, reward.reputationChange);
+            if (isCompleted) return;
 
-                Debug.Log($"Изменена репутация с {reward.factionId}: {reward.reputationChange}");
+            currentAmount++;
+            if (currentAmount >= data.requiredAmount)
+                Complete();
+
+        }
+
+        private void Complete()
+        {
+            isCompleted = true;
+            Debug.Log($"Quest {data.title} complete!");
+
+            // ✅ Award: Exp + gold
+            // PlayerStats.Instance.AddExp(data.rewardExp);
+            // PlayerStats.Instance.AddGold(data.rewardGold);
+
+            // ✅ Award: items
+            if (data.itemRewards != null)
+            {
+                foreach (var reward in data.itemRewards)
+                {
+                    Inventory.Instance.Add(reward.item, reward.amount);
+                    Debug.Log($"Item gived: {reward.item.name} x{reward.amount}");
+                }
+            }
+
+            // ✅ Award: fraction reputation
+            if (data.factionRewards != null)
+            {
+                foreach (var reward in data.factionRewards)
+                {
+                    FactionManager.Instance.ModifyReputation(FactionType.Player, reward.factionId, reward.reputationChange);
+
+                    Debug.Log($"Reputation changed {reward.factionId}: {reward.reputationChange}");
+                }
             }
         }
     }
-}
 
-[System.Serializable]
-public class QuestSaveData
-{
-    public string questId;
-    public int currentAmount;
-    public bool isCompleted;
-}
-[System.Serializable]
-public class QuestSaveWrapper
-{
-    public List<QuestSaveData> activeQuests = new();
-    public List<QuestSaveData> completedQuests = new();
+    [System.Serializable]
+    public class QuestSaveData
+    {
+        public string questId;
+        public int currentAmount;
+        public bool isCompleted;
+    }
+    [System.Serializable]
+    public class QuestSaveWrapper
+    {
+        public List<QuestSaveData> activeQuests = new();
+        public List<QuestSaveData> completedQuests = new();
+    }
+
 }

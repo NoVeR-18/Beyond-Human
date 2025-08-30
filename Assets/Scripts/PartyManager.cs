@@ -166,10 +166,14 @@ public class PartyManager : MonoBehaviour
         }
     }
 
-    public void AddMember(Character character)
+    public bool AddMember(Character character)
     {
         if (!activeMembers.Contains(character) && activeMembers.Count < 4)
+        {
             activeMembers.Add(character);
+            return true;
+        }
+        return false;
     }
 
     public void RemoveMember(Character character)
@@ -186,7 +190,7 @@ public class PartyManager : MonoBehaviour
         {
             BattleParticipantData participant = new()
             {
-                prefab = character.battleCharacter.gameObject,
+                battleCharacter = character.battleCharacter,
                 stats = new CharacterStats(),
             };
             foreach (var kvp in character.equippedItems)

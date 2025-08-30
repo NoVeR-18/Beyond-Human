@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Quests;
+using TMPro;
 using UnityEngine;
 
 public class QuestItemUI : MonoBehaviour

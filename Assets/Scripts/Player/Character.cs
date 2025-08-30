@@ -1,4 +1,5 @@
-﻿using BattleSystem;
+﻿using Assets.Scripts.NPC;
+using BattleSystem;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,6 +16,26 @@ public class Character
 
     public List<SkillData> equippedSkills = new();
 
+    public Character(NPCController npcController = null)
+    {
+        if (npcController != null)
+        {
+            characterName = npcController.characterName;
+            portrait = npcController.GetComponent<SpriteRenderer>().sprite;
+            battleCharacter = npcController.battleParticipantData.battleCharacter;
+
+            if (npcController.battleParticipantData.abilities != null)
+            {
+                foreach (var ability in npcController.battleParticipantData.abilities)
+                {
+
+                    equippedSkills.Add(new SkillData(ability));
+                }
+            }
+
+
+        }
+    }
 
     public Equipment GetEquippedBySlot(EquipmentSlot slot)
     {

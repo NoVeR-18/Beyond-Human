@@ -1,55 +1,59 @@
 ﻿using UnityEngine;
-
-public enum QuestConditionType { QuestActive, QuestCompleted, QuestNotStarted }
-
-public class QuestConditionalObject : MonoBehaviour
+namespace Quests
 {
-    [Header("Quest Condition")]
-    public string questId;
-    public QuestConditionType conditionType;
 
-    [Header("Target Object (what will be enabled/disabled)")]
-    public GameObject targetObject;
-    public bool invert;
+    public enum QuestConditionType { QuestActive, QuestCompleted, QuestNotStarted }
 
-    private void Start()
+    public class QuestConditionalObject : MonoBehaviour
     {
-        UpdateState();
-        QuestManager.OnQuestUpdated += UpdateState;
-    }
+        [Header("Quest Condition")]
+        public string questId;
+        public QuestConditionType conditionType;
 
-    private void OnDestroy()
-    {
-        QuestManager.OnQuestUpdated -= UpdateState;
-    }
+        [Header("Target Object (what will be enabled/disabled)")]
+        public GameObject targetObject;
+        public bool invert;
 
-    private void UpdateState()
-    {
-        if (QuestManager.Instance == null) return;
-
-        bool shouldEnable = false;
-
-        switch (conditionType)
+        private void Start()
         {
-            case QuestConditionType.QuestActive:
-                shouldEnable = QuestManager.Instance.IsQuestActive(questId);
-                break;
-
-            case QuestConditionType.QuestCompleted:
-                shouldEnable = QuestManager.Instance.IsQuestCompleted(questId);
-                break;
-
-            case QuestConditionType.QuestNotStarted:
-                shouldEnable = !QuestManager.Instance.IsQuestActive(questId)
-                               && !QuestManager.Instance.IsQuestCompleted(questId);
-                break;
+            UpdateState();
+            QuestManager.OnQuestUpdated += UpdateState;
         }
 
-        if (invert) shouldEnable = !shouldEnable;
+        private void OnDestroy()
+        {
+            QuestManager.OnQuestUpdated -= UpdateState;
+        }
 
-        if (targetObject != null)
-            targetObject.SetActive(shouldEnable);
-        else
-            gameObject.SetActive(shouldEnable);
+        private void UpdateState()
+        {
+            if (QuestManager.Instance == null) return;
+
+            bool shouldEnable = false;
+
+            switch (conditionType)
+            {
+                case QuestConditionType.QuestActive:
+                    shouldEnable = QuestManager.Instance.IsQuestActive(questId);
+                    break;
+
+                case QuestConditionType.QuestCompleted:
+                    shouldEnable = QuestManager.Instance.IsQuestCompleted(questId);
+                    break;
+
+                case QuestConditionType.QuestNotStarted:
+                    shouldEnable = !QuestManager.Instance.IsQuestActive(questId)
+                                   && !QuestManager.Instance.IsQuestCompleted(questId);
+                    break;
+            }
+
+            if (invert) shouldEnable = !shouldEnable;
+
+            if (targetObject != null)
+                targetObject.SetActive(shouldEnable);
+            else
+                gameObject.SetActive(shouldEnable);
+        }
     }
+
 }

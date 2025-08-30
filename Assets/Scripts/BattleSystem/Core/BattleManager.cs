@@ -78,7 +78,7 @@ namespace BattleSystem
                     continue;
                 }
 
-                var go = Instantiate(unit.prefab, spawnPoint.transform.position, Quaternion.identity);
+                var go = Instantiate(unit.battleCharacter, spawnPoint.transform.position, Quaternion.identity);
                 var bc = go.GetComponent<BattleCharacter>();
 
                 bc.nameIDInWorld = unit.nameID;
