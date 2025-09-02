@@ -60,8 +60,19 @@ namespace Quests
 
                 bool validTarget = false;
 
-                if (quest.data.targetType == QuestTargetType.ById && enemy.name == quest.data.targetId)
-                    validTarget = true;
+                if (quest.data.targetType == QuestTargetType.ById)
+                {
+                    if (!string.IsNullOrEmpty(enemy.characterName))
+                    {
+                        if (enemy.characterName == quest.data.targetId)
+                            validTarget = true;
+                    }
+                    else
+                    {
+                        if (enemy.name == quest.data.targetId)
+                            validTarget = true;
+                    }
+                }
 
                 if (quest.data.targetType == QuestTargetType.ByFaction && enemy.FactionType == quest.data.targetFactionId)
                     validTarget = true;

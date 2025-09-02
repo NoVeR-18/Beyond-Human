@@ -23,7 +23,7 @@ namespace Assets.Scripts.NPC.Dialogue
                 _dialogueDict[seq.context].Add(seq);
             }
         }
-        public List<DialogueLine> GetRandomDialogue(DialogueContext context)
+        public List<DialogContent> GetRandomDialogue(DialogueContext context)
         {
             if (_dialogueDict == null || _dialogueDict.Count == 0)
                 Init();
@@ -41,13 +41,14 @@ namespace Assets.Scripts.NPC.Dialogue
     public class DialogueSequence
     {
         public DialogueContext context;
-        public List<DialogueLine> lines;
+        public List<DialogContent> lines;
     }
-    [System.Serializable]
-    public class DialogueLine
+
+    public class DialogContent
     {
-        [TextArea]
-        public string text;
+
+        [TextArea(2, 5)]
+        public string Text;          // Реплика
         public float delayAfter = 1f;
     }
 

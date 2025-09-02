@@ -1,3 +1,4 @@
+using Assets.Scripts.NPC;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -19,15 +20,22 @@ public class PlayerInteraction : MonoBehaviour
         Vector2 direction = interactionDirection.normalized;
 
         //RaycastHit2D hit = Physics2D.Raycast(origin, direction, interactDistance, LayerMask.GetMask("Interacteble"));
-        Collider2D hit = Physics2D.OverlapCircle(origin, interactDistance, LayerMask.GetMask("Interacteble"));
+        Collider2D hit = Physics2D.OverlapCircle(origin, interactDistance, LayerMask.GetMask("Interacteble", "NPC"));
 
         if (hit != null)
         {
-            IInteractable interactable = hit.GetComponent<IInteractable>();
-            if (interactable != null)
+            if (hit.TryGetComponent<IInteractable>(out var interactable))
             {
-                PlayerKeysAndSkills player = GetComponent<PlayerKeysAndSkills>(); // Предполагаем, что у игрока есть свой скрипт
-                interactable.Interact(player);
+                if (interactable != null)
+                {
+                    PlayerKeysAndSkills player = GetComponent<PlayerKeysAndSkills>(); // Предполагаем, что у игрока есть свой скрипт
+                    interactable.Interact(player);
+                }
+            }
+            else if (hit.TryGetComponent<NPCController>(out var npc))
+            {
+                if (npc != null && npc.StateMachine.CurrentState is IInteractableState interactableState)
+                    interactableState.Interact(GetComponent<PlayerController>());
             }
         }
     }

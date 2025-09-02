@@ -2,6 +2,7 @@ using Assets.Scripts.NPC.Dialogue;
 using Assets.Scripts.NPC.States;
 using Assets.Scripts.NPC.States.Assets.Scripts.NPC.States;
 using NPCEnums;
+using Quests;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -41,7 +42,10 @@ namespace Assets.Scripts.NPC
 
         public FactionType FactionType => factionType;
 
-        public NPCDialogueSet dialogueSet;
+        public NPCDialogueSet phraseDialogueSet;
+
+        public DialogueData dialogueData;
+
         private Dictionary<NPCActivityType, Func<ScheduleEntry, INPCState>> _activityStateFactory;
 
         [HideInInspector] public HouseData CurrentHouse;
@@ -88,25 +92,6 @@ namespace Assets.Scripts.NPC
             };
         }
 
-        public void Speak(DialogueContext context)
-        {
-            var lines = dialogueSet?.GetRandomDialogue(context);
-            if (lines == null || lines.Count == 0) return;
-
-            StartCoroutine(RunDialogue(lines));
-        }
-
-        private IEnumerator RunDialogue(List<DialogueLine> lines)
-        {
-            foreach (var line in lines)
-            {
-                Debug.Log($"{gameObject.name} says: {line.text}");
-                UIManager.Instance.dialogueWindow.ShowDialogue(line.text);
-
-                //  Here can integrate in UI system
-                yield return new WaitForSeconds(line.delayAfter);
-            }
-        }
 
         public NPCSaveData GetSaveData()
         {
@@ -178,7 +163,7 @@ namespace Assets.Scripts.NPC
         private void OnTimeChanged(GameTime time)
         {
             ScheduleEntry next = GetScheduleEntry(time);
-            if (next != null && next != currentEntry)
+            if (next != null)
             {
                 currentEntry = next;
                 SwitchActivity(next);
@@ -319,11 +304,11 @@ namespace Assets.Scripts.NPC
         {
             while (true)
             {
-                var lines = dialogueSet?.GetRandomDialogue(context);
+                var lines = phraseDialogueSet?.GetRandomDialogue(context);
                 if (lines != null && lines.Count > 0)
                 {
                     var line = lines[UnityEngine.Random.Range(0, lines.Count)];
-                    ShowFloatingText(line.text);
+                    ShowFloatingText(line.Text);
                 }
 
                 yield return new WaitForSeconds(UnityEngine.Random.Range(10f, 25f)); // случайный интервал
@@ -365,6 +350,7 @@ namespace Assets.Scripts.NPC
 
                 // Изменяем репутацию
                 FactionManager.Instance.ModifyReputationWithPlayer(factionType, -1);
+                QuestManager.Instance.OnEnemyKilled(this);
 
                 // Отмечаем как мёртвого и сохраняем
                 isDead = true;

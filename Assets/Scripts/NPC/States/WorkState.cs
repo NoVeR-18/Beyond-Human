@@ -4,7 +4,7 @@ namespace Assets.Scripts.NPC.States
 {
 
 
-    public class WorkState : INPCState
+    public class WorkState : INPCState, IInteractableState
     {
         private NPCController npc;
         private float workDuration;
@@ -42,6 +42,11 @@ namespace Assets.Scripts.NPC.States
         public void Exit()
         {
             npc.Animator.SetBool("IsWorking", false);
+        }
+
+        public void Interact(PlayerController player)
+        {
+            DialogueManager.Instance.StartDialogue(npc.dialogueData, npc, player);
         }
     }
 }

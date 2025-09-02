@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class DialogueAction : ScriptableObject
 {
-    public abstract void Execute(GameObject npc, GameObject player);
+    public abstract void Execute(NPCController npc, PlayerController player);
 }
 
 [CreateAssetMenu(menuName = "Dialogue/Actions/Give Quest")]
@@ -12,7 +12,7 @@ public class DialogueGiveQuestAction : DialogueAction
 {
     public QuestData quest;
 
-    public override void Execute(GameObject npc, GameObject player)
+    public override void Execute(NPCController npc, PlayerController player)
     {
         if (quest == null) { Debug.LogWarning("GiveQuestAction: quest is null"); return; }
         QuestManager.Instance.AddQuest(quest);
@@ -22,7 +22,7 @@ public class DialogueGiveQuestAction : DialogueAction
 [CreateAssetMenu(menuName = "Dialogue/Actions/Hire Companion")]
 public class DialogueHireCompanionAction : DialogueAction
 {
-    public override void Execute(GameObject npc, GameObject player)
+    public override void Execute(NPCController npc, PlayerController player)
     {
         if (PartyManager.Instance.AddMember(new Character(npc.GetComponent<NPCController>())))
             Destroy(npc);
@@ -34,7 +34,7 @@ public class DialogueUnlockBarrierAction : DialogueAction
 {
     public string barrierId;
 
-    public override void Execute(GameObject npc, GameObject player)
+    public override void Execute(NPCController npc, PlayerController player)
     {
         //WQuestBarrierManager.Instance.Unlock(barrierId);
     }

@@ -37,7 +37,7 @@ namespace Assets.Scripts.NPC.States
         }
 
 
-        public void Interact(NPCController npc)
+        public void Interact(PlayerController player)
         {
             Debug.Log("Open trade window.");
             UIManager.Instance.tradeWindow.Show();

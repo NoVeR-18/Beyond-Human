@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Assets.Scripts.NPC.States
+﻿namespace Assets.Scripts.NPC.States
 {
     public class QuestGiverState : INPCState, IInteractableState
     {
@@ -17,10 +15,9 @@ namespace Assets.Scripts.NPC.States
 
         public void Update() { }
 
-        public void Interact(NPCController npc)
+        public void Interact(PlayerController player)
         {
-            Debug.Log("Открыт диалог квеста.");
-            //QuestUI.Instance.Open(npc);
+            DialogueManager.Instance.StartDialogue(npc.dialogueData, npc, player);
         }
     }
 

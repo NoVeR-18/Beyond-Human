@@ -14,6 +14,6 @@ namespace Assets.Scripts.NPC
 
     public interface IInteractableState
     {
-        void Interact(NPCController npc);
+        void Interact(PlayerController player);
     }
 }

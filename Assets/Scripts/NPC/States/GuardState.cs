@@ -7,7 +7,7 @@ namespace Assets.Scripts.NPC.States
 
     namespace Assets.Scripts.NPC.States
     {
-        public class GuardState : INPCState, IInterruptible
+        public class GuardState : INPCState, IInterruptible, IInteractableState
         {
             private NPCController npc;
             private Vector3 guardPoint;
@@ -172,6 +172,11 @@ namespace Assets.Scripts.NPC.States
 
                 // Дружественен всем — не вступаю
                 return false;
+            }
+
+            public void Interact(PlayerController player)
+            {
+                DialogueManager.Instance.StartDialogue(npc.dialogueData, npc, player);
             }
         }
     }
