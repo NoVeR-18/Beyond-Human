@@ -9,6 +9,8 @@ public class SaveSystem : MonoBehaviour
 {
     public static SaveSystem Instance { get; private set; }
 
+    [SerializeField] private PlayerController player;
+    private PlayerSaveData playerCache;
     // NPC
     private readonly List<NPCController> allNPCs = new();     // All NPC
     [SerializeField]
@@ -71,42 +73,36 @@ public class SaveSystem : MonoBehaviour
         {
             string id = obj?.GetID();
 
-            // Если объект уничтожен в Unity, но id известен — сохраняем "пустую" запись с isDestroyed = true
+            // Если id нет — пропускаем
+            if (string.IsNullOrEmpty(id)) continue;
+
+            // Если объект уничтожен в сцене — ставим флаг isDestroyed (создадим запись, если её нет)
             if (obj == null || obj.Equals(null))
             {
-                if (!string.IsNullOrEmpty(id))
+                if (interactableCache.TryGetValue(id, out var existing))
                 {
-                    if (interactableCache.TryGetValue(id, out var existingData))
+                    existing.isDestroyed = true;
+                    interactableCache[id] = existing;
+                }
+                else
+                {
+                    interactableCache[id] = new InteractableSaveData
                     {
-                        existingData.isDestroyed = true;
-                        interactableCache[id] = existingData;
-                    }
-                    else
-                    {
-                        interactableCache[id] = new InteractableSaveData
-                        {
-                            id = id,
-                            isDestroyed = true
-                        };
-                    }
+                        id = id,
+                        isDestroyed = true
+                    };
                 }
                 continue;
             }
 
-            if (string.IsNullOrEmpty(id)) continue;
-
             try
             {
                 var data = obj.GetSaveData();
-                {
-                    interactableCache[id].position = data.position;
-                    interactableCache[id].rotation = data.rotation;
-                    interactableCache[id].isOpened = data.isOpened;
-                    interactableCache[id].items = data.items;
-                    interactableCache[id].prefabId = data.prefabId;
-                    interactableCache[id].isDestroyed = data.isDestroyed; // если объект не уничтожен
+                if (string.IsNullOrEmpty(data.id))
+                    data.id = id;
 
-                }
+                // просто добавляем/заменяем запись в кеше
+                interactableCache[id] = data;
             }
             catch (MissingReferenceException e)
             {
@@ -114,8 +110,10 @@ public class SaveSystem : MonoBehaviour
             }
         }
 
+        // если кеш пуст — можно не вызывать сохранение, но это опционально
         InteractableSaveManager.SaveInteractables(interactableCache.Values.ToList());
     }
+
 
 
     private void LoadInteractables()
@@ -215,9 +213,26 @@ public class SaveSystem : MonoBehaviour
 
         NPCSaveManager.SaveNPCs(data);
 
+        SavePlayer();
         SaveInteractables();
     }
+    private void SavePlayer()
+    {
+        if (player != null)
+        {
+            playerCache = player.GetSaveData();
+            PlayerSaveManager.SavePlayer(playerCache);
+        }
+    }
 
+    private void LoadPlayer()
+    {
+        var data = PlayerSaveManager.LoadPlayer();
+        if (data != null && player != null)
+        {
+            player.LoadFromData(data);
+        }
+    }
     // Load all NPCs from file and filter their states
     public void LoadAll()
     {
@@ -243,6 +258,7 @@ public class SaveSystem : MonoBehaviour
             }
         }
 
+        LoadPlayer();
         // Interactables
         LoadInteractables();
     }

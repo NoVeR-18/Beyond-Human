@@ -73728,6 +73728,17 @@ MonoBehaviour:
   m_Spacing: {x: 25, y: 25}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1489344234 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9032080289581290168, guid: 0f4ca36328080ca438a37b8cb110940d, type: 3}
+  m_PrefabInstance: {fileID: 3639094220624431659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8f88b27da5e8a44b71bd895eea87dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1509857032
 GameObject:
   m_ObjectHideFlags: 0
@@ -78531,6 +78542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec976a1a9416914a95c55c083fcb95f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1489344234}
 --- !u!1001 &1864566705
 PrefabInstance:
   m_ObjectHideFlags: 0

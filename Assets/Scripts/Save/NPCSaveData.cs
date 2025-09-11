@@ -1,4 +1,5 @@
 ﻿using NPCEnums;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,4 +19,13 @@ public class NPCSaveData
 public class SaveContainer
 {
     public List<NPCSaveData> allNpcData = new List<NPCSaveData>();
+}
+[Serializable]
+public class PlayerSaveData
+{
+    public Vector3 position;
+    public Quaternion rotation;
+
+    public int health;
+
 }

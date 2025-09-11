@@ -125,16 +125,10 @@ public class DialogueWindow : MonoBehaviour, IPointerDownHandler
     {
         HideDialogue();
 
-
-        currentDialogue = null;
-        currentLineIndex = 0;
-    }
-
-    public void CancelDialogue()
-    {
-        HideDialogue();
         DialogueManager.Instance.CloseDialogue(currentDialogue?.result);
+
         currentDialogue = null;
         currentLineIndex = 0;
     }
+
 }

@@ -42,6 +42,9 @@ public class Chest : InteractableObject, IInteractable
         addressableKey = data.prefabId;
         isOpened = data.isOpened;
 
+        transform.position = data.position;
+        transform.rotation = data.rotation;
+
         items = new List<InventoryItem>();
 
         foreach (var savedItem in data.items)

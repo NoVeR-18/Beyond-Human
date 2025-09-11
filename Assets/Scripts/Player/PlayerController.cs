@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour, IFactionMember
     private FactionData factionData;
     public FactionData FactionData => factionData;
     [SerializeField] private FactionType factionType;
-    //private FactionData factionData;
 
     public FactionType FactionType => factionType;
 
@@ -44,7 +43,23 @@ public class PlayerController : MonoBehaviour, IFactionMember
         if (factionData == null)
             Debug.LogWarning($"FactionData not found for {factionType} on {gameObject.name}");
     }
+    public PlayerSaveData GetSaveData()
+    {
+        return new PlayerSaveData
+        {
+            position = transform.position,
+            rotation = transform.rotation,
+            health = battleParticipantData.stats.CurrentHP
+        };
+    }
 
+    // Загрузка данных
+    public void LoadFromData(PlayerSaveData data)
+    {
+        transform.position = data.position;
+        transform.rotation = data.rotation;
+        battleParticipantData.stats.CurrentHP = data.health;
+    }
     void Update()
     {
         float inputX = Input.GetAxisRaw("Horizontal");
