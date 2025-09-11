@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -162,10 +162,10 @@ TextureImporter:
       name: Effect 8 Idle_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 112
-        width: 55
-        height: 44
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Effect 8 Idle_1
       rect:
         serializedVersion: 2
-        x: 346
-        y: 111
-        width: 57
-        height: 44
+        x: 256
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: Effect 8 Idle_2
       rect:
         serializedVersion: 2
-        x: 599
-        y: 113
-        width: 60
-        height: 43
+        x: 512
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: Effect 8 Idle_3
       rect:
         serializedVersion: 2
-        x: 858
-        y: 112
-        width: 57
-        height: 45
+        x: 768
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: Effect 8 Idle_4
       rect:
         serializedVersion: 2
-        x: 1115
-        y: 113
-        width: 58
-        height: 45
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +267,10 @@ TextureImporter:
       name: Effect 8 Idle_5
       rect:
         serializedVersion: 2
-        x: 1369
-        y: 114
-        width: 60
-        height: 42
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       name: Effect 8 Idle_6
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 154
-        width: 6
-        height: 6
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: Effect 8 Idle_7
       rect:
         serializedVersion: 2
-        x: 1378
-        y: 144
-        width: 18
-        height: 17
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,101 +326,25 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Effect 8 Idle_8
-      rect:
-        serializedVersion: 2
-        x: 1626
-        y: 114
-        width: 60
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9ce300e5897d37d0800000000000000
-      internalID: -2937057766079730529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8 Idle_9
-      rect:
-        serializedVersion: 2
-        x: 1884
-        y: 113
-        width: 57
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46b42803f3f379fe0800000000000000
-      internalID: -1182406836532130972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8 Idle_10
-      rect:
-        serializedVersion: 2
-        x: 853
-        y: 124
-        width: 9
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5f0a7ba14b2aa2f0800000000000000
-      internalID: -960908009440407713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8 Idle_11
-      rect:
-        serializedVersion: 2
-        x: 1110
-        y: 124
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 256af63f659854240800000000000000
-      internalID: 4775373986440652370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4985a2cb16725294081e17fbff1926b5
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Effect 8 Idle_0: -8143523364914323661
+      Effect 8 Idle_1: 7131830017437064080
+      Effect 8 Idle_2: 823906792358985226
+      Effect 8 Idle_3: 3632345935757632688
+      Effect 8 Idle_4: 7866358159237587735
+      Effect 8 Idle_5: 7183245558143391530
+      Effect 8 Idle_6: -1295076172278069360
+      Effect 8 Idle_7: -6498204224347499448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

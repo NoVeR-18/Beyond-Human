@@ -160,6 +160,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -167,10 +180,10 @@ TextureImporter:
       name: Effect 10 Start_0
       rect:
         serializedVersion: 2
-        x: 47
-        y: 99
-        width: 17
-        height: 21
+        x: 0
+        y: 0
+        width: 96
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +201,10 @@ TextureImporter:
       name: Effect 10 Start_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 110
-        width: 16
-        height: 11
+        x: 96
+        y: 0
+        width: 96
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +222,10 @@ TextureImporter:
       name: Effect 10 Start_2
       rect:
         serializedVersion: 2
-        x: 228
-        y: 112
-        width: 14
-        height: 10
+        x: 192
+        y: 0
+        width: 96
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +243,10 @@ TextureImporter:
       name: Effect 10 Start_3
       rect:
         serializedVersion: 2
-        x: 235
-        y: 119
-        width: 7
-        height: 6
+        x: 288
+        y: 0
+        width: 96
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,304 +260,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_4
-      rect:
-        serializedVersion: 2
-        x: 311
-        y: 15
-        width: 69
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4165a13a87aacb640800000000000000
-      internalID: 5097136313385768468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_5
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 84
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6032fa392bb170a20800000000000000
-      internalID: 3028419728225805062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_6
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 86
-        width: 7
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f99d7b3acac1ef10800000000000000
-      internalID: 2297340254865955313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_7
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 97
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 692bb141ad7b70f90800000000000000
-      internalID: -6987414149573922154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_8
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 80
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e3a65a4c04a6e8a0800000000000000
-      internalID: -6276148658000452635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_9
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 15
-        width: 60
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bafd0d18f5a71be00800000000000000
-      internalID: 1058761938027208619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_10
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 76
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 722cfd36bb1f21c50800000000000000
-      internalID: 6634630988206948903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_11
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 81
-        width: 8
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a1fb4e9a2c097700800000000000000
-      internalID: 538475007631421863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_12
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 66
-        width: 14
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 044351c65175dae60800000000000000
-      internalID: 7975126264662275136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_13
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 15
-        width: 48
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1665b6c55b35c94a0800000000000000
-      internalID: -6585296516717783455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_14
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 63
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81a816f4a8a108890800000000000000
-      internalID: -7457931801585939944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_15
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 68
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27ef1b233e43a9de0800000000000000
-      internalID: -1325688989894443406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_16
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 15
-        width: 47
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce248dc781fcbfbc0800000000000000
-      internalID: -3748174560775093524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 10 Start_17
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 51
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fba987c3ceecada0800000000000000
-      internalID: -5932104084520064010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 16973d1669de4294c8337a67ce6a0845
     internalID: 0
     vertices: []
     indices: 
@@ -554,22 +273,8 @@ TextureImporter:
     nameFileIdTable:
       Effect 10 Start_0: -4243530616795980972
       Effect 10 Start_1: -8957796599835927276
-      Effect 10 Start_10: 6634630988206948903
-      Effect 10 Start_11: 538475007631421863
-      Effect 10 Start_12: 7975126264662275136
-      Effect 10 Start_13: -6585296516717783455
-      Effect 10 Start_14: -7457931801585939944
-      Effect 10 Start_15: -1325688989894443406
-      Effect 10 Start_16: -3748174560775093524
-      Effect 10 Start_17: -5932104084520064010
       Effect 10 Start_2: 4044513442892387232
       Effect 10 Start_3: -3026423835387662778
-      Effect 10 Start_4: 5097136313385768468
-      Effect 10 Start_5: 3028419728225805062
-      Effect 10 Start_6: 2297340254865955313
-      Effect 10 Start_7: -6987414149573922154
-      Effect 10 Start_8: -6276148658000452635
-      Effect 10 Start_9: 1058761938027208619
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

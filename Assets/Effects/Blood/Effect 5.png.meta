@@ -142,6 +142,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -149,10 +162,10 @@ TextureImporter:
       name: Effect 5_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 37
-        width: 97
-        height: 55
+        x: 0
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +183,10 @@ TextureImporter:
       name: Effect 5_1
       rect:
         serializedVersion: 2
-        x: 246
-        y: 43
-        width: 95
-        height: 46
+        x: 196
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +204,10 @@ TextureImporter:
       name: Effect 5_2
       rect:
         serializedVersion: 2
-        x: 443
-        y: 44
-        width: 94
-        height: 39
+        x: 392
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +225,10 @@ TextureImporter:
       name: Effect 5_3
       rect:
         serializedVersion: 2
-        x: 635
-        y: 47
-        width: 98
-        height: 33
+        x: 588
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,10 +246,10 @@ TextureImporter:
       name: Effect 5_4
       rect:
         serializedVersion: 2
-        x: 830
-        y: 53
-        width: 99
-        height: 23
+        x: 784
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +267,10 @@ TextureImporter:
       name: Effect 5_5
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 54
-        width: 101
-        height: 20
+        x: 980
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,10 +288,10 @@ TextureImporter:
       name: Effect 5_6
       rect:
         serializedVersion: 2
-        x: 1223
-        y: 56
-        width: 98
-        height: 16
+        x: 1176
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +309,10 @@ TextureImporter:
       name: Effect 5_7
       rect:
         serializedVersion: 2
-        x: 1418
-        y: 27
-        width: 99
-        height: 79
+        x: 1372
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,10 +330,10 @@ TextureImporter:
       name: Effect 5_8
       rect:
         serializedVersion: 2
-        x: 1611
-        y: 19
-        width: 102
-        height: 91
+        x: 1568
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,10 +351,10 @@ TextureImporter:
       name: Effect 5_9
       rect:
         serializedVersion: 2
-        x: 1816
-        y: 16
-        width: 94
-        height: 95
+        x: 1764
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +372,10 @@ TextureImporter:
       name: Effect 5_10
       rect:
         serializedVersion: 2
-        x: 2016
-        y: 17
-        width: 90
-        height: 95
+        x: 1960
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,10 +393,10 @@ TextureImporter:
       name: Effect 5_11
       rect:
         serializedVersion: 2
-        x: 2238
-        y: 18
-        width: 62
-        height: 91
+        x: 2156
+        y: 0
+        width: 196
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,7 +413,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4457360f478faa84fa121e511e47c3b5
     internalID: 0
     vertices: []
     indices: 

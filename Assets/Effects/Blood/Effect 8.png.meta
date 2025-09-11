@@ -157,6 +157,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -164,10 +177,10 @@ TextureImporter:
       name: Effect 8_0
       rect:
         serializedVersion: 2
-        x: 131
+        x: 0
         y: 0
-        width: 126
-        height: 68
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +198,10 @@ TextureImporter:
       name: Effect 8_1
       rect:
         serializedVersion: 2
-        x: 261
+        x: 130
         y: 0
-        width: 129
-        height: 72
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +219,10 @@ TextureImporter:
       name: Effect 8_2
       rect:
         serializedVersion: 2
-        x: 393
+        x: 260
         y: 0
-        width: 125
-        height: 69
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +240,10 @@ TextureImporter:
       name: Effect 8_3
       rect:
         serializedVersion: 2
-        x: 526
+        x: 390
         y: 0
-        width: 121
-        height: 67
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +261,10 @@ TextureImporter:
       name: Effect 8_4
       rect:
         serializedVersion: 2
-        x: 657
+        x: 520
         y: 0
-        width: 119
-        height: 66
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +282,10 @@ TextureImporter:
       name: Effect 8_5
       rect:
         serializedVersion: 2
-        x: 806
+        x: 650
         y: 0
-        width: 96
-        height: 57
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +303,10 @@ TextureImporter:
       name: Effect 8_6
       rect:
         serializedVersion: 2
-        x: 946
-        y: 1
-        width: 82
-        height: 51
+        x: 780
+        y: 0
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +324,10 @@ TextureImporter:
       name: Effect 8_7
       rect:
         serializedVersion: 2
-        x: 981
-        y: 37
-        width: 27
-        height: 22
+        x: 910
+        y: 0
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +345,10 @@ TextureImporter:
       name: Effect 8_8
       rect:
         serializedVersion: 2
-        x: 1006
-        y: 52
-        width: 7
-        height: 6
+        x: 1040
+        y: 0
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +366,10 @@ TextureImporter:
       name: Effect 8_9
       rect:
         serializedVersion: 2
-        x: 1099
-        y: 4
-        width: 184
-        height: 56
+        x: 1170
+        y: 0
+        width: 130
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,157 +383,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Effect 8_10
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 71
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d9503f75d5f05bd0800000000000000
-      internalID: -2643342683955766824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8_11
-      rect:
-        serializedVersion: 2
-        x: 1079
-        y: 13
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26d240ab478d441a0800000000000000
-      internalID: -6826093139338187422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8_12
-      rect:
-        serializedVersion: 2
-        x: 1138
-        y: 31
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af9cdcbc372583260800000000000000
-      internalID: 7077497471706712570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8_13
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 12
-        width: 32
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b53e2aed7309ac60800000000000000
-      internalID: 7829793266495010226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8_14
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 12
-        width: 25
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a9393d53949958ba0800000000000000
-      internalID: -6087290781606636646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8_15
-      rect:
-        serializedVersion: 2
-        x: 1115
-        y: 9
-        width: 10
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 48991ec7d438e4340800000000000000
-      internalID: 4849958217555483012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 8_16
-      rect:
-        serializedVersion: 2
-        x: 1125
-        y: 11
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fc781881155b0e90800000000000000
-      internalID: -7058454457187009288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ca5b48c72b105b848ae12a57431f21ff
     internalID: 0
     vertices: []
     indices: 
@@ -530,13 +396,6 @@ TextureImporter:
     nameFileIdTable:
       Effect 8_0: -3171444328823300146
       Effect 8_1: 3968351917166279791
-      Effect 8_10: -2643342683955766824
-      Effect 8_11: -6826093139338187422
-      Effect 8_12: 7077497471706712570
-      Effect 8_13: 7829793266495010226
-      Effect 8_14: -6087290781606636646
-      Effect 8_15: 4849958217555483012
-      Effect 8_16: -7058454457187009288
       Effect 8_2: -3232380311445956620
       Effect 8_3: -7071064252959968152
       Effect 8_4: -3908490158171050176

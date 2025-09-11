@@ -157,6 +157,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -164,10 +177,10 @@ TextureImporter:
       name: Effect 13_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 17
-        width: 22
-        height: 30
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +198,10 @@ TextureImporter:
       name: Effect 13_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 17
-        width: 26
-        height: 31
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +219,10 @@ TextureImporter:
       name: Effect 13_2
       rect:
         serializedVersion: 2
-        x: 146
-        y: 16
-        width: 27
-        height: 33
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +240,10 @@ TextureImporter:
       name: Effect 13_3
       rect:
         serializedVersion: 2
-        x: 210
-        y: 15
-        width: 28
-        height: 34
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +261,10 @@ TextureImporter:
       name: Effect 13_4
       rect:
         serializedVersion: 2
-        x: 274
-        y: 21
-        width: 28
-        height: 22
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +282,10 @@ TextureImporter:
       name: Effect 13_5
       rect:
         serializedVersion: 2
-        x: 337
-        y: 19
-        width: 30
-        height: 27
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +303,10 @@ TextureImporter:
       name: Effect 13_6
       rect:
         serializedVersion: 2
-        x: 401
-        y: 19
-        width: 30
-        height: 27
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +324,10 @@ TextureImporter:
       name: Effect 13_7
       rect:
         serializedVersion: 2
-        x: 465
-        y: 19
-        width: 30
-        height: 26
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +345,10 @@ TextureImporter:
       name: Effect 13_8
       rect:
         serializedVersion: 2
-        x: 533
-        y: 21
-        width: 22
-        height: 22
+        x: 512
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +366,10 @@ TextureImporter:
       name: Effect 13_9
       rect:
         serializedVersion: 2
-        x: 582
-        y: 5
-        width: 52
-        height: 54
+        x: 576
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +387,10 @@ TextureImporter:
       name: Effect 13_10
       rect:
         serializedVersion: 2
-        x: 646
-        y: 6
-        width: 52
-        height: 52
+        x: 640
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +408,10 @@ TextureImporter:
       name: Effect 13_11
       rect:
         serializedVersion: 2
-        x: 708
-        y: 4
-        width: 56
-        height: 56
+        x: 704
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +429,10 @@ TextureImporter:
       name: Effect 13_12
       rect:
         serializedVersion: 2
-        x: 773
-        y: 5
-        width: 54
-        height: 54
+        x: 768
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +450,10 @@ TextureImporter:
       name: Effect 13_13
       rect:
         serializedVersion: 2
-        x: 837
-        y: 6
-        width: 22
-        height: 30
+        x: 832
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,73 +467,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Effect 13_14
-      rect:
-        serializedVersion: 2
-        x: 838
-        y: 26
-        width: 53
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a641009bfd9907120800000000000000
-      internalID: 2409594986803762282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 13_15
-      rect:
-        serializedVersion: 2
-        x: 859
-        y: 29
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2047a514d5f308e80800000000000000
-      internalID: -8178467253543865342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 13_16
-      rect:
-        serializedVersion: 2
-        x: 859
-        y: 5
-        width: 30
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d173a5dca833a17a0800000000000000
-      internalID: -6405750848737364195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: effb093de4d8d4f45adb5fc6eaec1b70
     internalID: 0
     vertices: []
     indices: 
@@ -534,9 +484,6 @@ TextureImporter:
       Effect 13_11: 105121508586550846
       Effect 13_12: 1401043795048141951
       Effect 13_13: -7145856701562842033
-      Effect 13_14: 2409594986803762282
-      Effect 13_15: -8178467253543865342
-      Effect 13_16: -6405750848737364195
       Effect 13_2: 7716365310656281658
       Effect 13_3: 4506284779284277492
       Effect 13_4: 5696946358456230816

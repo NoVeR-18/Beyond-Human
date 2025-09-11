@@ -148,6 +148,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -155,10 +168,10 @@ TextureImporter:
       name: Effect 6_0
       rect:
         serializedVersion: 2
-        x: 141
+        x: 0
         y: 0
-        width: 82
-        height: 39
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +189,10 @@ TextureImporter:
       name: Effect 6_1
       rect:
         serializedVersion: 2
-        x: 217
-        y: 28
-        width: 8
-        height: 11
+        x: 128
+        y: 0
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +210,10 @@ TextureImporter:
       name: Effect 6_2
       rect:
         serializedVersion: 2
-        x: 269
+        x: 256
         y: 0
-        width: 108
-        height: 59
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +231,10 @@ TextureImporter:
       name: Effect 6_3
       rect:
         serializedVersion: 2
-        x: 420
+        x: 384
         y: 0
-        width: 88
-        height: 48
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +252,10 @@ TextureImporter:
       name: Effect 6_4
       rect:
         serializedVersion: 2
-        x: 28
+        x: 512
         y: 0
-        width: 50
-        height: 14
+        width: 128
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,199 +269,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Effect 6_5
-      rect:
-        serializedVersion: 2
-        x: 592
-        y: 0
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 368ae36cae006a510800000000000000
-      internalID: 1559935329278797923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_6
-      rect:
-        serializedVersion: 2
-        x: 606
-        y: 14
-        width: 6
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6e8035c86b5f1dfe0800000000000000
-      internalID: -1165880664125142810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_7
-      rect:
-        serializedVersion: 2
-        x: 606
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf1ccf88b6f1337d0800000000000000
-      internalID: -2939971585022574085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_8
-      rect:
-        serializedVersion: 2
-        x: 621
-        y: 0
-        width: 20
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3bc41bb5feb6c9bb0800000000000000
-      internalID: -4927945216470463309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_9
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 0
-        width: 14
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70584d674b272d3b0800000000000000
-      internalID: -5489198876397894393
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_10
-      rect:
-        serializedVersion: 2
-        x: 397
-        y: 0
-        width: 24
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f3a267ffe23851ff0800000000000000
-      internalID: -66002381649335745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_11
-      rect:
-        serializedVersion: 2
-        x: 527
-        y: 0
-        width: 14
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4654f2d2b3dfbe770800000000000000
-      internalID: 8641278740643399012
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_12
-      rect:
-        serializedVersion: 2
-        x: 549
-        y: 0
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2dd3e8cd45af65460800000000000000
-      internalID: 7230241494174416338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 6_13
-      rect:
-        serializedVersion: 2
-        x: 562
-        y: 0
-        width: 28
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d820a78831d6c9d30800000000000000
-      internalID: 4439543263341970061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c6df213cdd5a735468b30b73a96bcbda
     internalID: 0
     vertices: []
     indices: 
@@ -458,18 +282,9 @@ TextureImporter:
     nameFileIdTable:
       Effect 6_0: -5097243304735730733
       Effect 6_1: 1586506339279945565
-      Effect 6_10: -66002381649335745
-      Effect 6_11: 8641278740643399012
-      Effect 6_12: 7230241494174416338
-      Effect 6_13: 4439543263341970061
       Effect 6_2: 1796029479417977173
       Effect 6_3: 150579914726735604
       Effect 6_4: -8216995959021371996
-      Effect 6_5: 1559935329278797923
-      Effect 6_6: -1165880664125142810
-      Effect 6_7: -2939971585022574085
-      Effect 6_8: -4927945216470463309
-      Effect 6_9: -5489198876397894393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
