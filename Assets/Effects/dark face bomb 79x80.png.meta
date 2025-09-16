@@ -253,6 +253,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -260,10 +273,10 @@ TextureImporter:
       name: dark face bomb 79x80_0
       rect:
         serializedVersion: 2
-        x: 652
-        y: 11
-        width: 46
-        height: 63
+        x: 0
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +294,10 @@ TextureImporter:
       name: dark face bomb 79x80_1
       rect:
         serializedVersion: 2
-        x: 731
-        y: 17
-        width: 47
-        height: 58
+        x: 79
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +315,10 @@ TextureImporter:
       name: dark face bomb 79x80_2
       rect:
         serializedVersion: 2
-        x: 810
-        y: 25
-        width: 41
-        height: 51
+        x: 158
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +336,10 @@ TextureImporter:
       name: dark face bomb 79x80_3
       rect:
         serializedVersion: 2
-        x: 889
-        y: 22
-        width: 42
-        height: 55
+        x: 237
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +357,10 @@ TextureImporter:
       name: dark face bomb 79x80_4
       rect:
         serializedVersion: 2
-        x: 968
-        y: 22
-        width: 48
-        height: 56
+        x: 395
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +378,10 @@ TextureImporter:
       name: dark face bomb 79x80_5
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 30
-        width: 48
-        height: 49
+        x: 474
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +399,10 @@ TextureImporter:
       name: dark face bomb 79x80_6
       rect:
         serializedVersion: 2
-        x: 1126
-        y: 35
-        width: 34
-        height: 24
+        x: 553
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +420,10 @@ TextureImporter:
       name: dark face bomb 79x80_7
       rect:
         serializedVersion: 2
-        x: 1205
-        y: 36
-        width: 43
-        height: 44
+        x: 632
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +441,10 @@ TextureImporter:
       name: dark face bomb 79x80_8
       rect:
         serializedVersion: 2
-        x: 1363
-        y: 38
-        width: 41
-        height: 42
+        x: 711
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +462,10 @@ TextureImporter:
       name: dark face bomb 79x80_9
       rect:
         serializedVersion: 2
-        x: 1507
+        x: 790
         y: 0
-        width: 104
-        height: 66
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +483,10 @@ TextureImporter:
       name: dark face bomb 79x80_10
       rect:
         serializedVersion: 2
-        x: 1599
-        y: 58
-        width: 12
-        height: 7
+        x: 869
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +504,10 @@ TextureImporter:
       name: dark face bomb 79x80_11
       rect:
         serializedVersion: 2
-        x: 1624
-        y: 4
-        width: 33
-        height: 61
+        x: 948
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +525,10 @@ TextureImporter:
       name: dark face bomb 79x80_12
       rect:
         serializedVersion: 2
-        x: 1660
+        x: 1027
         y: 0
-        width: 311
-        height: 66
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +546,10 @@ TextureImporter:
       name: dark face bomb 79x80_13
       rect:
         serializedVersion: 2
-        x: 843
-        y: 35
-        width: 10
-        height: 9
+        x: 1106
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +567,10 @@ TextureImporter:
       name: dark face bomb 79x80_14
       rect:
         serializedVersion: 2
-        x: 923
-        y: 39
-        width: 8
-        height: 7
+        x: 1185
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +588,10 @@ TextureImporter:
       name: dark face bomb 79x80_15
       rect:
         serializedVersion: 2
-        x: 994
-        y: 31
-        width: 11
-        height: 9
+        x: 1264
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +609,10 @@ TextureImporter:
       name: dark face bomb 79x80_16
       rect:
         serializedVersion: 2
-        x: 1072
-        y: 30
-        width: 13
-        height: 10
+        x: 1343
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +630,10 @@ TextureImporter:
       name: dark face bomb 79x80_17
       rect:
         serializedVersion: 2
-        x: 1153
-        y: 29
-        width: 16
-        height: 20
+        x: 1422
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +651,10 @@ TextureImporter:
       name: dark face bomb 79x80_18
       rect:
         serializedVersion: 2
-        x: 1233
-        y: 29
-        width: 8
-        height: 13
+        x: 1501
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +672,10 @@ TextureImporter:
       name: dark face bomb 79x80_19
       rect:
         serializedVersion: 2
-        x: 1304
-        y: 38
-        width: 8
-        height: 6
+        x: 1580
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +693,10 @@ TextureImporter:
       name: dark face bomb 79x80_20
       rect:
         serializedVersion: 2
-        x: 1312
-        y: 29
-        width: 7
-        height: 13
+        x: 1659
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +714,10 @@ TextureImporter:
       name: dark face bomb 79x80_21
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 27
-        width: 13
-        height: 12
+        x: 1738
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +735,10 @@ TextureImporter:
       name: dark face bomb 79x80_22
       rect:
         serializedVersion: 2
-        x: 1448
-        y: 22
-        width: 16
-        height: 18
+        x: 1817
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +756,10 @@ TextureImporter:
       name: dark face bomb 79x80_23
       rect:
         serializedVersion: 2
-        x: 1465
-        y: 29
-        width: 16
-        height: 16
+        x: 1896
+        y: 0
+        width: 79
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -760,535 +773,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_24
-      rect:
-        serializedVersion: 2
-        x: 1607
-        y: 35
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d6ba1309cf89d550800000000000000
-      internalID: 6186133656673367769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_25
-      rect:
-        serializedVersion: 2
-        x: 820
-        y: 27
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 45503af0b78974860800000000000000
-      internalID: 7514142157601703252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_26
-      rect:
-        serializedVersion: 2
-        x: 830
-        y: 21
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 977be407226c693d0800000000000000
-      internalID: -3200152633984764039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_27
-      rect:
-        serializedVersion: 2
-        x: 839
-        y: 30
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf5098dc03171dc50800000000000000
-      internalID: 6688251376042575355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_28
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 29
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abcee1c8b6a5db910800000000000000
-      internalID: 1854738039505349818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_29
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 29
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e77ce3629f67e510800000000000000
-      internalID: 1578352868948998113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_30
-      rect:
-        serializedVersion: 2
-        x: 895
-        y: 27
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ee43dc21c792b900800000000000000
-      internalID: 698787748132376293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_31
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 27
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 190f902b820942a90800000000000000
-      internalID: -7339582988246978415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_32
-      rect:
-        serializedVersion: 2
-        x: 918
-        y: 27
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b7cf066a02cda9b0800000000000000
-      internalID: -5067180655804168270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_33
-      rect:
-        serializedVersion: 2
-        x: 931
-        y: 32
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 010e06dee09c3d390800000000000000
-      internalID: -7794665464098922480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_34
-      rect:
-        serializedVersion: 2
-        x: 978
-        y: 28
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 590ed73ee82628120800000000000000
-      internalID: 2414600716065562773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_35
-      rect:
-        serializedVersion: 2
-        x: 1055
-        y: 23
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff1d461655b716830800000000000000
-      internalID: 4062663945501331967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_36
-      rect:
-        serializedVersion: 2
-        x: 1133
-        y: 24
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8b25ca3d6a6c7190800000000000000
-      internalID: -7963373023727899766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_37
-      rect:
-        serializedVersion: 2
-        x: 1212
-        y: 24
-        width: 17
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e1a928351a394500800000000000000
-      internalID: 380899506300494304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_38
-      rect:
-        serializedVersion: 2
-        x: 1292
-        y: 27
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de0273832a7dfd530800000000000000
-      internalID: 3882058495544467693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_39
-      rect:
-        serializedVersion: 2
-        x: 1390
-        y: 29
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9198d955a4346d010800000000000000
-      internalID: 1213231136165955865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_40
-      rect:
-        serializedVersion: 2
-        x: 826
-        y: 20
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10154175382cc8e10800000000000000
-      internalID: 2201348187234783489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_41
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 24
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44af4f32e11a41de0800000000000000
-      internalID: -1363287636362069436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_42
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 21
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 624a9c476c88836d0800000000000000
-      internalID: -3010505964952902618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_43
-      rect:
-        serializedVersion: 2
-        x: 1304
-        y: 24
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4eb30eb30f22e490800000000000000
-      internalID: -7718555118240285110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_44
-      rect:
-        serializedVersion: 2
-        x: 1380
-        y: 22
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91c8696428b1c1b90800000000000000
-      internalID: -7269905452138853351
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_45
-      rect:
-        serializedVersion: 2
-        x: 1605
-        y: 23
-        width: 15
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 406e1698e782a94f0800000000000000
-      internalID: -821299458105809404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_46
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 6
-        width: 86
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4f1172af910b24e0800000000000000
-      internalID: -2005507423926673590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_47
-      rect:
-        serializedVersion: 2
-        x: 1588
-        y: 13
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0bc4f022f814a7220800000000000000
-      internalID: 2484370227455806640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark face bomb 79x80_48
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 6
-        width: 399
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ed87ae18dd507e50800000000000000
-      internalID: 6805042219765435880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ab63648c62b21454f8f84f6d4d3175e5
     internalID: 0
     vertices: []
     indices: 
@@ -1313,33 +801,8 @@ TextureImporter:
       dark face bomb 79x80_21: -1599462901754640591
       dark face bomb 79x80_22: 863440646810077932
       dark face bomb 79x80_23: 1110803709161058775
-      dark face bomb 79x80_24: 6186133656673367769
-      dark face bomb 79x80_25: 7514142157601703252
-      dark face bomb 79x80_26: -3200152633984764039
-      dark face bomb 79x80_27: 6688251376042575355
-      dark face bomb 79x80_28: 1854738039505349818
-      dark face bomb 79x80_29: 1578352868948998113
       dark face bomb 79x80_3: -4045922830066380064
-      dark face bomb 79x80_30: 698787748132376293
-      dark face bomb 79x80_31: -7339582988246978415
-      dark face bomb 79x80_32: -5067180655804168270
-      dark face bomb 79x80_33: -7794665464098922480
-      dark face bomb 79x80_34: 2414600716065562773
-      dark face bomb 79x80_35: 4062663945501331967
-      dark face bomb 79x80_36: -7963373023727899766
-      dark face bomb 79x80_37: 380899506300494304
-      dark face bomb 79x80_38: 3882058495544467693
-      dark face bomb 79x80_39: 1213231136165955865
       dark face bomb 79x80_4: -410820108413505019
-      dark face bomb 79x80_40: 2201348187234783489
-      dark face bomb 79x80_41: -1363287636362069436
-      dark face bomb 79x80_42: -3010505964952902618
-      dark face bomb 79x80_43: -7718555118240285110
-      dark face bomb 79x80_44: -7269905452138853351
-      dark face bomb 79x80_45: -821299458105809404
-      dark face bomb 79x80_46: -2005507423926673590
-      dark face bomb 79x80_47: 2484370227455806640
-      dark face bomb 79x80_48: 6805042219765435880
       dark face bomb 79x80_5: 2719566070065370713
       dark face bomb 79x80_6: -3123833142971924334
       dark face bomb 79x80_7: 5795540753169863255

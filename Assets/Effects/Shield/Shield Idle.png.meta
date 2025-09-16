@@ -148,6 +148,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -155,10 +168,10 @@ TextureImporter:
       name: Shield Idle_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 6
-        width: 102
-        height: 104
+        x: 0
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +189,10 @@ TextureImporter:
       name: Shield Idle_1
       rect:
         serializedVersion: 2
-        x: 123
-        y: 6
-        width: 102
-        height: 104
+        x: 116
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +210,10 @@ TextureImporter:
       name: Shield Idle_2
       rect:
         serializedVersion: 2
-        x: 239
-        y: 6
-        width: 102
-        height: 104
+        x: 232
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +231,10 @@ TextureImporter:
       name: Shield Idle_3
       rect:
         serializedVersion: 2
-        x: 355
-        y: 6
-        width: 102
-        height: 104
+        x: 348
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +252,10 @@ TextureImporter:
       name: Shield Idle_4
       rect:
         serializedVersion: 2
-        x: 471
-        y: 6
-        width: 102
-        height: 104
+        x: 464
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +273,10 @@ TextureImporter:
       name: Shield Idle_5
       rect:
         serializedVersion: 2
-        x: 587
-        y: 6
-        width: 102
-        height: 104
+        x: 580
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +294,10 @@ TextureImporter:
       name: Shield Idle_6
       rect:
         serializedVersion: 2
-        x: 703
-        y: 6
-        width: 102
-        height: 104
+        x: 696
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +315,10 @@ TextureImporter:
       name: Shield Idle_7
       rect:
         serializedVersion: 2
-        x: 819
-        y: 6
-        width: 102
-        height: 104
+        x: 812
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +336,10 @@ TextureImporter:
       name: Shield Idle_8
       rect:
         serializedVersion: 2
-        x: 935
-        y: 6
-        width: 102
-        height: 104
+        x: 928
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +357,10 @@ TextureImporter:
       name: Shield Idle_9
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 6
-        width: 102
-        height: 104
+        x: 1044
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +378,10 @@ TextureImporter:
       name: Shield Idle_10
       rect:
         serializedVersion: 2
-        x: 1167
-        y: 6
-        width: 102
-        height: 104
+        x: 1160
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +399,10 @@ TextureImporter:
       name: Shield Idle_11
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 6
-        width: 102
-        height: 104
+        x: 1276
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +420,10 @@ TextureImporter:
       name: Shield Idle_12
       rect:
         serializedVersion: 2
-        x: 1399
-        y: 6
-        width: 102
-        height: 104
+        x: 1392
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +441,10 @@ TextureImporter:
       name: Shield Idle_13
       rect:
         serializedVersion: 2
-        x: 1515
-        y: 6
-        width: 102
-        height: 104
+        x: 1508
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,7 +461,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6f05f76e587c6594aa274e6064a88806
     internalID: 0
     vertices: []
     indices: 

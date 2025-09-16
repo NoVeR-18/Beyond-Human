@@ -27,12 +27,12 @@ public class EquipmentSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
         if (equipped != null)
         {
             icon.sprite = equipped.icon;
-            icon.enabled = true;
+            icon.color = new Color(1f, 1f, 1f, 1f);
         }
         else
         {
             icon.sprite = null;
-            icon.enabled = false;
+            icon.color = new Color(1f, 1f, 1f, 0f);
         }
 
         slotLabel.text = slotType.ToString();
@@ -48,6 +48,7 @@ public class EquipmentSlotUI : MonoBehaviour, IDropHandler, IPointerClickHandler
                 Inventory.Instance.Add(equipped, 1);
             }
             ownerCharacter.Equip(eq);
+            PartyManager.Instance.SyncEquipmentWithCharacter(ownerCharacter);
             Inventory.Instance.Remove(eq, 1);
             equipped = eq;
             UpdateUI();

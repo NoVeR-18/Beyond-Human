@@ -118,6 +118,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -127,7 +140,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
+        width: 32
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,9 +159,9 @@ TextureImporter:
       name: Effect 9_1
       rect:
         serializedVersion: 2
-        x: 70
+        x: 32
         y: 0
-        width: 20
+        width: 32
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,9 +180,9 @@ TextureImporter:
       name: Effect 9_2
       rect:
         serializedVersion: 2
-        x: 107
+        x: 64
         y: 0
-        width: 10
+        width: 32
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,9 +201,9 @@ TextureImporter:
       name: Effect 9_3
       rect:
         serializedVersion: 2
-        x: 141
+        x: 96
         y: 0
-        width: 36
+        width: 32
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,10 +218,52 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Effect 9_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24f593e8c89e14a995e135ee91ac40
+      internalID: 915459790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect 9_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a04635b5afdb346877336251303ead
+      internalID: -1104603302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0d1f778890c08c349b50ae88a2679754
     internalID: 0
     vertices: []
     indices: 
@@ -220,6 +275,8 @@ TextureImporter:
       Effect 9_1: 3986462374702001226
       Effect 9_2: -8602214741877170734
       Effect 9_3: -3208224066979766867
+      Effect 9_4: 915459790
+      Effect 9_5: -1104603302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

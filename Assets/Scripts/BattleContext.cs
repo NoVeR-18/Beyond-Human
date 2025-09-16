@@ -19,6 +19,9 @@ public class BattleContext : MonoBehaviour
     private int teamIndex = 1;
 
     private bool joining = false;
+
+    [SerializeField] private bool autoStartForTesting = false;
+    public List<BattleParticipantData> battleParticipantDatas = new List<BattleParticipantData>();
     private void Awake()
     {
         if (Instance != null)
@@ -29,6 +32,14 @@ public class BattleContext : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        if (autoStartForTesting)
+        {
+            foreach (var data in battleParticipantDatas)
+            {
+                Charackters.Add(data);
+            }
+
+        }
     }
 
 
@@ -163,7 +174,6 @@ public class BattleParticipantData
 {
     public BattleCharacter battleCharacter;
     [HideInInspector] public string nameID;
-    [HideInInspector]
     public BattleTeam team;
     public CharacterStats stats;
     public List<AbilityData> abilities = new();

@@ -208,6 +208,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -215,10 +228,10 @@ TextureImporter:
       name: Effect 7_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 18
-        width: 79
-        height: 27
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +249,10 @@ TextureImporter:
       name: Effect 7_1
       rect:
         serializedVersion: 2
-        x: 147
-        y: 15
-        width: 26
-        height: 32
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +270,10 @@ TextureImporter:
       name: Effect 7_2
       rect:
         serializedVersion: 2
-        x: 209
-        y: 14
-        width: 30
-        height: 34
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +291,10 @@ TextureImporter:
       name: Effect 7_3
       rect:
         serializedVersion: 2
-        x: 272
-        y: 13
-        width: 32
-        height: 27
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +312,10 @@ TextureImporter:
       name: Effect 7_4
       rect:
         serializedVersion: 2
-        x: 274
-        y: 36
-        width: 9
-        height: 11
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +333,10 @@ TextureImporter:
       name: Effect 7_5
       rect:
         serializedVersion: 2
-        x: 290
-        y: 40
-        width: 9
-        height: 7
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +354,10 @@ TextureImporter:
       name: Effect 7_6
       rect:
         serializedVersion: 2
-        x: 473
-        y: 9
-        width: 15
-        height: 31
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +375,10 @@ TextureImporter:
       name: Effect 7_7
       rect:
         serializedVersion: 2
-        x: 784
-        y: 22
-        width: 17
-        height: 18
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +396,10 @@ TextureImporter:
       name: Effect 7_8
       rect:
         serializedVersion: 2
-        x: 801
-        y: 23
-        width: 13
-        height: 17
+        x: 512
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +417,10 @@ TextureImporter:
       name: Effect 7_9
       rect:
         serializedVersion: 2
-        x: 850
-        y: 29
-        width: 15
-        height: 12
+        x: 576
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +438,10 @@ TextureImporter:
       name: Effect 7_10
       rect:
         serializedVersion: 2
-        x: 865
-        y: 15
-        width: 14
-        height: 26
+        x: 640
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,10 +459,10 @@ TextureImporter:
       name: Effect 7_11
       rect:
         serializedVersion: 2
-        x: 913
-        y: 23
-        width: 16
-        height: 20
+        x: 704
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,10 +480,10 @@ TextureImporter:
       name: Effect 7_12
       rect:
         serializedVersion: 2
-        x: 930
-        y: 15
-        width: 13
-        height: 26
+        x: 768
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,10 +501,10 @@ TextureImporter:
       name: Effect 7_13
       rect:
         serializedVersion: 2
-        x: 977
-        y: 31
-        width: 16
-        height: 12
+        x: 832
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +522,10 @@ TextureImporter:
       name: Effect 7_14
       rect:
         serializedVersion: 2
-        x: 999
-        y: 18
-        width: 8
-        height: 23
+        x: 896
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,397 +543,19 @@ TextureImporter:
       name: Effect 7_15
       rect:
         serializedVersion: 2
-        x: 343
-        y: 12
-        width: 18
-        height: 27
+        x: 960
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2452e0b8dadde7160800000000000000
+      spriteID: 99f77499877fd27418aafdf224657a2b
       internalID: 7025296206176593218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_16
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 11
-        width: 18
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fc58953cdcd4f150800000000000000
-      internalID: 5905587849739656435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_17
-      rect:
-        serializedVersion: 2
-        x: 525
-        y: 14
-        width: 39
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 74e3b388b58e89bf0800000000000000
-      internalID: -317248293904368057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_18
-      rect:
-        serializedVersion: 2
-        x: 586
-        y: 14
-        width: 46
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb224950b611e3230800000000000000
-      internalID: 3620350301805224635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_19
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 14
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05633a860c0593ae0800000000000000
-      internalID: -1569134207842437552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_20
-      rect:
-        serializedVersion: 2
-        x: 663
-        y: 15
-        width: 18
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfc8cba17f365d900800000000000000
-      internalID: 708582429337357563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_21
-      rect:
-        serializedVersion: 2
-        x: 680
-        y: 14
-        width: 16
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 635f80c0d83688630800000000000000
-      internalID: 3929500132324209974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_22
-      rect:
-        serializedVersion: 2
-        x: 714
-        y: 14
-        width: 35
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8852f2b27b390230800000000000000
-      internalID: 3605478340501330061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_23
-      rect:
-        serializedVersion: 2
-        x: 750
-        y: 14
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9b235a36de18a9e0800000000000000
-      internalID: -1610002961334588517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_24
-      rect:
-        serializedVersion: 2
-        x: 777
-        y: 14
-        width: 12
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1cc2679af9b77fb0800000000000000
-      internalID: -4650043604303950817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_25
-      rect:
-        serializedVersion: 2
-        x: 789
-        y: 15
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ec80d6266ff52f70800000000000000
-      internalID: 9162009831158090981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_26
-      rect:
-        serializedVersion: 2
-        x: 803
-        y: 18
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a903cd678c518430800000000000000
-      internalID: 3783406898699766176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_27
-      rect:
-        serializedVersion: 2
-        x: 814
-        y: 19
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91fabeb7409a59530800000000000000
-      internalID: 3861178092264075033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_28
-      rect:
-        serializedVersion: 2
-        x: 817
-        y: 14
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b07e0f2c39d651020800000000000000
-      internalID: 2311874465122805515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_29
-      rect:
-        serializedVersion: 2
-        x: 841
-        y: 20
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aff2044ed68e3b8d0800000000000000
-      internalID: -2831664182007418886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_30
-      rect:
-        serializedVersion: 2
-        x: 847
-        y: 14
-        width: 18
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b32781624649dbab0800000000000000
-      internalID: -4990669654199864773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_31
-      rect:
-        serializedVersion: 2
-        x: 882
-        y: 14
-        width: 6
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8082222c812f93810800000000000000
-      internalID: 1745692518732933128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_32
-      rect:
-        serializedVersion: 2
-        x: 919
-        y: 15
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 633d111df3ae5c8d0800000000000000
-      internalID: -2826595631293672650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Effect 7_33
-      rect:
-        serializedVersion: 2
-        x: 977
-        y: 15
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85acb7dd990f54c00800000000000000
-      internalID: 884377445484710488
       vertices: []
       indices: 
       edges: []
@@ -928,7 +563,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7c3248a8205137d419ecfbe558e03309
     internalID: 0
     vertices: []
     indices: 
@@ -944,26 +579,8 @@ TextureImporter:
       Effect 7_13: 7116038134486256177
       Effect 7_14: 1667923672733576013
       Effect 7_15: 7025296206176593218
-      Effect 7_16: 5905587849739656435
-      Effect 7_17: -317248293904368057
-      Effect 7_18: 3620350301805224635
-      Effect 7_19: -1569134207842437552
       Effect 7_2: -230486768809504895
-      Effect 7_20: 708582429337357563
-      Effect 7_21: 3929500132324209974
-      Effect 7_22: 3605478340501330061
-      Effect 7_23: -1610002961334588517
-      Effect 7_24: -4650043604303950817
-      Effect 7_25: 9162009831158090981
-      Effect 7_26: 3783406898699766176
-      Effect 7_27: 3861178092264075033
-      Effect 7_28: 2311874465122805515
-      Effect 7_29: -2831664182007418886
       Effect 7_3: 423580017706676722
-      Effect 7_30: -4990669654199864773
-      Effect 7_31: 1745692518732933128
-      Effect 7_32: -2826595631293672650
-      Effect 7_33: 884377445484710488
       Effect 7_4: 1105811268365275117
       Effect 7_5: 998427643206148781
       Effect 7_6: -1120810854549363519

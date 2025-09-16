@@ -23,7 +23,6 @@ public class PartyWindow : UIWindow
         content.SetActive(true);
         ShowGearMode();
         UpdateUI();
-        var v = PartyManager.Instance.CharacterToBattleParticiant();
     }
 
     public override void Hide()

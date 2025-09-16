@@ -21,10 +21,32 @@ public class Equipment : Item
     public int holyResistance;
     public int magicResistance;
 
+    [Header("For Animation")]
+    public EquipmentSprites equipmentSprites;
+
     public override void Use()
     {
     }
 
 }
+[System.Serializable]
+public class EquipmentSprites
+{
+    public Sprite front;
+    public Sprite side;
+    public Sprite back;
 
-public enum EquipmentSlot { Helmet, Chest, Pants, Shoes, Gloves, Amulet }
+    public Sprite GetSprite(Direction dir)
+    {
+        return dir switch
+        {
+            Direction.Front => front,
+            Direction.Side => side,
+            Direction.Back => back,
+            _ => front
+        };
+    }
+}
+
+public enum Direction { Front, Side, Back }
+public enum EquipmentSlot { Helmet, Bib, Pants, Shoes, Gloves, Amulet }

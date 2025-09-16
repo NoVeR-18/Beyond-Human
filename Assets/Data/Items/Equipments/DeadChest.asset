@@ -13,9 +13,24 @@ MonoBehaviour:
   m_Name: DeadChest
   m_EditorClassIdentifier: 
   itemName: Dead Chest
-  icon: {fileID: -855298285791758126, guid: 562ca516c0d886041b84a0d0d9ef322a, type: 3}
+  icon: {fileID: 6160410337668943629, guid: 6820b660292aaa643b731ddc8d9d7713, type: 3}
   showInInventory: 1
   maxStack: 5
-  equipSlot: 1
-  armorModifier: 2
-  damageModifier: 0
+  equipSlot: 2
+  healthPoints: 0
+  airResistance: 0
+  waterResistance: 0
+  fireResistance: 0
+  earthResistance: 0
+  electricResistance: 0
+  iceResistance: 0
+  poisonResistance: 0
+  bluntResistance: 0
+  piercingResistance: 0
+  curseResistance: 0
+  holyResistance: 0
+  magicResistance: 0
+  equipmentSprites:
+    front: {fileID: 6160410337668943629, guid: 6820b660292aaa643b731ddc8d9d7713, type: 3}
+    side: {fileID: -2965152782375315990, guid: b6f0c82188b0615468596304dc73148e, type: 3}
+    back: {fileID: 4636534962178757317, guid: 75391077a6c848d4db3810608d99e8f2, type: 3}

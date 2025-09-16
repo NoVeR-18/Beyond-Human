@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Fire
   m_EditorClassIdentifier: 
   abilityName: Fire
+  tier: 0
   icon: {fileID: 534960623560536297, guid: 180a1375982285c44a85ec327a2472c7, type: 3}
   castTime: 0
   cooldown: 1
+  shieldAmount: 0
   damages:
   - damageType: 0
     baseDamage: 5
@@ -25,3 +27,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae9426067770fd54d9a699e8a6f70c3a, type: 2}
   summonPrefab: {fileID: 0}
   animationTrigger: Attack
+  effectPrefab: {fileID: 6405428142264817013, guid: 0ac118772c9f496469ac5279244fb491, type: 3}
+  attachToTarget: 1
+  effectMoveSpeed: 10

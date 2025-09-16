@@ -15,13 +15,14 @@ public class PlayerController : MonoBehaviour, IFactionMember
     private SpriteRenderer spriteRenderer;
     public BattleParticipantData battleParticipantData;
     private Vector2 movement;
+    public EquipmentManager playerEquipmentManager;
 
     // === Лестница ===
     private bool onStairs = false;
     private float zStart = 0f;
     private float zEnd = 1f;
     private Vector2 stairDirection = Vector2.zero; // ↗ направление лестницы
-
+    private Direction currentDirection = Direction.Front;
 
     private FactionData factionData;
     public FactionData FactionData => factionData;
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour, IFactionMember
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        UpdateDirection(movement);
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (emitter == null)
         {
@@ -92,6 +94,9 @@ public class PlayerController : MonoBehaviour, IFactionMember
         {
             animator.SetFloat("MoveX", movement.x);
             animator.SetFloat("MoveY", movement.y);
+
+
+            UpdateDirection(movement);
         }
 
         Flip();
@@ -105,7 +110,28 @@ public class PlayerController : MonoBehaviour, IFactionMember
             spriteRenderer.sortingOrder = Mathf.RoundToInt(z * 10);
         }
     }
+    private void UpdateDirection(Vector2 move)
+    {
+        Direction newDir;
 
+        if (Mathf.Abs(move.y) > Mathf.Abs(move.x))
+        {
+            if (move.y > 0)
+                newDir = Direction.Back;
+            else
+                newDir = Direction.Front;
+        }
+        else
+        {
+            newDir = Direction.Side;
+        }
+
+        if (newDir != currentDirection)
+        {
+            currentDirection = newDir;
+            playerEquipmentManager?.SetDirection(currentDirection);
+        }
+    }
 
 
     void FixedUpdate()

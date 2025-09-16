@@ -20,4 +20,7 @@ public class Weapon : Item
     {
 
     }
+
+    [Header("For animation")]
+    public EquipmentSprites equipmentSprites;
 }

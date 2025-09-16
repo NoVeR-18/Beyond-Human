@@ -262,6 +262,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -269,10 +282,10 @@ TextureImporter:
       name: dark bomb 79x65_0
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 30
-        width: 48
-        height: 28
+        x: 0
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +303,10 @@ TextureImporter:
       name: dark bomb 79x65_1
       rect:
         serializedVersion: 2
-        x: 1126
-        y: 35
-        width: 34
-        height: 24
+        x: 79
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +324,10 @@ TextureImporter:
       name: dark bomb 79x65_2
       rect:
         serializedVersion: 2
-        x: 1206
-        y: 36
-        width: 42
-        height: 22
+        x: 158
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,9 +345,9 @@ TextureImporter:
       name: dark bomb 79x65_3
       rect:
         serializedVersion: 2
-        x: 1507
+        x: 237
         y: 0
-        width: 104
+        width: 79
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -353,10 +366,10 @@ TextureImporter:
       name: dark bomb 79x65_4
       rect:
         serializedVersion: 2
-        x: 1599
-        y: 58
-        width: 12
-        height: 7
+        x: 395
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +387,10 @@ TextureImporter:
       name: dark bomb 79x65_5
       rect:
         serializedVersion: 2
-        x: 1624
-        y: 4
-        width: 33
-        height: 61
+        x: 474
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,9 +408,9 @@ TextureImporter:
       name: dark bomb 79x65_6
       rect:
         serializedVersion: 2
-        x: 1660
+        x: 553
         y: 0
-        width: 311
+        width: 79
         height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -416,10 +429,10 @@ TextureImporter:
       name: dark bomb 79x65_7
       rect:
         serializedVersion: 2
-        x: 656
-        y: 11
-        width: 42
-        height: 40
+        x: 632
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +450,10 @@ TextureImporter:
       name: dark bomb 79x65_8
       rect:
         serializedVersion: 2
-        x: 735
-        y: 38
-        width: 18
-        height: 16
+        x: 711
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +471,10 @@ TextureImporter:
       name: dark bomb 79x65_9
       rect:
         serializedVersion: 2
-        x: 746
-        y: 17
-        width: 32
-        height: 33
+        x: 790
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +492,10 @@ TextureImporter:
       name: dark bomb 79x65_10
       rect:
         serializedVersion: 2
-        x: 814
-        y: 46
-        width: 9
-        height: 7
+        x: 869
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +513,10 @@ TextureImporter:
       name: dark bomb 79x65_11
       rect:
         serializedVersion: 2
-        x: 823
-        y: 47
-        width: 9
-        height: 8
+        x: 948
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +534,10 @@ TextureImporter:
       name: dark bomb 79x65_12
       rect:
         serializedVersion: 2
-        x: 831
-        y: 46
-        width: 7
-        height: 6
+        x: 1027
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,10 +555,10 @@ TextureImporter:
       name: dark bomb 79x65_13
       rect:
         serializedVersion: 2
-        x: 838
-        y: 46
-        width: 6
-        height: 6
+        x: 1106
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -563,10 +576,10 @@ TextureImporter:
       name: dark bomb 79x65_14
       rect:
         serializedVersion: 2
-        x: 843
-        y: 35
-        width: 10
-        height: 14
+        x: 1185
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,10 +597,10 @@ TextureImporter:
       name: dark bomb 79x65_15
       rect:
         serializedVersion: 2
-        x: 889
-        y: 22
-        width: 42
-        height: 34
+        x: 1264
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -605,10 +618,10 @@ TextureImporter:
       name: dark bomb 79x65_16
       rect:
         serializedVersion: 2
-        x: 968
-        y: 22
-        width: 48
-        height: 35
+        x: 1343
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,10 +639,10 @@ TextureImporter:
       name: dark bomb 79x65_17
       rect:
         serializedVersion: 2
-        x: 1153
-        y: 29
-        width: 16
-        height: 20
+        x: 1422
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -647,10 +660,10 @@ TextureImporter:
       name: dark bomb 79x65_18
       rect:
         serializedVersion: 2
-        x: 733
-        y: 24
-        width: 16
-        height: 20
+        x: 1501
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,10 +681,10 @@ TextureImporter:
       name: dark bomb 79x65_19
       rect:
         serializedVersion: 2
-        x: 811
-        y: 26
-        width: 16
-        height: 19
+        x: 1580
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -689,10 +702,10 @@ TextureImporter:
       name: dark bomb 79x65_20
       rect:
         serializedVersion: 2
-        x: 828
-        y: 32
-        width: 8
-        height: 10
+        x: 1659
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,10 +723,10 @@ TextureImporter:
       name: dark bomb 79x65_21
       rect:
         serializedVersion: 2
-        x: 837
-        y: 30
-        width: 8
-        height: 12
+        x: 1738
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -731,10 +744,10 @@ TextureImporter:
       name: dark bomb 79x65_22
       rect:
         serializedVersion: 2
-        x: 846
-        y: 29
-        width: 6
-        height: 7
+        x: 1817
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -752,10 +765,10 @@ TextureImporter:
       name: dark bomb 79x65_23
       rect:
         serializedVersion: 2
-        x: 851
-        y: 29
-        width: 7
-        height: 8
+        x: 1896
+        y: 0
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,598 +782,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_24
-      rect:
-        serializedVersion: 2
-        x: 918
-        y: 27
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64687b2eeb1374ba0800000000000000
-      internalID: -6104856073960192442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_25
-      rect:
-        serializedVersion: 2
-        x: 931
-        y: 32
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f57220d61b886f2f0800000000000000
-      internalID: -939413176640723105
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_26
-      rect:
-        serializedVersion: 2
-        x: 1055
-        y: 23
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c25532554b359d0a0800000000000000
-      internalID: -6856356923707271892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_27
-      rect:
-        serializedVersion: 2
-        x: 1133
-        y: 24
-        width: 17
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67e7a1de540052380800000000000000
-      internalID: -8996784380272017802
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_28
-      rect:
-        serializedVersion: 2
-        x: 1212
-        y: 24
-        width: 17
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e4cd394d119014830800000000000000
-      internalID: 4053531111795711054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_29
-      rect:
-        serializedVersion: 2
-        x: 1233
-        y: 29
-        width: 8
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd56558d1fd80e850800000000000000
-      internalID: 6404274739976955356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_30
-      rect:
-        serializedVersion: 2
-        x: 1292
-        y: 27
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 74a7c27c1cc1086c0800000000000000
-      internalID: -4143280038585009593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_31
-      rect:
-        serializedVersion: 2
-        x: 1304
-        y: 38
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58ba29e18a82037c0800000000000000
-      internalID: -4093727358747235451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_32
-      rect:
-        serializedVersion: 2
-        x: 1312
-        y: 29
-        width: 7
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c96c18fec5fbbfb40800000000000000
-      internalID: 5475180177875125916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_33
-      rect:
-        serializedVersion: 2
-        x: 1372
-        y: 27
-        width: 24
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70b20dce020639180800000000000000
-      internalID: -9109831926712095993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_34
-      rect:
-        serializedVersion: 2
-        x: 1390
-        y: 29
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69b8231883c0aeb00800000000000000
-      internalID: 858512115792776086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_35
-      rect:
-        serializedVersion: 2
-        x: 1448
-        y: 22
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15edf61e5ad2ddc60800000000000000
-      internalID: 7844476316424330833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_36
-      rect:
-        serializedVersion: 2
-        x: 1465
-        y: 29
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95f2a29cb5b362640800000000000000
-      internalID: 5054792897173008217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_37
-      rect:
-        serializedVersion: 2
-        x: 1607
-        y: 35
-        width: 12
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b19f6ca8cde1d070800000000000000
-      internalID: 8129540248522690996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_38
-      rect:
-        serializedVersion: 2
-        x: 820
-        y: 27
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b17fadc18ac26d70800000000000000
-      internalID: 9035006461309055414
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_39
-      rect:
-        serializedVersion: 2
-        x: 827
-        y: 21
-        width: 18
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed266b6b7be88adb0800000000000000
-      internalID: -4780414084758215970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_40
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 24
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 456570576791b1960800000000000000
-      internalID: 7573675194913871444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_41
-      rect:
-        serializedVersion: 2
-        x: 895
-        y: 27
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef8232022332cda10800000000000000
-      internalID: 1935460638056982782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_42
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 27
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78bf240a9b181c010800000000000000
-      internalID: 1207388809369680775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_43
-      rect:
-        serializedVersion: 2
-        x: 978
-        y: 28
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 65e43730c4c827740800000000000000
-      internalID: 5148331582141189718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_44
-      rect:
-        serializedVersion: 2
-        x: 1304
-        y: 24
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2cf0a286524759160800000000000000
-      internalID: 7031654097219096514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_45
-      rect:
-        serializedVersion: 2
-        x: 1380
-        y: 22
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e3975d6060357c70800000000000000
-      internalID: 8968127423687660512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_46
-      rect:
-        serializedVersion: 2
-        x: 1605
-        y: 23
-        width: 15
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 669356aa7057484f0800000000000000
-      internalID: -827407755745347226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_47
-      rect:
-        serializedVersion: 2
-        x: 826
-        y: 20
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf2740c487ffc8c00800000000000000
-      internalID: 904378517331145467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_48
-      rect:
-        serializedVersion: 2
-        x: 906
-        y: 21
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23c269add14a684f0800000000000000
-      internalID: -826793033447625678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_49
-      rect:
-        serializedVersion: 2
-        x: 1588
-        y: 13
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 566c6489ee5fc4f70800000000000000
-      internalID: 9172976946152654437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_50
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 6
-        width: 399
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a528c215ccbc1710800000000000000
-      internalID: 1665413516829926821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark bomb 79x65_51
-      rect:
-        serializedVersion: 2
-        x: 513
-        y: 6
-        width: 86
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b160943bf0e078f00800000000000000
-      internalID: 1118878493020063259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f9ef0853e2486a3458ff96e3f11241d8
     internalID: 0
     vertices: []
     indices: 
@@ -1385,37 +810,9 @@ TextureImporter:
       dark bomb 79x65_21: 794054264629427458
       dark bomb 79x65_22: 4448315654238555094
       dark bomb 79x65_23: -3186754457280437099
-      dark bomb 79x65_24: -6104856073960192442
-      dark bomb 79x65_25: -939413176640723105
-      dark bomb 79x65_26: -6856356923707271892
-      dark bomb 79x65_27: -8996784380272017802
-      dark bomb 79x65_28: 4053531111795711054
-      dark bomb 79x65_29: 6404274739976955356
       dark bomb 79x65_3: -8998301505827435513
-      dark bomb 79x65_30: -4143280038585009593
-      dark bomb 79x65_31: -4093727358747235451
-      dark bomb 79x65_32: 5475180177875125916
-      dark bomb 79x65_33: -9109831926712095993
-      dark bomb 79x65_34: 858512115792776086
-      dark bomb 79x65_35: 7844476316424330833
-      dark bomb 79x65_36: 5054792897173008217
-      dark bomb 79x65_37: 8129540248522690996
-      dark bomb 79x65_38: 9035006461309055414
-      dark bomb 79x65_39: -4780414084758215970
       dark bomb 79x65_4: 6469632036095833184
-      dark bomb 79x65_40: 7573675194913871444
-      dark bomb 79x65_41: 1935460638056982782
-      dark bomb 79x65_42: 1207388809369680775
-      dark bomb 79x65_43: 5148331582141189718
-      dark bomb 79x65_44: 7031654097219096514
-      dark bomb 79x65_45: 8968127423687660512
-      dark bomb 79x65_46: -827407755745347226
-      dark bomb 79x65_47: 904378517331145467
-      dark bomb 79x65_48: -826793033447625678
-      dark bomb 79x65_49: 9172976946152654437
       dark bomb 79x65_5: 4825641253667635311
-      dark bomb 79x65_50: 1665413516829926821
-      dark bomb 79x65_51: 1118878493020063259
       dark bomb 79x65_6: -7951931200566597180
       dark bomb 79x65_7: -1168925294466324628
       dark bomb 79x65_8: -7047331004317207841

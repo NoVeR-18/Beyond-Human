@@ -118,6 +118,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,10 +138,10 @@ TextureImporter:
       name: hit 3_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 17
-        width: 22
-        height: 28
+        x: 0
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +159,10 @@ TextureImporter:
       name: hit 3_1
       rect:
         serializedVersion: 2
-        x: 110
-        y: 28
-        width: 11
-        height: 8
+        x: 82
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +180,10 @@ TextureImporter:
       name: hit 3_2
       rect:
         serializedVersion: 2
-        x: 111
-        y: 14
-        width: 13
-        height: 9
+        x: 164
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,31 +197,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: hit 3_3
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 10
-        width: 83
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 781dfaab8b47a33a0800000000000000
-      internalID: -6684902360123190905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e13d11e5ea46f7b4585b61461d41f35d
     internalID: 0
     vertices: []
     indices: 
@@ -219,7 +211,6 @@ TextureImporter:
       hit 3_0: 6450605946063965566
       hit 3_1: -6470804503686797916
       hit 3_2: 3487268081891486360
-      hit 3_3: -6684902360123190905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

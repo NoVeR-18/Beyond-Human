@@ -139,6 +139,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -146,10 +159,10 @@ TextureImporter:
       name: Electric Hit 3_0
       rect:
         serializedVersion: 2
-        x: 193
-        y: 18
-        width: 24
-        height: 24
+        x: 0
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +180,10 @@ TextureImporter:
       name: Electric Hit 3_1
       rect:
         serializedVersion: 2
-        x: 274
-        y: 17
-        width: 26
-        height: 26
+        x: 82
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +201,10 @@ TextureImporter:
       name: Electric Hit 3_2
       rect:
         serializedVersion: 2
-        x: 355
-        y: 16
-        width: 28
-        height: 28
+        x: 164
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +222,10 @@ TextureImporter:
       name: Electric Hit 3_3
       rect:
         serializedVersion: 2
-        x: 436
-        y: 20
-        width: 14
-        height: 20
+        x: 246
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +243,10 @@ TextureImporter:
       name: Electric Hit 3_4
       rect:
         serializedVersion: 2
-        x: 444
-        y: 37
-        width: 19
-        height: 9
+        x: 328
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +264,10 @@ TextureImporter:
       name: Electric Hit 3_5
       rect:
         serializedVersion: 2
-        x: 444
-        y: 15
-        width: 22
-        height: 22
+        x: 410
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +285,10 @@ TextureImporter:
       name: Electric Hit 3_6
       rect:
         serializedVersion: 2
-        x: 450
-        y: 36
-        width: 6
-        height: 6
+        x: 492
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +306,10 @@ TextureImporter:
       name: Electric Hit 3_7
       rect:
         serializedVersion: 2
-        x: 454
-        y: 33
-        width: 6
-        height: 6
+        x: 574
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,73 +323,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Electric Hit 3_8
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 15
-        width: 112
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cce68a035371065c0800000000000000
-      internalID: -4224350933256474932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Electric Hit 3_9
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 26
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0ac9d4677cbfa7e0800000000000000
-      internalID: -1751974509044708850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Electric Hit 3_10
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 23
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5de426e68db214470800000000000000
-      internalID: 8377024990450699989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0217bc0f90d0eb649ba1252342b7b52c
     internalID: 0
     vertices: []
     indices: 
@@ -386,15 +336,12 @@ TextureImporter:
     nameFileIdTable:
       Electric Hit 3_0: -532920208944238326
       Electric Hit 3_1: 1379000831087081295
-      Electric Hit 3_10: 8377024990450699989
       Electric Hit 3_2: -460973874837589935
       Electric Hit 3_3: 7662635829251585083
       Electric Hit 3_4: 4593308541524810711
       Electric Hit 3_5: 6967861880861089663
       Electric Hit 3_6: -6470149906293577747
       Electric Hit 3_7: 1618095191390397499
-      Electric Hit 3_8: -4224350933256474932
-      Electric Hit 3_9: -1751974509044708850
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

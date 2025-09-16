@@ -124,6 +124,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -131,10 +144,10 @@ TextureImporter:
       name: Sparks Hit 2_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 17
-        width: 22
-        height: 28
+        x: 0
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +165,10 @@ TextureImporter:
       name: Sparks Hit 2_1
       rect:
         serializedVersion: 2
-        x: 108
-        y: 14
-        width: 16
-        height: 12
+        x: 82
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +186,10 @@ TextureImporter:
       name: Sparks Hit 2_2
       rect:
         serializedVersion: 2
-        x: 109
-        y: 35
-        width: 10
-        height: 8
+        x: 164
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +207,10 @@ TextureImporter:
       name: Sparks Hit 2_3
       rect:
         serializedVersion: 2
-        x: 110
-        y: 28
-        width: 11
-        height: 8
+        x: 246
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +228,10 @@ TextureImporter:
       name: Sparks Hit 2_4
       rect:
         serializedVersion: 2
-        x: 114
-        y: 34
-        width: 10
-        height: 16
+        x: 328
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,31 +245,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Sparks Hit 2_5
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 10
-        width: 169
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 729126a3fe9acd560800000000000000
-      internalID: 7339928337648851239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b7bd2324b57abe24fa9e2f485a7569a8
     internalID: 0
     vertices: []
     indices: 
@@ -269,7 +261,6 @@ TextureImporter:
       Sparks Hit 2_2: 4380014861342442200
       Sparks Hit 2_3: 7190437485713236425
       Sparks Hit 2_4: -224383154490226687
-      Sparks Hit 2_5: 7339928337648851239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

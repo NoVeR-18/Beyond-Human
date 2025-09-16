@@ -31,8 +31,6 @@ namespace BattleSystem
 
         public void UpdateCooldowns(Dictionary<AbilityData, float> cooldowns, BattleCharacter owner)
         {
-            List<AbilitySlotUI> toRemove = new();
-
             foreach (var pair in slots)
             {
                 var slot = pair.Key;

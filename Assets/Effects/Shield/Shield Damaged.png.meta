@@ -148,6 +148,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -155,10 +168,10 @@ TextureImporter:
       name: Shield Damaged_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 5
-        width: 105
-        height: 108
+        x: 0
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +189,10 @@ TextureImporter:
       name: Shield Damaged_1
       rect:
         serializedVersion: 2
-        x: 119
-        y: 2
-        width: 111
-        height: 112
+        x: 116
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +210,10 @@ TextureImporter:
       name: Shield Damaged_2
       rect:
         serializedVersion: 2
-        x: 235
-        y: 5
-        width: 110
-        height: 108
+        x: 232
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +231,10 @@ TextureImporter:
       name: Shield Damaged_3
       rect:
         serializedVersion: 2
-        x: 351
-        y: 3
-        width: 108
-        height: 110
+        x: 348
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +252,10 @@ TextureImporter:
       name: Shield Damaged_4
       rect:
         serializedVersion: 2
-        x: 470
-        y: 3
-        width: 103
-        height: 110
+        x: 464
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +273,10 @@ TextureImporter:
       name: Shield Damaged_5
       rect:
         serializedVersion: 2
-        x: 587
-        y: 3
-        width: 102
-        height: 110
+        x: 580
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +294,10 @@ TextureImporter:
       name: Shield Damaged_6
       rect:
         serializedVersion: 2
-        x: 703
-        y: 3
-        width: 102
-        height: 107
+        x: 696
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +315,10 @@ TextureImporter:
       name: Shield Damaged_7
       rect:
         serializedVersion: 2
-        x: 819
-        y: 5
-        width: 102
-        height: 105
+        x: 812
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +336,10 @@ TextureImporter:
       name: Shield Damaged_8
       rect:
         serializedVersion: 2
-        x: 935
-        y: 6
-        width: 102
-        height: 104
+        x: 928
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +357,10 @@ TextureImporter:
       name: Shield Damaged_9
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 6
-        width: 102
-        height: 104
+        x: 1044
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +378,10 @@ TextureImporter:
       name: Shield Damaged_10
       rect:
         serializedVersion: 2
-        x: 1167
-        y: 6
-        width: 102
-        height: 104
+        x: 1160
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +399,10 @@ TextureImporter:
       name: Shield Damaged_11
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 6
-        width: 102
-        height: 104
+        x: 1276
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +420,10 @@ TextureImporter:
       name: Shield Damaged_12
       rect:
         serializedVersion: 2
-        x: 1399
-        y: 6
-        width: 102
-        height: 104
+        x: 1392
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +441,10 @@ TextureImporter:
       name: Shield Damaged_13
       rect:
         serializedVersion: 2
-        x: 1515
-        y: 6
-        width: 102
-        height: 104
+        x: 1508
+        y: 0
+        width: 116
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,7 +461,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bf96b084a29dc4d4ebd5daf244dfa26b
     internalID: 0
     vertices: []
     indices: 

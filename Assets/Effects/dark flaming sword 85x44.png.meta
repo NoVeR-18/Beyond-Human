@@ -208,6 +208,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -215,10 +228,10 @@ TextureImporter:
       name: dark flaming sword 85x44_0
       rect:
         serializedVersion: 2
-        x: 256
+        x: 0
         y: 0
-        width: 16
-        height: 37
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,18 +249,18 @@ TextureImporter:
       name: dark flaming sword 85x44_1
       rect:
         serializedVersion: 2
-        x: 345
+        x: 170
         y: 0
-        width: 39
+        width: 85
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: accd493ca546704b0800000000000000
+      spriteID: 6a3971d8ffe9c5d419386c661ccac154
       internalID: -5474296481054401334
       vertices: []
       indices: 
@@ -257,18 +270,18 @@ TextureImporter:
       name: dark flaming sword 85x44_2
       rect:
         serializedVersion: 2
-        x: 438
-        y: 11
-        width: 15
-        height: 25
+        x: 255
+        y: 0
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c366825fb0e2fe620800000000000000
+      spriteID: 480b7324b0501a441bc37de461d21ded
       internalID: 2805511721767691836
       vertices: []
       indices: 
@@ -278,18 +291,18 @@ TextureImporter:
       name: dark flaming sword 85x44_3
       rect:
         serializedVersion: 2
-        x: 522
+        x: 340
         y: 0
-        width: 37
-        height: 29
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f236afdd9f19a0060800000000000000
+      spriteID: 849649abc0eccd146a6b614c10c1de1b
       internalID: 6920504279765246767
       vertices: []
       indices: 
@@ -299,18 +312,18 @@ TextureImporter:
       name: dark flaming sword 85x44_4
       rect:
         serializedVersion: 2
-        x: 549
+        x: 425
         y: 0
-        width: 41
+        width: 85
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8b08022234d303cd0800000000000000
+      spriteID: 9391caf7516d4df4c959808588fc505c
       internalID: -2580495227938635592
       vertices: []
       indices: 
@@ -320,18 +333,18 @@ TextureImporter:
       name: dark flaming sword 85x44_5
       rect:
         serializedVersion: 2
-        x: 614
+        x: 510
         y: 0
-        width: 16
-        height: 25
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1c6d4d7764080710800000000000000
+      spriteID: 6cff54e0e2791a14081e1b1de0385ca6
       internalID: 1659581305216396316
       vertices: []
       indices: 
@@ -341,18 +354,18 @@ TextureImporter:
       name: dark flaming sword 85x44_6
       rect:
         serializedVersion: 2
-        x: 629
+        x: 595
         y: 0
-        width: 27
-        height: 29
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8e2913e8e1b78d420800000000000000
+      spriteID: e8b7164738873374fa6b28479143aae8
       internalID: 2655007351499756264
       vertices: []
       indices: 
@@ -362,19 +375,19 @@ TextureImporter:
       name: dark flaming sword 85x44_7
       rect:
         serializedVersion: 2
-        x: 652
-        y: 12
-        width: 9
-        height: 8
+        x: 680
+        y: 0
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8987a4fe401e11e30800000000000000
-      internalID: 4472603316266367128
+      spriteID: ddbd5c9bdf7c5524aa4b404143ecf35c
+      internalID: -1709458062
       vertices: []
       indices: 
       edges: []
@@ -383,19 +396,19 @@ TextureImporter:
       name: dark flaming sword 85x44_8
       rect:
         serializedVersion: 2
-        x: 660
-        y: 10
-        width: 6
-        height: 6
+        x: 765
+        y: 0
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 457af57271720d8a0800000000000000
-      internalID: -6282478499783530668
+      spriteID: f289a78e2febbb3498908264c723ee03
+      internalID: 250990520
       vertices: []
       indices: 
       edges: []
@@ -404,19 +417,19 @@ TextureImporter:
       name: dark flaming sword 85x44_9
       rect:
         serializedVersion: 2
-        x: 661
-        y: 14
-        width: 6
-        height: 6
+        x: 850
+        y: 0
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6b2370bc2295ba3c0800000000000000
-      internalID: -4347283009326075210
+      spriteID: a09ed0324b9bc704c901d3ca6ade0b12
+      internalID: 1737182492
       vertices: []
       indices: 
       edges: []
@@ -425,19 +438,19 @@ TextureImporter:
       name: dark flaming sword 85x44_10
       rect:
         serializedVersion: 2
-        x: 665
+        x: 935
         y: 0
-        width: 12
-        height: 19
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 509ed5e52849cb430800000000000000
-      internalID: 3800075473243728133
+      spriteID: da9a0509e50978641946357b1136b133
+      internalID: 1983262435
       vertices: []
       indices: 
       edges: []
@@ -446,19 +459,19 @@ TextureImporter:
       name: dark flaming sword 85x44_11
       rect:
         serializedVersion: 2
-        x: 691
+        x: 1020
         y: 0
-        width: 30
-        height: 25
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0046ddb4d5abc420800000000000000
-      internalID: 2651395138774253579
+      spriteID: a5a995667b2aacd49a402b7fbbf852bb
+      internalID: 1569272211
       vertices: []
       indices: 
       edges: []
@@ -467,19 +480,19 @@ TextureImporter:
       name: dark flaming sword 85x44_12
       rect:
         serializedVersion: 2
-        x: 718
-        y: 16
-        width: 7
-        height: 9
+        x: 1105
+        y: 0
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bd9ae321cc9011a10800000000000000
-      internalID: 1878293291674282459
+      spriteID: 34f84d474bf58754ea4bc0eed0befc90
+      internalID: 385207496
       vertices: []
       indices: 
       edges: []
@@ -488,439 +501,19 @@ TextureImporter:
       name: dark flaming sword 85x44_13
       rect:
         serializedVersion: 2
-        x: 724
+        x: 1275
         y: 0
-        width: 21
-        height: 26
+        width: 85
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d911543d5c96e89c0800000000000000
-      internalID: -3923081927019130467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_14
-      rect:
-        serializedVersion: 2
-        x: 739
-        y: 8
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 38db81070b43c5450800000000000000
-      internalID: 6078791529442884995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_15
-      rect:
-        serializedVersion: 2
-        x: 744
-        y: 0
-        width: 19
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7730fea35200350d0800000000000000
-      internalID: -3435401930851024009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_16
-      rect:
-        serializedVersion: 2
-        x: 752
-        y: 14
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ae0e3cb30f5c0d40800000000000000
-      internalID: 5551916910288703144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_17
-      rect:
-        serializedVersion: 2
-        x: 776
-        y: 0
-        width: 24
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b94ce4a8da5c58ef0800000000000000
-      internalID: -106461667032906597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_18
-      rect:
-        serializedVersion: 2
-        x: 803
-        y: 0
-        width: 46
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94dded64722a50050800000000000000
-      internalID: 5766193187494223177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_19
-      rect:
-        serializedVersion: 2
-        x: 861
-        y: 0
-        width: 25
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1415425eb57aa0340800000000000000
-      internalID: 4830857563436503361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_20
-      rect:
-        serializedVersion: 2
-        x: 890
-        y: 0
-        width: 45
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27dc82d0a4b7e18a0800000000000000
-      internalID: -6332488468057764494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_21
-      rect:
-        serializedVersion: 2
-        x: 946
-        y: 0
-        width: 26
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b4d8be7db4b9c7c0800000000000000
-      internalID: -4050507663875189580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_22
-      rect:
-        serializedVersion: 2
-        x: 976
-        y: 0
-        width: 45
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9f2df84af7494ced0800000000000000
-      internalID: -2394625825911614727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_23
-      rect:
-        serializedVersion: 2
-        x: 1071
-        y: 0
-        width: 69
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c97d870fb04603620800000000000000
-      internalID: 2751809374765242268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_24
-      rect:
-        serializedVersion: 2
-        x: 1149
-        y: 0
-        width: 15
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10370cfe33c7c75c0800000000000000
-      internalID: -4216358588618083583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_25
-      rect:
-        serializedVersion: 2
-        x: 1294
-        y: 0
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b347e1a6501cebc0800000000000000
-      internalID: -3752606425236945994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_26
-      rect:
-        serializedVersion: 2
-        x: 1319
-        y: 0
-        width: 15
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c1125f4986fca130800000000000000
-      internalID: 3579506873454432706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_27
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 0
-        width: 69
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c95ad49fc4c1bb60800000000000000
-      internalID: 7760200028770687433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_28
-      rect:
-        serializedVersion: 2
-        x: 654
-        y: 6
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7d1fcda4a69ce48e0800000000000000
-      internalID: -1707205750367129129
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_29
-      rect:
-        serializedVersion: 2
-        x: 655
-        y: 0
-        width: 9
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 562d36ca2b7550240800000000000000
-      internalID: 4757305006294815333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_30
-      rect:
-        serializedVersion: 2
-        x: 663
-        y: 1
-        width: 7
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d09c4464bcc8c9cc0800000000000000
-      internalID: -3702929988920227571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_31
-      rect:
-        serializedVersion: 2
-        x: 744
-        y: 0
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5523742ccc5667c00800000000000000
-      internalID: 898017105814172245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_32
-      rect:
-        serializedVersion: 2
-        x: 831
-        y: 0
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 330dbf256cc841260800000000000000
-      internalID: 7067428498674798643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flaming sword 85x44_33
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 176
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2b3e489985306db0800000000000000
-      internalID: -4800778337694893270
+      spriteID: d07ec1be461a39a479670674374f5c76
+      internalID: -527876971
       vertices: []
       indices: 
       edges: []
@@ -928,7 +521,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 875a6f6ea5400a24faf88c80e472baa2
     internalID: 0
     vertices: []
     indices: 
@@ -938,38 +531,18 @@ TextureImporter:
     nameFileIdTable:
       dark flaming sword 85x44_0: -2252397970142626111
       dark flaming sword 85x44_1: -5474296481054401334
-      dark flaming sword 85x44_10: 3800075473243728133
-      dark flaming sword 85x44_11: 2651395138774253579
-      dark flaming sword 85x44_12: 1878293291674282459
-      dark flaming sword 85x44_13: -3923081927019130467
-      dark flaming sword 85x44_14: 6078791529442884995
-      dark flaming sword 85x44_15: -3435401930851024009
-      dark flaming sword 85x44_16: 5551916910288703144
-      dark flaming sword 85x44_17: -106461667032906597
-      dark flaming sword 85x44_18: 5766193187494223177
-      dark flaming sword 85x44_19: 4830857563436503361
+      dark flaming sword 85x44_10: 1983262435
+      dark flaming sword 85x44_11: 1569272211
+      dark flaming sword 85x44_12: 385207496
+      dark flaming sword 85x44_13: -527876971
       dark flaming sword 85x44_2: 2805511721767691836
-      dark flaming sword 85x44_20: -6332488468057764494
-      dark flaming sword 85x44_21: -4050507663875189580
-      dark flaming sword 85x44_22: -2394625825911614727
-      dark flaming sword 85x44_23: 2751809374765242268
-      dark flaming sword 85x44_24: -4216358588618083583
-      dark flaming sword 85x44_25: -3752606425236945994
-      dark flaming sword 85x44_26: 3579506873454432706
-      dark flaming sword 85x44_27: 7760200028770687433
-      dark flaming sword 85x44_28: -1707205750367129129
-      dark flaming sword 85x44_29: 4757305006294815333
       dark flaming sword 85x44_3: 6920504279765246767
-      dark flaming sword 85x44_30: -3702929988920227571
-      dark flaming sword 85x44_31: 898017105814172245
-      dark flaming sword 85x44_32: 7067428498674798643
-      dark flaming sword 85x44_33: -4800778337694893270
       dark flaming sword 85x44_4: -2580495227938635592
       dark flaming sword 85x44_5: 1659581305216396316
       dark flaming sword 85x44_6: 2655007351499756264
-      dark flaming sword 85x44_7: 4472603316266367128
-      dark flaming sword 85x44_8: -6282478499783530668
-      dark flaming sword 85x44_9: -4347283009326075210
+      dark flaming sword 85x44_7: -1709458062
+      dark flaming sword 85x44_8: 250990520
+      dark flaming sword 85x44_9: 1737182492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

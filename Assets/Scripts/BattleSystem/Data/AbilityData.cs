@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace BattleSystem
 {
-
     [CreateAssetMenu(fileName = "New Ability", menuName = "Battle/Ability")]
     public class AbilityData : ScriptableObject
     {
@@ -21,7 +20,10 @@ namespace BattleSystem
 
         public GameObject summonPrefab;
         public string animationTrigger = "Attack";
-
+        [Header("Effects")]
+        public EffectController effectPrefab;
+        public bool attachToTarget = true; // флаг Ч эффект "врезаетс€" в цель или летит к ней
+        public float effectMoveSpeed = 10f;
 
     }
 

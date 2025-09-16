@@ -13,9 +13,24 @@ MonoBehaviour:
   m_Name: Helmet
   m_EditorClassIdentifier: 
   itemName: Helmet
-  icon: {fileID: 1009049853055315898, guid: f5152fcb006865540b14a142838def90, type: 3}
+  icon: {fileID: 7267013068412884171, guid: 09518b2bf19289844aa7dbd65af26e6a, type: 3}
   showInInventory: 1
   maxStack: 5
   equipSlot: 0
-  armorModifier: 0
-  damageModifier: 0
+  healthPoints: 0
+  airResistance: 0
+  waterResistance: 0
+  fireResistance: 0
+  earthResistance: 0
+  electricResistance: 0
+  iceResistance: 0
+  poisonResistance: 0
+  bluntResistance: 0
+  piercingResistance: 0
+  curseResistance: 0
+  holyResistance: 0
+  magicResistance: 0
+  equipmentSprites:
+    front: {fileID: 7267013068412884171, guid: 09518b2bf19289844aa7dbd65af26e6a, type: 3}
+    side: {fileID: -6413783981204029785, guid: 435b9f50246aeaf4198c6068a12bdfce, type: 3}
+    back: {fileID: -8542811684224181795, guid: 56dc18e31bc5de94d8b2cbca8aaeb34c, type: 3}

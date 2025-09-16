@@ -24,8 +24,6 @@ namespace BattleSystem
         public StatusEffectPanel Team2EffectUI;
         public StatusEffectPanel Team3EffectUI;
 
-
-
         private Dictionary<BattleTeam, List<BattleSpawnPoint>> spawnPoints;
         private Dictionary<BattleSpawnPoint, BattleCharacter> occupiedSpawns = new();
 
@@ -126,6 +124,27 @@ namespace BattleSystem
                     character.abilityUI = Team3AbilityUI;
                     character.statusEffectPanel = Team3EffectUI;
                 }
+            }
+        }
+
+        private void SpawnAbilityEffect(BattleCharacter caster, BattleCharacter target, AbilityData ability)
+        {
+            if (ability.effectPrefab == null) return;
+
+            Vector3 spawnPos = caster.transform.position;
+
+            // создаём эффект
+            var effect = Instantiate(ability.effectPrefab, spawnPos, Quaternion.identity);
+
+            if (ability.attachToTarget && target != null)
+            {
+                // эффект летит к цели
+                effect.Play(target.transform, ability.effectMoveSpeed);
+            }
+            else
+            {
+                // эффект проигрывается сразу на кастере (например аура)
+                effect.Play();
             }
         }
 
@@ -266,6 +285,9 @@ namespace BattleSystem
                 }
 
             }
+
+
+            SpawnAbilityEffect(caster, target, ability);
         }
         private void CleanDeadCharactersAndFreeSpawns()
         {

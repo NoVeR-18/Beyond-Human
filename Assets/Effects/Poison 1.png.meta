@@ -124,6 +124,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -131,10 +144,10 @@ TextureImporter:
       name: Poison 1_0
       rect:
         serializedVersion: 2
-        x: 196
-        y: 24
-        width: 13
-        height: 10
+        x: 0
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +165,10 @@ TextureImporter:
       name: Poison 1_1
       rect:
         serializedVersion: 2
-        x: 278
-        y: 25
-        width: 13
-        height: 11
+        x: 82
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +186,10 @@ TextureImporter:
       name: Poison 1_2
       rect:
         serializedVersion: 2
-        x: 360
-        y: 28
-        width: 13
-        height: 11
+        x: 164
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +207,10 @@ TextureImporter:
       name: Poison 1_3
       rect:
         serializedVersion: 2
-        x: 442
-        y: 31
-        width: 13
-        height: 9
+        x: 246
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +228,10 @@ TextureImporter:
       name: Poison 1_4
       rect:
         serializedVersion: 2
-        x: 524
-        y: 33
-        width: 176
-        height: 9
+        x: 328
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +249,10 @@ TextureImporter:
       name: Poison 1_5
       rect:
         serializedVersion: 2
-        x: 36
-        y: 23
-        width: 89
-        height: 8
+        x: 410
+        y: 0
+        width: 82
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +266,73 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Poison 1_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f522e36abe8c8041a3352581014efdd
+      internalID: -826901282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison 1_7
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6185a7cfd2c5974ba84960243ad2c8a
+      internalID: -261650517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Poison 1_8
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 82
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2f7bfb8fdae4b4d935d67a933649eb
+      internalID: -555098291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b311d306c4029f743a1cbe221cffe2d0
     internalID: 0
     vertices: []
     indices: 
@@ -270,6 +346,9 @@ TextureImporter:
       Poison 1_3: 7084896878961596451
       Poison 1_4: 4650466052755138222
       Poison 1_5: 841706656535313207
+      Poison 1_6: -826901282
+      Poison 1_7: -261650517
+      Poison 1_8: -555098291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

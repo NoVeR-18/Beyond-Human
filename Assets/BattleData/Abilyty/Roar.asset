@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Roar
   m_EditorClassIdentifier: 
   abilityName: Roar
+  tier: 0
   icon: {fileID: 1009049853055315898, guid: 83913ae551e483646b8564947a940ab8, type: 3}
   castTime: 0
   cooldown: 3
+  shieldAmount: 0
   damages:
   - damageType: 0
     baseDamage: 5
@@ -24,3 +26,6 @@ MonoBehaviour:
   effects: []
   summonPrefab: {fileID: 0}
   animationTrigger: Attack
+  effectPrefab: {fileID: 6405428142264817013, guid: 0ac118772c9f496469ac5279244fb491, type: 3}
+  attachToTarget: 1
+  effectMoveSpeed: 10

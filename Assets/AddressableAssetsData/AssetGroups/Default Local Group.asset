@@ -23,12 +23,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - default
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8b9c03f0f22f58c409d9dc4e980bdb41
-    m_Address: Sword
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 377bfbbc7a97a2d448dd65d7568fb8a5
     m_Address: WaterBottle
     m_ReadOnly: 0
@@ -50,17 +44,15 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: eeeb8a4ba172f4945bd983b5fa57200d
-    m_Address: Iron Sword
+  - m_GUID: 8b9c03f0f22f58c409d9dc4e980bdb41
+    m_Address: Sword
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 146d8c47aa67cba498fb2f958c8891d5
-    m_Address: Dead Chest
+  - m_GUID: eb297fb533d44194888e8d02bec4a0dd
+    m_Address: Helmet
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - default
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3203c14bb2673ae4486c9afc38bb396d
     m_Address: Roar
@@ -73,8 +65,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: eb297fb533d44194888e8d02bec4a0dd
-    m_Address: Helmet
+  - m_GUID: eeeb8a4ba172f4945bd983b5fa57200d
+    m_Address: IronSword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -110,6 +102,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - BattlePrefabs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 146d8c47aa67cba498fb2f958c8891d5
+    m_Address: Dead Chest
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0bd739ea458498b4489fdc95b2fc6c72
+    m_Address: Bib
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5a006c797b3c8614fa279df947077cb6, type: 2}

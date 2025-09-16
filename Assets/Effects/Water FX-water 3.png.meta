@@ -244,6 +244,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -251,10 +264,10 @@ TextureImporter:
       name: Water FX-water 3_0
       rect:
         serializedVersion: 2
-        x: 735
+        x: 0
         y: 0
-        width: 19
-        height: 23
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +285,10 @@ TextureImporter:
       name: Water FX-water 3_1
       rect:
         serializedVersion: 2
-        x: 864
+        x: 138
         y: 0
-        width: 13
-        height: 26
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,10 +306,10 @@ TextureImporter:
       name: Water FX-water 3_2
       rect:
         serializedVersion: 2
-        x: 1138
-        y: 21
-        width: 7
-        height: 7
+        x: 276
+        y: 0
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,10 +327,10 @@ TextureImporter:
       name: Water FX-water 3_3
       rect:
         serializedVersion: 2
-        x: 1272
-        y: 23
-        width: 6
-        height: 7
+        x: 414
+        y: 0
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,10 +348,10 @@ TextureImporter:
       name: Water FX-water 3_4
       rect:
         serializedVersion: 2
-        x: 1406
+        x: 552
         y: 0
-        width: 25
-        height: 29
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +369,10 @@ TextureImporter:
       name: Water FX-water 3_5
       rect:
         serializedVersion: 2
-        x: 464
+        x: 690
         y: 0
-        width: 13
-        height: 19
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,10 +390,10 @@ TextureImporter:
       name: Water FX-water 3_6
       rect:
         serializedVersion: 2
-        x: 600
+        x: 828
         y: 0
-        width: 12
-        height: 20
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,10 +411,10 @@ TextureImporter:
       name: Water FX-water 3_7
       rect:
         serializedVersion: 2
-        x: 875
-        y: 14
-        width: 6
-        height: 6
+        x: 966
+        y: 0
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,10 +432,10 @@ TextureImporter:
       name: Water FX-water 3_8
       rect:
         serializedVersion: 2
-        x: 998
+        x: 1104
         y: 0
-        width: 25
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,10 +453,10 @@ TextureImporter:
       name: Water FX-water 3_9
       rect:
         serializedVersion: 2
-        x: 1137
+        x: 1242
         y: 0
-        width: 8
-        height: 20
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +474,10 @@ TextureImporter:
       name: Water FX-water 3_10
       rect:
         serializedVersion: 2
-        x: 1146
+        x: 1380
         y: 0
-        width: 13
-        height: 22
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,10 +495,10 @@ TextureImporter:
       name: Water FX-water 3_11
       rect:
         serializedVersion: 2
-        x: 1271
+        x: 1518
         y: 0
-        width: 7
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,10 +516,10 @@ TextureImporter:
       name: Water FX-water 3_12
       rect:
         serializedVersion: 2
-        x: 1285
+        x: 1656
         y: 0
-        width: 8
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -524,10 +537,10 @@ TextureImporter:
       name: Water FX-water 3_13
       rect:
         serializedVersion: 2
-        x: 1405
+        x: 1794
         y: 0
-        width: 7
-        height: 15
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -545,10 +558,10 @@ TextureImporter:
       name: Water FX-water 3_14
       rect:
         serializedVersion: 2
-        x: 1541
+        x: 1932
         y: 0
-        width: 19
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,10 +579,10 @@ TextureImporter:
       name: Water FX-water 3_15
       rect:
         serializedVersion: 2
-        x: 1569
+        x: 2070
         y: 0
-        width: 10
-        height: 19
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,10 +600,10 @@ TextureImporter:
       name: Water FX-water 3_16
       rect:
         serializedVersion: 2
-        x: 1675
+        x: 2208
         y: 0
-        width: 19
-        height: 20
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -608,10 +621,10 @@ TextureImporter:
       name: Water FX-water 3_17
       rect:
         serializedVersion: 2
-        x: 1699
+        x: 2346
         y: 0
-        width: 10
-        height: 20
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -629,10 +642,10 @@ TextureImporter:
       name: Water FX-water 3_18
       rect:
         serializedVersion: 2
-        x: 1810
+        x: 2484
         y: 0
-        width: 18
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,10 +663,10 @@ TextureImporter:
       name: Water FX-water 3_19
       rect:
         serializedVersion: 2
-        x: 1832
+        x: 2622
         y: 0
-        width: 16
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -671,10 +684,10 @@ TextureImporter:
       name: Water FX-water 3_20
       rect:
         serializedVersion: 2
-        x: 1939
+        x: 2760
         y: 0
-        width: 24
-        height: 19
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -692,10 +705,10 @@ TextureImporter:
       name: Water FX-water 3_21
       rect:
         serializedVersion: 2
-        x: 1960
-        y: 15
-        width: 12
-        height: 6
+        x: 2898
+        y: 0
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -713,10 +726,10 @@ TextureImporter:
       name: Water FX-water 3_22
       rect:
         serializedVersion: 2
-        x: 1970
+        x: 3036
         y: 0
-        width: 7
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -734,10 +747,10 @@ TextureImporter:
       name: Water FX-water 3_23
       rect:
         serializedVersion: 2
-        x: 2072
+        x: 3174
         y: 0
-        width: 24
-        height: 17
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -755,10 +768,10 @@ TextureImporter:
       name: Water FX-water 3_24
       rect:
         serializedVersion: 2
-        x: 2093
+        x: 3312
         y: 0
-        width: 18
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -776,10 +789,10 @@ TextureImporter:
       name: Water FX-water 3_25
       rect:
         serializedVersion: 2
-        x: 2225
+        x: 3450
         y: 0
-        width: 20
-        height: 20
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -797,10 +810,10 @@ TextureImporter:
       name: Water FX-water 3_26
       rect:
         serializedVersion: 2
-        x: 2360
+        x: 3588
         y: 0
-        width: 22
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -818,10 +831,10 @@ TextureImporter:
       name: Water FX-water 3_27
       rect:
         serializedVersion: 2
-        x: 2471
+        x: 3726
         y: 0
-        width: 46
-        height: 21
+        width: 138
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -835,388 +848,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_28
-      rect:
-        serializedVersion: 2
-        x: 2604
-        y: 0
-        width: 43
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1fb9386393f0a93d0800000000000000
-      internalID: -3199227846891168783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_29
-      rect:
-        serializedVersion: 2
-        x: 2644
-        y: 14
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 05d0ce8635818b0e0800000000000000
-      internalID: -2254024866977280688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_30
-      rect:
-        serializedVersion: 2
-        x: 2737
-        y: 0
-        width: 48
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23af4c0198a4820e0800000000000000
-      internalID: -2294502057592948174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_31
-      rect:
-        serializedVersion: 2
-        x: 2888
-        y: 0
-        width: 974
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f4a9a7141f10070e0800000000000000
-      internalID: -2274315676124800433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_32
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 0
-        width: 138
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb0eebb991271d9f0800000000000000
-      internalID: -445449433820241730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_33
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 0
-        width: 10
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b92c068825be7b360800000000000000
-      internalID: 7185470470200803995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_34
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 5
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7aaafec3f856b9860800000000000000
-      internalID: 7537730067211725479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_35
-      rect:
-        serializedVersion: 2
-        x: 606
-        y: 0
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab2f30cd6622271c0800000000000000
-      internalID: -4507502451871190342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_36
-      rect:
-        serializedVersion: 2
-        x: 884
-        y: 0
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be6bf9cc9daffb840800000000000000
-      internalID: 5242184304630413035
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_37
-      rect:
-        serializedVersion: 2
-        x: 1156
-        y: 0
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f5aa249748ad6620800000000000000
-      internalID: 2769054371284690417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_38
-      rect:
-        serializedVersion: 2
-        x: 1291
-        y: 0
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a4ec55dbc87fec90800000000000000
-      internalID: -7138354067505617754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_39
-      rect:
-        serializedVersion: 2
-        x: 1435
-        y: 0
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10963aa4f1b5ff110800000000000000
-      internalID: 1296855407660329217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_40
-      rect:
-        serializedVersion: 2
-        x: 1539
-        y: 0
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78065dd650915ecd0800000000000000
-      internalID: -2529588104590434169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_41
-      rect:
-        serializedVersion: 2
-        x: 1673
-        y: 0
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39d3bd79885695f20800000000000000
-      internalID: 3411869830047546771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_42
-      rect:
-        serializedVersion: 2
-        x: 1708
-        y: 6
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 486f6636bea5a9be0800000000000000
-      internalID: -1469762361351539068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_43
-      rect:
-        serializedVersion: 2
-        x: 1807
-        y: 0
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d279008cb221a0e0800000000000000
-      internalID: -2260487344965979439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_44
-      rect:
-        serializedVersion: 2
-        x: 2205
-        y: 0
-        width: 25
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 286dd24055aa6f810800000000000000
-      internalID: 1798812383300146818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water FX-water 3_45
-      rect:
-        serializedVersion: 2
-        x: 2338
-        y: 0
-        width: 27
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8d286c87028b75a0800000000000000
-      internalID: -6522476666384011892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3d4b08a446e135b4eb2acf5ed280418b
     internalID: 0
     vertices: []
     indices: 
@@ -1245,26 +880,8 @@ TextureImporter:
       Water FX-water 3_25: -5478614157522474569
       Water FX-water 3_26: -3434148884132412385
       Water FX-water 3_27: 5630416313100522490
-      Water FX-water 3_28: -3199227846891168783
-      Water FX-water 3_29: -2254024866977280688
       Water FX-water 3_3: 8060343663111340285
-      Water FX-water 3_30: -2294502057592948174
-      Water FX-water 3_31: -2274315676124800433
-      Water FX-water 3_32: -445449433820241730
-      Water FX-water 3_33: 7185470470200803995
-      Water FX-water 3_34: 7537730067211725479
-      Water FX-water 3_35: -4507502451871190342
-      Water FX-water 3_36: 5242184304630413035
-      Water FX-water 3_37: 2769054371284690417
-      Water FX-water 3_38: -7138354067505617754
-      Water FX-water 3_39: 1296855407660329217
       Water FX-water 3_4: -6333119177089412402
-      Water FX-water 3_40: -2529588104590434169
-      Water FX-water 3_41: 3411869830047546771
-      Water FX-water 3_42: -1469762361351539068
-      Water FX-water 3_43: -2260487344965979439
-      Water FX-water 3_44: 1798812383300146818
-      Water FX-water 3_45: -6522476666384011892
       Water FX-water 3_5: 4422553035243544985
       Water FX-water 3_6: 8902530787925711098
       Water FX-water 3_7: -1849926494408141549

@@ -20,15 +20,32 @@ public class EffectController : MonoBehaviour
 
     public void Play(Transform target = null, float moveSpeed = 5f)
     {
-        if (target != null || type == EffectType.Start)
-            StartCoroutine(PlayEffect());
-        else
+        this.target = target;
+        this.moveSpeed = moveSpeed;
+
+        // === Проверка направления и разворот ===
+        if (this.target != null)
         {
-            this.target = target;
-            this.moveSpeed = moveSpeed;
-            StartCoroutine(PlayAndMove());
+            if (this.target.position.x < transform.position.x)
+            {
+                // цель слева → отразим по X
+                Vector3 scale = transform.localScale;
+                scale.x = Mathf.Abs(scale.x) * -1f;
+                transform.localScale = scale;
+            }
+            else
+            {
+                // цель справа → гарантируем положительный scale.x
+                Vector3 scale = transform.localScale;
+                scale.x = Mathf.Abs(scale.x);
+                transform.localScale = scale;
+            }
         }
 
+        if (this.target == null || type == EffectType.Start || type == EffectType.End)
+            StartCoroutine(PlayEffect());
+        else
+            StartCoroutine(PlayAndMove());
     }
 
     IEnumerator PlayEffect()
@@ -42,7 +59,7 @@ public class EffectController : MonoBehaviour
         if (nextAnim != null)
         {
             EffectController nA = Instantiate(nextAnim.gameObject, transform.position, Quaternion.identity).GetComponent<EffectController>();
-            nA.Play();
+            nA.Play(target, moveSpeed);
         }
 
         Destroy(gameObject);

@@ -142,6 +142,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -149,10 +162,10 @@ TextureImporter:
       name: dark flame 1 50x40_0
       rect:
         serializedVersion: 2
-        x: 104
+        x: 0
         y: 0
-        width: 42
-        height: 37
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +183,10 @@ TextureImporter:
       name: dark flame 1 50x40_1
       rect:
         serializedVersion: 2
-        x: 153
+        x: 50
         y: 0
-        width: 45
-        height: 39
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,9 +204,9 @@ TextureImporter:
       name: dark flame 1 50x40_2
       rect:
         serializedVersion: 2
-        x: 201
+        x: 100
         y: 0
-        width: 67
+        width: 50
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -212,10 +225,10 @@ TextureImporter:
       name: dark flame 1 50x40_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 24
-        width: 18
-        height: 14
+        x: 150
+        y: 0
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,10 +246,10 @@ TextureImporter:
       name: dark flame 1 50x40_4
       rect:
         serializedVersion: 2
-        x: 269
-        y: 30
-        width: 10
-        height: 9
+        x: 200
+        y: 0
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +267,10 @@ TextureImporter:
       name: dark flame 1 50x40_5
       rect:
         serializedVersion: 2
-        x: 275
+        x: 250
         y: 0
-        width: 17
-        height: 37
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,10 +288,10 @@ TextureImporter:
       name: dark flame 1 50x40_6
       rect:
         serializedVersion: 2
-        x: 290
-        y: 30
-        width: 6
-        height: 9
+        x: 300
+        y: 0
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +309,10 @@ TextureImporter:
       name: dark flame 1 50x40_7
       rect:
         serializedVersion: 2
-        x: 294
-        y: 2
-        width: 197
-        height: 38
+        x: 350
+        y: 0
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,10 +330,10 @@ TextureImporter:
       name: dark flame 1 50x40_8
       rect:
         serializedVersion: 2
-        x: 259
-        y: 20
-        width: 6
-        height: 6
+        x: 400
+        y: 0
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,10 +351,10 @@ TextureImporter:
       name: dark flame 1 50x40_9
       rect:
         serializedVersion: 2
-        x: 24
+        x: 450
         y: 0
-        width: 14
-        height: 8
+        width: 50
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,52 +368,10 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: dark flame 1 50x40_10
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 0
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13810abcf96bde810800000000000000
-      internalID: 1796292623823018033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dark flame 1 50x40_11
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 6
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6e651bfebe9de2f0800000000000000
-      internalID: -941922203957105041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 164014857c140ff4b8e19d6768c98b1a
     internalID: 0
     vertices: []
     indices: 
@@ -410,8 +381,6 @@ TextureImporter:
     nameFileIdTable:
       dark flame 1 50x40_0: -7638908181594002150
       dark flame 1 50x40_1: -3764248281332417846
-      dark flame 1 50x40_10: 1796292623823018033
-      dark flame 1 50x40_11: -941922203957105041
       dark flame 1 50x40_2: -24654905669436624
       dark flame 1 50x40_3: 4368576649009271955
       dark flame 1 50x40_4: -5690964726823713974
