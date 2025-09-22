@@ -1,4 +1,5 @@
 ﻿using NPCEnums;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Quests
@@ -15,6 +16,7 @@ namespace Quests
         public string questId;
         public string title;
         [TextArea] public string description;
+        public LocationId locationId; // where complete the quest
 
         [Header("Task")]
         public QuestType questType;
@@ -22,24 +24,20 @@ namespace Quests
         [Tooltip("Для Kill/Collect")]
         public QuestTargetType targetType;
 
-        [Tooltip("ID цели (например, Wolf001). Используется, если TargetType = ById")]
+        [Tooltip("ID target (example, Wolf001). Use, if TargetType = ById")]
         public string targetId;
 
-        [Tooltip("Фракция цели (например, Animals). Используется, если TargetType = ByFaction")]
+        [Tooltip("Faction target (example, Animals). Use, if TargetType = ByFaction")]
         public FactionType targetFactionId;
 
-        [Tooltip("Необходимо выполнить (кол-во убитых/собранных и т.д.)")]
+        [Tooltip("Need count (kill/collect etc)")]
         public int requiredAmount = 1;
 
-        [Header("Rewards")]
-        public int rewardExp;
-        public int rewardGold;
+        [Tooltip("Change faction after complete")]
+        public List<FactionReward> factionRewards;
 
-        [Tooltip("Изменение репутации фракции при завершении квеста")]
-        public FactionReward[] factionRewards;
-
-        [Tooltip("Предметы, выдаваемые в награду")]
-        public ItemReward[] itemRewards;
+        [Tooltip("Items, as reward")]
+        public List<ItemReward> itemRewards;
     }
 
     [System.Serializable]

@@ -12,6 +12,8 @@ public class NPCSaveData
     public string destinationId; // вместо NavTargetPoint
     public HouseData CurrentHouse;
     public int CurrentFloor;
+
+    public LocationId locationId;
     public bool isDead = false;
 }
 

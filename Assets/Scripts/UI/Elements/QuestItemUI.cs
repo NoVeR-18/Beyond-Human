@@ -1,19 +1,21 @@
 ﻿using Quests;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestItemUI : MonoBehaviour
 {
-    [SerializeField] private TMP_Text titleText;
-    [SerializeField] private TMP_Text descriptionText;
-    [SerializeField] private TMP_Text progressText;
+    [SerializeField] private TMP_Text questTitle;
+    [SerializeField] private Button button;
 
-    public void Setup(Quest quest)
+    private Quest quest;
+
+    public void Setup(Quest quest, System.Action onClick)
     {
-        titleText.text = quest.data.title;
-        descriptionText.text = quest.data.description;
-        progressText.text = quest.isCompleted
-            ? "Complete!"
-            : $"{quest.currentAmount}/{quest.data.requiredAmount}";
+        this.quest = quest;
+        questTitle.text = quest.data.title;
+
+        button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() => onClick?.Invoke());
     }
 }

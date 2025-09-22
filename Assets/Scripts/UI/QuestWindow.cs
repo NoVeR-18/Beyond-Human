@@ -1,14 +1,18 @@
 using Quests;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestWindow : UIWindow
 {
+    [Header("UI References")]
     [SerializeField] private GameObject content;
-    [SerializeField] private Transform questListParent;   //all parent for quest items
-    [SerializeField] private GameObject questItemPrefab;  // prefab for one quest item
+    [SerializeField] private Transform locationListParent;   // родитель для локаций
+    [SerializeField] private QuestLocationGroupUI locationGroupPrefab; // префаб группы локации
+    [SerializeField] private QuestDetailsUI questDetailsUI;  // правая панель деталей
 
-    private readonly List<GameObject> activeItems = new();
+    private readonly List<GameObject> activeGroups = new();
 
     public override void Show()
     {
@@ -26,30 +30,44 @@ public class QuestWindow : UIWindow
         ClearUI();
     }
 
-
     private void RefreshUI()
     {
         ClearUI();
-
         if (QuestManager.Instance == null) return;
 
-        foreach (var quest in QuestManager.Instance.activeQuests)
-        {
-            GameObject item = Instantiate(questItemPrefab, questListParent);
-            activeItems.Add(item);
+        // Группируем квесты по локациям
+        var grouped = QuestManager.Instance.activeQuests
+            .GroupBy(q => q.data.locationId);
 
-            QuestItemUI questUI = item.GetComponent<QuestItemUI>();
-            if (questUI != null)
-                questUI.Setup(quest);
+        foreach (var group in grouped)
+        {
+            if (!group.Any()) continue;
+
+            QuestLocationGroupUI groupUI = Instantiate(locationGroupPrefab, locationListParent);
+            activeGroups.Add(groupUI.gameObject);
+
+            if (groupUI != null)
+            {
+                groupUI.Setup(group.Key, group.ToList(), ShowQuestDetails);
+            }
         }
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(
+    locationListParent.transform.parent as RectTransform
+);
     }
 
     private void ClearUI()
     {
-        foreach (var go in activeItems)
+        foreach (var go in activeGroups)
             Destroy(go);
+        activeGroups.Clear();
+    }
 
-        activeItems.Clear();
+    private void ShowQuestDetails(Quest quest)
+    {
+        questDetailsUI.Show(quest);
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(content.transform.parent as RectTransform);
     }
 }
-

@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.NPC;
+using GameWorld;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -208,10 +209,14 @@ public class SaveSystem : MonoBehaviour
         foreach (var npc in allNPCs)
         {
             if (npc != null)
-                data.Add(npc.GetSaveData());
+            {
+                var npcData = npc.GetSaveData();
+                npcData.locationId = LocationManager.Instance.GetCurrentLocation();
+                data.Add(npcData);
+            }
         }
 
-        NPCSaveManager.SaveNPCs(data);
+        NPCSaveManager.SaveNPCs(data, LocationManager.Instance.GetCurrentLocation());
 
         SavePlayer();
         SaveInteractables();
@@ -233,12 +238,18 @@ public class SaveSystem : MonoBehaviour
             player.LoadFromData(data);
         }
     }
+    public void PlayerEntrance(Transform transform)
+    {
+        player.transform.position = transform.position;
+    }
+
     // Load all NPCs from file and filter their states
     public void LoadAll()
     {
-        var savedData = NPCSaveManager.LoadNPCs();
+        var currentLoc = LocationManager.Instance.GetCurrentLocation();
+        var savedData = NPCSaveManager.LoadNPCs(currentLoc);
 
-        foreach (var data in savedData)
+        foreach (var data in savedData.Where(d => d.locationId == currentLoc))
         {
             var npc = allNPCs.Find(n => n.npcId == data.npcId);
             if (npc != null)
@@ -259,7 +270,6 @@ public class SaveSystem : MonoBehaviour
         }
 
         LoadPlayer();
-        // Interactables
         LoadInteractables();
     }
     private void OnApplicationQuit()

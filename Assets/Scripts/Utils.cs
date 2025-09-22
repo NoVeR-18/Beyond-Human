@@ -10,7 +10,6 @@ namespace GameUtils.Utils
         {
             return new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         }
-
     }
 
     public static class SaveUtils

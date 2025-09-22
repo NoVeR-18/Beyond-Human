@@ -15,13 +15,12 @@ MonoBehaviour:
   questId: 2
   title: Test
   description: Testing system
+  locationId: 2
   questType: 0
   targetType: 1
   targetId: 
   targetFactionId: 6
   requiredAmount: 2
-  rewardExp: 0
-  rewardGold: 0
   factionRewards: []
   itemRewards:
   - item: {fileID: 11400000, guid: 76ae9e40a8dba0346903d09021338686, type: 2}

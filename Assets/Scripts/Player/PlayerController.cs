@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour, IFactionMember
         {
             var prefab = Resources.Load<InteractionEmitter>("Prefabs/InteractionEmitter");
             emitter = Instantiate(prefab, transform.position, Quaternion.identity, transform);
+            emitter.tag = "Player";
         }
         factionData = FactionManager.Instance.GetFaction(factionType);
         if (factionData == null)

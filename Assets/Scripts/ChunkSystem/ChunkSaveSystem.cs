@@ -9,6 +9,8 @@ public class ChunkSaveSystem : MonoBehaviour
     public int chunkSize = 32;
     public string saveFolder = "Chunks";
 
+    [SerializeField] private LocationId locationId;    // лучше задавать в инспекторе или при загрузке сцены
+
     private HashSet<Vector2Int> loadedChunks = new();
     private Dictionary<string, TilePaletteData> paletteLookup = new();
     [SerializeField]
@@ -92,10 +94,8 @@ public class ChunkSaveSystem : MonoBehaviour
                 }
             }
         }
-
-        string path = Path.Combine(saveFolder, $"chunk_{chunkCoord.x}_{chunkCoord.y}.dat");
-        Debug.Log($"Save chunk {chunkCoord}");
-        Directory.CreateDirectory(saveFolder);
+        string path = GetChunkPath(chunkCoord);
+        Directory.CreateDirectory(GetLocationFolder());
         using (BinaryWriter writer = new(File.Open(path, FileMode.Create)))
         {
             writer.Write(tiles.Count);
@@ -116,10 +116,10 @@ public class ChunkSaveSystem : MonoBehaviour
         LoadPalettesFromResources();
         var tilemaps = gridHierarchy.GetNamedTilemaps();
 
-        string path = Path.Combine(saveFolder, $"chunk_{chunkPos.x}_{chunkPos.y}.dat");
+        string path = GetChunkPath(chunkPos);
         if (!File.Exists(path))
         {
-            Debug.LogWarning($"Chunk not found: {chunkPos}");
+            Debug.LogWarning($"Chunk not found: {chunkPos} in {locationId}");
             return;
         }
 
@@ -311,4 +311,24 @@ public class ChunkSaveSystem : MonoBehaviour
             }
         }
     }
+
+
+    private string GetLocationFolder()
+    {
+        return Path.Combine(saveFolder, locationId.ToString());
+    }
+
+    private string GetChunkPath(Vector2Int chunkCoord)
+    {
+        return Path.Combine(GetLocationFolder(), $"chunk_{chunkCoord.x}_{chunkCoord.y}.dat");
+    }
+}
+
+public enum LocationId
+{
+    None,
+    Enforcers,
+    Wandener,
+    Greenland,
+    Volcano
 }

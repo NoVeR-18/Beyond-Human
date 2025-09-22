@@ -5,19 +5,23 @@ using UnityEngine;
 
 public static class NPCSaveManager
 {
-    public static void SaveNPCs(List<NPCSaveData> npcData)
+    public static void SaveNPCs(List<NPCSaveData> npcData, LocationId location)
     {
         var container = new SaveContainer { allNpcData = npcData };
         var json = JsonUtility.ToJson(container, true);
-        File.WriteAllText(SaveUtils.NPCFile, json);
+
+        string path = Path.Combine(SaveUtils.SavePath, $"{location}_npcs.json");
+        File.WriteAllText(path, json);
     }
 
-    public static List<NPCSaveData> LoadNPCs()
+    public static List<NPCSaveData> LoadNPCs(LocationId location)
     {
-        if (!File.Exists(SaveUtils.NPCFile))
+        string path = Path.Combine(SaveUtils.SavePath, $"{location}_npcs.json");
+
+        if (!File.Exists(path))
             return new List<NPCSaveData>();
 
-        var json = File.ReadAllText(SaveUtils.NPCFile);
+        var json = File.ReadAllText(path);
         var container = JsonUtility.FromJson<SaveContainer>(json);
         return container.allNpcData;
     }
