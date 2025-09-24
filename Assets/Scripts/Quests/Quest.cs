@@ -34,11 +34,6 @@ namespace Quests
             isCompleted = true;
             Debug.Log($"Quest {data.title} complete!");
 
-            // ✅ Award: Exp + gold
-            // PlayerStats.Instance.AddExp(data.rewardExp);
-            // PlayerStats.Instance.AddGold(data.rewardGold);
-
-            // ✅ Award: items
             if (data.itemRewards != null)
             {
                 foreach (var reward in data.itemRewards)

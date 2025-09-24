@@ -1,5 +1,6 @@
 ﻿#if UNITY_EDITOR
 using UnityEditor;
+using UnityEngine;
 #endif
 
 [System.Serializable]
@@ -7,10 +8,9 @@ public class LocationData
 {
     public LocationId id;
 
-#if UNITY_EDITOR
     public SceneAsset scene; // видно в инспекторе, но в билде не используется
-#endif
 
+    public Sprite detailedMap;
 
     public string SceneName => scene.name;
 

@@ -18,7 +18,6 @@ public class PartyCharacterPanel : MonoBehaviour
 
     [Header("Skill UI")]
     [SerializeField] private GameObject skillsRoot;
-    [SerializeField] private SkillPointIndicator skillPointsCircle;
     [SerializeField] private EquippedSkillsBook equippedSkillsUI;
     [SerializeField]
     private Character character;
@@ -49,8 +48,6 @@ public class PartyCharacterPanel : MonoBehaviour
 
     public void ShowSkills()
     {
-
-        skillPointsCircle.SetPoints(character.remainingSkillPoints);
         equippedSkillsUI.SetSkills(character.equippedSkills);
     }
     public Character GetCharacter() => character;

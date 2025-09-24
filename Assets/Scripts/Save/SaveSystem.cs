@@ -131,7 +131,7 @@ public class SaveSystem : MonoBehaviour
 
             var existing = interactables.Find(o => o != null && o.GetID() == data.id);
 
-            if (existing == null)
+            if (existing == null && !string.IsNullOrEmpty(data.prefabId))
             {
                 // грузим по ключу из Addressables
                 var handle = Addressables.LoadAssetAsync<GameObject>(data.prefabId);
@@ -149,12 +149,12 @@ public class SaveSystem : MonoBehaviour
                         }
                         else
                         {
-                            Debug.LogError($"Префаб {data.prefabId} не содержит InteractableObject");
+                            Debug.LogError($"Prefab {data.prefabId} dont contain InteractableObject");
                         }
                     }
                     else
                     {
-                        Debug.LogError($"Не удалось загрузить префаб с ключом {data.prefabId}");
+                        Debug.LogError($"Can`t load prefab {data.prefabId}");
                     }
                 };
             }

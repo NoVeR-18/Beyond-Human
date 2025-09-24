@@ -330,5 +330,12 @@ public enum LocationId
     Enforcers,
     Wandener,
     Greenland,
-    Volcano
+    Volcano,
+    Desert,
+    Swamp,
+    Mountains,
+    CityRuins,
+    Beach,
+    Forest,
+    Caves
 }

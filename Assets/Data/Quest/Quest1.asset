@@ -21,7 +21,9 @@ MonoBehaviour:
   targetId: 
   targetFactionId: 6
   requiredAmount: 1
-  factionRewards: []
+  factionRewards:
+  - factionId: 0
+    reputationChange: 0
   itemRewards:
   - item: {fileID: 11400000, guid: 76ae9e40a8dba0346903d09021338686, type: 2}
     amount: 1

@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -8184637884527117143, guid: a3750958a127ca14b93eae8b86124a91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a4dd2df97d065489e0949ef6c25e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: 
   isAggressive: 0
   viewDistance: 6
   viewAngle: 360
@@ -215,22 +216,46 @@ MonoBehaviour:
   target: {fileID: 0}
   StateName: 
   battleParticipantData:
-    prefab: {fileID: 0}
+    battleCharacter: {fileID: 0}
     nameID: 
     team: 0
     stats:
       MaxHP: 100
       CurrentHP: 100
       CurrentShield: 0
+      airResistance: 0
+      waterResistance: 0
+      fireResistance: 0
+      earthResistance: 0
+      electricResistance: 0
+      iceResistance: 0
+      poisonResistance: 0
+      bluntResistance: 0
+      piercingResistance: 0
+      curseResistance: 0
+      holyResistance: 0
+      airDamage: 0
+      waterDamage: 0
+      fireDamage: 0
+      earthDamage: 0
+      electricDamage: 0
+      iceDamage: 0
+      poisonDamage: 0
+      bluntDamage: 0
+      piercingDamage: 0
+      curseDamage: 0
+      holyDamage: 0
     abilities: []
     faction: {fileID: 0}
   isDead: 0
   factionType: 0
-  dialogueSet: {fileID: 0}
+  phraseDialogueSet: {fileID: 0}
+  dialogueData: {fileID: 0}
   CurrentHouse: {fileID: 0}
   CurrentFloor: 0
   emitter: {fileID: 0}
   npcId: 
+  _dropedItems: []
 --- !u!114 &-8239412186506752187
 MonoBehaviour:
   m_ObjectHideFlags: 0

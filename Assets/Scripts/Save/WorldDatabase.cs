@@ -1,11 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "WorldDatabase", menuName = "Game/World Database")]
 public class WorldDatabase : ScriptableObject
 {
     [SerializeField]
+    private Sprite worldMap;
+    [SerializeField]
     private List<LocationData> locations = new();
+
+    [SerializeField]
+    private List<LocationsBackGrounds> locationsBackGrounds = new();
 
     private Dictionary<LocationId, LocationData> lookup;
 
@@ -36,5 +42,23 @@ public class WorldDatabase : ScriptableObject
         return data.SceneName;
     }
 
+    public Sprite GetRandomBackGround(LocationId locationId)
+    {
+        var backgrounds = locationsBackGrounds.FindAll(bg => bg.locationId == locationId);
+        return backgrounds.Count > 0 ? backgrounds[UnityEngine.Random.Range(0, backgrounds.Count)].background : null;
+    }
+
+    public Sprite GetWorldMap()
+    {
+        return worldMap;
+    }
+
     public IReadOnlyList<LocationData> Locations => locations;
+}
+
+[Serializable]
+public class LocationsBackGrounds
+{
+    public LocationId locationId;
+    public Sprite background;
 }

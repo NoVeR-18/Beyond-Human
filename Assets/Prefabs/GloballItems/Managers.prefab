@@ -108,7 +108,7 @@ MonoBehaviour:
   m_BuildHeightMesh: 0
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: 39da45285efcc414eb91624d4765ab1f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 6a46df5a721e7a049bd19e4075eae367, type: 2}
 --- !u!114 &1531057148345604421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   worldDatabase: {fileID: 11400000, guid: 79173afa12e6ae44ba609b57ed6375ea, type: 2}
-  currentLocation: 1
+  currentLocation: 4
 --- !u!1 &2114649356937753506
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   gridHierarchy: {fileID: 0}
   chunkSize: 32
   saveFolder: MapChunks
-  locationId: 1
+  locationId: 0
   palettes:
   - {fileID: 11400000, guid: 2957f63a64020564b91b80cc64320145, type: 2}
   - {fileID: 11400000, guid: 42673e6b1a482c042941668fdf2418ee, type: 2}
@@ -317,18 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df1c98563999ee4ebf79669ab768fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chunkPoss:
-  - {x: -1, y: -2}
-  - {x: -3, y: -2}
-  - {x: -2, y: -2}
-  - {x: -3, y: -1}
-  - {x: -2, y: -1}
-  - {x: -3, y: 0}
-  - {x: -2, y: 0}
-  - {x: 0, y: -1}
-  - {x: 0, y: 0}
-  - {x: -1, y: 0}
-  - {x: -1, y: -1}
+  chunkPoss: []
   gridHierarchy: {fileID: 0}
   chunkSaveSystem: {fileID: 5358360163997353895}
 --- !u!1 &3544571998767345422
@@ -380,18 +369,9 @@ MonoBehaviour:
     portrait: {fileID: -3332345008988473559, guid: 900125be079a62a4692fbd47899e6d59, type: 3}
     weaponMainHand: {fileID: 11400000, guid: eeeb8a4ba172f4945bd983b5fa57200d, type: 2}
     weaponOffHand: {fileID: 11400000, guid: 8b9c03f0f22f58c409d9dc4e980bdb41, type: 2}
-    remainingSkillPoints: 5
     battleCharacter: {fileID: 6835940681249617066, guid: d1aeda8639a07c14dac7965971af6684, type: 3}
     equippedSkills:
     - {fileID: 11400000, guid: 4d7b026a2f1ad224598cb2e51ef54be8, type: 2}
-  - characterName: 2 Sword
-    portrait: {fileID: 8793639957104055765, guid: d68cc9d218409c74299064cef4c29ff8, type: 3}
-    weaponMainHand: {fileID: 11400000, guid: eeeb8a4ba172f4945bd983b5fa57200d, type: 2}
-    weaponOffHand: {fileID: 11400000, guid: 8b9c03f0f22f58c409d9dc4e980bdb41, type: 2}
-    remainingSkillPoints: 5
-    battleCharacter: {fileID: -7823714547196978794, guid: a554626d6a6a1be41b5d8be415bc54ac, type: 3}
-    equippedSkills:
-    - {fileID: 11400000, guid: 76ae9e40a8dba0346903d09021338686, type: 2}
   playerController: {fileID: 0}
 --- !u!1 &3707474598853862014
 GameObject:

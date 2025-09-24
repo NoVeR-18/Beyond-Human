@@ -39,7 +39,6 @@ public class PartyManager : MonoBehaviour
             {
                 characterName = character.characterName,
                 skillDatas = new(),
-                remainingSkillPoints = character.remainingSkillPoints,
                 equipped = new(),
                 mainHandItem = character.weaponMainHand?.itemName,
                 offHandItem = character.weaponOffHand?.itemName,
@@ -104,7 +103,6 @@ public class PartyManager : MonoBehaviour
                 if (data.characterName == "Player")
                 {
                     // Подтягиваем данные игрока
-                    playerCharacter.remainingSkillPoints = data.remainingSkillPoints;
 
                     // Экипировка
                     foreach (var eq in data.equipped)
@@ -154,7 +152,6 @@ public class PartyManager : MonoBehaviour
                     Character character = new Character
                     {
                         characterName = data.characterName,
-                        remainingSkillPoints = data.remainingSkillPoints,
                         equippedSkills = new(),
                         equippedItems = new()
                     };

@@ -24,6 +24,8 @@ namespace BattleSystem
         public StatusEffectPanel Team2EffectUI;
         public StatusEffectPanel Team3EffectUI;
 
+        public SpriteRenderer BackGround;
+        public WorldDatabase worldDatabase;
         private Dictionary<BattleTeam, List<BattleSpawnPoint>> spawnPoints;
         private Dictionary<BattleSpawnPoint, BattleCharacter> occupiedSpawns = new();
 
@@ -49,6 +51,7 @@ namespace BattleSystem
                 StartCoroutine(AbilityLoop(character));
             }
 
+            FitToScreen();
             StartCoroutine(StatusEffectLoop());
         }
 
@@ -147,7 +150,30 @@ namespace BattleSystem
                 effect.Play();
             }
         }
+        void FitToScreen()
+        {
+            BackGround.sprite = worldDatabase.GetRandomBackGround(BattleContext.Instance.battleLocation);
 
+            Camera cam = Camera.main;
+            float worldScreenHeight = cam.orthographicSize * 2f;
+            float worldScreenWidth = worldScreenHeight * cam.aspect;
+
+            Vector2 spriteSize = BackGround.sprite.bounds.size;
+
+            // Рассчитываем масштаб по ширине и высоте
+            float scaleX = worldScreenWidth / spriteSize.x;
+            float scaleY = worldScreenHeight / spriteSize.y;
+
+            // Берём минимальный, чтобы целиком влез (без обрезки)
+            float finalScale = Mathf.Min(scaleX, scaleY);
+
+            BackGround.transform.localScale = new Vector3(
+                scaleX,
+                scaleY,
+                1f
+            );
+            BackGround.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, 0);
+        }
         private bool IsBattleOver()
         {
             return teamA.All(c => !c.IsAlive) || (teamB.All(c => !c.IsAlive) && (teamC.All(c => !c.IsAlive)));

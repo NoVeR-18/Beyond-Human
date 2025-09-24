@@ -85,7 +85,6 @@ namespace BattleSystem
             return null;
         }
 
-
         public float GetRemainingCooldown(AbilityData ability) =>
             cooldowns.ContainsKey(ability) ? cooldowns[ability] : 0f;
 

@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.NPC;
 using BattleSystem;
+using GameWorld;
 using NPCEnums;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +23,9 @@ public class BattleContext : MonoBehaviour
 
     [SerializeField] private bool autoStartForTesting = false;
     public List<BattleParticipantData> battleParticipantDatas = new List<BattleParticipantData>();
+
+    public LocationId battleLocation;
+
     private void Awake()
     {
         if (Instance != null)
@@ -161,6 +165,7 @@ public class BattleContext : MonoBehaviour
         }
         teamIndex = 1;
         Debug.Log($"Бой начинается! Участников: {Charackters.Count}");
+        battleLocation = LocationManager.Instance.GetCurrentLocation();
         returnSceneName = SceneManager.GetActiveScene().name;
         SaveSystem.Instance.SaveAll();
         SceneManager.LoadScene("BattleScene");

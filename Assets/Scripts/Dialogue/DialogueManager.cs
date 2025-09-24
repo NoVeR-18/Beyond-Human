@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.NPC;
+using Quests;
 using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
@@ -15,6 +16,7 @@ public class DialogueManager : MonoBehaviour
         dialogueWindow.StartDialogue(dialogue);
         currentNpc = npc;
         currentPlayer = player;
+        QuestManager.Instance.ReportTalk(npc.characterName);
     }
 
 

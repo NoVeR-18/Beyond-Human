@@ -11,7 +11,6 @@ public class Character
     public Dictionary<EquipmentSlot, Equipment> equippedItems = new(); // Helmet, Chest, Pants, Shoes, Gloves, Amulet
     public Weapon weaponMainHand;
     public Weapon weaponOffHand;
-    public int remainingSkillPoints;
     public BattleCharacter battleCharacter; // Ссылка на BattleCharacter для использования в бою
 
     public List<SkillData> equippedSkills = new();
@@ -82,11 +81,6 @@ public class Character
         // Проверяем, достаточно ли очков навыков
         if (draggedSkill == null)
             return false;
-        else if (remainingSkillPoints < draggedSkill.skillPointCost)
-        {
-            Debug.LogWarning($"Not enough skill points to equip {draggedSkill.itemName}");
-            return false;
-        }
         else
             return true;
 

@@ -1,3 +1,4 @@
+using Quests;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -53,6 +54,7 @@ public class Inventory : MonoBehaviour
                 inventoryItem.quantity += addable;
                 remainingAmount -= addable;
 
+                QuestManager.Instance.ReportCollect(item.itemName);
                 if (remainingAmount <= 0)
                     break;
             }
@@ -64,6 +66,7 @@ public class Inventory : MonoBehaviour
             int stackSize = Mathf.Min(remainingAmount, item.maxStack);
             items.Add(new InventoryItem(item, stackSize));
             remainingAmount -= stackSize;
+            QuestManager.Instance.ReportCollect(item.itemName);
         }
 
         if (remainingAmount > 0)

@@ -29,7 +29,8 @@ public class DialogueHireCompanionAction : DialogueAction
     }
 }
 
-[CreateAssetMenu(menuName = "Dialogue/Actions/Unlock Barrier")]
+//[CreateAssetMenu(menuName = "Dialogue/Actions/Unlock Barrier")]
+
 public class DialogueUnlockBarrierAction : DialogueAction
 {
     public string barrierId;

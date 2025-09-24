@@ -12,10 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e049e053c2dbe4ca9880438523362b, type: 3}
   m_Name: WorldDatabase
   m_EditorClassIdentifier: 
+  worldMap: {fileID: -2281410519378503675, guid: 96ee43be76e602044b950a09322aba1f, type: 3}
   locations:
   - id: 1
     scene: {fileID: 102900000, guid: d136ed5177b216d48a9794e06eafcf0c, type: 3}
-    sceneName: 
+    detailedMap: {fileID: -4602446047409566346, guid: 236b92306d997ed43b0a5ce5bee30557, type: 3}
   - id: 4
     scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
-    sceneName: 
+    detailedMap: {fileID: -3381124427069432450, guid: df85adf3336684740b122133e1b5d953, type: 3}
+  - id: 6
+    scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+    detailedMap: {fileID: -8291471750771349351, guid: aa9460db82888e2459cf6b1fb37c4873, type: 3}
+  - id: 5
+    scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+    detailedMap: {fileID: -6135021837459987668, guid: be1980044ffbed1478825b80b018234e, type: 3}
+  - id: 7
+    scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+    detailedMap: {fileID: 435405877276373459, guid: c19dbba584dfbe14492aa62fa2635368, type: 3}
+  - id: 9
+    scene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+    detailedMap: {fileID: -1311187221782468523, guid: b3f3b46c18ff548479c80a13270dd3d0, type: 3}
+  locationsBackGrounds:
+  - locationId: 5
+    background: {fileID: -8065002600911622951, guid: 83a2fe47dbd3bf949a18fda264fd4af7, type: 3}
+  - locationId: 5
+    background: {fileID: -8065002600911622951, guid: 83a2fe47dbd3bf949a18fda264fd4af7, type: 3}
+  - locationId: 7
+    background: {fileID: 2451938547632121422, guid: 0ff707b6151725348b3609a78f1ca4af, type: 3}
+  - locationId: 7
+    background: {fileID: 6218374939472013770, guid: 14981f19501d66749a6f184a614f37fe, type: 3}
+  - locationId: 4
+    background: {fileID: 3239572553662381624, guid: 9b114af0989cd20408aa308814459f59, type: 3}
+  - locationId: 4
+    background: {fileID: 5231816601013636895, guid: 0ee957e97ff044b4f9a63ba60d298fcc, type: 3}
+  - locationId: 1
+    background: {fileID: 1267846469109212470, guid: 53860ee8214baad4492fe5d3ec419549, type: 3}
+  - locationId: 4
+    background: {fileID: 2883727755865203187, guid: 349fa249029647744a13eec0684ac1df, type: 3}

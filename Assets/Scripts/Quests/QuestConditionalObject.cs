@@ -7,7 +7,7 @@ namespace Quests
     public class QuestConditionalObject : MonoBehaviour
     {
         [Header("Quest Condition")]
-        public string questId;
+        public QuestData questId;
         public QuestConditionType conditionType;
 
         [Header("Target Object (what will be enabled/disabled)")]
@@ -34,16 +34,16 @@ namespace Quests
             switch (conditionType)
             {
                 case QuestConditionType.QuestActive:
-                    shouldEnable = QuestManager.Instance.IsQuestActive(questId);
+                    shouldEnable = QuestManager.Instance.IsQuestActive(questId.questId);
                     break;
 
                 case QuestConditionType.QuestCompleted:
-                    shouldEnable = QuestManager.Instance.IsQuestCompleted(questId);
+                    shouldEnable = QuestManager.Instance.IsQuestCompleted(questId.questId);
                     break;
 
                 case QuestConditionType.QuestNotStarted:
-                    shouldEnable = !QuestManager.Instance.IsQuestActive(questId)
-                                   && !QuestManager.Instance.IsQuestCompleted(questId);
+                    shouldEnable = !QuestManager.Instance.IsQuestActive(questId.questId)
+                                   && !QuestManager.Instance.IsQuestCompleted(questId.questId);
                     break;
             }
 
