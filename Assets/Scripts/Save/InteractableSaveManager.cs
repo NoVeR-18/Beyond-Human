@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using GameUtils.Utils;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -6,19 +7,22 @@ public static class InteractableSaveManager
 {
     private static string SavePath => Path.Combine(Application.persistentDataPath, "interactables_save.json");
 
-    public static void SaveInteractables(List<InteractableSaveData> data)
+    public static void SaveInteractables(List<InteractableSaveData> data, LocationId location)
     {
         var container = new InteractablesSaveContainer { allInteractables = data };
         var json = JsonUtility.ToJson(container, true);
-        File.WriteAllText(SavePath, json);
+
+        string path = Path.Combine(SaveUtils.SavePath, $"{location}_interactables.json");
+        File.WriteAllText(path, json);
     }
 
-    public static List<InteractableSaveData> LoadInteractables()
+    public static List<InteractableSaveData> LoadInteractables(LocationId location)
     {
-        if (!File.Exists(SavePath))
+        string path = Path.Combine(SaveUtils.SavePath, $"{location}_interactables.json");
+        if (!File.Exists(path))
             return new List<InteractableSaveData>();
 
-        var json = File.ReadAllText(SavePath);
+        var json = File.ReadAllText(path);
         var container = JsonUtility.FromJson<InteractablesSaveContainer>(json);
         return container.allInteractables;
     }
@@ -40,6 +44,7 @@ public class InteractableSaveData
 
     public Vector3 position;
     public Quaternion rotation;
+    public LocationId locationId;
 
 }
 public interface ISaveableInteractable

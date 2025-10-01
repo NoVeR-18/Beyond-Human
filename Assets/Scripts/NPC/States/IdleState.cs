@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace Assets.Scripts.NPC.States
 {
-
     public class IdleState : INPCState
     {
         private NPCController npc;

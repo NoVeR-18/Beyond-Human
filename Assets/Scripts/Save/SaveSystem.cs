@@ -73,11 +73,8 @@ public class SaveSystem : MonoBehaviour
         foreach (var obj in interactables)
         {
             string id = obj?.GetID();
-
-            // Если id нет — пропускаем
             if (string.IsNullOrEmpty(id)) continue;
 
-            // Если объект уничтожен в сцене — ставим флаг isDestroyed (создадим запись, если её нет)
             if (obj == null || obj.Equals(null))
             {
                 if (interactableCache.TryGetValue(id, out var existing))
@@ -90,7 +87,8 @@ public class SaveSystem : MonoBehaviour
                     interactableCache[id] = new InteractableSaveData
                     {
                         id = id,
-                        isDestroyed = true
+                        isDestroyed = true,
+                        locationId = LocationManager.Instance.GetCurrentLocation() // добавляем
                     };
                 }
                 continue;
@@ -102,28 +100,32 @@ public class SaveSystem : MonoBehaviour
                 if (string.IsNullOrEmpty(data.id))
                     data.id = id;
 
-                // просто добавляем/заменяем запись в кеше
+                data.locationId = LocationManager.Instance.GetCurrentLocation(); // добавляем
                 interactableCache[id] = data;
             }
             catch (MissingReferenceException e)
             {
-                Debug.LogWarning($"Interactable {id} was destroyed but not removed from list. Skipping. Exception: {e.Message}");
+                Debug.LogWarning($"Interactable {id} was destroyed but not removed. Exception: {e.Message}");
             }
         }
 
-        // если кеш пуст — можно не вызывать сохранение, но это опционально
-        InteractableSaveManager.SaveInteractables(interactableCache.Values.ToList());
+        var currentLoc = LocationManager.Instance.GetCurrentLocation();
+        InteractableSaveManager.SaveInteractables(interactableCache.Values.ToList(), currentLoc);
     }
-
 
 
     private void LoadInteractables()
     {
-        var savedData = InteractableSaveManager.LoadInteractables();
+        var currentLoc = LocationManager.Instance.GetCurrentLocation();
+        var savedData = InteractableSaveManager.LoadInteractables(currentLoc);
         interactableCache.Clear();
+
 
         foreach (var data in savedData)
         {
+            if (data.locationId != currentLoc) // фильтрация по локации
+                continue;
+
             interactableCache[data.id] = data;
 
             if (data.isDestroyed)
@@ -133,7 +135,6 @@ public class SaveSystem : MonoBehaviour
 
             if (existing == null && !string.IsNullOrEmpty(data.prefabId))
             {
-                // грузим по ключу из Addressables
                 var handle = Addressables.LoadAssetAsync<GameObject>(data.prefabId);
                 handle.Completed += op =>
                 {
@@ -154,11 +155,11 @@ public class SaveSystem : MonoBehaviour
                     }
                     else
                     {
-                        Debug.LogError($"Can`t load prefab {data.prefabId}");
+                        Debug.LogError($"Can't load prefab {data.prefabId}");
                     }
                 };
             }
-            else
+            else if (existing != null)
             {
                 existing.LoadFromData(data);
             }

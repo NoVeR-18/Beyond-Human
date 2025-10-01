@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace Assets.Scripts.NPC.States
 {
-
     public class SleepState : INPCState, IInterruptible
     {
         private NPCController npc;
@@ -24,7 +23,7 @@ namespace Assets.Scripts.NPC.States
 
         public void Update()
         {
-            // NPC спит, ничего не делает. Может проснуться по времени или если его потревожили
+            // NPC sleep until player comes close
             if (npc.CanSeePlayer(out var player) && npc.isAggressive)
             {
                 npc.target = player;

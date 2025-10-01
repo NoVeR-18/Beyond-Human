@@ -8,7 +8,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour, IFactionMember
 {
     public InteractionEmitter emitter;
-    public float moveSpeed = 5f;
+    [Header("Movement Settings")]
+    public float walkSpeed = 3f;
+    public float runSpeed = 6f;
+    public float crawlSpeed = 1.5f;
+    private float currentSpeed;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -17,12 +21,21 @@ public class PlayerController : MonoBehaviour, IFactionMember
     private Vector2 movement;
     public EquipmentManager playerEquipmentManager;
 
-    // === Лестница ===
+    // === Stairs ===
     private bool onStairs = false;
     private float zStart = 0f;
     private float zEnd = 1f;
-    private Vector2 stairDirection = Vector2.zero; // ↗ направление лестницы
+    private Vector2 stairDirection = Vector2.zero; // ↗ Direction of the stairs
     private Direction currentDirection = Direction.Front;
+
+    private enum MovementState
+    {
+        Walk,
+        Run,
+        Crawl
+    }
+
+    private MovementState currentState = MovementState.Walk;
 
     private FactionData factionData;
     public FactionData FactionData => factionData;
@@ -56,17 +69,47 @@ public class PlayerController : MonoBehaviour, IFactionMember
         };
     }
 
-    // Загрузка данных
+    // Load player data from save
     public void LoadFromData(PlayerSaveData data)
     {
         transform.position = data.position;
         transform.rotation = data.rotation;
         battleParticipantData.stats.CurrentHP = data.health;
     }
+
     void Update()
+    {
+        HandleInput();
+        HandleAnimation();
+        HandleZPosition();
+    }
+
+    private void HandleInput()
     {
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
+
+        // переключение состояний (пример — Shift = бег, Ctrl = ползание)
+        if (Input.GetKey(KeyCode.LeftShift))
+            currentState = MovementState.Run;
+        else if (Input.GetKey(KeyCode.LeftControl))
+            currentState = MovementState.Crawl;
+        else
+            currentState = MovementState.Walk;
+
+        // выбор скорости в зависимости от состояния
+        switch (currentState)
+        {
+            case MovementState.Walk:
+                currentSpeed = walkSpeed;
+                break;
+            case MovementState.Run:
+                currentSpeed = runSpeed;
+                break;
+            case MovementState.Crawl:
+                currentSpeed = crawlSpeed;
+                break;
+        }
 
         if (onStairs && stairDirection != Vector2.zero)
         {
@@ -80,29 +123,32 @@ public class PlayerController : MonoBehaviour, IFactionMember
             }
             else
             {
-                movement = Vector2.zero;
-                movement.y = Input.GetAxisRaw("Vertical") * stairDirection.magnitude;
+                movement = new Vector2(0, inputY * stairDirection.magnitude);
             }
         }
         else
         {
             movement = new Vector2(inputX, inputY);
         }
+    }
 
-        // Обновление параметров анимации
+
+    private void HandleAnimation()
+    {
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
         if (movement.sqrMagnitude > 0.01f)
         {
             animator.SetFloat("MoveX", movement.x);
             animator.SetFloat("MoveY", movement.y);
-
-
             UpdateDirection(movement);
         }
 
         Flip();
+    }
 
-        // Обработка Z-позиции на лестнице
+    private void HandleZPosition()
+    {
         if (onStairs)
         {
             float progress = Mathf.InverseLerp(zStart, zEnd, transform.position.y);
@@ -111,6 +157,8 @@ public class PlayerController : MonoBehaviour, IFactionMember
             spriteRenderer.sortingOrder = Mathf.RoundToInt(z * 10);
         }
     }
+
+
     private void UpdateDirection(Vector2 move)
     {
         Direction newDir;
@@ -130,17 +178,18 @@ public class PlayerController : MonoBehaviour, IFactionMember
         if (newDir != currentDirection)
         {
             currentDirection = newDir;
-            playerEquipmentManager?.SetDirection(currentDirection);
+            if (playerEquipmentManager != null)
+                playerEquipmentManager?.SetDirection(currentDirection);
         }
     }
 
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement.normalized * currentSpeed * Time.fixedDeltaTime);
         if (movement.sqrMagnitude > 0.1f)
         {
-            emitter.Activate(InterruptReason.PlayerWalking);
+            emitter.Activate(InterruptReason.PlayerWalking, currentSpeed / 2);
         }
     }
 
@@ -152,7 +201,7 @@ public class PlayerController : MonoBehaviour, IFactionMember
         }
     }
 
-    // === Вход на лестницу ===
+    // === Enter on stairs ===
     public void SetOnStairs(bool value, float zStart, float zEnd, Vector2 stairDirection)
     {
         onStairs = value;
@@ -163,11 +212,11 @@ public class PlayerController : MonoBehaviour, IFactionMember
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        // Автогенерация при добавлении компонента
+        // Auto-generate nameID if it's empty
         if (string.IsNullOrEmpty(battleParticipantData.nameID))
         {
             battleParticipantData.nameID = GenerateId();
-            EditorUtility.SetDirty(this); // помечаем объект как изменённый
+            EditorUtility.SetDirty(this); // Mark the object as dirty to save changes
         }
     }
     public bool IsEnemyTo(IFactionMember other)

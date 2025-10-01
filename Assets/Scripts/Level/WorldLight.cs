@@ -34,7 +34,8 @@ namespace Assets.Scripts.Level
         }
         private void OnDestroy()
         {
-            timeManager.OnTimeChanged -= UpdateLightColor;
+            if (timeManager != null)
+                timeManager.OnTimeChanged -= UpdateLightColor;
         }
 
     }
