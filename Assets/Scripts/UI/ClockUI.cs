@@ -1,15 +1,26 @@
+using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ClockUI : MonoBehaviour
 {
     public TextMeshProUGUI clockText;
+    public TextMeshProUGUI dayText;
 
     private void Start()
     {
         UpdateClock(TimeManager.Instance.CurrentTime);
         TimeManager.Instance.OnTimeChanged += UpdateClock;
+        TimeManager.Instance.OnDayChanged += Instance_OnDayChanged;
+
+        Instance_OnDayChanged(TimeManager.Instance.CurrentTime.Day);
+        UpdateClock(TimeManager.Instance.CurrentTime);
+
+    }
+
+    private void Instance_OnDayChanged(DayOfWeek obj)
+    {
+        dayText.text = obj.ToString();
     }
 
     private void UpdateClock(GameTime time)
