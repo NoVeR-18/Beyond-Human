@@ -9,12 +9,29 @@ public class EquipmentManager : MonoBehaviour
 
     private Direction currentDirection = Direction.Front;
 
+    private void Start()
+    {
+        if (slots != null && slots.Count > 0)
+        {
+            slots.RemoveAll(slot => slot == null);
+        }
+
+        if (weaponSlots != null && weaponSlots.Count > 0)
+        {
+            weaponSlots.RemoveAll(slot => slot == null);
+        }
+    }
+
+
     public void SetDirection(Direction dir)
     {
         currentDirection = dir;
 
         foreach (var slot in slots)
-            slot.UpdateDirection(currentDirection);
+        {
+            if (slot != null)
+                slot.UpdateDirection(currentDirection);
+        }
     }
 
     public void EquipItem(EquipmentSlot slotType, EquipmentSprites sprites)
