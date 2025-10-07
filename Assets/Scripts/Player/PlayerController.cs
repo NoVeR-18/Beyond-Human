@@ -2,17 +2,26 @@
 using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 public class PlayerController : MonoBehaviour, IFactionMember
 {
     public InteractionEmitter emitter;
+
     [Header("Movement Settings")]
     public float walkSpeed = 3f;
     public float runSpeed = 6f;
     public float crawlSpeed = 1.5f;
     private float currentSpeed;
+
+    [Header("Swimming Settings")]
+    [SerializeField] private Tilemap waterTilemap;
+    [SerializeField] private Sprite boatSprite;
+    [SerializeField] private Sprite normalSprite;
+    [SerializeField] private float swimSpeed = 2f;
+    private bool isSwimming = false;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -25,7 +34,7 @@ public class PlayerController : MonoBehaviour, IFactionMember
     private bool onStairs = false;
     private float zStart = 0f;
     private float zEnd = 1f;
-    private Vector2 stairDirection = Vector2.zero; // ↗ Direction of the stairs
+    private Vector2 stairDirection = Vector2.zero;
     private Direction currentDirection = Direction.Front;
 
     private enum MovementState
@@ -40,25 +49,34 @@ public class PlayerController : MonoBehaviour, IFactionMember
     private FactionData factionData;
     public FactionData FactionData => factionData;
     [SerializeField] private FactionType factionType;
-
     public FactionType FactionType => factionType;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        UpdateDirection(movement);
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        UpdateDirection(movement);
+
         if (emitter == null)
         {
             var prefab = Resources.Load<InteractionEmitter>("Prefabs/InteractionEmitter");
             emitter = Instantiate(prefab, transform.position, Quaternion.identity, transform);
             emitter.tag = "Player";
         }
+
         factionData = FactionManager.Instance.GetFaction(factionType);
         if (factionData == null)
             Debug.LogWarning($"FactionData not found for {factionType} on {gameObject.name}");
     }
+
+    private void Start()
+    {
+        if (waterTilemap == null)
+            waterTilemap = FindAnyObjectByType<GridHierarchy>().background;
+    }
+
     public PlayerSaveData GetSaveData()
     {
         return new PlayerSaveData
@@ -69,7 +87,6 @@ public class PlayerController : MonoBehaviour, IFactionMember
         };
     }
 
-    // Load player data from save
     public void LoadFromData(PlayerSaveData data)
     {
         transform.position = data.position;
@@ -80,8 +97,9 @@ public class PlayerController : MonoBehaviour, IFactionMember
     void Update()
     {
         HandleInput();
-        HandleAnimation();
         HandleZPosition();
+        if (isSwimming)
+            CheckForShoreExit();
     }
 
     private void HandleInput()
@@ -89,7 +107,21 @@ public class PlayerController : MonoBehaviour, IFactionMember
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
 
-        // переключение состояний (пример — Shift = бег, Ctrl = ползание)
+        if (isSwimming)
+        {
+            // In water fixed swim speed and free movement
+            currentSpeed = swimSpeed;
+            movement = new Vector2(inputX, inputY);
+
+            // local check to prevent leaving water
+            Vector3Int nextCell = waterTilemap.WorldToCell(transform.position + (Vector3)(movement.normalized * 0.5f));
+            if (!waterTilemap.HasTile(nextCell))
+                movement = Vector2.zero;
+
+            return;
+        }
+
+        // На суше обычное управление
         if (Input.GetKey(KeyCode.LeftShift))
             currentState = MovementState.Run;
         else if (Input.GetKey(KeyCode.LeftControl))
@@ -97,7 +129,6 @@ public class PlayerController : MonoBehaviour, IFactionMember
         else
             currentState = MovementState.Walk;
 
-        // выбор скорости в зависимости от состояния
         switch (currentState)
         {
             case MovementState.Walk:
@@ -114,30 +145,24 @@ public class PlayerController : MonoBehaviour, IFactionMember
         if (onStairs && stairDirection != Vector2.zero)
         {
             if (inputX > 0.01f)
-            {
                 movement = stairDirection.normalized;
-            }
             else if (inputX < -0.01f)
-            {
                 movement = -stairDirection.normalized;
-            }
             else
-            {
                 movement = new Vector2(0, inputY * stairDirection.magnitude);
-            }
         }
         else
         {
             movement = new Vector2(inputX, inputY);
         }
+        HandleAnimation();
     }
-
 
     private void HandleAnimation()
     {
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (movement.sqrMagnitude > 0.01f)
+        if (!isSwimming && movement.sqrMagnitude > 0.01f)
         {
             animator.SetFloat("MoveX", movement.x);
             animator.SetFloat("MoveY", movement.y);
@@ -158,17 +183,13 @@ public class PlayerController : MonoBehaviour, IFactionMember
         }
     }
 
-
     private void UpdateDirection(Vector2 move)
     {
         Direction newDir;
 
         if (Mathf.Abs(move.y) > Mathf.Abs(move.x))
         {
-            if (move.y > 0)
-                newDir = Direction.Back;
-            else
-                newDir = Direction.Front;
+            newDir = move.y > 0 ? Direction.Back : Direction.Front;
         }
         else
         {
@@ -178,16 +199,15 @@ public class PlayerController : MonoBehaviour, IFactionMember
         if (newDir != currentDirection)
         {
             currentDirection = newDir;
-            if (playerEquipmentManager != null)
-                playerEquipmentManager?.SetDirection(currentDirection);
+            playerEquipmentManager?.SetDirection(currentDirection);
         }
     }
-
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement.normalized * currentSpeed * Time.fixedDeltaTime);
-        if (movement.sqrMagnitude > 0.1f)
+
+        if (!isSwimming && movement.sqrMagnitude > 0.1f)
         {
             emitter.Activate(InterruptReason.PlayerWalking, currentSpeed / 2);
         }
@@ -201,7 +221,7 @@ public class PlayerController : MonoBehaviour, IFactionMember
         }
     }
 
-    // === Enter on stairs ===
+    // === STAIRS ===
     public void SetOnStairs(bool value, float zStart, float zEnd, Vector2 stairDirection)
     {
         onStairs = value;
@@ -209,16 +229,54 @@ public class PlayerController : MonoBehaviour, IFactionMember
         this.zEnd = zEnd;
         this.stairDirection = stairDirection;
     }
+
+    // === SWIMMING LOGIC ===
+    public void EnterBoatMode(Vector3 worldPos)
+    {
+        transform.position = worldPos;
+        isSwimming = true;
+        spriteRenderer.sprite = boatSprite;
+        animator.enabled = false; // лодка статичная, отключаем анимации
+    }
+
+    private void CheckForShoreExit()
+    {
+        Vector3Int currentCell = waterTilemap.WorldToCell(transform.position);
+        Vector3Int[] offsets =
+        {
+            new Vector3Int(1,0,0), new Vector3Int(-1,0,0),
+            new Vector3Int(0,1,0), new Vector3Int(0,-1,0)
+        };
+
+        foreach (var offset in offsets)
+        {
+            var checkCell = currentCell + offset;
+            if (!waterTilemap.HasTile(checkCell))
+            {
+                ExitBoatMode(waterTilemap.CellToWorld(checkCell) + new Vector3(0.5f, 0.5f, 0));
+                break;
+            }
+        }
+    }
+
+    private void ExitBoatMode(Vector3 shorePos)
+    {
+        transform.position = shorePos;
+        isSwimming = false;
+        spriteRenderer.sprite = normalSprite;
+        animator.enabled = true;
+    }
+
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        // Auto-generate nameID if it's empty
         if (string.IsNullOrEmpty(battleParticipantData.nameID))
         {
             battleParticipantData.nameID = GenerateId();
-            EditorUtility.SetDirty(this); // Mark the object as dirty to save changes
+            EditorUtility.SetDirty(this);
         }
     }
+
     public bool IsEnemyTo(IFactionMember other)
     {
         if (factionData == null || other.FactionData == null) return false;

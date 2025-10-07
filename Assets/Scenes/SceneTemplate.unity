@@ -255,6 +255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 159a841cb06e02845ba34851aacf4cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1839735485 &413069332 stripped
+Tilemap:
+  m_CorrespondingSourceObject: {fileID: 299256778475426971, guid: f76165e35c73af14ea0e138d1b14af57, type: 3}
+  m_PrefabInstance: {fileID: 413069330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &431050208 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5358360163997353895, guid: 699f6ff2c85b9d94e8d1fa70b33e1b1a, type: 3}
@@ -274,6 +279,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4570677275025943865, guid: ae471f50df9501f43816acf89c8b45e5, type: 3}
+      propertyPath: waterTilemap
+      value: 
+      objectReference: {fileID: 413069332}
     - target: {fileID: 5434459550178444421, guid: ae471f50df9501f43816acf89c8b45e5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -380,6 +389,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93ab2c35939184d47bf97dafe538c946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &750119687 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4570677275025943865, guid: ae471f50df9501f43816acf89c8b45e5, type: 3}
+  m_PrefabInstance: {fileID: 750119685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf173fc447d03948a38ba3785c4f462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1991315081
@@ -507,10 +527,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1407300632580868001, guid: 0f4ca36328080ca438a37b8cb110940d, type: 3}
+      propertyPath: swimPrompt
+      value: 
+      objectReference: {fileID: 750119687}
+    - target: {fileID: 1407300632580868001, guid: 0f4ca36328080ca438a37b8cb110940d, type: 3}
+      propertyPath: waterTilemap
+      value: 
+      objectReference: {fileID: 413069332}
     - target: {fileID: 7757548013711264332, guid: 0f4ca36328080ca438a37b8cb110940d, type: 3}
       propertyPath: chunkSystem
       value: 
       objectReference: {fileID: 431050208}
+    - target: {fileID: 9032080289581290168, guid: 0f4ca36328080ca438a37b8cb110940d, type: 3}
+      propertyPath: waterTilemap
+      value: 
+      objectReference: {fileID: 413069332}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
