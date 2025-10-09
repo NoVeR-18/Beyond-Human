@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4903892e6540ce74389bac9560db0924, type: 3}
+  m_Name: New Dialogue Hire Companion Action 1
+  m_EditorClassIdentifier: 
+  HiredCharacter:
+    characterName: Archer
+    portrait: {fileID: 8793639957104055765, guid: d68cc9d218409c74299064cef4c29ff8, type: 3}
+    weaponMainHand: {fileID: 0}
+    weaponOffHand: {fileID: 0}
+    battleCharacter: {fileID: -7823714547196978794, guid: a554626d6a6a1be41b5d8be415bc54ac, type: 3}
+    equippedSkills:
+    - {fileID: 11400000, guid: 76ae9e40a8dba0346903d09021338686, type: 2}
+  equipedItems:
+    helmet: {fileID: 11400000, guid: eb297fb533d44194888e8d02bec4a0dd, type: 2}
+    chest: {fileID: 0}
+    pants: {fileID: 0}
+    shoes: {fileID: 0}
+    gloves: {fileID: 0}
+    amulet: {fileID: 0}
+  stats:
+    MaxHP: 100
+    CurrentHP: 100
+    CurrentShield: 0
+    airResistance: 0
+    waterResistance: 0
+    fireResistance: 0
+    earthResistance: 0
+    electricResistance: 0
+    iceResistance: 0
+    poisonResistance: 0
+    bluntResistance: 0
+    piercingResistance: 0
+    curseResistance: 0
+    holyResistance: 0
+    airDamage: 0
+    waterDamage: 0
+    fireDamage: 0
+    earthDamage: 0
+    electricDamage: 0
+    iceDamage: 0
+    poisonDamage: 0
+    bluntDamage: 0
+    piercingDamage: 0
+    curseDamage: 0
+    holyDamage: 0

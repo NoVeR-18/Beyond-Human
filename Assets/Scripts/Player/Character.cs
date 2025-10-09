@@ -8,7 +8,15 @@ public class Character
 {
     public string characterName;
     public Sprite portrait;
-    public Dictionary<EquipmentSlot, Equipment> equippedItems = new(); // Helmet, Chest, Pants, Shoes, Gloves, Amulet
+    public Dictionary<EquipmentSlot, Equipment> equippedItems = new()
+    {
+        [EquipmentSlot.Helmet] = null,
+        [EquipmentSlot.Bib] = null,
+        [EquipmentSlot.Pants] = null,
+        [EquipmentSlot.Shoes] = null,
+        [EquipmentSlot.Gloves] = null,
+        [EquipmentSlot.Amulet] = null
+    }; // Helmet, Chest, Pants, Shoes, Gloves, Amulet
     public Weapon weaponMainHand;
     public Weapon weaponOffHand;
     public BattleCharacter battleCharacter; // Ссылка на BattleCharacter для использования в бою
@@ -31,8 +39,6 @@ public class Character
                     equippedSkills.Add(new SkillData(ability));
                 }
             }
-
-
         }
     }
 

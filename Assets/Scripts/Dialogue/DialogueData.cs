@@ -20,6 +20,6 @@ public class DialogueData : ScriptableObject
 
     public List<DialogueLine> lines = new List<DialogueLine>();
 
-    [Header("Что произойдет после диалога")]
+    [Header("What hapening after dialogue")]
     public DialogueAction result;
 }
